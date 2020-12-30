@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=============== Medicine ====================-->
+
+	<ThingDef ParentName="MechSerumBase">
+		<defName>RE_MediGel</defName>
+		<label>medi-gel</label>
+		<description>An advanced, fast acting gel which almost instantly seals wounds, preventing bleeding out.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/MedicineMediGel</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<stackLimit>10</stackLimit>
+		<statBases>
+			<MarketValue>950</MarketValue>
+		</statBases>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<tradeability>Sellable</tradeability>
+		<costList>
+			<MedicineIndustrial>2</MedicineIndustrial>
+			<Neutroamine>2</Neutroamine>
+			<!-- RE_ElementZero>?</RE_ElementZero -->
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<!-- researchPrerequisite>RE_MediGelFabrication</researchPrerequisite -->
+			<skillRequirements>
+				<Crafting>6</Crafting>
+				<Intellectual>6</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Use medi-gel</useLabel>
+				<useDuration>300</useDuration>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>RECompMediGel.CompUseEffect_MediGel</compClass>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>CompUseEffect_DestroySelf</compClass>
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<RecipeDef>
+		<defName>RE_AdministerMediGel</defName>
+		<label>administer medi-gel</label>
+		<description>Administer medi-gel.</description>
+		<workerClass>Recipe_AdministerUsableItem</workerClass>
+		<jobString>Administering medi-gel.</jobString>
+		<targetsBodyPart>false</targetsBodyPart>
+		<anesthetize>false</anesthetize>
+		<workAmount>300</workAmount>
+		<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+		<surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RE_MediGel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RE_MediGel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+</Defs>
