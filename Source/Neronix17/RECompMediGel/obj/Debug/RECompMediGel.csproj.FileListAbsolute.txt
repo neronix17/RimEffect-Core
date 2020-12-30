@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimEffect-Core\1.2\Assemblies\RECompMediGel.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimEffect-Core\Source\Neronix17\RECompMediGel\obj\Debug\RECompMediGel.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimEffect-Core\Source\Neronix17\RECompMediGel\obj\Debug\RECompMediGel.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimEffect-Core\Source\Neronix17\RECompMediGel\obj\Debug\RECompMediGel.dll
