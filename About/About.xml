@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Rim-Effect: Core</name>
+	<author>Vanilla Expanded Team and Co.</author>
+	<supportedVersions><li>1.2</li></supportedVersions>
+	<packageId>RimEffect.Core</packageId>
+<loadAfter>
+    <li>vanillaexpanded.achievements</li>
+</loadAfter>
+	<description>
+A WIP of Rim-Effect: Core module.
+
+Do not share, redistribute, publish or use the assets from this mod without prior approval.
+	</description>
+</ModMetaData>

@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+
+  <SoundDef>
+    <defName>RE_Interact_Avenger</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Avenger/Avenger_Interact</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25~25</volumeRange>      
+        <pitchRange>0.8728257~1.1</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Shot_Avenger</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/Avenger/Avenger_Shot</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>45.2941~45.2941</volumeRange>      
+        <pitchRange>1.091765~1</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Interact_Katana</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Katana/Katana_Interact</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25~25</volumeRange>      
+        <pitchRange>0.8728257~1.1</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Shot_Katana</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/Katana/Katana_Shot</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>45.2941~45.2941</volumeRange>      
+        <pitchRange>1.091765~1</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Interact_Mantis</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Mantis/Mantis_Interact</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25~25</volumeRange>      
+        <pitchRange>0.8728257~1.1</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Shot_Mantis</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/Mantis/Mantis_Shot</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>45.2941~45.2941</volumeRange>      
+        <pitchRange>1.091765~1</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+ 
+  
+  <SoundDef>
+    <defName>RE_Shot_MissileLauncher</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/MissileLauncher/MissileLauncher_Shot</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>45.2941~45.2941</volumeRange>      
+        <pitchRange>1.091765~1</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Interact_Phalanx</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Phalanx/Phalanx_Interact</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25~25</volumeRange>      
+        <pitchRange>0.8728257~1.1</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Shot_Phalanx</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/Phalanx/Phalanx_Shot</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>45.2941~45.2941</volumeRange>      
+        <pitchRange>1.091765~1</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Interact_Predator</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Predator/Predator_Interact</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25~25</volumeRange>      
+        <pitchRange>0.8728257~1.1</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Shot_Predator</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/Predator/Predator_Shot</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>45.2941~45.2941</volumeRange>      
+        <pitchRange>1.091765~1</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Interact_Tempest</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Tempest/Tempest_Interact</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25~25</volumeRange>      
+        <pitchRange>0.8728257~1.1</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Shot_Tempest</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/Tempest/Tempest_Shot</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>45.2941~45.2941</volumeRange>      
+        <pitchRange>1.091765~1</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Interact_Vindicator</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Vindicator/Vindicator_Interact</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25~25</volumeRange>      
+        <pitchRange>0.8728257~1.1</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Shot_Vindicator</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/Vindicator/Vindicator_Shot</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>45.2941~45.2941</volumeRange>      
+        <pitchRange>1.091765~1</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Interact_Widow</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Widow/Widow_Interact</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25~25</volumeRange>      
+        <pitchRange>0.8728257~1.1</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Shot_Widow</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/Widow/Widow_Shot</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>45.2941~45.2941</volumeRange>      
+        <pitchRange>1.091765~1</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+
+  
+</Defs>
