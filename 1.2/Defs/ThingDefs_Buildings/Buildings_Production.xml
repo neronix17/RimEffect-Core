@@ -6,7 +6,7 @@
     <label>spacer tech research bench</label>
     <description>A spacer tech bench with computers and electronic measurement equipment. Allows more rapid research, and unlocks advanced research projects.</description>
     <thingClass>Building_ResearchBench</thingClass>
-    <size>(5,2)</size>
+    <size>(5,1)</size>
     <minifiedDef />
     <thingCategories Inherit="false"/>
     <stuffCategories>
@@ -18,7 +18,7 @@
       <ComponentSpacer>10</ComponentSpacer>
     </costList>
     <graphicData>
-      <texPath>Things/Building/Production/ResearchBenchHiTech</texPath>
+      <texPath>Things/Building/Furniture/ResearchTableSpacerTech/ResearchBenchSpacerTech</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>(7,4)</drawSize>
