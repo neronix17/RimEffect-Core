@@ -6,11 +6,11 @@
     <label>alliance terminal</label>
     <description>A research bench module that unlocks alliance technologies. Can be given as a quest reward by the Alliance faction.</description>
     <graphicData>
-      <texPath>Things/Building/Special/AlianceTerminal</texPath>
+      <texPath>Things/Building/Furniture/Special/AllianceTerminal</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>1.0</drawSize>
+      <drawSize>(2,2)</drawSize>
     </graphicData>
-    <uiIconScale>0.85</uiIconScale>
+    <uiIconScale>0.45</uiIconScale>
     <size>(1,1)</size>
     <rotatable>true</rotatable>
     <altitudeLayer>Building</altitudeLayer>
