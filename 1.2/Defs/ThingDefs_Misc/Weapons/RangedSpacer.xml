@@ -746,5 +746,69 @@
       <speed>40</speed>
     </projectile>
   </ThingDef>
+  
+<!-- Alliance Shotgun -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>RE_Gun_AllianceChainShotgun</defName>
+    <label>alliance chain shotgun</label>
+    <description>tbd</description>
+    <techLevel>Ultra</techLevel>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/AllianceChainShotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>RE_Interact_Katana</soundInteract>
+    <statBases>
+      <Mass>5.4</Mass>
+      <AccuracyTouch>0.57</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+      <WorkToMake>45000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>85</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <weaponTags Inherit='False'>
+      <li>AllianceGunHeavy</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>RE_Bullet_AllianceShotgun</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>12.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>RE_Shot_Katana</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
 
 </Defs>
