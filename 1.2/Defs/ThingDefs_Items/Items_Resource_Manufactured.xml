@@ -3,46 +3,36 @@
 
 	<!--=============== Medicine ====================-->
 
-	<ThingDef ParentName="MechSerumBase">
+	<ThingDef ParentName="MedicineBase">
 		<defName>RE_MediGel</defName>
 		<label>medi-gel</label>
-		<description>An advanced, fast acting gel which almost instantly seals wounds, preventing bleeding out.</description>
+		<description>An advanced, fast acting gel which almost instantly seals and cures wounds, preventing bleeding out.</description>
+		<thingClass>Medicine</thingClass>
 		<graphicData>
 			<texPath>Things/Item/Resource/MedicineMediGel</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<drawSize>0.85</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
-		<stackLimit>10</stackLimit>
+		<stackLimit>25</stackLimit>
 		<statBases>
-			<MarketValue>950</MarketValue>
+      		<Mass>0.2</Mass>
+			<MarketValue>750</MarketValue>
+			<Flammability>0.7</Flammability>
+			<MedicalPotency>2.00</MedicalPotency>
+			<MedicalQualityMax>2.00</MedicalQualityMax>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<MaxHitPoints>80</MaxHitPoints>
+      		<WorkToMake>3000</WorkToMake>
 		</statBases>
-		<thingCategories>
-			<li>Items</li>
-		</thingCategories>
-		<tradeability>Sellable</tradeability>
-		<costList>
-			<MedicineIndustrial>2</MedicineIndustrial>
-			<Neutroamine>2</Neutroamine>
-			<!-- RE_ElementZero>?</RE_ElementZero -->
-		</costList>
-		<recipeMaker>
-			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-			<workSkill>Intellectual</workSkill>
-			<recipeUsers>
-				<li>DrugLab</li>
-			</recipeUsers>
-			<!-- researchPrerequisite>RE_MediGelFabrication</researchPrerequisite -->
-			<skillRequirements>
-				<Crafting>6</Crafting>
-				<Intellectual>6</Intellectual>
-			</skillRequirements>
-		</recipeMaker>
 		<comps>
 			<li Class="CompProperties_Usable">
 				<useJob>UseItem</useJob>
 				<useLabel>Use medi-gel</useLabel>
 				<useDuration>300</useDuration>
+			</li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>MechSerumUsed</soundOnUsed>
 			</li>
 			<li Class="CompProperties_UseEffect">
 				<compClass>RECompMediGel.CompUseEffect_MediGel</compClass>
@@ -51,6 +41,27 @@
 				<compClass>CompUseEffect_DestroySelf</compClass>
 			</li>
 		</comps>
+		<costList>
+			<MedicineIndustrial>3</MedicineIndustrial>
+			<Neutroamine>5</Neutroamine>
+			<!-- RE_ElementZero>?</RE_ElementZero -->
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<recipeUsers>
+				<li>RE_ManufacturingBench</li>
+			</recipeUsers>
+			<researchPrerequisite>RE_MediGelFabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+				<Intellectual>6</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+		<tradeability>Sellable</tradeability>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
 		<thingSetMakerTags>
 			<li>RewardStandardHighFreq</li>
 		</thingSetMakerTags>
