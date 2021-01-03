@@ -36,7 +36,7 @@
   </ThingDef>
   
   <ThingDef ParentName="RE_AmmoBelts">
-    <defName>AmmoCryoBelt</defName>
+    <defName>RE_AmmoCryoBelt</defName>
     <label>cryo rounds</label>
     <description>An ammo belt with cryo rounds.</description>
     <graphicData>
@@ -84,7 +84,7 @@
   </ThingDef>
   
   <ThingDef ParentName="RE_AmmoBelts">
-    <defName>AmmoDisruptorBelt</defName>
+    <defName>RE_AmmoDisruptorBelt</defName>
     <label>disruptor rounds</label>
     <description>An ammo belt with disruptor rounds.</description>
     <graphicData>
@@ -132,7 +132,7 @@
   </ThingDef>
   
   <ThingDef ParentName="RE_AmmoBelts">
-    <defName>AmmoExplosiveBelt</defName>
+    <defName>RE_AmmoExplosiveBelt</defName>
     <label>explosive rounds</label>
     <description>An ammo belt with explosive rounds.</description>
     <graphicData>
@@ -180,7 +180,7 @@
   </ThingDef>
   
   <ThingDef ParentName="RE_AmmoBelts">
-    <defName>AmmoIncendiaryBelt</defName>
+    <defName>RE_AmmoIncendiaryBelt</defName>
     <label>incendiary rounds</label>
     <description>An ammo belt with incendiary rounds.</description>
     <graphicData>
@@ -228,7 +228,7 @@
   </ThingDef>
   
   <ThingDef ParentName="RE_AmmoBelts">
-    <defName>AmmoPiercingBelt</defName>
+    <defName>RE_AmmoPiercingBelt</defName>
     <label>piercing rounds</label>
     <description>An ammo belt with piercing rounds.</description>
     <graphicData>
@@ -276,7 +276,7 @@
   </ThingDef>
   
   <ThingDef ParentName="RE_AmmoBelts">
-    <defName>AmmoToxicBelt</defName>
+    <defName>RE_AmmoToxicBelt</defName>
     <label>toxic rounds</label>
     <description>An ammo belt with toxic rounds.</description>
     <graphicData>
