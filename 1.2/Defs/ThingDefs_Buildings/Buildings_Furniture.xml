@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="BuildingBase">
-    <defName>PrefabHeater</defName>
+    <defName>RE_PrefabHeater</defName>
     <label>prefab heater</label>
     <description>A device that converts electricity into heat, more effectively than basic heater. It can automatically turn itself on or off to reach a specific target temperature.</description>
     <thingClass>Building_Heater</thingClass>
@@ -75,7 +75,7 @@
   </ThingDef>
   
   <ThingDef>
-    <defName>PrefabStandingLamp</defName>
+    <defName>RE_PrefabStandingLamp</defName>
     <label>prefab standing lamp</label>
     <description>An electrical prefab standing lamp that lights an area in mild blue. People need light to move and work at full speed.</description>
     <thingClass>Building</thingClass>
@@ -231,7 +231,7 @@
 	</ThingDef>
 	
    <ThingDef ParentName="BedWithQualityBase">
-    <defName>PrefabBed</defName>
+    <defName>RE_PrefabBed</defName>
     <label>prefab bed</label>
     <description>A cozy orthopedic mattress and sheets on a frame for resting.</description>
     <graphicData>
@@ -285,7 +285,7 @@
   </ThingDef>
   
   <ThingDef ParentName="ArtableBedBase">
-    <defName>PrefabDoubleBed</defName>
+    <defName>RE_PrefabDoubleBed</defName>
     <label>prefab double bed</label>
     <description>A prefab double-wide bed that fits two people.</description>
     <graphicData>
