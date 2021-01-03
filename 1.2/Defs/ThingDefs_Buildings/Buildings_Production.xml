@@ -72,7 +72,7 @@
   </ThingDef>
   
   <ThingDef ParentName="BenchBase">
-    <defName>ManufacturingBench</defName>
+    <defName>RE_ManufacturingBench</defName>
     <label>manufacturing bench</label>
     <description>A manufacturing workbench equipped with advanced tools for producing technological marvels from simpler materials.</description>
     <thingClass>Building_WorkTable</thingClass>
