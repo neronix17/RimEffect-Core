@@ -6,7 +6,7 @@
     <label>alliance terminal</label>
     <description>A research bench module that unlocks alliance technologies. Can be given as a quest reward by the Alliance faction.</description>
     <graphicData>
-      <texPath>Things/Building/Furniture/Special/AllianceTerminal</texPath>
+      <texPath>Things/Building/Furniture/Special/TerminalAlliance</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,2)</drawSize>
     </graphicData>
