@@ -13,7 +13,8 @@ namespace RimEffect
     public class AmmoBelt : Apparel
     {
         public static Dictionary<Thing, AmmoBelt> pawnsWithAmmobelts = new Dictionary<Thing, AmmoBelt>();
-        
+        private bool inUse;
+        public bool InUse => inUse;
         private Pawn wearer;
         public override void Tick()
         {
@@ -40,6 +41,31 @@ namespace RimEffect
             }
         }
 
+        public override IEnumerable<Gizmo> GetWornGizmos()
+        {
+
+            Command_Toggle command_Toggle = new Command_Toggle();
+            command_Toggle.hotKey = KeyBindingDefOf.Misc12;
+            command_Toggle.isActive = (() => InUse);
+            command_Toggle.toggleAction = delegate
+            {
+                this.inUse = !InUse;
+            };
+            command_Toggle.defaultLabel = (inUse ? "RE.CommandDisableAmmoBeltLabel".Translate(this.Label) : "RE.CommandEnableAmmoBeltLabel".Translate(this.Label));
+            command_Toggle.defaultDesc = "RE.CommandToggleAmmoBeltDesc".Translate();
+            command_Toggle.icon = Textures.AmmoBeltToggle;
+            command_Toggle.turnOnSound = SoundDefOf.DraftOn;
+            command_Toggle.turnOffSound = SoundDefOf.DraftOff;
+            command_Toggle.groupKey = 817296546;
+            yield return command_Toggle;
+        }
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Values.Look(ref inUse, "inUse");
+        }
+
         public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
         {
             if (this.Wearer != null)
@@ -60,7 +86,7 @@ namespace RimEffect
         private static void Prefix(Projectile __instance, Thing launcher, Vector3 origin, LocalTargetInfo usedTarget, LocalTargetInfo intendedTarget,
             ProjectileHitFlags hitFlags, Thing equipment = null, ThingDef targetCoverDef = null)
         {
-            if (launcher != null && AmmoBelt.pawnsWithAmmobelts.TryGetValue(launcher, out AmmoBelt ammoBelt))
+            if (launcher != null && AmmoBelt.pawnsWithAmmobelts.TryGetValue(launcher, out AmmoBelt ammoBelt) && ammoBelt.InUse)
             {
                 ammoBelt.HitPoints -= 1;
                 if (ammoBelt.HitPoints <= 0)
@@ -76,7 +102,7 @@ namespace RimEffect
     {
         private static void Prefix(Projectile __instance, Thing hitThing)
         {
-            if (__instance.Launcher != null && AmmoBelt.pawnsWithAmmobelts.TryGetValue(__instance.Launcher, out AmmoBelt ammoBelt))
+            if (__instance.Launcher != null && AmmoBelt.pawnsWithAmmobelts.TryGetValue(__instance.Launcher, out AmmoBelt ammoBelt) && ammoBelt.InUse)
             {
                 if (ammoBelt.def == RE_DefOf.RE_AmmoExplosiveBelt)
                 {
@@ -95,7 +121,7 @@ namespace RimEffect
             if (!recursionTrap)
             {
                 if (dinfo.Instigator != null && (dinfo.Weapon?.IsRangedWeapon ?? false) 
-                    && AmmoBelt.pawnsWithAmmobelts.TryGetValue(dinfo.Instigator, out AmmoBelt ammoBelt) && !ammoBelt.DestroyedOrNull())
+                    && AmmoBelt.pawnsWithAmmobelts.TryGetValue(dinfo.Instigator, out AmmoBelt ammoBelt) && !ammoBelt.DestroyedOrNull() && ammoBelt.InUse)
                 {
                     if (ammoBelt.def == RE_DefOf.RE_AmmoPiercingBelt)
                     {

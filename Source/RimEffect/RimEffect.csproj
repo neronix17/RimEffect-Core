@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Damages\DamageWorker_BombNoShake.cs" />
+    <Compile Include="Textures.cs" />
     <Compile Include="RE_DefOf.cs" />
     <Compile Include="Apparels\AmmoBelt.cs" />
     <Compile Include="HarmonyPatches\HarmonyInit.cs" />
