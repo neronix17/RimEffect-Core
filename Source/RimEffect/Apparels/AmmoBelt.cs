@@ -97,10 +97,8 @@ namespace RimEffect
                 {
                     if (ammoBelt.def == RE_DefOf.RE_AmmoPiercingBelt)
                     {
-                        Log.Message($"{ammoBelt} - {dinfo.ArmorPenetrationInt} - {Traverse.Create(dinfo).Field("armorPenetrationInt").GetValue<float>()}");
-                        Traverse.Create(dinfo).Field("armorPenetrationInt").SetValue(99999);
-                        Log.Message($"{ammoBelt} - {dinfo.ArmorPenetrationInt} - {Traverse.Create(dinfo).Field("armorPenetrationInt").GetValue<float>()}");
-                        AccessTools.Field(typeof(DamageInfo), "armorPenetrationInt").SetValue(dinfo, 99999);
+                        Log.Message($"{ammoBelt} - {dinfo.ArmorPenetrationInt} - {AccessTools.Field(typeof(DamageInfo), "armorPenetrationInt").GetValue(dinfo)}");
+                        AccessTools.Field(typeof(DamageInfo), "armorPenetrationInt").SetValueDirect(__makeref(dinfo), dinfo.ArmorPenetrationInt * 1.5f);
                         Log.Message($"{ammoBelt} - {dinfo.ArmorPenetrationInt} - {AccessTools.Field(typeof(DamageInfo), "armorPenetrationInt").GetValue(dinfo)}");
                     }
                     else if (ammoBelt.def == RE_DefOf.RE_AmmoCryoBelt && __instance is Pawn victim)
