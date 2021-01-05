@@ -32,8 +32,10 @@ namespace RimEffect
                 {
                     pawnsWithAmmobelts.Remove(key);
                 }
-
-                pawnsWithAmmobelts[this.Wearer] = this;
+                if (this.Wearer != null)
+                {
+                    pawnsWithAmmobelts[this.Wearer] = this;
+                }
                 wearer = this.Wearer;
             }
         }
