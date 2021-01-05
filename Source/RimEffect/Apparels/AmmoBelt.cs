@@ -19,10 +19,20 @@ namespace RimEffect
         {
             if (!this.Destroyed && this.HitPoints > 0 && this.Wearer != wearer)
             {
-                if (pawnsWithAmmobelts.ContainsKey(wearer))
+                var keysToRemove = new List<Thing>();
+                foreach (var ammoBelts in pawnsWithAmmobelts)
                 {
-                    pawnsWithAmmobelts.Remove(wearer);
+                    if (ammoBelts.Value == this)
+                    {
+                        keysToRemove.Add(ammoBelts.Key);
+                    }
                 }
+
+                foreach (var key in keysToRemove)
+                {
+                    pawnsWithAmmobelts.Remove(key);
+                }
+
                 pawnsWithAmmobelts[this.Wearer] = this;
                 wearer = this.Wearer;
             }
