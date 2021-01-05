@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<RE.CommandDisableAmmoBeltLabel>Disable {0}</RE.CommandDisableAmmoBeltLabel>
+	<RE.CommandEnableAmmoBeltLabel>Enable {0}</RE.CommandEnableAmmoBeltLabel>
+	<RE.CommandToggleAmmoBeltDesc>Enable/disable ammo belt</RE.CommandToggleAmmoBeltDesc>
+</LanguageData>
