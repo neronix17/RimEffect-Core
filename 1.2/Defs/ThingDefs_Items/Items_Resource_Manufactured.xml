@@ -119,5 +119,28 @@
       <li>Manufactured</li>
     </thingCategories>
   </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>RE_ElementZero</defName>
+    <label>element zero</label>
+    <description>Incredibly rare and valuable element zero capsules.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ElementZero</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <stackLimit>150</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>186</MarketValue>
+      <Mass>0.02</Mass>
+      <Flammability>0.7</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
 
 </Defs>
