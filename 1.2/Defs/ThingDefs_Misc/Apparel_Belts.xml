@@ -140,6 +140,9 @@
       <texPath>Things/Apparel/AmmoBelt/AmmoExplosiveBelt</texPath>
       <drawSize>(0.7,0.7)</drawSize>
     </graphicData>
+	<statBases>
+	      <MaxHitPoints>50</MaxHitPoints>
+	</statBases>
     <apparel>
       <wornGraphicPath>Things/Apparel/AmmoBelt/AmmoExplosiveBelt</wornGraphicPath>
       <wornGraphicData>
