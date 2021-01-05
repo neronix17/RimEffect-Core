@@ -25,7 +25,6 @@ namespace RimEffect
                     if (ammoBelts.Value == this)
                     {
                         keysToRemove.Add(ammoBelts.Key);
-                        Log.Message("");
                     }
                 }
 
