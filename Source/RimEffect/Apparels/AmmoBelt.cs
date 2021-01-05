@@ -19,6 +19,10 @@ namespace RimEffect
         {
             if (!this.Destroyed && this.HitPoints > 0 && this.Wearer != wearer)
             {
+                if (pawnsWithAmmobelts.ContainsKey(wearer))
+                {
+                    pawnsWithAmmobelts.Remove(wearer);
+                }
                 pawnsWithAmmobelts[this.Wearer] = this;
                 wearer = this.Wearer;
             }
