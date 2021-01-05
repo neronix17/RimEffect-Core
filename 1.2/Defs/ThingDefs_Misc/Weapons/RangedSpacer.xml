@@ -92,7 +92,7 @@
 <!-- Alliance Battle Rifle -->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>RE_Gun_AllianceBattleRifle</defName>
-    <label>alliance assault rifle</label>
+    <label>alliance battle rifle</label>
     <description>tbd</description>
     <techLevel>Ultra</techLevel>
     <graphicData>
