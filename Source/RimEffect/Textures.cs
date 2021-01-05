@@ -13,6 +13,6 @@ namespace RimEffect
     [StaticConstructorOnStartup]
     public static class Textures
     {
-        public static Texture2D AmmoBeltToggle = ContentFinder<Texture2D>.Get("UI/AmmoBeltToggle");
+
     }
 }
