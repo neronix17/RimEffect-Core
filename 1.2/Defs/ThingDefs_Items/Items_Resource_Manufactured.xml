@@ -60,10 +60,10 @@
 		</recipeMaker>
 		<tradeability>Sellable</tradeability>
 		<tradeTags>
-			<li>ExoticMisc</li>
+			<li>RE_Medicine</li>
 		</tradeTags>
 		<thingSetMakerTags>
-			<li>RewardStandardHighFreq</li>
+			<li>RE_Medicine</li>
 		</thingSetMakerTags>
 	</ThingDef>
 
@@ -118,6 +118,9 @@
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
+	<tradeTags>
+      <li>RE_Resource</li>
+    </tradeTags>
   </ThingDef>
   
   <ThingDef ParentName="ResourceBase">
@@ -141,6 +144,9 @@
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
+	<tradeTags>
+      <li>RE_Resource</li>
+    </tradeTags>
   </ThingDef>
 
 </Defs>
