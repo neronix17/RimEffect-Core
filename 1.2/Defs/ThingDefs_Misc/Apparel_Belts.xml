@@ -19,9 +19,6 @@
     <tradeability>Sellable</tradeability>
     <soundInteract>Standard_Pickup</soundInteract>
     <tickerType>Normal</tickerType>
-    <tradeTags>
-      <li>ExoticMisc</li>
-    </tradeTags>
     <apparel>
       <scoreOffset>4</scoreOffset>
       <careIfWornByCorpse>false</careIfWornByCorpse>
@@ -34,6 +31,9 @@
         <li>Belt</li>
       </layers>
     </apparel>
+    <tradeTags>
+      <li>RE_AmmoBelts</li>
+    </tradeTags>
   </ThingDef>
   
   <ThingDef ParentName="RE_AmmoBelts">
