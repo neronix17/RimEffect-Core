@@ -3,7 +3,7 @@
 
   <ThingDef ParentName="AnimalThingBase">
     <defName>RE_Pyjak</defName>
-    <label>squirrel</label>
+    <label>pyjak</label>
     <description>Pyjak, sometimes referred to as "space monkey", is a primitive species found on several planets including Eletania, Tuchanka, and Zorya. It is known for being intelligent enough to steal things, and is generally considered rodent.</description>
     <statBases>
       <MoveSpeed>5.1</MoveSpeed>
@@ -53,10 +53,12 @@
     </tools>
     <race>
       <body>QuadrupedAnimalWithPawsAndTail</body>
+	  <thinkTreeMain>RE_Pyjak</thinkTreeMain>
       <baseBodySize>0.15</baseBodySize>
       <baseHealthScale>0.25</baseHealthScale>
 	  <herdMigrationAllowed>false</herdMigrationAllowed>
       <baseHungerRate>0.20</baseHungerRate>
+      <nuzzleMtbHours>1</nuzzleMtbHours>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Light</leatherDef>
       <wildness>0.65</wildness>
