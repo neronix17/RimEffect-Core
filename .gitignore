@@ -339,5 +339,5 @@ ASALocalRun/
 # BeatPulse healthcheck temp database
 healthchecksdb
 /Source/Properties/launchSettings.json
-Source/RimEffect/.vs/RimEffect/v16/.suo
-Source/RimEffect/obj/Debug/RimEffect.dll
+*/.vs/*
+*/obj/*
