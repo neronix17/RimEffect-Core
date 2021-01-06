@@ -341,3 +341,4 @@ healthchecksdb
 /Source/Properties/launchSettings.json
 */.vs/*
 */obj/*
+Source/RimEffect/.vs/RimEffect/v16/.suo
