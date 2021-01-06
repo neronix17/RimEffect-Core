@@ -236,6 +236,7 @@
       <texPath>Things/Projectile/Shot_MassAcceleratorTurret_Heavy</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <damageDef>Bomb</damageDef>
       <explosionRadius>1.9</explosionRadius>
