@@ -116,7 +116,7 @@
       <ai_chillDestination>false</ai_chillDestination>
     </building>
     <graphicData>
-      <drawSize>(2,2)</drawSize>
+      <drawSize>(1.5,1.5)</drawSize>
       <drawOffset>(0,0,0.2)</drawOffset>
       <texPath>Things/Building/Furniture/PrefabColumn</texPath>
       <graphicClass>Graphic_Random</graphicClass>
