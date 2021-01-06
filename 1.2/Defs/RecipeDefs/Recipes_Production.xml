@@ -9,39 +9,21 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>7000</workAmount>
+    <workAmount>8000</workAmount>
     <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <ingredients>
       <li>
         <filter>
           <thingDefs>
-            <li>ComponentIndustrial</li>
+            <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>1</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Uranium</li>
-          </thingDefs>
-        </filter>
-        <count>5</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Gold</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
+        <count>3</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Steel</li>
-        <li>Uranium</li>
-        <li>Gold</li>
       </thingDefs>
     </fixedIngredientFilter>
     <recipeUsers>
