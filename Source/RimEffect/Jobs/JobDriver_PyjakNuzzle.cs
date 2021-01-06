@@ -29,7 +29,6 @@ namespace RimEffect
 			yield return Toils_General.Do(delegate
 			{ 
 				Pawn recipient = (Pawn)pawn.CurJob.targetA.Thing;
-				Log.Message("TEst");
 				pawn.interactions.TryInteractWith(recipient, RE_DefOf.RE_Interaction_PyjakNuzzle);
 			});
 		}
