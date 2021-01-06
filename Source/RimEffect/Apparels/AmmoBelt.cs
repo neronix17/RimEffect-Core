@@ -54,8 +54,8 @@ namespace RimEffect
             command_Toggle.defaultLabel = (inUse ? "RE.CommandDisableAmmoBeltLabel".Translate(this.Label) : "RE.CommandEnableAmmoBeltLabel".Translate(this.Label));
             command_Toggle.defaultDesc = "RE.CommandToggleAmmoBeltDesc".Translate();
             command_Toggle.icon = this.def.uiIcon;
-            command_Toggle.turnOnSound = SoundDefOf.DraftOn;
-            command_Toggle.turnOffSound = SoundDefOf.DraftOff;
+            command_Toggle.turnOnSound = RE_DefOf.RE_Ammo_Enable;
+            command_Toggle.turnOffSound = RE_DefOf.RE_Ammo_Enable;
             command_Toggle.groupKey = 817296546;
             yield return command_Toggle;
         }

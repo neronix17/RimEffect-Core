@@ -127,7 +127,7 @@
         <warmupTime>0</warmupTime>
         <range>29.9</range>
         <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-        <burstShotCount>2</burstShotCount>
+        <burstShotCount>3</burstShotCount>
         <soundCast>RE_Shot_Turret</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -143,7 +143,7 @@
     <graphicData>
       <texPath>Things/Building/Security/Turret_MassAcceleratorHeavy/TurretMassAcceleratorHeavy_Base</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(2.5, 2.5)</drawSize>
+      <drawSize>(3, 3)</drawSize>
       <drawOffset>(0,0,-0.1)</drawOffset>
       <damageData>
         <rect>(0.2,0.2,0.6,0.6)</rect>
@@ -174,7 +174,7 @@
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>
-      <turretTopDrawSize>3.7</turretTopDrawSize>
+      <turretTopDrawSize>4</turretTopDrawSize>
       <turretTopOffset>(0, 0.05)</turretTopOffset>
     </building>
     <placeWorkers>
@@ -222,7 +222,7 @@
     </comps>
     <building>
       <turretGunDef>RE_Gun_HeavyMassAcceleratorTurret</turretGunDef>
-      <turretBurstCooldownTime>3.5</turretBurstCooldownTime>
+      <turretBurstCooldownTime>4.8</turretBurstCooldownTime>
     </building>
     <researchPrerequisites>
       <li>RE_MassAcceleration</li>
@@ -237,7 +237,8 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
-      <damageDef>Bullet</damageDef>
+      <damageDef>Bomb</damageDef>
+      <explosionRadius>1.9</explosionRadius>
       <damageAmountBase>30</damageAmountBase>
       <speed>98</speed>
     </projectile>
@@ -269,7 +270,7 @@
         <warmupTime>0</warmupTime>
         <minRange>6.9</minRange>
         <range>35.9</range>
-        <ticksBetweenBurstShots>14</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>32</ticksBetweenBurstShots>
         <burstShotCount>3</burstShotCount>
         <soundCast>RE_Shot_HeavyTurret</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>

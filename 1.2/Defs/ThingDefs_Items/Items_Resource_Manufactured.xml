@@ -102,6 +102,7 @@
     <graphicData>
       <texPath>Things/Item/Resource/ComponentPrefabrication</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
+	  <drawSize>0.90</drawSize>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
