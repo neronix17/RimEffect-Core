@@ -44,7 +44,7 @@
     <Compile Include="Damages\DamageWorker_BombNoShake.cs" />
     <Compile Include="Interactions\InteractionWorker_PyjakNuzzle.cs" />
     <Compile Include="Jobs\JobDriver_PyjakNuzzle.cs" />
-    <Compile Include="Jobs\JobGiver_PyjakNuzzle - Copy.cs" />
+    <Compile Include="Jobs\JobGiver_HaulItemsToRandomPlaces.cs" />
     <Compile Include="Jobs\JobGiver_PyjakNuzzle.cs" />
     <Compile Include="Textures.cs" />
     <Compile Include="RE_DefOf.cs" />
