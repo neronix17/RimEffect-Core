@@ -21,5 +21,7 @@ namespace RimEffect
 
         public static HediffDef Hypothermia;
         public static DamageDef RE_BombNoShake;
+
+        public static SoundDef RE_Ammo_Enable;
     }
 }
