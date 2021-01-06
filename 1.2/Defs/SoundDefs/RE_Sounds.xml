@@ -342,6 +342,7 @@
     <maxSimultaneous>1</maxSimultaneous>  
     <subSounds>
       <li>
+	    <onCamera>True</onCamera> 
         <grains>
           <li Class="AudioGrain_Clip">
             <clipPath>Things/Ammo/AmmoEnable</clipPath>
