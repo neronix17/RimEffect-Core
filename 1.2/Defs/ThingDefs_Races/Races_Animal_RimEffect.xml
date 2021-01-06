@@ -3,7 +3,7 @@
 
   <ThingDef ParentName="AnimalThingBase">
     <defName>RE_Pyjak</defName>
-    <label>pyjak</label>
+    <label>squirrel</label>
     <description>Pyjak, sometimes referred to as "space monkey", is a primitive species found on several planets including Eletania, Tuchanka, and Zorya. It is known for being intelligent enough to steal things, and is generally considered rodent.</description>
     <statBases>
       <MoveSpeed>5.1</MoveSpeed>
@@ -53,12 +53,10 @@
     </tools>
     <race>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-	  <thinkTreeMain>RE_Pyjak</thinkTreeMain>
       <baseBodySize>0.15</baseBodySize>
       <baseHealthScale>0.25</baseHealthScale>
 	  <herdMigrationAllowed>false</herdMigrationAllowed>
       <baseHungerRate>0.20</baseHungerRate>
-      <nuzzleMtbHours>1</nuzzleMtbHours>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Light</leatherDef>
       <wildness>0.65</wildness>
@@ -143,6 +141,192 @@
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Pyjak/Dessicated_Pyjak</texPath>
           <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>RE_Varren</defName>
+    <label>varren</label>
+    <description>Varren is omnivore with a preference for living prey. Originally native to the krogan homeworld of Tuchanka, it is—like most life from Tuchanka—savage, clannish, and consummate survivors. It is a pack hunter when vulnerable prey is readily available and become scavenger when outnumbered or outclassed.</description>
+    <statBases>
+      <MoveSpeed>5.0</MoveSpeed>
+      <MarketValue>600</MarketValue>
+      <ComfyTemperatureMin>-30</ComfyTemperatureMin>
+    </statBases>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>13</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>13</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>fangs</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.9</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>13</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <predator>true</predator>
+      <maxPreyBodySize>2.3</maxPreyBodySize>
+      <petness>0.3</petness>
+	  <herdMigrationAllowed>false</herdMigrationAllowed>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHungerRate>0.25</baseHungerRate>
+      <baseHealthScale>1.4</baseHealthScale>
+      <foodType>CarnivoreAnimalStrict</foodType>
+      <leatherDef>Leather_Wolf</leatherDef>
+      <gestationPeriodDays>20</gestationPeriodDays>
+      <nameOnTameChance>1</nameOnTameChance>
+      <trainability>Advanced</trainability>
+      <wildness>0.60</wildness>
+      <manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.5</manhunterOnDamageChance>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(2, 1.7)</li>
+          <li>(2.5, 0.7)</li>
+          <li>(3, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>16</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.2</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.45</minAge>
+          <soundWounded>RE_Pawn_Varren_Injured</soundWounded>
+          <soundDeath>RE_Pawn_Varren_Death</soundDeath>
+          <soundCall>RE_Pawn_Varren_Call</soundCall>
+          <soundAngry>RE_Pawn_Varren_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>RE_AnimalRE</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>RE_Varren</defName>
+    <label>varren</label>
+    <race>RE_Varren</race>
+    <combatPower>150</combatPower>
+    <ecoSystemWeight>0.45</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+	<alternateGraphicChance>0.99</alternateGraphicChance>
+    <alternateGraphics>
+      <li><texPath>Things/Pawn/Varren/Varren_A</texPath></li>
+      <li><texPath>Things/Pawn/Varren/Varren_B</texPath></li>
+      <li><texPath>Things/Pawn/Varren/Varren_C</texPath></li>
+      <li><texPath>Things/Pawn/Varren/Varren_D</texPath></li>
+    </alternateGraphics>
+    <lifeStages>
+      <li>
+        <label>varren puppy</label>
+        <labelPlural>varren puppies</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Varren/Varren_D</texPath>
+          <drawSize>1.05</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Varren/Varren_Dessicated_east</texPath>
+          <drawSize>1.05</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Varren/Varren_D</texPath>
+          <drawSize>1.7</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Varren/Varren_Dessicated_east</texPath>
+          <drawSize>1.7</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Varren/Varren_D</texPath>
+          <drawSize>2.05</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Varren/Varren_Dessicated_east</texPath>
+          <drawSize>2.05</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
