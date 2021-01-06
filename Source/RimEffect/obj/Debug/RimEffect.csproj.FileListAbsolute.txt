@@ -1,8 +1,0 @@
-c:\GAMES\Rimworld\Mods\RimEffect-Core\Source\RimEffect\bin\Debug\RimEffect.dll
-c:\GAMES\Rimworld\Mods\RimEffect-Core\Source\RimEffect\bin\Debug\RimEffect.pdb
-c:\GAMES\Rimworld\Mods\RimEffect-Core\Source\RimEffect\bin\Debug\0Harmony.dll
-c:\GAMES\Rimworld\Mods\RimEffect-Core\Source\RimEffect\obj\Debug\RimEffect.csprojAssemblyReference.cache
-c:\GAMES\Rimworld\Mods\RimEffect-Core\Source\RimEffect\obj\Debug\RimEffect.csproj.CoreCompileInputs.cache
-c:\GAMES\Rimworld\Mods\RimEffect-Core\Source\RimEffect\obj\Debug\RimEffect.csproj.CopyComplete
-c:\GAMES\Rimworld\Mods\RimEffect-Core\Source\RimEffect\obj\Debug\RimEffect.dll
-c:\GAMES\Rimworld\Mods\RimEffect-Core\1.2\Assemblies\RimEffect.dll
