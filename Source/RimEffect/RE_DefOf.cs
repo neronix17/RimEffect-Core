@@ -23,5 +23,9 @@ namespace RimEffect
         public static DamageDef RE_BombNoShake;
 
         public static SoundDef RE_Ammo_Enable;
+        public static JobDef RE_PyjakNuzzle;
+
+        public static ThoughtDef RE_Thought_PyjakNuzzle;
+        public static InteractionDef RE_Interaction_PyjakNuzzle;
     }
 }
