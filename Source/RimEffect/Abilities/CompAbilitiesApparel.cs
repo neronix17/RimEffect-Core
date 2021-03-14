@@ -36,6 +36,9 @@
             if (this.Pawn == null)
                 yield break;
 
+            if (!this.Pawn.IsColonistPlayerControlled)
+                yield break;
+
             if (this.Pawn != this.pawn)
             {
                 this.pawn = this.Pawn;

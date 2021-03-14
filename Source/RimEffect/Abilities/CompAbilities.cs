@@ -53,6 +53,9 @@
             foreach (Gizmo gizmo in base.CompGetGizmosExtra()) 
                 yield return gizmo;
 
+            if (!this.Pawn.IsColonistPlayerControlled)
+                yield break;
+
             foreach (Ability ability in this.learnedAbilities) 
                 yield return ability.GetGizmo();
 
