@@ -456,5 +456,112 @@
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
   </PawnKindDef>
+  
+  <PawnKindDef ParentName="AllianceBase">
+    <defName>RE_Alliance_Engineer</defName>
+    <label>engineer</label>
+    <combatPower>300</combatPower>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.6~2</gearHealthRange>
+    <apparelTags>
+      <li>RE_AllianceNavyGearMedium</li>
+    </apparelTags>
+    <apparelMoney>4000~4500</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <weaponTags>
+      <li>AllianceGun</li>
+    </weaponTags>
+    <weaponMoney>1250~2400</weaponMoney>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>200~700</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+      <li>RE_Implant</li>
+    </techHediffsTags>
+    <modExtensions>
+      <li Class="VFECore.PawnKindDefExtension">
+        <factionColourApparelPartList>
+          <li>FullHead</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Legs</li>
+        </factionColourApparelPartList>
+        <factionColourApparelLayerList>
+          <li>Overhead</li>
+          <li>OnSkin</li>
+          <li>Middle</li>
+          <li>Shell</li>
+          <li>VFEC_OuterShell</li>
+          <li>OnSkin</li>
+        </factionColourApparelLayerList>
+      </li>
+		<li Class="RimEffect.PawnKindAbilityExtension">
+			<giveAbilities>
+				<li>RE_Tech_CryoBlast</li>
+				<li>RE_Tech_DefenseMatrix</li>
+				<li>RE_Tech_Incinerate</li>
+			</giveAbilities>
+			<implantDef>RE_OmniTool</implantDef>
+			<initialLevel>1</initialLevel>
+			<giveRandomAbilities>true</giveRandomAbilities>
+		</li>
+    </modExtensions>
+	
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="AllianceBase">
+    <defName>RE_Alliance_Adept</defName>
+    <label>adept</label>
+    <combatPower>315</combatPower>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.8~2</gearHealthRange>
+    <apparelTags>
+      <li>RE_AllianceNavyGearLight</li>
+    </apparelTags>
+    <apparelMoney>3500~4500</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <weaponTags>
+      <li>AllianceGunLight</li>
+    </weaponTags>
+    <weaponMoney>1500~2400</weaponMoney>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>700~1200</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <modExtensions>
+      <li Class="VFECore.PawnKindDefExtension">
+        <factionColourApparelPartList>
+          <li>FullHead</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Legs</li>
+        </factionColourApparelPartList>
+        <factionColourApparelLayerList>
+          <li>Overhead</li>
+          <li>OnSkin</li>
+          <li>Middle</li>
+          <li>Shell</li>
+          <li>VFEC_OuterShell</li>
+          <li>OnSkin</li>
+        </factionColourApparelLayerList>
+      </li>
+	  <li Class="RimEffect.PawnKindAbilityExtension">
+		<giveAbilities>
+			<li>RE_Biotic_Throw</li>
+		</giveAbilities>
+		<implantDef>RE_BioticAmpHediff</implantDef>
+		<initialLevel>1</initialLevel>
+		<giveRandomAbilities>true</giveRandomAbilities>
+		</li>
+    </modExtensions>
+  </PawnKindDef>
 
 </Defs>
