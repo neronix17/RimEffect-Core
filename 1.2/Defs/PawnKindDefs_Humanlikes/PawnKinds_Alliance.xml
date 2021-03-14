@@ -505,7 +505,7 @@
 				<li>RE_Tech_DefenseMatrix</li>
 				<li>RE_Tech_Incinerate</li>
 			</giveAbilities>
-			<implantDef>RE_OmniTool</implantDef>
+			<implantDef>RE_OmniToolHediff</implantDef>
 			<initialLevel>1</initialLevel>
 			<giveRandomAbilities>true</giveRandomAbilities>
 		</li>
