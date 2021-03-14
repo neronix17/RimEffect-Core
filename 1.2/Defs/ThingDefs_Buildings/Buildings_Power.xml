@@ -47,7 +47,7 @@
 			</li>
 			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>11.0</fuelConsumptionRate>
+				<fuelConsumptionRate>2.0</fuelConsumptionRate>
 				<fuelCapacity>75.0</fuelCapacity>
 				<fuelFilter>
 					<thingDefs>
@@ -84,7 +84,7 @@
 		<graphicData>
 			<texPath>Things/Building/Power/PrefabSolarCollector/PrefabSolarCollector</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(4,5)</drawSize>
+			<drawSize>(5,5)</drawSize>
 			<shadowData>
 				<volume>(3.5,0.75,3.4)</volume>
 				<offset>(0,0,0)</offset>
@@ -106,7 +106,7 @@
 			<Flammability>0.7</Flammability>
 		</statBases>
 		<tickerType>Normal</tickerType>
-		<size>(4,4)</size>
+		<size>(5,3)</size>
 		<building>
 			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
 		</building>
@@ -135,7 +135,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_FusionCell</defName>
 		<label>fusion cell</label>
-		<description>An advanced prefabricated battery that allows for more efficient storage of larger amounts of power. \n\nPrefabricated equipment is vital for getting a new settlement up and running quickly and safely out on the dangerous frontier.</description>
+		<description>An advanced prefabricated battery that allows for more efficient storage of larger amounts of power. Fusion cells are also capable of generating a small amount of power themselves.\n\nPrefabricated equipment is vital for getting a new settlement up and running quickly and safely out on the dangerous frontier.</description>
 		<thingClass>Building_Battery</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Power/FusionCell/FusionCell</texPath>
@@ -172,7 +172,7 @@
 		</building>
 		<costList>
 			<Steel>55</Steel>
-			<Plasteel>15</Plasteel>
+			<Uranium>10</Uranium>
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<comps>
@@ -203,7 +203,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_ElementZeroReactor</defName>
 		<label>element zero reactor</label>
-		<description>A large reactor repurposed from a ship power core. Consumes element zero to produce large amounts of power. Can be overloaded, resulting in even larger power output at the cost of local radiation.\n\nNuclear reactor will quickly overheat and should be cooled at all times.\n\nCannot be placed outdoors.</description>
+		<description>A large reactor repurposed from a ship power core. Consumes element zero to produce large amounts of power. Can be overloaded, resulting in even larger power output at the cost of local psychic drone.\n\nElement Zero reactor will quickly overheat and should be cooled at all times.\n\nCannot be placed outdoors.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Power/ElementZeroReactor/ElementZeroReactor</texPath>
@@ -234,10 +234,10 @@
 		<tickerType>Normal</tickerType>
 		<size>(6,6)</size>
 		<costList>
-			<Plasteel>340</Plasteel>
+			<Plasteel>180</Plasteel>
 			<ComponentSpacer>8</ComponentSpacer>
 			<ComponentIndustrial>6</ComponentIndustrial>
-			<Silver>10</Silver>
+			<RE_PrefabComponent>24</RE_PrefabComponent>
 		</costList>
 		
 		<placeWorkers>
@@ -294,7 +294,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_FusionReactor</defName>
 		<label>fusion reactor</label>
-		<description>Produces power by consuming uranium. Must be periodically loaded with uranium fuel by hand.</description>
+		<description>Produces power by consuming uranium. Consumes uranium to produce large amounts of power. Can be overloaded, resulting in even larger power output at the cost of local radiation.\n\nNuclear reactor will quickly overheat and should be cooled at all times.\n\nCannot be placed outdoors.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Power/FusionReactor/FusionReactor</texPath>
@@ -321,8 +321,9 @@
 			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
 		</building>
 		<costList>
-			<Plasteel>150</Plasteel>
+			<Plasteel>90</Plasteel>
 			<ComponentSpacer>3</ComponentSpacer>
+			<RE_PrefabComponent>18</RE_PrefabComponent>
 		</costList>
 		<comps>
 			<li Class="CompProperties_Power">
@@ -380,7 +381,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>RE_PrefabGeothermalPlant</defName>
     <label>prefab geothermal plant</label>
-    <description>Produces large amount of electricity from geothermal steam geysers. Must be placed on a steam geyser.</description>
+    <description>Produces large amount of electricity from geothermal steam geysers. Must be placed on a steam geyser.\n\nPrefabricated equipment is vital for getting a new settlement up and running quickly and safely out on the dangerous frontier.</description>
     <thingClass>Building</thingClass>
     <graphicData>
       <texPath>Things/Building/Power/PrefabGeothermalPowerPlant/PrefabGeothermalPowerPlant</texPath>
@@ -410,8 +411,8 @@
     <tickerType>Normal</tickerType>
     <size>(6,6)</size>
     <costList>
-      <Plasteel>280</Plasteel>
-      <ComponentSpacer>8</ComponentSpacer>
+      <Plasteel>140</Plasteel>
+      <ComponentSpacer>6</ComponentSpacer>
 	  <RE_PrefabComponent>18</RE_PrefabComponent>
     </costList>
     <comps>

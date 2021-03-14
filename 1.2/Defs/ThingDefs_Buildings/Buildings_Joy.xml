@@ -70,7 +70,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>RE_VIInterface</defName>
     <label>VI interface</label>
-    <description>A hologram immiter connected to VI interface.</description>
+    <description>A hologram emmiter connected to VI interface. The VI can be interacted and talked with, providing users news, information and recreation.</description>
 	<thingClass>RimEffect.Building_VIInterface</thingClass>
     <graphicData>
       <texPath>Things/Building/Joy/VITerminal/VITerminal</texPath>
@@ -86,9 +86,10 @@
     <socialPropernessMatters>true</socialPropernessMatters>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 	<costList>
-	<ComponentSpacer>1</ComponentSpacer>
-	<Plasteel>5</Plasteel>
-	<Steel>25</Steel>
+	<ComponentSpacer>2</ComponentSpacer>
+	<Plasteel>25</Plasteel>
+	<Steel>50</Steel>
+    <RE_PrefabComponent>8</RE_PrefabComponent>
 	</costList>
     <thingCategories>
       <li>BuildingsJoy</li>

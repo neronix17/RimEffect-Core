@@ -4,7 +4,7 @@
   <ThingDef>
     <defName>RE_BioticAmp</defName>
     <label>biotic amp</label>
-    <description>hey</description>
+    <description>This brain implant allows the user to manipulate the mass effect fields using element zero nodules inside of the amplifier, essentially generating strong enough fields for practical use. With training in specific abilities, the user can throw biotic abilities with diverse effects. Restricts the maximum weight of the weapon carried.</description>
     <thingClass>ThingWithComps</thingClass>
     <category>Item</category>
     <techLevel>Ultra</techLevel>
@@ -77,7 +77,7 @@
     <hediffClass>RimEffect.Hediff_BioticAmp</hediffClass>
     <descriptionHyperlinks><ThingDef>RE_BioticAmp</ThingDef></descriptionHyperlinks>
     <label>biotic amp</label>
-    <description>An organic connection to a larger psychic field. This allows a person to use specific psychic powers that they have learned to influence reality in ways that seem impossible.</description>
+    <description>The ability of this lifeform to create mass effect fields using element zero nodules embedded in body tissues. These powers are both accessed and augmented by using bio-amps. Biotic individuals can knock enemies over from a distance, lift them into the air, generate gravitational vortices to tear obstacles or enemies apart, or create protective barriers.</description>
     <initialSeverity>1</initialSeverity> 
     <minSeverity>0</minSeverity>
     <maxSeverity>4</maxSeverity>
@@ -88,28 +88,28 @@
         <minSeverity>1</minSeverity>
         <statFactors>
           <RE_BioticEnergyMax>100.0</RE_BioticEnergyMax>
-          <RE_BioticEnergyRecoveryRate>5</RE_BioticEnergyRecoveryRate>
+          <RE_BioticEnergyRecoveryRate>0.1</RE_BioticEnergyRecoveryRate>
         </statFactors>
       </li>
       <li>
         <minSeverity>2</minSeverity>
         <statFactors>
           <RE_BioticEnergyMax>160.34</RE_BioticEnergyMax>
-          <RE_BioticEnergyRecoveryRate>8</RE_BioticEnergyRecoveryRate>
+          <RE_BioticEnergyRecoveryRate>0.2</RE_BioticEnergyRecoveryRate>
         </statFactors>
       </li>
       <li>
         <minSeverity>3</minSeverity>
         <statFactors>
           <RE_BioticEnergyMax>230.67</RE_BioticEnergyMax>
-          <RE_BioticEnergyRecoveryRate>10</RE_BioticEnergyRecoveryRate>
+          <RE_BioticEnergyRecoveryRate>0.3</RE_BioticEnergyRecoveryRate>
         </statFactors>
       </li>
       <li>
         <minSeverity>4</minSeverity>
         <statFactors>
           <RE_BioticEnergyMax>300</RE_BioticEnergyMax>
-          <RE_BioticEnergyRecoveryRate>12</RE_BioticEnergyRecoveryRate>
+          <RE_BioticEnergyRecoveryRate>0.4</RE_BioticEnergyRecoveryRate>
         </statFactors>
       </li>
     </stages>

@@ -8,7 +8,7 @@
   <ThingDef ParentName="BaseREMachine">
     <defName>RE_Mechanoids_FENRIS</defName>
     <label>FENRIS mech</label>
-    <description>A medium speed, simple-minded robot capable of efficiently hauling cargo across the local area.</description>
+    <description>Mechanical constructs designed by Hahne-Kedar specifically for hauling resources. Like other mechs produced by Hahne-Kedar, they are identifiable by their white armor and red lights. For many humans, the FENRIS Mechs are viewed as the mechanical analogs of "dogs" and mimic dog-like behavior, which may be related to Hahne-Kedar being an Alliance-Based Corporation.</description>
     <statBases>
       <MoveSpeed>2.9</MoveSpeed>
       <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
@@ -82,7 +82,7 @@
   <ThingDef ParentName="BaseREMachine">
     <defName>RE_Mechanoids_LOKI</defName>
     <label>LOKI mech</label>
-    <description>A simple-minded, slow combat drone. Often used as security across Alliance systems, LOKI mechs are expandable and very durable.</description>
+    <description>The Hahne-Kedar-manufactured LOKI Mech is a bipedal humanoid security robot designed for security detail and guard duty in locations where manpower is an issue, or where the use of organics for "around the clock" shifts is unfeasible. Slow and simple-minded, these droids are expendable but fairly durable.</description>
     <statBases>
       <MoveSpeed>1.9</MoveSpeed>
       <ArmorRating_Blunt>0.32</ArmorRating_Blunt>
@@ -156,7 +156,7 @@
  <ThingDef ParentName="BaseREMachine">
     <defName>RE_Mechanoids_YMIR</defName>
     <label>YMIR mech</label>
-    <description>The Battle YMIR Mech, or Model 34-A, or more commonly called a Heavy Mech, is a massive killing machine designed for anti-infantry purposes. Clad in bone-white armor with red lights, they are utilized by Alliance military as infantry support.</description>
+    <description>The Battle YMIR Mech, or Model 34-A, or more commonly called a Heavy Mech, is a massive killing machine designed for anti-infantry purposes. Clad in bone-white armor with red lights, they are utilized by Alliance military as infantry support. It utilises a powerful shield capable of withstanding heavy fire.</description>
     <statBases>
       <MoveSpeed>1.9</MoveSpeed>
       <ArmorRating_Blunt>0.62</ArmorRating_Blunt>
@@ -203,7 +203,7 @@
 	<comps>
       <li Class="VFE.Mechanoids.CompProperties_Machine">
 		<violent>true</violent>
-		<hoursActive>72</hoursActive>
+		<hoursActive>48</hoursActive>
       </li>
 		<li Class="VFEMech.CompProperties_ShieldMechBubble">
 			<EnergyShieldRechargeRate>0.03</EnergyShieldRechargeRate>
