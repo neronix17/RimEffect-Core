@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using RimWorld;
     using UnityEngine;
     using Verse;
@@ -18,13 +19,24 @@
             singularity.radius        = this.GetRadiusForPawn();
             singularity.damage        = this.GetPowerForPawn();
             singularity.endTick       = Find.TickManager.TicksGame + this.GetDurationForPawn();
+
+            if (this.def.targetMotes.Any()) 
+                singularity.mote = this.def.targetMotes.First();
+        }
+
+        public override void CheckCastEffects(LocalTargetInfo targetInfo, out bool cast, out bool target, out bool hediffApply)
+        {
+            base.CheckCastEffects(targetInfo, out cast, out _, out hediffApply);
+            target = false;
         }
     }
 
     public class Singularity : Thing
     {
-        public Pawn    caster;
-        public Faction casterFaction;
+        public Pawn     caster;
+        public Faction  casterFaction;
+        public ThingDef mote;
+        public Mote     moteThing;
 
         public float radius;
         public float damage;
@@ -53,8 +65,7 @@
                 return this.graphic;
             }
         }
-
-
+        
         public override void Tick()
         {
             this.curRotation += rotSpeed % 360f;
@@ -75,6 +86,15 @@
                         pawn.TakeDamage(dinfo);
                     }
                 }
+
+            if (this.moteThing is null)
+            {
+                this.moteThing = MoteMaker.MakeStaticMote(this.DrawPos, this.Map, mote);
+            }
+            else
+            {
+                this.moteThing.Maintain();
+            }
 
             if (this.tmpPawns.Any() ? this.IsHashIntervalTick(GenTicks.TickRareInterval) : this.IsHashIntervalTick(GenTicks.TickRareInterval/8))
             {

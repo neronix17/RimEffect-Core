@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using RimWorld;
     using UnityEngine;
     using Verse;
@@ -13,12 +14,21 @@
         {
             base.Cast(target);
 
-            AnnihilationField singularity = (AnnihilationField) GenSpawn.Spawn(RE_DefOf.RE_Biotic_AnnihilationField, target.Cell, this.pawn.Map);
-            singularity.caster        = this.pawn;
-            singularity.casterFaction = this.pawn.Faction;
-            singularity.radius        = this.GetRadiusForPawn();
-            singularity.damage        = this.GetPowerForPawn();
-            singularity.endTick       = Find.TickManager.TicksGame + this.GetDurationForPawn();
+            AnnihilationField annihilationField = (AnnihilationField) GenSpawn.Spawn(RE_DefOf.RE_Biotic_AnnihilationField, target.Cell, this.pawn.Map);
+            annihilationField.caster        = this.pawn;
+            annihilationField.casterFaction = this.pawn.Faction;
+            annihilationField.radius        = this.GetRadiusForPawn();
+            annihilationField.damage        = this.GetPowerForPawn();
+            annihilationField.endTick       = Find.TickManager.TicksGame + this.GetDurationForPawn();
+
+            if (this.def.targetMotes.Any())
+                annihilationField.mote = this.def.targetMotes.First();
+        }
+
+        public override void CheckCastEffects(LocalTargetInfo targetInfo, out bool cast, out bool target, out bool hediffApply)
+        {
+            base.CheckCastEffects(targetInfo, out cast, out _, out hediffApply);
+            target = false;
         }
     }
 
@@ -26,8 +36,10 @@
     {
         private const int TickInterval = GenTicks.TickRareInterval / 8;
 
-        public Pawn caster;
-        public Faction casterFaction;
+        public Pawn     caster;
+        public Faction  casterFaction;
+        public ThingDef mote;
+        public Mote     moteThing;
 
         public float radius;
         public float damage;
@@ -63,11 +75,19 @@
             }
         }
 
-
         public override void Tick()
         {
             this.sustainer.Maintain();
             this.curRotation += rotSpeed % 360f;
+
+            if (this.moteThing is null)
+            {
+                this.moteThing = MoteMaker.MakeStaticMote(this.DrawPos, this.Map, mote, this.radius);
+            }
+            else
+            {
+                this.moteThing.Maintain();
+            }
 
             if (this.tmpPawns.Any() ? this.IsHashIntervalTick(TickInterval) : this.IsHashIntervalTick(GenTicks.TickRareInterval / 32))
             {

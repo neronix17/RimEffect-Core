@@ -251,7 +251,10 @@
     <radius>3</radius>
     <durationTime>600</durationTime>
     <iconPath>UI/Abilities/Biotic_Singularity</iconPath>
-	<castSound>RE_Biotic_Singularity</castSound>
+	  <castSound>RE_Biotic_Singularity</castSound>
+    <targetMotes>
+      <li>RE_Mote_BioticDistortionSingularity</li>
+    </targetMotes>
     <requiredHediff>
       <hediffDef>RE_BioticAmpHediff</hediffDef>
       <minimumLevel>3</minimumLevel>
@@ -279,6 +282,26 @@
     <drawOffscreen>true</drawOffscreen>
     <seeThroughFog>true</seeThroughFog>
     <alwaysFlee>true</alwaysFlee>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteGlowDistortBackground">
+    <defName>RE_Mote_BioticDistortionSingularity</defName>
+    <thingClass>MoteThrownAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>1</fadeInTime>
+      <fadeOutTime>2</fadeOutTime>
+      <solidTime>6</solidTime>
+      <growthRate>0.3</growthRate>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Black</texPath>
+      <shaderParameters>
+        <_distortionIntensity>0.08</_distortionIntensity>
+        <_brightnessMultiplier>3</_brightnessMultiplier>      
+      </shaderParameters>
+      <drawSize>2.5</drawSize>
+    </graphicData>
   </ThingDef>
 
   <RimEffect.AbilityDef>
@@ -334,6 +357,9 @@
     <power>5</power>
     <durationTime>900</durationTime>
     <iconPath>UI/Abilities/Biotic_AnnihilationField</iconPath>
+    <targetMotes>
+      <li>RE_Mote_BioticDistortionAnnihilationField</li>
+    </targetMotes>
 	<castSound>RE_Biotic_AnnihilationField</castSound>
     <requiredHediff>
       <hediffDef>RE_BioticAmpHediff</hediffDef>
@@ -362,5 +388,25 @@
     <drawOffscreen>true</drawOffscreen>
     <seeThroughFog>true</seeThroughFog>
     <alwaysFlee>true</alwaysFlee>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteGlowDistortBackground">
+    <defName>RE_Mote_BioticDistortionAnnihilationField</defName>
+    <thingClass>MoteThrownAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>7</fadeInTime>
+      <fadeOutTime>7</fadeOutTime>
+      <solidTime>1</solidTime>
+      <growthRate>0</growthRate>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Black</texPath>
+      <shaderParameters>
+        <_distortionIntensity>0.05</_distortionIntensity>
+        <_brightnessMultiplier>1.2</_brightnessMultiplier>      
+      </shaderParameters>
+      <drawSize>2.5</drawSize>
+    </graphicData>
   </ThingDef>
 </Defs>
