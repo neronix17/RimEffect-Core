@@ -257,12 +257,12 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>RimEffect.CompPowerPlantZero</compClass>
-				<basePowerConsumption>-5000</basePowerConsumption>
+				<basePowerConsumption>-40000</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>15.0</fuelConsumptionRate>
+				<fuelConsumptionRate>2.0</fuelConsumptionRate>
 				<fuelCapacity>100.0</fuelCapacity>
 				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
 				<initialConfigurableTargetFuelLevel>50</initialConfigurableTargetFuelLevel>
@@ -333,7 +333,7 @@
 			</li>
 			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>15.0</fuelConsumptionRate>
+				<fuelConsumptionRate>2.0</fuelConsumptionRate>
 				<fuelCapacity>100.0</fuelCapacity>
 				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
 				<initialConfigurableTargetFuelLevel>50</initialConfigurableTargetFuelLevel>

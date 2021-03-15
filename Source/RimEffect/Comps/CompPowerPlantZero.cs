@@ -92,7 +92,7 @@ namespace RimEffect
                 {
                     signalMeltdown = false;
                     float powerAdditional;
-                    powerAdditional = (this.refuelableComp.FuelPercentOfMax) * base.Props.basePowerConsumption;
+                    powerAdditional = (2 * this.refuelableComp.FuelPercentOfMax - 1f) * base.Props.basePowerConsumption;
                     radiationRadius = radiationRadiusBase + ((this.refuelableComp.FuelPercentOfMax - 0.5f) * radiationRadiusBase * 5);
                     variableHeatPusherComp.HeatPerSecondVariable = variableHeatPusherComp.Props.heatPerSecond + (variableHeatPusherComp.Props.heatPerSecond * this.refuelableComp.FuelPercentOfMax);
                     tickRadiation = (int)Math.Round((tickRadiationBase * (1.0f - this.refuelableComp.FuelPercentOfMax)) + tickRadiationBase);
