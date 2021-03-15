@@ -59,6 +59,9 @@
 		<blockLight>true</blockLight>
 		<canOverlapZones>false</canOverlapZones>
 		<fertility>0</fertility>
+		<researchPrerequisites>
+			<li>RE_BasicPrefabrication</li>
+		</researchPrerequisites>
 		<stuffCategories Inherit='False'>
 			<li>Metallic</li>
 		</stuffCategories>
@@ -100,6 +103,9 @@
 		<rotatable>false</rotatable>
 		<fertility>0</fertility>
 		<specialDisplayRadius>6.9</specialDisplayRadius>
+		<researchPrerequisites>
+			<li>RE_BasicPrefabrication</li>
+		</researchPrerequisites>
 		<!-- must be kept in sync with roof hold-up radius -->
 		<building>
 			<isInert>true</isInert>
@@ -146,7 +152,7 @@
 		</graphicData>
 		<uiIconPath>Things/Building/Door/PrefabDoorSimple_MenuIcon</uiIconPath>
 		<costList>
-			<Steel>10</Steel>
+			<RE_PrefabComponent>2</RE_PrefabComponent>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<costStuffCount>15</costStuffCount>
