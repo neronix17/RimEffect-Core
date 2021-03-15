@@ -73,7 +73,7 @@
     <costList>
       <Plasteel>15</Plasteel>
       <ComponentSpacer>4</ComponentSpacer>
-	  <RE_ElementZero>1</RE_ElementZero>
+	  <RE_ElementZero>5</RE_ElementZero>
     </costList>
   </ThingDef>
 
@@ -151,7 +151,7 @@
     <costList>
       <Plasteel>15</Plasteel>
       <ComponentSpacer>4</ComponentSpacer>
-	  <RE_ElementZero>1</RE_ElementZero>
+	  <RE_ElementZero>5</RE_ElementZero>
     </costList>
   </ThingDef>
 
@@ -229,7 +229,7 @@
     <costList>
       <Plasteel>15</Plasteel>
       <ComponentSpacer>4</ComponentSpacer>
-	  <RE_ElementZero>1</RE_ElementZero>
+	  <RE_ElementZero>5</RE_ElementZero>
     </costList>
   </ThingDef>
 
@@ -307,7 +307,7 @@
     <costList>
       <Plasteel>15</Plasteel>
       <ComponentSpacer>4</ComponentSpacer>
-	  <RE_ElementZero>2</RE_ElementZero>
+	  <RE_ElementZero>15</RE_ElementZero>
     </costList>
   </ThingDef>
 
@@ -385,7 +385,7 @@
     <costList>
       <Plasteel>15</Plasteel>
       <ComponentSpacer>4</ComponentSpacer>
-	  <RE_ElementZero>2</RE_ElementZero>
+	  <RE_ElementZero>10</RE_ElementZero>
     </costList>
   </ThingDef>
 
@@ -451,13 +451,13 @@
   <ThingDef ParentName="RE_BodyPartImplantBase">
     <defName>RE_TargetingVI</defName>
     <label>targeting VI</label>
-    <description>A microcomputer with large glass capsule and advanced combat stimulant synthesizer. Constantly injects substances into the blood, increasing the user's potential in melee combat.</description>
+    <description>A small capsule with a VI system, increasing the combat abilities of the user. Increases the firing range significantly.</description>
     <descriptionHyperlinks><RecipeDef>RE_InstallTargetingVI</RecipeDef></descriptionHyperlinks>
     <thingSetMakerTags><li>RE_Implant</li></thingSetMakerTags>
     <costList>
       <Plasteel>15</Plasteel>
       <ComponentSpacer>4</ComponentSpacer>
-	  <RE_ElementZero>1</RE_ElementZero>
+	  <RE_ElementZero>5</RE_ElementZero>
     </costList>
   </ThingDef>
 
