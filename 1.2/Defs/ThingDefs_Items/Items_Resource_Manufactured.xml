@@ -43,9 +43,9 @@
 			</li>
 		</comps>
 		<costList>
-			<MedicineIndustrial>3</MedicineIndustrial>
+			<MedicineIndustrial>1</MedicineIndustrial>
 			<Neutroamine>5</Neutroamine>
-			<!-- RE_ElementZero>?</RE_ElementZero -->
+			<RE_ElementZero>2</RE_ElementZero>
 		</costList>
 		<recipeMaker>
 			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
@@ -137,7 +137,7 @@
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
-      <MarketValue>186</MarketValue>
+      <MarketValue>67</MarketValue>
       <Mass>0.02</Mass>
       <Flammability>0.7</Flammability>
       <DeteriorationRate>1.0</DeteriorationRate>

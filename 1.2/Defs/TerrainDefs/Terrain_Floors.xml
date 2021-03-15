@@ -92,11 +92,11 @@
         <defName>RE_ColonialRubberTile</defName>
         <label>colonial rubber floor</label>
         <renderPrecedence>243</renderPrecedence>
-        <description>Colonial rubber floor.</description>
+        <description>Colonial rubber floor, fast to build and reducing the risk of dangerous accidents.</description>
         <texturePath>Terrain/Surfaces/ColonialRubberTile</texturePath>
         <color>(0.71, 0.71, 0.71)</color>
         <statBases>
-            <WorkToBuild>800</WorkToBuild>
+            <WorkToBuild>400</WorkToBuild>
         </statBases>
         <costList>
             <Steel>3</Steel>

@@ -39,7 +39,7 @@
   <ThingDef ParentName="RE_AmmoBelts">
     <defName>RE_AmmoCryoBelt</defName>
     <label>cryo rounds</label>
-    <description>An ammo belt with cryo rounds.</description>
+    <description>An ammo belt with cryo rounds. Occupies belt slot.\n\nEach shot fired with a weapon whilst this belt is equipped applies hypothermia, but reduces durability of the belt.</description>
     <graphicData>
       <texPath>Things/Apparel/AmmoBelt/AmmoCryoBelt</texPath>
       <drawSize>(0.7,0.7)</drawSize>
@@ -87,7 +87,7 @@
   <ThingDef ParentName="RE_AmmoBelts">
     <defName>RE_AmmoDisruptorBelt</defName>
     <label>disruptor rounds</label>
-    <description>An ammo belt with disruptor rounds.</description>
+    <description>An ammo belt with disruptor rounds. Occupies belt slot.\n\nEach shot fired with a weapon whilst this belt is equipped applies EMP damage, but reduces durability of the belt.</description>
     <graphicData>
       <texPath>Things/Apparel/AmmoBelt/AmmoDisruptorBelt</texPath>
       <drawSize>(0.7,0.7)</drawSize>
@@ -135,7 +135,7 @@
   <ThingDef ParentName="RE_AmmoBelts">
     <defName>RE_AmmoExplosiveBelt</defName>
     <label>explosive rounds</label>
-    <description>An ammo belt with explosive rounds.</description>
+    <description>An ammo belt with explosive rounds. Occupies belt slot.\n\nEach shot fired with a weapon whilst this belt is equipped is an explosive shot with a 1.9 detonation radius, but reduces durability of the belt.</description>
     <graphicData>
       <texPath>Things/Apparel/AmmoBelt/AmmoExplosiveBelt</texPath>
       <drawSize>(0.7,0.7)</drawSize>
@@ -186,7 +186,7 @@
   <ThingDef ParentName="RE_AmmoBelts">
     <defName>RE_AmmoIncendiaryBelt</defName>
     <label>incendiary rounds</label>
-    <description>An ammo belt with incendiary rounds.</description>
+    <description>An ammo belt with incendiary rounds. Occupies belt slot.\n\nEach shot fired with a weapon whilst this belt is equipped applies fire damage and sets the target on fire, but reduces durability of the belt.</description>
     <graphicData>
       <texPath>Things/Apparel/AmmoBelt/AmmoIncendiaryBelt</texPath>
       <drawSize>(0.7,0.7)</drawSize>
@@ -234,7 +234,7 @@
   <ThingDef ParentName="RE_AmmoBelts">
     <defName>RE_AmmoPiercingBelt</defName>
     <label>piercing rounds</label>
-    <description>An ammo belt with piercing rounds.</description>
+    <description>An ammo belt with armor-piercing rounds. Occupies belt slot.\n\nEach shot fired with a weapon whilst this belt is equipped has a higher armor penetration, but reduces durability of the belt.</description>
     <graphicData>
       <texPath>Things/Apparel/AmmoBelt/AmmoPiercingBelt</texPath>
       <drawSize>(0.7,0.7)</drawSize>
@@ -282,7 +282,7 @@
   <ThingDef ParentName="RE_AmmoBelts">
     <defName>RE_AmmoToxicBelt</defName>
     <label>toxic rounds</label>
-    <description>An ammo belt with toxic rounds.</description>
+    <description>An ammo belt with toxic rounds. Occupies belt slot.\n\nEach shot fired with a weapon whilst this belt is equipped applies toxic buildup, but reduces durability of the belt.</description>
     <graphicData>
       <texPath>Things/Apparel/AmmoBelt/AmmoToxicBelt</texPath>
       <drawSize>(0.7,0.7)</drawSize>
