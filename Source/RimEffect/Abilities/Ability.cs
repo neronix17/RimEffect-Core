@@ -82,13 +82,13 @@
                 sb.AppendLine($"{"RE.AbilityStatsPower".Translate()}: {powerForPawn}".Colorize(Color.cyan));
             int castTimeForPawn = this.GetCastTimeForPawn();
             if (castTimeForPawn > 0)
-                sb.AppendLine($"{"AbilityCastingTime".Translate()}: {castTimeForPawn.ToStringTicksToPeriod(shortForm: true)}".Colorize(Color.cyan));
+                sb.AppendLine($"{"AbilityCastingTime".Translate()}: {castTimeForPawn.ToStringTicksToPeriod()}".Colorize(Color.cyan));
             int cooldownForPawn = this.GetCooldownForPawn();
             if (cooldownForPawn > 0)
-                sb.AppendLine($"{"CooldownTime".Translate()}: {cooldownForPawn.ToStringTicksToPeriod(shortForm: true)}".Colorize(Color.cyan));
+                sb.AppendLine($"{"CooldownTime".Translate()}: {cooldownForPawn.ToStringTicksToPeriod()}".Colorize(Color.cyan));
             int durationForPawn = this.GetDurationForPawn();
             if (durationForPawn > 0)
-                sb.AppendLine($"{"RE.AbilityStatsDuration".Translate()}: {durationForPawn.ToStringTicksToPeriod(shortForm: true)}".Colorize(Color.cyan));
+                sb.AppendLine($"{"RE.AbilityStatsDuration".Translate()}: {durationForPawn.ToStringTicksToPeriod()}".Colorize(Color.cyan));
 
             AbilityExtension_Biotic biotic = this.def.GetModExtension<AbilityExtension_Biotic>();
             if (biotic != null) 
