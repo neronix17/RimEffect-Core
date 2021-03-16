@@ -5,6 +5,7 @@
     using HarmonyLib;
     using Verse;
 
+    [HarmonyBefore("legodude17.mvcf")]
     [HarmonyPatch(typeof(Pawn), nameof(Pawn.TryGetAttackVerb))]
     public static class TryGetAttackVerb_Patch
     {

@@ -46,7 +46,7 @@
         public TargetingParameters targetingParameters;
         public float               chance = 1f;
 
-        public float Chance => this.chance;
+        public float Chance => this.targetMode == AbilityTargetingMode.Self ? 0 : this.chance;
 
         public override IEnumerable<string> ConfigErrors()
         {
