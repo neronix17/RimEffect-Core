@@ -28,6 +28,10 @@
         <countRange>450~550</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
+        <thingDef>Plasteel</thingDef>
+        <countRange>500~850</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
         <thingDef>Cloth</thingDef>
         <countRange>250~400</countRange>
       </li>
@@ -152,6 +156,10 @@
         <thingDef>RE_MediGel</thingDef>
         <countRange>2~12</countRange>
       </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Plasteel</thingDef>
+        <countRange>50~150</countRange>
+      </li>
       
       <!-- Drugs -->
       <!-- none -->
@@ -193,6 +201,11 @@
       <!-- Implants -->
       <li Class="StockGenerator_SingleDef">
         <thingDef>RE_StrengthEnhancer</thingDef>
+        <countRange>1~1</countRange>
+      </li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>RE_Implant</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
         <countRange>1~1</countRange>
       </li>
       
