@@ -16,11 +16,23 @@
         public AbilityDef def;
         public int        cooldown;
 
+        public Verb_CastAbility verb;
+
         public Hediff_Abilities hediff;
 
         public Hediff_Abilities Hediff => this.hediff == null && this.def.requiredHediff != null
                                               ? (this.hediff = (Hediff_Abilities) this.pawn?.health.hediffSet.GetFirstHediffOfDef(this.def.requiredHediff.hediffDef))
                                               : this.hediff;
+
+        public void Init()
+        {
+            this.verb             = (Verb_CastAbility) Activator.CreateInstance(this.def.verbProperties.verbClass);
+            this.verb.loadID      = this.GetUniqueLoadID() + "_Verb";
+            this.verb.verbProps   = this.def.verbProperties;
+            this.verb.verbTracker = this.pawn.verbTracker;
+            this.verb.caster      = this.pawn;
+            this.verb.ability     = this;
+        }
 
         public virtual bool IsEnabledForPawn(out string reason)
         {
@@ -98,6 +110,9 @@
             return sb.ToString();
         }
 
+        public virtual float Chance => 
+            this.def.Chance;
+
         public virtual Command_Action GetGizmo()
         {
             Command_Ability action = new Command_Ability
@@ -145,8 +160,7 @@
 
             this.CheckCastEffects(target, out bool cast, out bool targetMote, out bool hediffApply);
 
-            if(hediffApply)
-                ApplyHediffs(target);
+            if(hediffApply) this.ApplyHediffs(target);
 
             if (cast) 
                 this.CastEffects(target);
@@ -194,16 +208,27 @@
             Scribe_References.Look(ref this.pawn,   nameof(this.pawn));
             Scribe_Values.Look(ref this.cooldown, nameof(this.cooldown));
             Scribe_Defs.Look(ref this.def, nameof(this.def));
+            Scribe_Deep.Look(ref this.verb, nameof(this.verb));
+
+            if (Scribe.mode == LoadSaveMode.PostLoadInit)
+            {
+                this.verb.loadID      = this.GetUniqueLoadID() + "_Verb";
+                this.verb.verbProps   = this.def.verbProperties;
+                this.verb.verbTracker = this.pawn.verbTracker;
+                this.verb.caster      = this.pawn;
+                this.verb.ability     = this;
+            }
         }
 
         public string GetUniqueLoadID() => 
             $"Ability_{this.def.defName}_{this.holder.GetUniqueLoadID()}";
 
-        public virtual bool CanHitTarget(LocalTargetInfo target) => 
-            target.Cell.DistanceTo(this.pawn.Position) < this.GetRangeForPawn() && GenSight.LineOfSight(this.pawn.Position, target.Cell, this.pawn.Map);
+
+        public virtual bool CanHitTarget(LocalTargetInfo target) =>
+            !target.IsValid || this.targetParams.CanTarget(target.ToTargetInfo(this.pawn.Map)) && target.Cell.DistanceTo(this.pawn.Position) < this.GetRangeForPawn() && GenSight.LineOfSight(this.pawn.Position, target.Cell, this.pawn.Map);
 
         public virtual bool ValidateTarget(LocalTargetInfo target) => 
-            this.targetParams.CanTarget(target.ToTargetInfo(this.pawn.Map)) && this.CanHitTarget(target);
+            this.CanHitTarget(target);
 
         public virtual void DrawHighlight(LocalTargetInfo target)
         {
@@ -243,31 +268,18 @@
         {
             get
             {
-                TargetingParameters parameters = new TargetingParameters();
+                TargetingParameters parameters = this.def.targetingParameters;
 
-                switch (this.def.targetMode)
-                {
-                    case AbilityTargetingMode.Self:
-                        parameters = TargetingParameters.ForSelf(this.pawn);
-                        break;
-                    case AbilityTargetingMode.Location:
-                        parameters.canTargetLocations = true;
-                        break;
-                    case AbilityTargetingMode.Thing:
-                        parameters.canTargetItems     = true;
-                        parameters.canTargetBuildings = true;
-                        break;
-                    case AbilityTargetingMode.Pawn:
-                        parameters.canTargetPawns = true;
-                        break;
-                    default:
-                        throw new ArgumentOutOfRangeException();
-                }
+                if (this.def.targetMode == AbilityTargetingMode.Self) 
+                    parameters.targetSpecificThing = this.pawn;
+
                 return parameters;
             }
         }
 
         public ITargetingSource DestinationSelector { get; }
+
+        
     }
 
     public class Ability_Blank : Ability

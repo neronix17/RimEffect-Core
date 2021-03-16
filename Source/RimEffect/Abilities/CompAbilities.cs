@@ -14,12 +14,14 @@
 
         private List<Ability> learnedAbilities = new List<Ability>();
 
-        public           Ability currentlyCasting;
+        public Ability currentlyCasting;
 
         private float energyMax;
         protected override float EnergyMax => this.energyMax;
 
         protected override float EnergyGainPerTick => 0f;
+
+        public List<Ability> LearnedAbilities => this.learnedAbilities;
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
@@ -36,6 +38,7 @@
             ability.def    = abilityDef;
             ability.pawn   = this.Pawn;
             ability.holder = this.Pawn;
+            ability.Init();
 
             this.learnedAbilities.Add(ability);
         }

@@ -71,6 +71,7 @@
     <Compile Include="Abilities\Hediff_OmniTool.cs" />
     <Compile Include="Abilities\JobDriver_CastAbilityOnce.cs" />
     <Compile Include="Abilities\PawnKindAbilityExtension.cs" />
+    <Compile Include="Abilities\Verb_CastAbility.cs" />
     <Compile Include="Apparels\SpectreArmor.cs" />
     <Compile Include="Buildings\Building_AutoDoorLockable.cs" />
     <Compile Include="Buildings\Building_GalaxyMap.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="HarmonyPatches\EquipmentRender_Patch.cs" />
     <Compile Include="HarmonyPatches\HostileTo_Patch.cs" />
     <Compile Include="HarmonyPatches\ShouldFleeFrom_Patch.cs" />
+    <Compile Include="HarmonyPatches\TryGetAttackVerb_Patch.cs" />
     <Compile Include="HarmonyPatches\Verb_Patches.cs" />
     <Compile Include="HarmonyPatches\Notify_DamageApplied_Patch.cs" />
     <Compile Include="HarmonyPatches\Building_SpawnSetup_Patch.cs" />

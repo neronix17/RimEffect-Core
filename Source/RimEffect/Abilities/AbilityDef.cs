@@ -42,6 +42,12 @@
 
         public List<ThingDef>           targetMotes;
 
+        public VerbProperties      verbProperties;
+        public TargetingParameters targetingParameters;
+        public float               chance = 1f;
+
+        public float Chance => this.chance;
+
         public override IEnumerable<string> ConfigErrors()
         {
             foreach (string configError in base.ConfigErrors()) 
@@ -57,10 +63,46 @@
         public override void PostLoad()
         {
             if (!this.iconPath.NullOrEmpty())
-                LongEventHandler.ExecuteWhenFinished(delegate
-                                                     {
-                                                         this.icon = ContentFinder<Texture2D>.Get(this.iconPath);
-                                                     });
+                LongEventHandler.ExecuteWhenFinished(delegate { this.icon = ContentFinder<Texture2D>.Get(this.iconPath); });
+
+            if (this.targetingParameters == null)
+            {
+                this.targetingParameters = new TargetingParameters();
+
+                switch (this.targetMode)
+                {
+                    case AbilityTargetingMode.Self:
+                        this.targetingParameters = TargetingParameters.ForSelf(null);
+                        break;
+                    case AbilityTargetingMode.Location:
+                        this.targetingParameters.canTargetLocations = true;
+                        break;
+                    case AbilityTargetingMode.Thing:
+                        this.targetingParameters.canTargetItems  = true;
+                        this.targetingParameters.canTargetBuildings = true;
+                        break;
+                    case AbilityTargetingMode.Pawn:
+                        this.targetingParameters.canTargetPawns = true;
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
+            }
+
+            if(this.verbProperties == null)
+                this.verbProperties = new VerbProperties
+                                      {
+                                          verbClass           = typeof(Verb_CastAbility),
+                                          label               = this.label,
+                                          category            = VerbCategory.Misc,
+                                          range               = this.range,
+                                          noiseRadius         = 3f,
+                                          targetParams        = this.targetingParameters,
+                                          warmupTime          = this.castTime / (float) GenTicks.TicksPerRealSecond,
+                                          defaultCooldownTime = this.cooldownTime,
+                                          meleeDamageBaseAmount = Mathf.RoundToInt(this.power),
+                                          meleeDamageDef = DamageDefOf.Blunt
+                                      };
         }
 
     }

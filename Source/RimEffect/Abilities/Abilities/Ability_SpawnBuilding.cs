@@ -5,6 +5,8 @@
 
     public class Ability_SpawnBuilding : Ability
     {
+        public override float Chance => 0f;
+
         public override void Cast(LocalTargetInfo target)
         {
             base.Cast(target);

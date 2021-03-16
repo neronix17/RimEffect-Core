@@ -23,6 +23,7 @@
                 Ability ability = (Ability)Activator.CreateInstance(abilityDef.abilityClass);
                 ability.def    = abilityDef;
                 ability.holder = this.parent;
+                ability.Init();
 
                 this.givenAbilities.Add(ability);
             }
