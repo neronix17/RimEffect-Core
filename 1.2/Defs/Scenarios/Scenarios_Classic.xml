@@ -99,6 +99,12 @@
             <li>AlliancePlayerBase5</li>
           </chooseFrom>
         </li>
+			<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+				<factionDef>RE_SystemsAlliance</factionDef>
+				<affectStartingGoodwill>True</affectStartingGoodwill>
+				<startingGoodwillRange>100~100</startingGoodwillRange>
+				<def>VFEC_ForcedFactionGoodwill</def>
+			</li>
       </parts>
     </scenario>
   </ScenarioDef>
