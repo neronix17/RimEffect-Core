@@ -25,7 +25,8 @@ namespace RimEffect
 		public override void TransformValue(StatRequest req, ref float val)
 		{
 			if (req.HasThing && req.Thing.ParentHolder is Pawn_InventoryTracker inventoryTracker 
-				&& inventoryTracker.pawn.GetLord()?.LordJob is LordJob_TradeWithColony lordJob && lordJob.lord.faction?.def == RE_DefOf.RE_SystemsAlliance)
+				&& inventoryTracker.pawn.GetLord()?.LordJob is LordJob_TradeWithColony lordJob 
+				&& lordJob.lord.faction?.def == RE_DefOf.RE_SystemsAlliance && lordJob.lord.faction.RelationKindWith(Faction.OfPlayer) == FactionRelationKind.Ally)
 			{
 				val *= 0.75f;
 			}

@@ -129,6 +129,7 @@
     <Compile Include="Sites\SitePartWorker_PBeacon.cs" />
     <Compile Include="Sites\SitePartWorker_Generic.cs" />
     <Compile Include="Sites\SitePartWorker_RogueSite.cs" />
+    <Compile Include="Stats\StatPart_ModifyMarketValue.cs" />
     <Compile Include="Textures.cs" />
     <Compile Include="RE_DefOf.cs" />
     <Compile Include="Apparels\AmmoBelt.cs" />
