@@ -8,8 +8,8 @@
     <minValue>0</minValue>
     <hideAtValue>0</hideAtValue>
     <defaultBaseValue>1</defaultBaseValue>
-    <toStringStyle>Integer</toStringStyle>
-    <formatString>{0}/s</formatString>
+    <toStringStyle>PercentOne</toStringStyle>
+    <formatString>{0}</formatString>
     <showOnAnimals>false</showOnAnimals>
     <showOnMechanoids>false</showOnMechanoids>
     <showIfHediffsPresent><li>RE_OmniToolHediff</li></showIfHediffsPresent>
