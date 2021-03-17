@@ -669,6 +669,7 @@
       <DeteriorationRate>2</DeteriorationRate>
       <Beauty>-3</Beauty>
       <MaxHitPoints>400</MaxHitPoints>
+	  <MarketValue>5000</MarketValue>
       <Mass>15</Mass>
       <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>1.3</ArmorRating_Sharp>
