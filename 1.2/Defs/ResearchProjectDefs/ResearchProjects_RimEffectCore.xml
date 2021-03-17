@@ -307,6 +307,7 @@
     <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
+	  <li>RE_AllianceTerminal</li>
     </requiredResearchFacilities>
 	<tags>
 	  <li>AllianceColonyStart</li>
