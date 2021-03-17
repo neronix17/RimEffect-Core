@@ -49,7 +49,7 @@
         {
             GizmoResult result = base.GizmoOnGUIInt(butRect, shrunk);
 
-            if (this.ability.Chance >= 0f)
+            if (this.ability.Chance > 0f)
             {
                 Texture2D texture  = this.ability.AutoCast ? Widgets.CheckboxOnTex : Widgets.CheckboxOffTex;
                 Rect      position = new Rect(butRect.x + butRect.width - 24f, butRect.y, 24f, 24f);
