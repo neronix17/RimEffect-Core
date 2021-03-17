@@ -84,7 +84,7 @@
 		<graphicData>
 			<texPath>Things/Building/Power/PrefabSolarCollector/PrefabSolarCollector</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(5,5)</drawSize>
+			<drawSize>(5,4.8)</drawSize>
 			<shadowData>
 				<volume>(3.5,0.75,3.4)</volume>
 				<offset>(0,0,0)</offset>
