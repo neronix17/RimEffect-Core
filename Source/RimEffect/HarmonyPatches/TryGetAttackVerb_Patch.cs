@@ -16,7 +16,7 @@
             if (compAbilities == null) 
                 return true;
             
-            List<Verb_CastAbility> verbs = compAbilities.LearnedAbilities.Where(ab => ab.IsEnabledForPawn(out string _) && ab.CanHitTarget(target)).Select(ab => ab.verb).ToList();
+            List<Verb_CastAbility> verbs = compAbilities.LearnedAbilities.Where(ab => ab.CanAutoCast && ab.IsEnabledForPawn(out string _) && ab.CanHitTarget(target)).Select(ab => ab.verb).ToList();
 
             if (verbs.NullOrEmpty()) 
                 return true;

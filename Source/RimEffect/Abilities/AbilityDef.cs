@@ -44,7 +44,8 @@
 
         public VerbProperties      verbProperties;
         public TargetingParameters targetingParameters;
-        public float               chance = 1f;
+        public float               chance          = 1f;
+        public bool                autocastPlayerDefault = false;
 
         public float Chance => this.targetMode == AbilityTargetingMode.Self ? 0 : this.chance;
 

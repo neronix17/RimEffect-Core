@@ -33,6 +33,7 @@
             this.verb.verbTracker = this.pawn?.verbTracker;
             this.verb.caster      = this.pawn;
             this.verb.ability     = this;
+            this.autoCast         = this.def.autocastPlayerDefault;
         }
 
         public virtual bool IsEnabledForPawn(out string reason)
@@ -111,32 +112,36 @@
             return sb.ToString();
         }
 
+        public bool autoCast;
+
+        public virtual bool AutoCast =>
+            !this.pawn.IsColonistPlayerControlled || this.autoCast;
+        public virtual bool CanAutoCast =>
+            this.AutoCast && this.Chance > 0;
+
         public virtual float Chance => 
             this.def.Chance;
 
         public virtual Command_Action GetGizmo()
         {
-            Command_Ability action = new Command_Ability
-                                     {
-                                         defaultLabel   = this.def.LabelCap,
-                                         defaultDesc    = this.GetDescriptionForPawn(),
-                                         icon           = this.def.icon,
-                                         disabled       = !this.IsEnabledForPawn(out string reason),
-                                         disabledReason = reason.Colorize(Color.red),
-                                         action         = this.DoAction,
-                                         ability        = this,
-                                         pawn           = this.pawn
-                                     };
-
+            Command_Ability action = new Command_Ability(this.pawn, this);
             return action;
         }
 
         public virtual void DoAction()
         {
-            if (this.def.targetMode == AbilityTargetingMode.Self)
-                this.CreateCastJob(this.pawn);
+
+            if (Event.current.button == 1)
+            {
+                this.autoCast = !this.autoCast;
+            }
             else
-                Find.Targeter.BeginTargeting(this);
+            {
+                if (this.def.targetMode == AbilityTargetingMode.Self)
+                    this.CreateCastJob(this.pawn);
+                else
+                    Find.Targeter.BeginTargeting(this);
+            }
         }
 
         public virtual void CreateCastJob(LocalTargetInfo target)
