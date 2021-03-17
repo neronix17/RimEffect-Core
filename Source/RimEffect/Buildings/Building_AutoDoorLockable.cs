@@ -34,8 +34,8 @@ namespace RimEffect
         {
             switch (curDoorAccess)
             {
-                case DoorAccess.Default: return this.powerComp.PowerOn && base.PawnCanOpen(p);
-                case DoorAccess.Everyone: return this.powerComp.PowerOn && true;
+                case DoorAccess.Default: return base.PawnCanOpen(p);
+                case DoorAccess.Everyone: return true;
                 case DoorAccess.OnlyColonistsAndAnimals: return OnlyColonistsAndAnimals(p);
                 case DoorAccess.OnlyColonistsAndAnimalsAndFriendlies: return OnlyColonistsAndAnimalsAndFriendlies(p);
                 case DoorAccess.OnlyDrafted: return OnlyDrafted(p);
@@ -101,7 +101,7 @@ namespace RimEffect
         }
         private bool OnlyColonistsAndAnimals(Pawn p)
         {
-            if (this.powerComp.PowerOn && p.Faction == this.Faction)
+            if (p.Faction == this.Faction)
             {
                 return true;
             }
@@ -110,7 +110,7 @@ namespace RimEffect
 
         private bool OnlyColonistsAndAnimalsAndFriendlies(Pawn p)
         {
-            if (this.powerComp.PowerOn && p.Faction != null && (p.Faction == this.Faction || !p.Faction.HostileTo(this.Faction)))
+            if (p.Faction != null && (p.Faction == this.Faction || !p.Faction.HostileTo(this.Faction)))
             {
                 return true;
             }
@@ -118,7 +118,7 @@ namespace RimEffect
         }
         private bool OnlyDrafted(Pawn p)
         {
-            if (this.powerComp.PowerOn && p.Faction == this.Faction && p.Drafted)
+            if (p.Faction == this.Faction && p.Drafted)
             {
                 return true;
             }

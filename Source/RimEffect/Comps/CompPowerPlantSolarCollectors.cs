@@ -48,6 +48,7 @@ namespace RimEffect
 			base.PostDraw();
 			GenDraw.FillableBarRequest r = default(GenDraw.FillableBarRequest);
 			var pos = parent.DrawPos;
+			pos.y -= 0.0032154f;
 			pos.z -= 0.535f;
 			r.center = pos;
 			r.size = BarSize;
