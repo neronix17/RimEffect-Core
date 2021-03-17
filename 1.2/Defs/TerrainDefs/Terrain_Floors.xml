@@ -126,7 +126,6 @@
 		<color>(0.369, 0.369, 0.369)</color>
         <statBases>
             <WorkToBuild>300</WorkToBuild>
-            <Beauty>0</Beauty>
             <Cleanliness>0.2</Cleanliness>
         </statBases>
         <costList>
