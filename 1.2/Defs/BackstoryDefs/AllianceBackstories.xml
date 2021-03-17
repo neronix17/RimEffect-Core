@@ -1047,7 +1047,7 @@
     <defName>RE_AllianceStudent</defName>
     <title>Alliance student</title>
     <titleShort>Student</titleShort>
-    <baseDescription>[PAWN_nameDef] comes originally from London, but [PAWN_possessive] parents preferred the freedom of colony life. [PAWN_possessive] parents didn't have money for sending [PAWN_pronoun to a university, but [PAWN_nameDef] was able to pursue [PAWN_possessive] studies as the Alliance offered [PAWN_pronoun] full scholarship after seeing [PAWN_possessive] aptitude scores.</baseDescription>
+    <baseDescription>[PAWN_nameDef] comes originally from London, but [PAWN_possessive] parents preferred the freedom of colony life. [PAWN_possessive] parents didn't have money for sending [PAWN_pronoun] to a university, but [PAWN_nameDef] was able to pursue [PAWN_possessive] studies as the Alliance offered [PAWN_objective] full scholarship after seeing [PAWN_possessive] aptitude scores.</baseDescription>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
