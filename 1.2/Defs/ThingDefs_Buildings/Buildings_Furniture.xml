@@ -75,7 +75,7 @@
 	<techLevel>Ultra</techLevel>
   </ThingDef>
   
-  <ThingDef>
+  <ThingDef ParentName="BuildingBase">
     <defName>RE_PrefabStandingLamp</defName>
     <label>prefab standing lamp</label>
     <description>An electrical prefab standing lamp that lights an area in mild blue. People need light to move and work at full speed.</description>
