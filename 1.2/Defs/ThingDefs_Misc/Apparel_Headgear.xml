@@ -233,7 +233,7 @@
     <techLevel>Ultra</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <researchPrerequisite>RE_AllianceArmoury</researchPrerequisite>
+      <researchPrerequisite>RE_HeavyAllianceArmor</researchPrerequisite>
       <skillRequirements>
         <Crafting>12</Crafting>
       </skillRequirements>
