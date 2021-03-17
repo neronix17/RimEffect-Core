@@ -97,8 +97,8 @@
       <li Class="CompProperties_Spawner">
         <requiresPower>true</requiresPower>
         <thingToSpawn>RE_ElementZero</thingToSpawn>
-        <spawnCount>30</spawnCount>
-        <spawnIntervalRange><min>900000</min><max>900000</max></spawnIntervalRange>
+        <spawnCount>10</spawnCount>
+        <spawnIntervalRange><min>600000</min><max>600000</max></spawnIntervalRange>
         <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
         <showMessageIfOwned>true</showMessageIfOwned>
       </li>
