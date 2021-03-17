@@ -10,11 +10,11 @@
         <burnedDef>BurnedWoodPlankFloor</burnedDef>
         <color>(108,78,55)</color>
         <statBases>
-            <WorkToBuild>100</WorkToBuild>
+            <WorkToBuild>65</WorkToBuild>
             <Flammability>0.22</Flammability>
         </statBases>
         <costList>
-            <WoodLog>4</WoodLog>
+            <WoodLog>3</WoodLog>
         </costList>
         <constructEffect>ConstructWood</constructEffect>
         <researchPrerequisites>
@@ -39,12 +39,12 @@
         <description>Steel tiles, for that spaceship look. They are pretty, and the smooth tile surface gets a bonus to cleanliness.</description>
         <color>(0.369, 0.369, 0.369)</color>
         <statBases>
-            <WorkToBuild>1000</WorkToBuild>
-            <Beauty>2</Beauty>
+            <WorkToBuild>600</WorkToBuild>
+            <Beauty>1</Beauty>
             <Cleanliness>0.2</Cleanliness>
         </statBases>
         <costList>
-            <Steel>8</Steel>
+            <Steel>7</Steel>
         </costList>
         <designationHotKey>Misc7</designationHotKey>
     </TerrainDef>
@@ -56,13 +56,14 @@
         <description>For a futuristic but royal look, silver tiles fit perfectly into luxurious rooms. They get a bonus to cleanliness.</description>
         <color>(0.45, 0.45, 0.45)</color>
         <statBases>
-            <Beauty>6</Beauty>
-            <WorkToBuild>1000</WorkToBuild>
+            <Beauty>5</Beauty>
+            <WorkToBuild>600</WorkToBuild>
             <Cleanliness>0.2</Cleanliness>
         </statBases>
         <costList>
-            <Silver>80</Silver>
+            <Silver>70</Silver>
         </costList>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
         <tags>
             <li>FineFloor</li>
         </tags>
@@ -75,12 +76,12 @@
         <description>For overbearing extravagance, nothing beats gold tiles. They are exceptionally expensive, and exceptionally beautiful, and people will think you're exceptionally snobbish if you actually live on them.</description>
         <color>(0.65, 0.65, 0.35)</color>
         <statBases>
-            <Beauty>14</Beauty>
-            <WorkToBuild>1000</WorkToBuild>
+            <Beauty>12</Beauty>
+            <WorkToBuild>600</WorkToBuild>
             <Cleanliness>0.2</Cleanliness>
         </statBases>
         <costList>
-            <Gold>80</Gold>
+            <Gold>70</Gold>
         </costList>
         <tags>
             <li>FineFloor</li>
@@ -102,7 +103,6 @@
             <Steel>3</Steel>
         </costList>
         <constructEffect>ConstructMetal</constructEffect>
-        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
         <researchPrerequisites>
             <li>RE_BasicPrefabrication</li>
         </researchPrerequisites>
@@ -115,7 +115,7 @@
         <researchPrerequisites>
             <li>RE_BasicPrefabrication</li>
         </researchPrerequisites>
-        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
     </TerrainDef>
 	
     <TerrainDef ParentName="RE_PavTileMetalBase">
@@ -125,8 +125,8 @@
         <description>Steel tiles. Cheap, but neutral in terms of looks and fast to build.</description>
 		<color>(0.369, 0.369, 0.369)</color>
         <statBases>
-            <WorkToBuild>200</WorkToBuild>
-            <Beauty>2</Beauty>
+            <WorkToBuild>300</WorkToBuild>
+            <Beauty>0</Beauty>
             <Cleanliness>0.2</Cleanliness>
         </statBases>
         <costList>
@@ -141,12 +141,12 @@
         <description>Silver tiles. Cheap, quite beautiful in terms of looks and fast to build.</description>
         <color>(0.45, 0.45, 0.45)</color>
         <statBases>
-            <Beauty>4</Beauty>
-            <WorkToBuild>200</WorkToBuild>
-            <Cleanliness>0.4</Cleanliness>
+            <Beauty>3</Beauty>
+            <WorkToBuild>300</WorkToBuild>
+            <Cleanliness>0.2</Cleanliness>
         </statBases>
         <costList>
-            <Silver>20</Silver>
+            <Silver>30</Silver>
         </costList>
         <tags>
             <li>FineFloor</li>
@@ -160,12 +160,12 @@
         <description>Gold tiles. Cheap, beautiful in terms of looks and fast to build.</description>
 		<color>(0.65, 0.65, 0.35)</color>
         <statBases>
-            <Beauty>6</Beauty>
-            <WorkToBuild>200</WorkToBuild>
+            <Beauty>5</Beauty>
+            <WorkToBuild>300</WorkToBuild>
             <Cleanliness>0.2</Cleanliness>
         </statBases>
         <costList>
-            <Gold>20</Gold>
+            <Gold>30</Gold>
         </costList>
         <tags>
             <li>FineFloor</li>
