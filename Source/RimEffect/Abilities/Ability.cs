@@ -26,10 +26,11 @@
 
         public void Init()
         {
-            this.verb             = (Verb_CastAbility) Activator.CreateInstance(this.def.verbProperties.verbClass);
+            if(this.verb == null)
+                this.verb             = (Verb_CastAbility) Activator.CreateInstance(this.def.verbProperties.verbClass);
             this.verb.loadID      = this.GetUniqueLoadID() + "_Verb";
             this.verb.verbProps   = this.def.verbProperties;
-            this.verb.verbTracker = this.pawn.verbTracker;
+            this.verb.verbTracker = this.pawn?.verbTracker;
             this.verb.caster      = this.pawn;
             this.verb.ability     = this;
         }

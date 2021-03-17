@@ -24,7 +24,6 @@
                 ability.def    = abilityDef;
                 ability.holder = this.parent;
                 ability.Init();
-
                 this.givenAbilities.Add(ability);
             }
         }
@@ -43,8 +42,11 @@
             if (this.Pawn != this.pawn)
             {
                 this.pawn = this.Pawn;
-                foreach (Ability ability in this.givenAbilities) 
+                foreach (Ability ability in this.givenAbilities)
+                {
                     ability.pawn = this.pawn;
+                    ability.Init();
+                }
             }
 
             foreach (Ability ability in this.givenAbilities)
