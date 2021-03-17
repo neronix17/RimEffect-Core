@@ -1012,7 +1012,7 @@
 
 <AlienRace.BackstoryDef>
     <defName>RE_PromissingStudent</defName>
-    <title>Promissing student</title>
+    <title>Promising student</title>
     <titleShort>Student</titleShort>
     <baseDescription>[PAWN_nameDef] enlisted at a very early age, seeking a better life. [PAWN_pronoun] trained for two years on one of the Alliance battle cruisers. [PAWN_pronoun] served aboard eight vessels and received two purple hearts before the Skyllian Blitz, where [PAWN_possessive] ship was deployed to help defend the colony.</baseDescription>
 	<bodyTypeMale>Male</bodyTypeMale>
