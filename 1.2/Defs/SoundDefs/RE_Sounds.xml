@@ -240,7 +240,7 @@
             <clipPath>Things/Vindicator/Vindicator_Interact</clipPath>
           </li>
         </grains>
-        <volumeRange>25~25</volumeRange>      
+        <volumeRange>35~45</volumeRange>      
         <pitchRange>0.8728257~1.1</pitchRange>
       </li>
     </subSounds>
