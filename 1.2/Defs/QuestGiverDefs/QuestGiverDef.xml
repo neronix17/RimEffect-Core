@@ -5,7 +5,7 @@
 		<defName>RE_GalaxyMap_QuestGiver</defName>
 		<currency Class="VanillaStorytellersExpanded.GoodwillCurrency">
 			<costToAcceptQuest>15</costToAcceptQuest>
-			<minimunGoodwillRequirement>-50</minimunGoodwillRequirement>
+			<minimunGoodwillRequirement>1</minimunGoodwillRequirement>
 		</currency>
 		<workerClass>VanillaStorytellersExpanded.QuestWorker</workerClass>
 		<windowClass>RimEffect.Window_GalaxyMap</windowClass>

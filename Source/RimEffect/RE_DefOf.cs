@@ -68,6 +68,7 @@ namespace RimEffect
         public static JobDef RE_LeaveMap;
         public static HediffDef RE_TurnBackToFormerFaction;
         public static PawnKindDef RE_Alliance_Marine;
+        public static ThingDef RE_SpacerTechResearchBench;
     }
 }
  
