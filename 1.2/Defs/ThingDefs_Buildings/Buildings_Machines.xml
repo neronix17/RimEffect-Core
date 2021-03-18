@@ -123,9 +123,9 @@
     </building>
     <costList>
       <Steel>45</Steel>
-	  <Plasteel>20</Plasteel>
+	  <Plasteel>40</Plasteel>
       <RE_PrefabComponent>8</RE_PrefabComponent>
-	  <ComponentSpacer>3</ComponentSpacer>
+	  <ComponentSpacer>5</ComponentSpacer>
     </costList>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <comps>

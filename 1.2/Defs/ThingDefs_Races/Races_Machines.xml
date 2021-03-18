@@ -123,8 +123,8 @@
     </race>
     <butcherProducts>
 	  <RE_PrefabComponent>6</RE_PrefabComponent>
-      <ComponentSpacer>2</ComponentSpacer>
-      <Plasteel>10</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+      <Plasteel>40</Plasteel>
     </butcherProducts>
 	<comps>
       <li Class="VFE.Mechanoids.CompProperties_Machine">
