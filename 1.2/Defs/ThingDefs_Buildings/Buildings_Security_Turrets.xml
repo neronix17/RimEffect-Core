@@ -52,7 +52,7 @@
         <outOfFuelMessage>Cannot shoot: Needs new barrel</outOfFuelMessage>
         <fuelFilter><thingDefs><li>Plasteel</li></thingDefs></fuelFilter>
         <fuelCapacity>60</fuelCapacity>       <!-- 30 bursts -->
-        <fuelMultiplier>0.75</fuelMultiplier> <!-- 1.333 plasteel per burst, 80 per full rearm -->
+        <fuelMultiplier>1.0</fuelMultiplier> <!-- 1.333 plasteel per burst, 80 per full rearm (changed)-->
         <initialFuelPercent>1</initialFuelPercent>
         <autoRefuelPercent>0.5</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
@@ -195,8 +195,8 @@
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret> <!-- like level 8 human shooter -->
     </statBases>
     <costList>
-      <Plasteel>250</Plasteel>
-      <ComponentSpacer>4</ComponentSpacer>
+      <Plasteel>260</Plasteel>
+      <ComponentSpacer>6</ComponentSpacer>
     </costList>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
@@ -212,7 +212,7 @@
         <outOfFuelMessage>Cannot shoot: Needs new barrel</outOfFuelMessage>
         <fuelFilter><thingDefs><li>Plasteel</li></thingDefs></fuelFilter>
         <fuelCapacity>90</fuelCapacity>       <!-- 30 bursts -->
-        <fuelMultiplier>0.5</fuelMultiplier>  <!-- 2 plasteel per burst, 180 per full rearm -->
+        <fuelMultiplier>1.0</fuelMultiplier>  <!-- 2 plasteel per burst, 180 per full rearm (changed) -->
         <initialFuelPercent>1</initialFuelPercent>
         <autoRefuelPercent>0.5</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
