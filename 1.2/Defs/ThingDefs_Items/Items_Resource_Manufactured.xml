@@ -142,6 +142,9 @@
       <Flammability>0.7</Flammability>
       <DeteriorationRate>1.0</DeteriorationRate>
     </statBases>
+    <deepCommonality>1</deepCommonality>
+    <deepCountPerPortion>5</deepCountPerPortion>
+    <deepLumpSizeRange>2~5</deepLumpSizeRange>
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
