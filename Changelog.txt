@@ -21,7 +21,7 @@ Science Uniform now has correct armor values
 Mass Accelerator Turret building cost Plasteel 250 > 260, Component Spacer 4 > 6
 Mass Accelerator Turret FuelMultiplier 0.75 > 1.0
 Large Mass Accelerator Turret FuelMultiplier 0.5 > 1.0
-Element Zero is now a deep-drillable resource
+NEW: Element Zero is now a deep-drillable resource
 Prefab Walls HP 200 > 500
 VI Interface no longer causes an NRE error
 In Android Tiers, new colonists no longer spawn with Spectre Armor
@@ -31,4 +31,4 @@ Spacer tech research bench can now be used for researching vanilla technologies
 Picking up contracts from Galaxy map is not possible if goodwill < 0
 Tech and Biotic abilities do not appear on Gizmos if the pawn is not drafted
 Vindicator sound volumeRange 25~25 > 35~45
-
+Systems Alliance should properly generate merchants now.
