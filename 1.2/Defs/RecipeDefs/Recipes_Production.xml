@@ -9,7 +9,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>8000</workAmount>
+    <workAmount>4000</workAmount>
     <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <ingredients>
       <li>
@@ -46,7 +46,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>32000</workAmount>
+    <workAmount>16000</workAmount>
     <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <ingredients>
       <li>
