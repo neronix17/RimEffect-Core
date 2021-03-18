@@ -310,6 +310,7 @@
   <PawnKindDef ParentName="AllianceBase">
     <defName>RE_Merchant</defName>
     <label>merchant</label>
+	<trader>true</trader>
     <combatPower>50</combatPower>
     <itemQuality>Normal</itemQuality>
     <isFighter>false</isFighter>
