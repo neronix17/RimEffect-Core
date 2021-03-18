@@ -813,7 +813,7 @@
     <defName>RE_MilitiaCombatant</defName>
     <title>Militia combatant</title>
     <titleShort>Militia</titleShort>
-    <baseDescription>As a child, [PAWN_nameDef] became a militia combatant on [PAWN_possesive] home planet, invaded by an alien race. After going through the horrors of war, [PAWN_pronoun] acquired combat skills along with the nightmares that haunt [PAWN_objective] to this day.</baseDescription>
+    <baseDescription>As a child, [PAWN_nameDef] became a militia combatant on [PAWN_possessive] home planet, invaded by an alien race. After going through the horrors of war, [PAWN_pronoun] acquired combat skills along with the nightmares that haunt [PAWN_objective] to this day.</baseDescription>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
