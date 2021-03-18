@@ -29,7 +29,7 @@
 		</graphicData>
 		<uiIconPath>Things/Building/Linked/PrefabWall/WallPrefab_MenuIcon</uiIconPath>
 		<statBases>
-			<MaxHitPoints>600</MaxHitPoints>
+			<MaxHitPoints>500</MaxHitPoints>
 			<WorkToBuild>20</WorkToBuild>
 			<Flammability>1.0</Flammability>
 			<MeditationFocusStrength>0.22</MeditationFocusStrength>
