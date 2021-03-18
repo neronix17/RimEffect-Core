@@ -1,0 +1,34 @@
+Rim Effect Core Changelog of Beta 1
+colonial wood floor wood cost 4 > 3
+steel colonial floor WorkToBuild 1000 > 600, Beauty 2 > 1, resource cost 8 > 7
+steel colonial pavement tile WorkToBuild 200 > 300, Beauty 2 > 0
+Heavy alliance helmet requires correct Alliance Heavy Armory tech
+Spectre armor and Spectre visor market value 5000 and 2000 respectively
+Prefab Standing Lamp no longer occupies floor tile
+Numerous backstory grammar fixes
+NEW: Added a bulk recipe for prefab components
+Prefab Component market value 56 > 15.7
+Prefab Component workToMake 8000 > 4000
+Prefab auto doors now open just fine without power, albeit slower
+Alliance Cooperation research project now correctly requires Alliance Terminal
+Abilities no longer autocast, unless you right-click them triggering autocast
+Adjusted drawsize of Prefab Solar Collectors to prevent clipping issues
+Element Zero reactor fuel consumed per day 2 > 10
+Element Zero extractor eezo spawn interval 15 days > 10 days
+Element Zero extractor eezo spawn amount 30 > 10
+Alliance Dress Jacket and Alliance Officer Hat now have correct armor values
+Science Uniform now has correct armor values
+Mass Accelerator Turret building cost Plasteel 250 > 260, Component Spacer 4 > 6
+Mass Accelerator Turret FuelMultiplier 0.75 > 1.0
+Large Mass Accelerator Turret FuelMultiplier 0.5 > 1.0
+Element Zero is now a deep-drillable resource
+Prefab Walls HP 200 > 500
+VI Interface no longer causes an NRE error
+In Android Tiers, new colonists no longer spawn with Spectre Armor
+LOKI charging station Plasteel cost 20 > 40, Component Spacer cost 3 > 5
+LOKI mech rebuild cost ComponentSpacer 2 > 4, Plasteel 10 > 40
+Spacer tech research bench can now be used for researching vanilla technologies
+Picking up contracts from Galaxy map is not possible if goodwill < 0
+Tech and Biotic abilities do not appear on Gizmos if the pawn is not drafted
+Vindicator sound volumeRange 25~25 > 35~45
+
