@@ -298,12 +298,13 @@
     </modExtensions>
   </RimEffect.AbilityDef>
 
-  <HediffDef ParentName = "PsycastHediffBase">
+  <HediffDef>
     <defName>RE_Tech_TacticalCloakHediff</defName>
     <label>tactical cloak</label>
     <description>Renders the user invisible to all enemies. Users cannot be targeted by any targetable abilities and powers.</description>
+    <hediffClass>HediffWithComps</hediffClass>
     <isBad>false</isBad>
-    <comps Inherit="False">
+    <comps>
       <li Class="HediffCompProperties_Disappears">
         <disappearsAfterTicks>1800~1800</disappearsAfterTicks>
       </li>
