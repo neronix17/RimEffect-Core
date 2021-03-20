@@ -441,6 +441,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+        <modExtensions>
+	            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+            </li>
+        </modExtensions>
   </ThingDef>
   
 <!-- Alliance Pistol -->
@@ -510,6 +515,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+        <modExtensions>
+	            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+            </li>
+        </modExtensions>
   </ThingDef>
   
   <!-- Alliance Handcannon -->
@@ -597,6 +607,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+        <modExtensions>
+	            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+            </li>
+        </modExtensions>
   </ThingDef>
   
 <!-- Alliance Anti-materiel rifle -->
