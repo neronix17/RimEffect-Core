@@ -1018,7 +1018,7 @@
     <graphicData>
       <texPath>Things/Building/Furniture/PrefabWardrobe/PrefabWardrobe</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(3.55,3.02)</drawSize>
+      <drawSize>(3.0,3.0)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
