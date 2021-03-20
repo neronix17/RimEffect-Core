@@ -234,6 +234,7 @@
   </ThingDef>
 
   <ThingDef Name="RE_SpacerApparelMakeableBase" ParentName="RE_SpacerApparelBase" Abstract="True">
+    <techLevel>Ultra</techLevel>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
