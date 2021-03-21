@@ -404,7 +404,7 @@
     <canOverlapZones>false</canOverlapZones>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
-      <WorkToBuild>16000</WorkToBuild>
+      <WorkToBuild>10000</WorkToBuild>
       <Flammability>0.5</Flammability>
       <Beauty>-30</Beauty>
     </statBases>
@@ -413,7 +413,7 @@
     <costList>
       <Plasteel>140</Plasteel>
       <ComponentSpacer>6</ComponentSpacer>
-	  <RE_PrefabComponent>18</RE_PrefabComponent>
+	  <RE_PrefabComponent>12</RE_PrefabComponent>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
