@@ -618,11 +618,14 @@
     <thingCategories>
       <li>Apparel</li>
     </thingCategories>
+    <costList>
+      <Plasteel>15</Plasteel>
+    </costList>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <WorkToMake>3400</WorkToMake>
       <Mass>0.3</Mass>
-      <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierArmor>0.34</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.5</EquipDelay>
