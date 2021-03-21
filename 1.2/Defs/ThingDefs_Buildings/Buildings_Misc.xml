@@ -136,8 +136,7 @@
     </building>
     <costList>
       <Plasteel>150</Plasteel>
-      <ComponentSpacer>8</ComponentSpacer>
-      <RE_PrefabComponent>12</RE_PrefabComponent>
+      <ComponentSpacer>14</ComponentSpacer>
     </costList>
     <defaultPlacingRot>South</defaultPlacingRot>
     <interactionCellOffset>(0,0,4)</interactionCellOffset>
