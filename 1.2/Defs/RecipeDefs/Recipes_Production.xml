@@ -40,9 +40,9 @@
   
   <RecipeDef>
     <defName>RE_Make_PrefabComponentBulk</defName>
-    <label>make prefabrication component x4</label>
-    <description>Make 4 prefabrication components.</description>
-    <jobString>Making 4 prefabrication components.</jobString>
+    <label>make prefabrication component x8</label>
+    <description>Make 8 prefabrication components.</description>
+    <jobString>Making 8 prefabrication components.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
@@ -67,12 +67,13 @@
       <li>RE_ManufacturingBench</li>
     </recipeUsers>
     <products>
-      <RE_PrefabComponent>4</RE_PrefabComponent>
+      <RE_PrefabComponent>8</RE_PrefabComponent>
     </products>
     <skillRequirements>
       <Crafting>10</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
+    <researchPrerequisites><li>RE_ComplexPrefabrication</li></researchPrerequisites>
   </RecipeDef>
   
 </Defs>
