@@ -21,6 +21,7 @@ namespace RimEffect
         public static ThingDef RE_AmmoToxicBelt;
 
         public static HediffDef Hypothermia;
+        public static HediffDef RE_HypothermicSlowdown;
         public static DamageDef RE_BombNoShake;
 
         public static SoundDef RE_Ammo_Enable;
