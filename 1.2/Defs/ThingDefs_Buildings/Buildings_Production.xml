@@ -7,8 +7,7 @@
     <description>A spacer tech bench with computers and electronic measurement equipment. Allows more rapid research, and unlocks advanced research projects.</description>
     <thingClass>Building_ResearchBench</thingClass>
     <size>(5,1)</size>
-    <minifiedDef />
-    <thingCategories Inherit="false"/>
+    <minifiedDef>MinifiedThing</minifiedDef>
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>
