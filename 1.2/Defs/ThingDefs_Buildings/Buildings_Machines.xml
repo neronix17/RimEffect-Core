@@ -68,7 +68,7 @@
 		<hoursToRecharge>6</hoursToRecharge>
 	  </li>
     </comps>
-    <designationCategory>Security</designationCategory>
+    <designationCategory>Misc</designationCategory>
     <researchPrerequisites>
       <li>RE_ColonyDefenseForce</li>
     </researchPrerequisites>
