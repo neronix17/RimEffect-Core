@@ -16,7 +16,7 @@
             if (extension.building != null)
             {
                 Thing building = GenSpawn.Spawn(extension.building, target.Cell, this.pawn.Map);
-                building.SetFaction(this.pawn.Faction);
+                building.SetFactionDirect(this.pawn.Faction);
 
                 CompSpawnedBuilding comp = building.TryGetComp<CompSpawnedBuilding>();
                 if (comp != null)
