@@ -36,7 +36,7 @@
     <cooldownTimeStatFactors>
       <RE_AbilityCooldownFactor>1</RE_AbilityCooldownFactor>
     </cooldownTimeStatFactors>
-    <power>30</power>
+    <power>1</power>
     <iconPath>UI/Abilities/Tech_CryoBlast</iconPath>
 	  <castSound>RE_Tech_CryoBlast_Fire</castSound>
     <requiredHediff>
@@ -65,7 +65,7 @@
     <projectile>
       <damageDef>Frostbite</damageDef>
       <armorPenetrationBase>1</armorPenetrationBase>
-      <damageAmountBase>1</damageAmountBase>
+      <damageAmountBase>12</damageAmountBase>
       <speed>70</speed>
 	  <soundExplode>RE_Tech_CryoBlast_Explode</soundExplode>
     </projectile>

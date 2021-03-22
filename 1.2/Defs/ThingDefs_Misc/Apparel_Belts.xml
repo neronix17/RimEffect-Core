@@ -259,7 +259,7 @@
   <ThingDef ParentName="RE_AmmoBelts">
     <defName>RE_AmmoPiercingBelt</defName>
     <label>piercing rounds</label>
-    <description>An ammo belt with armor-piercing rounds. Occupies belt slot.\n\nEach shot fired with a weapon whilst this belt is equipped has a higher armor penetration, but reduces durability of the belt.</description>
+    <description>An ammo belt with armor-piercing rounds. Occupies belt slot.\n\nEach shot fired with a weapon whilst this belt is equipped has a 50% higher armor penetration, but reduces durability of the belt.</description>
     <graphicData>
       <texPath>Things/Apparel/AmmoBelt/AmmoPiercingBelt</texPath>
       <drawSize>(0.7,0.7)</drawSize>
