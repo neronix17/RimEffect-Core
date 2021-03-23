@@ -15,7 +15,17 @@ namespace RimEffect
     {
         public static Dictionary<Thing, AmmoBelt> pawnsWithAmmobelts = new Dictionary<Thing, AmmoBelt>();
         private bool inUse;
-        public bool InUse => inUse;
+        public bool InUse
+        {
+            get
+            {
+                if (this.Wearer?.Faction != null && this.Wearer.Faction != Faction.OfPlayer)
+                {
+                    return true;
+                }
+                return inUse;
+            }
+        }
         private Pawn wearer;
         public override void Tick()
         {
