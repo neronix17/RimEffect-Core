@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using RimWorld;
 using Verse;
+using Verse.Sound;
 
 using HarmonyLib;
 
@@ -32,13 +33,21 @@ namespace RECompMediGel
             if (medicine != null && medicine.def.defName == "RE_MediGel")
             {
                 MediGelUtility.TrySealWounds(patient);
+                MediGelUtility.TendAdditional(doctor, patient);
+                if (medicine != null)
+                {
+                    if (medicine.stackCount > 1)
+                    {
+                        medicine.stackCount--;
+                    }
+                    if (!medicine.Destroyed)
+                    {
+                        medicine.Destroy(DestroyMode.Vanish);
+                    }
+                }
+                return false;
             }
             return true;
-        }
-
-        [HarmonyPostfix]
-        static void Postfix(Pawn doctor, Pawn patient, Medicine medicine)
-        {
         }
     }
 }
