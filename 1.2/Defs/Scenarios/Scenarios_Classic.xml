@@ -3,7 +3,7 @@
 
   <ScenPartDef>
     <defName>RE_StartRandomIncidentOfCategory</defName>
-    <label>Start with random ThreatBig incident</label>
+    <label>Start with a random disaster</label>
     <scenPartClass>RimEffect.ScenPart_StartRandomIncidentOfCategory</scenPartClass>
     <category>StartingItem</category>
     <selectionWeight>1.0</selectionWeight>
