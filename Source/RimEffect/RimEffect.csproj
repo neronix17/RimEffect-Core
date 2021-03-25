@@ -122,6 +122,7 @@
     <Compile Include="Jobs\JoyGiver_UseVITerminal.cs" />
     <Compile Include="Jobs\LordJob_DefendPointThenLeave.cs" />
     <Compile Include="Jobs\LordToil_DefendPointThenLeave.cs" />
+    <Compile Include="Misc\Textures.cs" />
     <Compile Include="QuestNodes\QuestNode_GeneratePawns.cs" />
     <Compile Include="QuestNodes\QuestNode_GetPawn.cs" />
     <Compile Include="QuestNodes\QuestNode_GetRandomPawnKinds.cs" />
