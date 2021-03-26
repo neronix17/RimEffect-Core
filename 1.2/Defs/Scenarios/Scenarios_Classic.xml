@@ -1,6 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+  <ScenPartDef>
+    <defName>RE_StartRandomIncidentOfCategory</defName>
+    <label>Start with a random disaster</label>
+    <scenPartClass>RimEffect.ScenPart_StartRandomIncidentOfCategory</scenPartClass>
+    <category>StartingItem</category>
+    <selectionWeight>1.0</selectionWeight>
+    <summaryPriority>300</summaryPriority>
+  </ScenPartDef>
+  
   <ScenarioDef Name="VFE_TheLoneScavenger">
     <defName>RE_AllianceColony</defName>
     <label>Alliance colony</label>
@@ -12,6 +21,10 @@
         <factionDef>RE_AlliancePlayerColony</factionDef>
       </playerFaction>
       <parts>
+		<li Class="RimEffect.ScenPart_StartRandomIncidentOfCategory">
+		  <def>RE_StartRandomIncidentOfCategory</def>
+          <incidentCategory>ThreatBig</incidentCategory>
+        </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Steel</thingDef>
