@@ -54,7 +54,10 @@
         <maxSimultaneous>1</maxSimultaneous>
       </li>
     </comps>
-	<tradeability>Sellable</tradeability>
+	<tradeability>All</tradeability>
+    <tradeTags>
+      <li>RE_AllianceTerminal</li>
+    </tradeTags>
     <researchPrerequisites>
       <li>RE_AllianceCooperation</li>
     </researchPrerequisites>
