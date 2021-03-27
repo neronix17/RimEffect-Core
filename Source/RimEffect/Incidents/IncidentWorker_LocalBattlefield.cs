@@ -73,6 +73,10 @@ namespace RimEffect
             var enemyFaction = hostileFactions.Where(x => x.HostileTo(friendlyFaction)).RandomElement();
 
             var points = StorytellerUtility.DefaultThreatPointsNow(parms.target) * 5;
+            if (points > 10000)
+            {
+                points = 10000;
+            }
             var raidStrategy = RaidStrategyDefOf.ImmediateAttackFriendly;
             var raidArrivalMode = PawnsArrivalModeDefOf.EdgeWalkIn;
             
