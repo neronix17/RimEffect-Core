@@ -154,7 +154,7 @@
       </li>
       <li Class="StockGenerator_Tag">
         <tradeTag>RE_SpacerApparel</tradeTag>
-        <thingDefCountRange>2~3</thingDefCountRange>
+        <thingDefCountRange>3~6</thingDefCountRange>
         <countRange>2~4</countRange>
       </li>
 
@@ -182,6 +182,10 @@
       <li Class="StockGenerator_SingleDef">
         <thingDef>Telescope</thingDef>
         <countRange>0~1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>RE_AllianceTerminal</thingDef>
+        <countRange>1~2</countRange>
       </li>
 
       <!-- Exotic -->

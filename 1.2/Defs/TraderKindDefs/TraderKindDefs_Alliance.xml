@@ -105,7 +105,10 @@
       </li>
       
       <!-- Exotic -->
-      <!-- none -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>RE_AllianceTerminal</thingDef>
+        <countRange>0~1</countRange>
+      </li>
       
       <!-- Slaves -->
       <!-- none -->
@@ -304,6 +307,10 @@
       <li Class="StockGenerator_SingleDef">
         <thingDef>RE_PrefabTelevision</thingDef>
         <countRange>0~2</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>RE_AllianceTerminal</thingDef>
+        <countRange>0~1</countRange>
       </li>
       
       <!-- Exotic -->
