@@ -68,7 +68,13 @@
 
             if (this.targetingParameters == null)
             {
-                this.targetingParameters = new TargetingParameters();
+                this.targetingParameters = new TargetingParameters() {
+                                                                         canTargetPawns = false,
+                                                                         canTargetBuildings = false,
+                                                                         canTargetAnimals = false,
+                                                                         canTargetHumans = false,
+                                                                         canTargetMechs = false
+                                                                     };
 
                 switch (this.targetMode)
                 {
@@ -83,7 +89,7 @@
                         this.targetingParameters.canTargetBuildings = true;
                         break;
                     case AbilityTargetingMode.Pawn:
-                        this.targetingParameters.canTargetPawns = true;
+                        this.targetingParameters.canTargetPawns = this.targetingParameters.canTargetHumans = this.targetingParameters.canTargetMechs = this.targetingParameters.canTargetAnimals = true;
                         break;
                     default:
                         throw new ArgumentOutOfRangeException();
