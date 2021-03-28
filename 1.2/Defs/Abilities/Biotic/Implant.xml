@@ -22,7 +22,7 @@
       <MaxHitPoints>100</MaxHitPoints>
       <Beauty>-4</Beauty>
       <Mass>1</Mass>
-      <MarketValue>2600</MarketValue>
+      <MarketValue>3100</MarketValue>
       <DeteriorationRate>0</DeteriorationRate>
 	  <WorkToMake>36000</WorkToMake>
     </statBases>
@@ -90,6 +90,7 @@
           <RE_BioticEnergyMax>100.0</RE_BioticEnergyMax>
           <RE_BioticEnergyRecoveryRate>0.1</RE_BioticEnergyRecoveryRate>
         </statFactors>
+		<hungerRateFactorOffset>0.25</hungerRateFactorOffset>
       </li>
       <li>
         <minSeverity>2</minSeverity>
@@ -97,6 +98,7 @@
           <RE_BioticEnergyMax>160.34</RE_BioticEnergyMax>
           <RE_BioticEnergyRecoveryRate>0.2</RE_BioticEnergyRecoveryRate>
         </statFactors>
+		<hungerRateFactorOffset>0.5</hungerRateFactorOffset>
       </li>
       <li>
         <minSeverity>3</minSeverity>
@@ -104,6 +106,7 @@
           <RE_BioticEnergyMax>230.67</RE_BioticEnergyMax>
           <RE_BioticEnergyRecoveryRate>0.3</RE_BioticEnergyRecoveryRate>
         </statFactors>
+		<hungerRateFactorOffset>0.75</hungerRateFactorOffset>
       </li>
       <li>
         <minSeverity>4</minSeverity>
@@ -111,6 +114,7 @@
           <RE_BioticEnergyMax>300</RE_BioticEnergyMax>
           <RE_BioticEnergyRecoveryRate>0.4</RE_BioticEnergyRecoveryRate>
         </statFactors>
+		<hungerRateFactorOffset>1.0</hungerRateFactorOffset>
       </li>
     </stages>
   </HediffDef>
