@@ -93,6 +93,7 @@
     <Compile Include="GenSteps\GenStep_RE_PirateOrMech.cs" />
     <Compile Include="GenSteps\GenStep_RE_WoundedSoldier.cs" />
     <Compile Include="GenSteps\GenStep_RogueSite.cs" />
+    <Compile Include="HarmonyPatches\AddDirect_Patch.cs" />
     <Compile Include="HarmonyPatches\AddHumanlikeOrders_Patch.cs" />
     <Compile Include="HarmonyPatches\CanInteractNowWith_Patch.cs" />
     <Compile Include="HarmonyPatches\EquipmentRender_Patch.cs" />
