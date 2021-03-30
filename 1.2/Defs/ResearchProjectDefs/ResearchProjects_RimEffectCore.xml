@@ -98,24 +98,6 @@
   </ResearchProjectDef>
   
    <ResearchProjectDef>
-    <defName>RE_PrefabHydroponics</defName>
-    <label>prefab hydroponics</label>
-    <description>Build prefab hydroponics to rapidly grow crops indoors.</description>
-    <baseCost>1400</baseCost>
-    <techLevel>Ultra</techLevel>
-    <prerequisites>
-      <li>RE_ComplexPrefabrication</li>
-    </prerequisites>
-    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
-    <requiredResearchFacilities>
-      <li>MultiAnalyzer</li>
-    </requiredResearchFacilities>
-    <researchViewX>3.0</researchViewX>
-    <researchViewY>0.7</researchViewY>
-	<tab>RimEffect</tab>
-  </ResearchProjectDef>
-  
-   <ResearchProjectDef>
     <defName>RE_MassAcceleration</defName>
     <label>mass acceleration</label>
     <description>Produce mass acceleration turrets.</description>
