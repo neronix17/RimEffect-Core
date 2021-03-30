@@ -266,7 +266,7 @@
     <baseCost>1500</baseCost>
     <techLevel>Ultra</techLevel>
     <prerequisites>
-      <li>RE_MassEffectFieldManipulation</li>
+      <li>RE_BasicPrefabrication</li>
     </prerequisites>
     <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
