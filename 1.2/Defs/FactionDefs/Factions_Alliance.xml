@@ -74,6 +74,21 @@
                 </options>
             </li>
             <li>
+                <!-- adepts and engineers -->
+                <kindDef>Combat</kindDef>
+                <options>
+                    <RE_AllianceRecruit>5</RE_AllianceRecruit>
+                    <RE_AllianceMilitia>10</RE_AllianceMilitia>
+                    <RE_AllianceOfficer>1.5</RE_AllianceOfficer>
+                    <RE_Ranger>7</RE_Ranger>
+                    <RE_Alliance_Marine>10</RE_Alliance_Marine>
+                    <RE_Alliance_MarineHeavy>10</RE_Alliance_MarineHeavy>
+                    <RE_Alliance_MarineSniper>3</RE_Alliance_MarineSniper>
+                    <RE_Alliance_Engineer>5</RE_Alliance_Engineer>
+                    <RE_Alliance_Adept>7</RE_Alliance_Adept>
+                </options>
+            </li>
+            <li>
                 <kindDef>Peaceful</kindDef>
                 <options>
                     <RE_Colonist>20</RE_Colonist>
