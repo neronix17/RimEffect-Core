@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using RimWorld;
     using UnityEngine;
     using Verse;
@@ -41,6 +42,8 @@
             ability.Init();
 
             this.learnedAbilities.Add(ability);
+
+            this.learnedAbilities = this.LearnedAbilities.OrderBy(ab => ab.def.requiredHediff?.minimumLevel ?? 0).GroupBy(ab => ab.Hediff).SelectMany(grp => grp).ToList();
         }
 
         public bool HasAbility(AbilityDef abilityDef)
@@ -58,7 +61,7 @@
 
             if (!this.Pawn.IsColonistPlayerControlled || !this.Pawn.Drafted)
                 yield break;
-
+            
             foreach (Ability ability in this.learnedAbilities) 
                 yield return ability.GetGizmo();
 
