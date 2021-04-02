@@ -36,7 +36,25 @@
     </hairTags>
     <apparelStuffFilter>
       <thingDefs>
-        <li>Synthread</li>
+        <li>Cloth</li>
+		<li>Leather_Plain</li>
+		<li>Leather_Dog</li>
+		<li>Leather_Wolf</li>
+		<li>Leather_Panthera</li>
+		<li>Leather_Camel</li>
+		<li>Leather_Bluefur</li>
+		<li>Leather_Bear</li>
+		<li>Leather_GuineaPig</li>
+		<li>Leather_Pig</li>
+		<li>Leather_Light</li>
+		<li>Leather_Bird</li>
+		<li>Leather_Chinchilla</li>
+		<li>Leather_Fox</li>
+		<li>Leather_Lizard</li>
+		<li>Leather_Elephant</li>
+		<li>Leather_Heavy</li>
+		<li>Leather_Rhinoceros</li>
+		<li>Leather_Patch</li>
       </thingDefs>
     </apparelStuffFilter>
   </FactionDef>
