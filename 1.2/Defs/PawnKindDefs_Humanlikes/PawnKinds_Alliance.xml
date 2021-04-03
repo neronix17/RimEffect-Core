@@ -476,6 +476,7 @@
     <weaponTags>
       <li>AllianceGun</li>
     </weaponTags>
+	<apparelIgnoreSeasons>True</apparelIgnoreSeasons>
     <weaponMoney>1250~2400</weaponMoney>
     <techHediffsChance>0.04</techHediffsChance>
     <techHediffsMoney>200~700</techHediffsMoney>
@@ -539,6 +540,7 @@
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
+	<apparelIgnoreSeasons>True</apparelIgnoreSeasons>
     <modExtensions>
       <li Class="VFECore.PawnKindDefExtension">
         <factionColourApparelPartList>
