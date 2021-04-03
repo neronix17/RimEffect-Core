@@ -215,6 +215,7 @@
             Scribe_Values.Look(ref this.cooldown, nameof(this.cooldown));
             Scribe_Defs.Look(ref this.def, nameof(this.def));
             Scribe_Deep.Look(ref this.verb, nameof(this.verb));
+            Scribe_Values.Look(ref this.autoCast, nameof(this.autoCast));
 
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
