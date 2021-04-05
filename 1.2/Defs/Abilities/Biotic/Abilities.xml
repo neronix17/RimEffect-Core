@@ -367,7 +367,7 @@
     </requiredHediff>
     <modExtensions>
       <li Class="RimEffect.AbilityExtension_Biotic">
-        <energyUsed>50</energyUsed>
+        <energyUsed>100</energyUsed>
       </li>
     </modExtensions>
   </RimEffect.AbilityDef>
