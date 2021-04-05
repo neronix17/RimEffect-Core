@@ -139,7 +139,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>RE_Bullet_AllianceAssaultRifle</defaultProjectile>
+        <defaultProjectile>RE_Bullet_AllianceBattleRifle</defaultProjectile>
         <warmupTime>1.2</warmupTime>
         <range>30.9</range>
         <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
@@ -168,6 +168,21 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>RE_Bullet_AllianceBattleRifle</defName>
+    <label>accelerated shot</label>
+    <graphicData>
+      <texPath>Things/Projectile/Shot_MassAccelerated_Large</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>22</damageAmountBase>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
   </ThingDef>
   
 <!-- Alliance Shotgun -->
