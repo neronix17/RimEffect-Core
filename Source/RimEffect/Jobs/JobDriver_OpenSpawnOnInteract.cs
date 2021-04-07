@@ -25,7 +25,7 @@ namespace RimEffect
             this.FailOnBurningImmobile(TargetIndex.A);
 
             yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.ClosestTouch).FailOnDespawnedNullOrForbidden(TargetIndex.A);
-            yield return Toils_General.Wait(15, TargetIndex.None).FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
+            yield return Toils_General.Wait(400, TargetIndex.None).FailOnDestroyedNullOrForbidden(TargetIndex.A).FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch).WithProgressBarToilDelay(TargetIndex.A, false, -0.5f); ;
             Toil finalize = new Toil();
             finalize.initAction = delegate ()
             {

@@ -96,15 +96,15 @@
     <passability>Impassable</passability>
     <rotatable>false</rotatable>
     <canOverlapZones>false</canOverlapZones>
-    <tickerType>Long</tickerType>
+    <tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>6</glowRadius>
-        <glowColor>(152,167,250,0)</glowColor>
+        <glowColor>(0,255,127,0)</glowColor>
       </li>
       <li Class="RimEffect.CompProperties_SpawnOnInteract">
         <thingToSpawn>TechprofSubpersonaCore</thingToSpawn>
-        <numToSpawnRange>2~10</numToSpawnRange>
+        <numToSpawnRange>2~4</numToSpawnRange>
       </li>
     </comps>
   </ThingDef>

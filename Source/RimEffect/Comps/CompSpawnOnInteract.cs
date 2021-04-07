@@ -69,10 +69,10 @@ namespace RimEffect
             }
         }
 
-        public override void CompTickLong()
+        public override void CompTick()
         {
             if (!alreadyUsed && ShouldSpawn) this.SpawnItems();
-            base.CompTickLong();
+            base.CompTick();
         }
 
         public void SpawnItems()
