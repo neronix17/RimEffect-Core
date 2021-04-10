@@ -22,6 +22,7 @@
     <canOverlapZones>false</canOverlapZones>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 	<designationCategory>Misc</designationCategory>
+	<defaultPlacingRot>South</defaultPlacingRot>
     <thingCategories>
       <li>BuildingsSpecial</li>
     </thingCategories>
