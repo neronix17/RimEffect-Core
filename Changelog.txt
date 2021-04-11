@@ -32,3 +32,34 @@ Picking up contracts from Galaxy map is not possible if goodwill < 0
 Tech and Biotic abilities do not appear on Gizmos if the pawn is not drafted
 Vindicator sound volumeRange 25~25 > 35~45
 Systems Alliance should properly generate merchants now.
+Alliance Pistol, SMG and Handcannon can now be used with shields.
+
+Rim Effect Core Changelog of Beta 2
+Adjust drawsize of Wardrobe so it doesn't overlap beds
+Alliance outfits spawn on tribals, notably the scientist outfit but possibly more.
+Put Omni-tool crafting behind Omni-tool research project.
+Put Biotic-amp crafting behind Biotic amp research project.
+Flare damage lowered from 80 to 30. Energy used changed from 50 to 100.
+EMP duration on Disruptor Rounds now 3x longer.
+Add the amount of armor piercing into description of the Armor Piercing rounds belt. The amount is 50% extra AP.
+Coilguns now work with ammo belts.
+Increase hypothermia given by the Cryo rounds to 20% per shot.
+Add a slow-down hediff alongside hypothermia on Cryo rounds.
+Prefab geothermal lower the amount of prefab comps to 12 and work amount for assembly down to 167 from 267
+Bulk prefab recipe increase to 8x prefab comp without increasing work to make.
+Galaxy map: Remove prefab components, Make it require 6 advanced components more.
+Lock the bulk prefab recipe behind Complex Fabrication
+Lower armor of the Battle Uniform and add some plasteel to it.
+Move Loki and Ymir to Security tab
+Add a few shades of grey for the colour generation of the alliance armors.
+When raiders spawn with ammo mods like disruptor rounds, these can be toggled on and off.
+Spacer tech research bench minifiable.
+Lower power of cryo blast to 1, increase damage to 12.
+The Scenario starts you with a random ThreatBig event.
+Omni-tool installable on archotech and bionic limbs no problem.
+Limit the amount of pawns that fight in the battlefield to prevent lag by having 300 pawns battling each other.
+Biotic Amp increases hunger rate by 0.1/0.2/0.3/0.4 depending on the level.
+Increase the price of biotic amp and omni-tool by 20%.
+Allow Empire to be friends with Player Colony.
+Prefab wardrobe, dresser, end table should affect vanilla and vanilla expanded beds.
+
