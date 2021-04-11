@@ -20,7 +20,7 @@
             this.disabled       = !ability.IsEnabledForPawn(out string reason);
             this.disabledReason = reason.Colorize(Color.red);
             this.action         = ability.DoAction;
-            this.shrinkable     = true;
+            //this.shrinkable     = true;
         }
 
         public override void GizmoUpdateOnMouseover()
@@ -46,7 +46,7 @@
                 GenDraw.DrawRadiusRing(this.pawn.Position, radius, Color.cyan);
         }
 
-        public override bool GroupsWith(Gizmo other) => other is Command_Ability;
+        public override bool GroupsWith(Gizmo other) => false;// other is Command_Ability;
 
         protected override GizmoResult GizmoOnGUIInt(Rect butRect, bool shrunk = false)
         {
