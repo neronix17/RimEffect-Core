@@ -49,7 +49,7 @@
                 }
             }
 
-            foreach (Ability ability in this.givenAbilities)
+            foreach (Ability ability in this.givenAbilities) 
                 yield return ability.GetGizmo();
         }
 

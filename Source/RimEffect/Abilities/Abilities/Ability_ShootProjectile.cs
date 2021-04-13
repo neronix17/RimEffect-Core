@@ -9,7 +9,6 @@
             base.Cast(target);
 
             Projectile projectile = GenSpawn.Spawn(this.def.GetModExtension<AbilityExtension_Projectile>().projectile, this.pawn.Position, this.pawn.Map) as Projectile;
-
             if (projectile is AbilityProjectile abilityProjectile)
             {
                 abilityProjectile.ability = this;

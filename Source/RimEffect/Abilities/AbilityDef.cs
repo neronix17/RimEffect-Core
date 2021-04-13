@@ -56,9 +56,10 @@
 
             if (!typeof(Ability).IsAssignableFrom(this.abilityClass))
                 yield return $"{this.abilityClass} is not a valid ability type";
-
+            /*
             if (this.GetModExtension<AbilityExtension_Projectile>() != null && (this.GetModExtension<AbilityExtension_Hediff>()?.applyAuto ?? false))
                 yield return "Projectile and auto apply hediff present. Please check if that is intended.";
+            */
         }
 
         public override void PostLoad()

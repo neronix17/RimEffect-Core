@@ -166,7 +166,8 @@
 
             this.CheckCastEffects(target, out bool cast, out bool targetMote, out bool hediffApply);
 
-            if(hediffApply) this.ApplyHediffs(target);
+            if(hediffApply) 
+                this.ApplyHediffs(target);
 
             if (cast) 
                 this.CastEffects(target);
@@ -198,9 +199,13 @@
                 AbilityExtension_Hediff hediffExtension = this.def.GetModExtension<AbilityExtension_Hediff>();
                 if (hediffExtension?.applyAuto ?? false)
                 {
-                    Hediff localHediff = HediffMaker.MakeHediff(hediffExtension.hediff, this.pawn);
+                    Hediff localHediff = HediffMaker.MakeHediff(hediffExtension.hediff, targetInfo.Pawn);
                     if (Math.Abs(hediffExtension.severity - -1f) > float.Epsilon)
                         localHediff.Severity = hediffExtension.severity;
+                    if (localHediff is HediffWithComps hwc)
+                        foreach (HediffComp hediffComp in hwc.comps)
+                            if (hediffComp is HediffComp_Ability hca) 
+                                hca.ability = this;
                     targetInfo.Pawn.health.AddHediff(localHediff);
                 }
             }

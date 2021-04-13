@@ -17,13 +17,16 @@ namespace RimEffect
         protected override IEnumerable<Toil> MakeNewToils()
         {
             yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch);
+
+            Quest quest = Find.QuestManager.QuestsListForReading.Find(q => q.QuestLookTargets.Any(look => look.HasWorldObject && Find.World.worldObjects.ObjectsAt(pawn.Map.Tile).Contains(look.WorldObject)));
+
             Toil finalize = new Toil();
             finalize.initAction = delegate ()
              {
                  // End related quest if no other pawn of same faction are still on the map
                  if (this.Map.mapPawns.AllPawnsSpawned.FindAll(predicate => predicate.Faction == pawn.Faction).Count <= 1)
                  {
-                     foreach (var quest in Find.QuestManager.QuestsListForReading)
+                     foreach (var item in Find.QuestManager.QuestsListForReading)
                      {
                          var signal = new Signal("Quest" + quest.id + ".AllHostagesAreFree");
                          Find.SignalManager.SendSignal(signal);

@@ -66,6 +66,7 @@
     <Compile Include="Abilities\Command_Ability.cs" />
     <Compile Include="Abilities\CompAbilities.cs" />
     <Compile Include="Abilities\CompAbilitiesApparel.cs" />
+    <Compile Include="Abilities\HediffComp_Ability.cs" />
     <Compile Include="Abilities\Hediff_Abilities.cs" />
     <Compile Include="Abilities\Hediff_BioticAmp.cs" />
     <Compile Include="Abilities\Hediff_OmniTool.cs" />
