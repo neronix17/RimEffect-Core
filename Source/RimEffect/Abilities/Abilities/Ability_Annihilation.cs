@@ -113,7 +113,7 @@
                     {
                         Thing t = cellThings[i];
 
-                        if (t is Pawn p && (this.caster != null ? p.HostileTo(this.caster) : p.HostileTo(this.casterFaction)))
+                        if (t is Pawn p)// && (this.caster != null ? p.HostileTo(this.caster) : p.HostileTo(this.casterFaction)))
                             this.tmpPawns.Add(p);
                     }
                 }
