@@ -751,7 +751,8 @@
     <equippedAngleOffset>45</equippedAngleOffset>
     <costList>
       <Plasteel>40</Plasteel>
-      <Uranium>20</Uranium>
+      <Uranium>40</Uranium>
+	  <ComponentSpacer>3</ComponentSpacer>
     </costList>
     <recipeMaker>
       <recipeUsers>
@@ -828,7 +829,7 @@
     <projectile>
       <damageDef>Bomb</damageDef>
       <!-- Use default damage from explosion def -->
-      <explosionRadius>3.9</explosionRadius>
+      <explosionRadius>1.9</explosionRadius>
       <speed>40</speed>
     </projectile>
   </ThingDef>
