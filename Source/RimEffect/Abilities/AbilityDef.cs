@@ -96,24 +96,29 @@
                         throw new ArgumentOutOfRangeException();
                 }
             }
-
-            if(this.verbProperties == null)
-                this.verbProperties = new VerbProperties
-                                      {
-                                          verbClass           = typeof(Verb_CastAbility),
-                                          label               = this.label,
-                                          category            = VerbCategory.Misc,
-                                          range               = this.range,
-                                          noiseRadius         = 3f,
-                                          targetParams        = this.targetingParameters,
-                                          warmupTime          = this.castTime / (float) GenTicks.TicksPerRealSecond,
-                                          defaultCooldownTime = this.cooldownTime,
-                                          meleeDamageBaseAmount = Mathf.RoundToInt(this.power),
-                                          meleeDamageDef = DamageDefOf.Blunt
-                                      };
         }
 
+        public override void ResolveReferences()
+        {
+            base.ResolveReferences();
+            if (this.verbProperties == null)
+                this.verbProperties = new VerbProperties
+                                      {
+                                          verbClass             = typeof(Verb_CastAbility),
+                                          label                 = this.label,
+                                          category              = VerbCategory.Misc,
+                                          range                 = this.range,
+                                          noiseRadius           = 3f,
+                                          targetParams          = this.targetingParameters,
+                                          warmupTime            = this.castTime / (float)GenTicks.TicksPerRealSecond,
+                                          defaultCooldownTime   = this.cooldownTime,
+                                          meleeDamageBaseAmount = Mathf.RoundToInt(this.power),
+                                          meleeDamageDef        = DamageDefOf.Blunt
+                                      };
+        }
     }
+
+
 
     public class HediffWithLevelCombination
     {
