@@ -34,7 +34,9 @@ namespace RimEffect
                 {
                     Randomize();
                 }
-                var parms = StorytellerUtility.DefaultParmsNow(incidentCategory, map);
+                var parms = new IncidentParms();
+                parms.target = map;
+                parms.points = 1000f;
                 incidentDef.Worker.TryExecute(parms);
             }
         }
