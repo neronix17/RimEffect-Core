@@ -180,7 +180,7 @@
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>22</damageAmountBase>
-      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <armorPenetrationBase>0.50</armorPenetrationBase>
       <speed>70</speed>
     </projectile>
   </ThingDef>
@@ -193,7 +193,7 @@
       <texPath>Things/Projectile/Shot_MassAccelerated_Shotgun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
-      <drawSize>1.2</drawSize>
+      <drawSize>1.0</drawSize>
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
