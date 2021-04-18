@@ -70,6 +70,7 @@
     <Compile Include="Abilities\Hediff_Abilities.cs" />
     <Compile Include="Abilities\Hediff_BioticAmp.cs" />
     <Compile Include="Abilities\Hediff_OmniTool.cs" />
+    <Compile Include="Abilities\InitializeAbilityComp.cs" />
     <Compile Include="Abilities\JobDriver_CastAbilityOnce.cs" />
     <Compile Include="Abilities\PawnKindAbilityExtension.cs" />
     <Compile Include="Abilities\Verb_CastAbility.cs" />
