@@ -663,7 +663,7 @@
     <label>spectre armor</label>
     <description>Elite prototype armor only available to the Spectres, granted them advanced combat abilities. \n\nThis armored hardsuit consists of several layers. The base layer is fabric with kinetic padding, with ablative plates over vital areas. The outer layer consists of kinetic barriers that trigger automatically when incoming projectiles are detected, providing a combination of protection and maneuverability that other armor technologies can't match.</description>
     <techLevel>Spacer</techLevel>
-	<thingClass>RimEffect.SpectreArmor</thingClass>
+	<thingClass>RimEffect.ShieldBeltApparel</thingClass>
 	<tickerType>Normal</tickerType>
     <graphicData>
       <texPath>Things/Apparel/SpectreArmor/SpectreArmor</texPath>
