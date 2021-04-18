@@ -17,5 +17,7 @@
                     target.Pawn.mindState.mentalStateHandler.TryStartMentalState(RE_DefOf.RE_SabotageBerserk, null, forceWake: true);
             }
         }
+
+        public override int GetDurationForPawn() => RE_DefOf.RE_SabotageBerserk.minTicksBeforeRecovery + RE_DefOf.RE_SabotageBerserk.maxTicksBeforeRecovery - RE_DefOf.RE_SabotageBerserk.minTicksBeforeRecovery;
     }
 }

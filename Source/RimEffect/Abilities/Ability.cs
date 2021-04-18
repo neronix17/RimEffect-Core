@@ -103,6 +103,13 @@
             int durationForPawn = this.GetDurationForPawn();
             if (durationForPawn > 0)
                 sb.AppendLine($"{"RE.AbilityStatsDuration".Translate()}: {durationForPawn.ToStringTicksToPeriod()}".Colorize(Color.cyan));
+            else if (this.def.HasModExtension<AbilityExtension_Hediff>())
+            {
+                AbilityExtension_Hediff         extension                      = this.def.GetModExtension<AbilityExtension_Hediff>();
+                HediffCompProperties_Disappears propertiesDisappears = extension.hediff.CompProps<HediffCompProperties_Disappears>();
+                if (propertiesDisappears != null) 
+                    sb.AppendLine($"{"RE.AbilityStatsDuration".Translate()}: {propertiesDisappears.disappearsAfterTicks.min.ToStringTicksToPeriod()} ~ {propertiesDisappears.disappearsAfterTicks.max.ToStringTicksToPeriod()}".Colorize(Color.cyan));
+            }
 
             AbilityExtension_Biotic biotic = this.def.GetModExtension<AbilityExtension_Biotic>();
             if (biotic != null) 
