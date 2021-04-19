@@ -63,3 +63,21 @@ Increase the price of biotic amp and omni-tool by 20%.
 Allow Empire to be friends with Player Colony.
 Prefab wardrobe, dresser, end table should affect vanilla and vanilla expanded beds.
 
+Rim Effect Core Changelog of Beta 3
+Add Engineer and Adept PawnKindDefs to some raids by the Alliance.
+Basic Prefabrication to be made a prerequisite for Complex Spacer Clothing.
+Look into amount of starting advanced components in the scenario. The amount should be slightly higher to allow building of the high-tech research bench and fabrication workbench.
+Starting colonists in scenario shouldn't start with Synthread clothes, leather and fabric instead.
+Alliance traders like to roleplay as tribals.
+Adjust the size of abilities Gizmo if you have more of them.
+Group abilities based on their type.
+Alliance crew spawns with tuques when it's cold.
+Some icons missing on Mechs
+Increase AP of Alliance Battle Rifle.
+Annihilation field energy cost increased to 100.
+Alliance Terminal default placement rotation should be south.
+Double the HP of Hex shield
+YMIR mech shield does not work
+Lower the draw size of the shotgun projectile.
+Explosion radius of Alliance rocket launcher is now 1.9. Uranium cost increased from 20 to 40, it now requires 3 Advanced Components too.
+Remove prefab hydroponics research.
