@@ -71,7 +71,7 @@
     <defName>RE_Biotic_Pull</defName>
     <label>biotic pull</label>
     <description>Generates a mass-lowering field which lifts the enemy in the air and quickly drops them, temporarily disabling them from a fight.
-    Effect: Enemy gets fulled towards the caster and gets temporarily knocked on the ground.</description>
+    Effect: Enemy gets pulled towards the caster and gets temporarily knocked on the ground.</description>
     <abilityClass>RimEffect.Ability_Pull</abilityClass>
     <targetMode>Pawn</targetMode>
     <castTime>60</castTime>
