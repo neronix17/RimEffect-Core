@@ -328,7 +328,7 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>RimEffect.CompPowerPlantNuclear</compClass>
-				<basePowerConsumption>-5000</basePowerConsumption>
+				<basePowerConsumption>-8000</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Flickable" />
