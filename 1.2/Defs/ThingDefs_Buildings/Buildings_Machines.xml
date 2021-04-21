@@ -22,7 +22,7 @@
       </damageData>
     </graphicData>
     <minifiedDef>MinifiedThing</minifiedDef>
-    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <passability>Standable</passability>
     <blockWind>false</blockWind>
     <rotatable>false</rotatable>
@@ -97,7 +97,7 @@
       </damageData>
     </graphicData>
     <minifiedDef>MinifiedThing</minifiedDef>
-    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <passability>Standable</passability>
     <blockWind>false</blockWind>
     <rotatable>false</rotatable>
@@ -171,7 +171,7 @@
       </damageData>
     </graphicData>
     <minifiedDef>MinifiedThing</minifiedDef>
-    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <passability>Standable</passability>
     <blockWind>false</blockWind>
     <rotatable>false</rotatable>
