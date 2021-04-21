@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Save Our Ship 2</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RE_Apparel_LightAllianceArmor"]/apparel/tags</xpath>
+					<value>
+						<li>EVA</li>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RE_Apparel_LightAllianceHelmet"]/apparel/tags</xpath>
+					<value>
+						<li>EVA</li>
+					</value>
+				</li>
+				
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RE_Apparel_AllianceArmor"]/apparel/tags</xpath>
+					<value>
+						<li>EVA</li>
+					</value>
+				</li>
+				
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RE_Apparel_AllianceHelmet"]/apparel/tags</xpath>
+					<value>
+						<li>EVA</li>
+					</value>
+				</li>
+				
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RE_Apparel_HeavyAllianceArmor"]/apparel/tags</xpath>
+					<value>
+						<li>EVA</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RE_Apparel_HeavyAllianceHelmet"]/apparel/tags</xpath>
+					<value>
+						<li>EVA</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "RE_Apparel_SpectreArmor"]/apparel/tags</xpath>
+					<value>
+						<li>EVA</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+
