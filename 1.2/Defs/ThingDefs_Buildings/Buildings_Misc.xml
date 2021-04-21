@@ -203,8 +203,8 @@ This one is out of service.</description>
       <ComponentSpacer>4</ComponentSpacer>
     </killedLeavings>
     <costList>
-      <Plasteel>450</Plasteel>
-      <ComponentSpacer>24</ComponentSpacer>
+      <Plasteel>100</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
     </costList>
     <rotatable>false</rotatable>
     <selectable>true</selectable>
