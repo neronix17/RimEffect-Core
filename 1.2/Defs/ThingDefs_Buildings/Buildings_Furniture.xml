@@ -1004,7 +1004,7 @@
 		<building>
 			<isSittable>true</isSittable>
 		</building>
-		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<researchPrerequisites>
 			<li>RE_BasicPrefabrication</li>
 		</researchPrerequisites>
