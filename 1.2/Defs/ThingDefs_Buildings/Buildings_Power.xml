@@ -41,7 +41,7 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerPlant</compClass>
-				<basePowerConsumption>-2000</basePowerConsumption>
+				<basePowerConsumption>-3000</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 				<soundAmbientProducingPower>ChemfuelFiredGenerator_Ambience</soundAmbientProducingPower>
 			</li>
