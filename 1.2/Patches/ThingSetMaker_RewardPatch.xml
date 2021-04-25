@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingSetMakerDef[defName="Reward_ItemsStandard"]/root/options/li[maxMarketValue=5500]/thingSetMaker/options</xpath>
+		<value>
+			<li>
+				<weight>40</weight>
+				<thingSetMaker Class="ThingSetMaker_Conditional_MakingFaction">
+					<makingFaction>RE_SystemsAlliance</makingFaction>
+					<requireNonNull>true</requireNonNull>
+					<thingSetMaker Class="ThingSetMaker_MarketValue">
+						<fixedParams>
+							<qualityGenerator>Reward</qualityGenerator>
+							<allowNonStackableDuplicates>False</allowNonStackableDuplicates>
+							<filter>
+								<thingSetMakerTagsToAllow>
+									<li>RE_SystemsAlliance</li>
+									<li>RE_AllianceReward</li>
+									<li>RE_AllianceArmoury</li>
+									<li>RE_SpectreArmoury</li>
+									<li>RE_AmmoBelts</li>
+									<li>RE_AllianceWeaponry</li>
+									<li>RE_Implant</li>
+								</thingSetMakerTagsToAllow>
+								<tradeTagsToAllow>
+									<li>RE_SpacerApparel</li>
+									<li>RE_AllianceSpacerApparel</li>
+									<li>RE_AllianceArmoury</li>
+									<li>RE_AmmoBelts</li>
+									<li>RE_AllianceWeaponry</li>
+									<li>RE_AllianceTerminal</li>
+								</tradeTagsToAllow>
+							</filter>
+						</fixedParams>
+					</thingSetMaker>
+				</thingSetMaker>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>
