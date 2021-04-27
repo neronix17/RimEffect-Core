@@ -21,6 +21,7 @@
     </techHediffsTags>
     <statBases>
       <WorkToMake>30000</WorkToMake>
+	  <Mass>1</Mass>
     </statBases>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
