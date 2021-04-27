@@ -565,7 +565,7 @@
     <defName>RE_AllianceAmbassador</defName>
     <title>Alliance ambassador</title>
     <titleShort>Ambassador</titleShort>
-    <baseDescription>[PAWN_nameDef] had been promised a career as a diplomat since childhood. [PAWN_pronoun] was trained in the best educational institutions of the Alliance to represent the interests of his state on the world stage. [PAWN_pronoun] doesn't know anything about combat due to the time spent in luxurious suites of space stations and planets.</baseDescription>
+    <baseDescription>[PAWN_nameDef] had been promised a career as a diplomat since childhood. [PAWN_pronoun] was trained in the best educational institutions of the Alliance to represent the interests of [PAWN_possessive] state on the world stage. [PAWN_pronoun] doesn't know anything about combat due to the time spent in luxurious suites of space stations and planets.</baseDescription>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
