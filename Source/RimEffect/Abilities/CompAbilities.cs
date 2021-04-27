@@ -54,6 +54,8 @@
             return false;
         }
 
+        public override string CompInspectStringExtra() => string.Empty;
+
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
             foreach (Gizmo gizmo in base.CompGetGizmosExtra()) 
