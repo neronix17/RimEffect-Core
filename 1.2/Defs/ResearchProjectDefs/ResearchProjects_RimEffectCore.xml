@@ -93,7 +93,7 @@
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
     <researchViewX>2.0</researchViewX>
-    <researchViewY>0.7</researchViewY>
+    <researchViewY>1.4</researchViewY>
 	<tab>RimEffect</tab>
   </ResearchProjectDef>
   
@@ -255,7 +255,7 @@
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
     <researchViewX>6.0</researchViewX>
-    <researchViewY>1.75</researchViewY>
+    <researchViewY>1.65</researchViewY>
 	<tab>RimEffect</tab>
   </ResearchProjectDef>
   
@@ -273,7 +273,7 @@
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
     <researchViewX>2.0</researchViewX>
-    <researchViewY>1.4</researchViewY>
+    <researchViewY>0.7</researchViewY>
 	<tab>RimEffect</tab>
   </ResearchProjectDef>
   
