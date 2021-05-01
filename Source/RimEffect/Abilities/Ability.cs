@@ -1,6 +1,7 @@
 ﻿namespace RimEffect
 {
     using System;
+    using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using RimWorld;
@@ -243,8 +244,19 @@
             $"Ability_{this.def.defName}_{this.holder.GetUniqueLoadID()}";
 
 
-        public virtual bool CanHitTarget(LocalTargetInfo target) =>
-            !target.IsValid || this.targetParams.CanTarget(target.ToTargetInfo(this.pawn.Map)) && target.Cell.DistanceTo(this.pawn.Position) < this.GetRangeForPawn() && GenSight.LineOfSight(this.pawn.Position, target.Cell, this.pawn.Map);
+        public virtual bool CanHitTarget(LocalTargetInfo target)
+        {
+            if (target.IsValid && this.targetParams.CanTarget(target.ToTargetInfo(this.pawn.Map)) && target.Cell.DistanceTo(this.pawn.Position) < this.GetRangeForPawn())
+            {
+                if (GenSight.LineOfSight(this.pawn.Position, target.Cell, this.pawn.Map))
+                    return true;
+                List<IntVec3> tempSourceList = new List<IntVec3>();
+                ShootLeanUtility.LeanShootingSourcesFromTo(this.pawn.Position, target.Cell, this.pawn.Map, tempSourceList);
+                if(tempSourceList.Any(ivc => GenSight.LineOfSight(ivc, target.Cell, this.pawn.Map)))
+                    return true;
+            }
+            return false;
+        }
 
         public virtual bool ValidateTarget(LocalTargetInfo target) => 
             this.CanHitTarget(target);
