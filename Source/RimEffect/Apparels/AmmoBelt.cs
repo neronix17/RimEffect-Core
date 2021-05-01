@@ -151,7 +151,7 @@ namespace RimEffect
     {
         private static void Prefix(Projectile __instance, Thing hitThing)
         {
-            if (__instance.Launcher != null && AmmoBelt.pawnsWithAmmobelts.TryGetValue(__instance.Launcher, out AmmoBelt ammoBelt) && ammoBelt.InUse && hitThing is Pawn)
+            if (__instance.Launcher != null && AmmoBelt.pawnsWithAmmobelts.TryGetValue(__instance.Launcher, out AmmoBelt ammoBelt) && ammoBelt.InUse)
             {
                 if (ammoBelt.def == RE_DefOf.RE_AmmoExplosiveBelt)
                 {
