@@ -83,6 +83,7 @@
     <cooldownTimeStatFactors>
       <RE_AbilityCooldownFactor>1</RE_AbilityCooldownFactor>
     </cooldownTimeStatFactors>
+    <durationTime>600</durationTime>
     <iconPath>UI/Abilities/Tech_DefenseMatrix</iconPath>
 	<castSound>RE_Tech_DefenseMatrix</castSound>
     <requiredHediff>

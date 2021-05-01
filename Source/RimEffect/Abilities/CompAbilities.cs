@@ -22,6 +22,8 @@
 
         protected override float EnergyGainPerTick => 0f;
 
+        private float breakTicks = -1;
+
         public List<Ability> LearnedAbilities => this.learnedAbilities;
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
@@ -52,6 +54,17 @@
                 if (learnedAbility.def == abilityDef)
                     return true;
             return false;
+        }
+
+        public override void CompTick()
+        {
+            base.CompTick();
+            if (ShieldState == ShieldState.Active)
+            {
+                this.breakTicks--;
+                if(this.breakTicks <= 0)
+                    this.Break();
+            }
         }
 
         public override string CompInspectStringExtra() => string.Empty;
@@ -102,7 +115,7 @@
         protected override void Reset() => 
             this.ticksToReset = Int32.MaxValue;
 
-        public bool ReinitShield(float newEnergy, string shieldTexturePath)
+        public bool ReinitShield(float newEnergy, string shieldTexturePath, int duration)
         {
             if (newEnergy < this.energy)
                 return false;
@@ -116,6 +129,7 @@
 
 
             this.ticksToReset = -1;
+            this.breakTicks   = duration;
             this.energyMax    = newEnergy;
             this.energy       = newEnergy;
             this.shieldPath   = shieldTexturePath;
