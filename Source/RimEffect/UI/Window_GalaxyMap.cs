@@ -803,19 +803,13 @@ namespace RimEffect
 						}
 						void AcceptAction()
 						{
-							Log.Message(" - AcceptAction - SoundDefOf.Quest_Accepted.PlayOneShotOnCamera(); - 1", true);
 							SoundDefOf.Quest_Accepted.PlayOneShotOnCamera();
-							Log.Message(" - AcceptAction - if (preAcceptAction != null) - 2", true);
 							if (preAcceptAction != null)
 							{
-								Log.Message(" - AcceptAction - preAcceptAction(); - 3", true);
 								preAcceptAction();
 							}
-							Log.Message(pLocal + " - " + selected + " - " + selected?.quest + " - " + selected?.quest?.name);
 							Messages.Message("MessageQuestAccepted".Translate(pLocal, selected.quest.name), pLocal, MessageTypeDefOf.TaskCompletion, historical: false);
-							Log.Message(" - AcceptAction - selected.quest.Accept(pLocal); - 5", true);
 							questGiverManager.ActivateQuest(pLocal, selected);
-							Log.Message(" - AcceptAction - selected = null; - 7", true);
 							selected = null;
 						}
 					}

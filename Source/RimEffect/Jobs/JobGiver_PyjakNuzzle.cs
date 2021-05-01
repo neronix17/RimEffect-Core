@@ -15,7 +15,6 @@ namespace RimEffect
 		private const float MaxNuzzleDistance = 40f;
 		protected override Job TryGiveJob(Pawn pawn)
 		{
-			Log.Message(pawn + " - trying to nuzzle");
 			if (pawn.RaceProps.nuzzleMtbHours <= 0f)
 			{
 				return null;
@@ -31,7 +30,6 @@ namespace RimEffect
 			Job job = JobMaker.MakeJob(RE_DefOf.RE_PyjakNuzzle, result);
 			job.locomotionUrgency = LocomotionUrgency.Walk;
 			job.expiryInterval = 3000;
-			Log.Message(pawn + " - get job " + job); ;
 			return job;
 		}
 	}

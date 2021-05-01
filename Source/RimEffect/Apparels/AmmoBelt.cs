@@ -89,6 +89,17 @@ namespace RimEffect
         }
     }
 
+    [HarmonyPatch(typeof(Pawn_ApparelTracker), nameof(Pawn_ApparelTracker.Wear))]
+    internal static class Wear_Patch
+    {
+        private static void Postfix(Pawn_ApparelTracker __instance, Apparel newApparel, bool dropReplacedApparel = true, bool locked = false)
+        {
+            if (newApparel is AmmoBelt belt)
+            {
+                AmmoBelt.pawnsWithAmmobelts[__instance.pawn] = belt;
+            }
+        }
+    }
 
     [HarmonyPatch(typeof(Projectile), nameof(Projectile.Launch), new Type[]
     {
@@ -131,7 +142,6 @@ namespace RimEffect
                     GenExplosion.DoExplosion(__instance.Position, __instance.Map, 1.9f, RE_DefOf.RE_BombNoShake, __instance.Launcher, 5, -1f, null, (__instance.Launcher as Pawn)?.equipment?.Primary?.def);
                 }
             }
-            Log.Message(__instance + " - " + hitThing + " - " + TakeDamage_Patch.ignoreEffect);
             TakeDamage_Patch.ignoreEffect = false;
         }
     }
@@ -166,31 +176,24 @@ namespace RimEffect
                 {
                     if (ammoBelt.def == RE_DefOf.RE_AmmoPiercingBelt)
                     {
-                        Log.Message("TakeDamage_Patch - Prefix - AccessTools.Field(typeof(DamageInfo), \"armorPenetrationInt\").SetValueDirect(__makeref(dinfo), dinfo.ArmorPenetrationInt * 1.5f); - 8", true);
                         AccessTools.Field(typeof(DamageInfo), "armorPenetrationInt").SetValueDirect(__makeref(dinfo), dinfo.ArmorPenetrationInt * 1.5f);
                     }
                     else if (ammoBelt.def == RE_DefOf.RE_AmmoCryoBelt)
                     {
-                        Log.Message("TakeDamage_Patch - Prefix - HealthUtility.AdjustSeverity(victim, RE_DefOf.Hypothermia, 0.20f); - 10", true);
                         HealthUtility.AdjustSeverity(victim, RE_DefOf.Hypothermia, 0.20f);
-                        Log.Message("TakeDamage_Patch - Prefix - HealthUtility.AdjustSeverity(victim, RE_DefOf.RE_HypothermicSlowdown, 0.20f); - 11", true);
                         HealthUtility.AdjustSeverity(victim, RE_DefOf.RE_HypothermicSlowdown, 0.20f);
                     }
                     else if (ammoBelt.def == RE_DefOf.RE_AmmoToxicBelt)
                     {
-                        Log.Message("TakeDamage_Patch - Prefix - HealthUtility.AdjustSeverity(victim2, HediffDefOf.ToxicBuildup, 0.05f); - 13", true);
                         HealthUtility.AdjustSeverity(victim, HediffDefOf.ToxicBuildup, 0.05f);
                     }
                     else if (ammoBelt.def == RE_DefOf.RE_AmmoDisruptorBelt)
                     {
-                        Log.Message("TakeDamage_Patch - Prefix - recursionTrap = true; - 15", true);
                         recursionTrap = true;
-                        Log.Message("TakeDamage_Patch - Prefix - __instance.TakeDamage(new DamageInfo(DamageDefOf.EMP, 20f, 0, -1, dinfo.Instigator, null, dinfo.Weapon)); - 16", true);
                         __instance.TakeDamage(new DamageInfo(DamageDefOf.EMP, 20f, 0, -1, dinfo.Instigator, null, dinfo.Weapon));
                     }
                     else if (ammoBelt.def == RE_DefOf.RE_AmmoIncendiaryBelt)
                     {
-                        Log.Message("TakeDamage_Patch - Prefix - __instance.TryAttachFire(0.5f); - 18", true);
                         __instance.TryAttachFire(0.5f);
                     }
                 }

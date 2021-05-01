@@ -271,7 +271,6 @@ namespace RimEffect
 					return false;
 				}
 			}
-			Log.Message(pawn + " - " + pawn.Faction.def + " - " + factionDef.GetValue(slate));
 			return true;
 		}
 

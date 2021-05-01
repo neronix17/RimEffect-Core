@@ -24,7 +24,6 @@ namespace RimEffect
 			var target = enemies.RandomElement();
 			if (target is null)
             {
-				Log.Message(pawn + " - Target is null returning vanilla");
 				return (Thing)AttackTargetFinder.BestAttackTarget
 				(pawn, targetScanFlags, (Thing x) => ExtraTargetValidator(pawn, x), 0f, pawn.Map.Size.x, GetFlagPosition(pawn), GetFlagRadius(pawn));
 			}

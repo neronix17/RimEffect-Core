@@ -45,18 +45,14 @@ namespace RimEffect
                 && x.RelationKindWith(Faction.OfPlayer) == FactionRelationKind.Hostile);
             if (!friendlyFactions.Any())
             {
-                Log.Message("No friendly faction");
                 return false;
             }
             if (!hostileFactions.Any())
             {
-                Log.Message("No hostile faction");
-
                 return false;
             }
             if (!friendlyFactions.Where(x => hostileFactions.Where(y => x.HostileTo(y)).Any()).Any())
             {
-                Log.Message("No hostile and friendly factions");
                 return false;
             }
             return true;
@@ -114,7 +110,6 @@ namespace RimEffect
             }
             foreach (var enemy in enemies)
             {
-                Log.Message(enemy.mindState.duty + " - " + enemy.mindState.enemyTarget);
                 //enemy.mindState.duty = new PawnDuty(RE_DefOf.RE_AssaultEnemies, friendlies.RandomElement());
                 enemy.mindState.enemyTarget = friendlies.RandomElement();
                 var jbg = new JobGiver_AttackOtherHostiles();
@@ -123,10 +118,8 @@ namespace RimEffect
                 var result = jbg.TryIssueJobPackage(enemy, default(JobIssueParams));
                 if (result.Job != null)
                 {
-                    Log.Message(enemy + " - " + result.Job);
                     enemy.jobs.TryTakeOrderedJob(result.Job);
                 }
-                Log.Message(enemy.mindState.duty + " - " + enemy.mindState.enemyTarget);
             }
             var totalTargets = targetInfosEnemies.ListFullCopy();
             totalTargets.AddRange(targetInfosFriendlies.ListFullCopy());

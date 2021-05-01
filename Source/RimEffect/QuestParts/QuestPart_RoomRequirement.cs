@@ -36,7 +36,6 @@ namespace RimEffect
 		public override void Notify_QuestSignalReceived(Signal signal)
 		{
 			base.Notify_QuestSignalReceived(signal);
-			Log.Message("signal.tag: " + signal.tag);
 			if (!(signal.tag == inSignal) || this.quest.State != QuestState.Ongoing)
 			{
 				return;
@@ -47,34 +46,26 @@ namespace RimEffect
 				var first = allRooms.Where(x => x.Role == room.roomRoleDef).FirstOrDefault();
 				if (first != null && first.CellCount >= room.minimumCellRequirement)
                 {
-					Log.Message("Removing: " + first.Role);
 					allRooms.Remove(first);
                 }
             }
 			bool allDone = true;
-			foreach (var room in allRooms)
-            {
-				Log.Message("New room: " + room.Role);
-            }
 			foreach (var room in roomsToBeBuilt)
             {
 				var first = allRooms.Where(x => x.Role == room.roomRoleDef && x.CellCount >= room.currentCellCount).FirstOrDefault();
 				if (first == null)
 				{
-					Log.Message("Not done: " + room.roomRoleDef);
 					allDone = false;
 				}
 				else
                 {
 					allRooms.Remove(first);
-					Log.Message("Done: " + room.roomRoleDef);
 				}
 			}
 
 			if (allDone)
             {
 				Find.SignalManager.SendSignal(new Signal("Quest" + quest.id + ".AllRoomsAreBuilt"));
-				Log.Message("All done");
             }
 		}
 

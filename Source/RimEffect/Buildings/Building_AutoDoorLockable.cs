@@ -86,7 +86,6 @@ namespace RimEffect
                 {
                     list.Add(new FloatMenuOption(doorState.Value, delegate
                     {
-                        Log.Message("doorState.Key: " + doorState.Key);
                         curDoorAccess = doorState.Key;
                     }, MenuOptionPriority.Default));
                 }

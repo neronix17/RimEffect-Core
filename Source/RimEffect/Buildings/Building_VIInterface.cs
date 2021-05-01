@@ -48,7 +48,6 @@ namespace RimEffect
             }
             PawnComponentsUtility.AddComponentsForSpawn(terminalAsPawn);
             terminals[terminalAsPawn] = this;
-            Log.Message("terminalAsPawn: " + terminalAsPawn);
         }
 
         public void Connect(Pawn user)
@@ -70,7 +69,6 @@ namespace RimEffect
             if (!user.interactions.InteractedTooRecentlyToInteract())
             {
                 var result = user.interactions.TryInteractWith(terminalAsPawn, interaction);
-                Log.Message(terminalAsPawn + " - " + interaction + " - " + user + " - " + result);
             }
         }
 
