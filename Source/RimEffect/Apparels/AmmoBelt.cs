@@ -178,12 +178,12 @@ namespace RimEffect
                     {
                         AccessTools.Field(typeof(DamageInfo), "armorPenetrationInt").SetValueDirect(__makeref(dinfo), dinfo.ArmorPenetrationInt * 1.5f);
                     }
-                    else if (ammoBelt.def == RE_DefOf.RE_AmmoCryoBelt)
+                    else if (ammoBelt.def == RE_DefOf.RE_AmmoCryoBelt && !victim.RaceProps.IsMechanoid)
                     {
                         HealthUtility.AdjustSeverity(victim, RE_DefOf.Hypothermia, 0.20f);
                         HealthUtility.AdjustSeverity(victim, RE_DefOf.RE_HypothermicSlowdown, 0.20f);
                     }
-                    else if (ammoBelt.def == RE_DefOf.RE_AmmoToxicBelt)
+                    else if (ammoBelt.def == RE_DefOf.RE_AmmoToxicBelt && !victim.RaceProps.IsMechanoid)
                     {
                         HealthUtility.AdjustSeverity(victim, HediffDefOf.ToxicBuildup, 0.05f);
                     }
