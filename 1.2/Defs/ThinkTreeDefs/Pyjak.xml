@@ -246,7 +246,7 @@
 						</li>
 
 						<li Class="ThinkNode_ChancePerHour_Constant">
-							<mtbHours>1</mtbHours>
+							<mtbHours>24</mtbHours>
 							<subNodes>
 								<li Class="RimEffect.JobGiver_HaulItemsToRandomPlaces" />
 							</subNodes>
@@ -327,30 +327,6 @@
 				</li>
 
 				<li Class="JobGiver_IdleError"/>
-			</subNodes>
-		</thinkRoot>
-	</ThinkTreeDef>
-
-	<ThinkTreeDef>
-		<defName>AnimalConstant</defName>
-		<thinkRoot Class="ThinkNode_Priority">
-			<subNodes>
-				<li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">
-					<subNodes>
-						<!-- Flee enemies, tornados, meteorites, etc. -->
-						<li Class="JobGiver_AnimalFlee" />
-
-						<!-- Join auto joinable caravan -->
-						<li Class="ThinkNode_Subtree">
-							<treeDef>JoinAutoJoinableCaravan</treeDef>
-						</li>
-
-						<!-- Lord directives -->
-						<li Class="ThinkNode_Subtree">
-							<treeDef>LordDutyConstant</treeDef>
-						</li>
-					</subNodes>
-				</li>
 			</subNodes>
 		</thinkRoot>
 	</ThinkTreeDef>

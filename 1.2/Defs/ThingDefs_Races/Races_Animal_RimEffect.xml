@@ -53,6 +53,8 @@
     </tools>
     <race>
       <body>QuadrupedAnimalWithPawsAndTail</body>
+	  <thinkTreeMain>RE_Pyjak</thinkTreeMain>
+      <nuzzleMtbHours>36</nuzzleMtbHours>
       <baseBodySize>0.15</baseBodySize>
       <baseHealthScale>0.25</baseHealthScale>
 	  <herdMigrationAllowed>false</herdMigrationAllowed>

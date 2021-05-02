@@ -19,12 +19,16 @@ namespace RimEffect
             var pyjaks = new List<Pawn>();
             for (var i = 0; i < pyjakCount; i++)
             {
-                var pyjak = PawnGenerator.GeneratePawn(RE_DefOf.RE_Pyjak, Faction.OfPlayer);
+                var pyjak = PawnGenerator.GeneratePawn(RE_DefOf.RE_Pyjak);
                 pyjaks.Add(pyjak);
             }
             DropPodUtility.DropThingsNear(cell, map, pyjaks, 110, canInstaDropDuringInit: false, leaveSlag: false, canRoofPunch: false, forbid: false);
             SendStandardLetter("RE.LetterPyjaksCrate".Translate(), "RE.LetterPyjaksCrateDesc".Translate(), baseLetterDef: LetterDefOf.PositiveEvent, 
                 parms: parms, lookTargets: pyjaks, textArgs: Array.Empty<NamedArgument>());
+            foreach (var pyjak in pyjaks)
+            {
+                pyjak.SetFaction(Faction.OfPlayer);
+            }
             return true;
         }
     }
