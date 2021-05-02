@@ -49,6 +49,7 @@
       </li>
       <li Class="RimEffect.AbilityExtension_Hediff">
         <hediff>Hypothermia</hediff>
+        <severity>0.4</severity>
       </li>
     </modExtensions>
   </RimEffect.AbilityDef>
@@ -82,6 +83,7 @@
     <cooldownTimeStatFactors>
       <RE_AbilityCooldownFactor>1</RE_AbilityCooldownFactor>
     </cooldownTimeStatFactors>
+    <durationTime>600</durationTime>
     <iconPath>UI/Abilities/Tech_DefenseMatrix</iconPath>
 	<castSound>RE_Tech_DefenseMatrix</castSound>
     <requiredHediff>

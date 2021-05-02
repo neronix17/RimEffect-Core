@@ -18,8 +18,9 @@
 
         public override void CheckCastEffects(LocalTargetInfo targetInfo, out bool cast, out bool target, out bool hediffApply)
         {
-            base.CheckCastEffects(targetInfo, out cast, out _, out hediffApply);
-            target = false;
+            base.CheckCastEffects(targetInfo, out cast, out _, out _);
+            target      = false;
+            hediffApply = false;
         }
     }
 

@@ -203,6 +203,7 @@
     <targetMode>Self</targetMode>
     <castTime>60</castTime>
     <power>50</power>
+    <durationTime>600</durationTime>
     <iconPath>UI/Abilities/Biotic_Barrier</iconPath>
 	<castSound>RE_Biotic_Barrier</castSound>
     <requiredHediff>

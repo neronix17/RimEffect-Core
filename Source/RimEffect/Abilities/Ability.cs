@@ -208,7 +208,7 @@
                 if (hediffExtension?.applyAuto ?? false)
                 {
                     Hediff localHediff = HediffMaker.MakeHediff(hediffExtension.hediff, targetInfo.Pawn);
-                    if (Math.Abs(hediffExtension.severity - -1f) > float.Epsilon)
+                    if (hediffExtension.severity > float.Epsilon)
                         localHediff.Severity = hediffExtension.severity;
                     if (localHediff is HediffWithComps hwc)
                         foreach (HediffComp hediffComp in hwc.comps)
