@@ -356,7 +356,7 @@
       <layers>
         <li>Shell</li>
       </layers>
-      <tags>
+      <tags inherit="False">
         <li>RE_AllianceSpacerApparel</li>
       </tags>
       <defaultOutfitTags>
@@ -858,7 +858,7 @@
       <layers>
         <li>Shell</li>
       </layers>
-      <tags>
+      <tags inherit="False">
         <li>RE_SpacerApparelScience</li>
       </tags>
       <defaultOutfitTags>
