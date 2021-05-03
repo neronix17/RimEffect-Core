@@ -257,6 +257,9 @@
         </disallowedThingDefs>
       </defaultIngredientFilter>
     </recipeMaker>
+    <apparel>
+        <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+    </apparel>
   </ThingDef>
 
   <ThingDef ParentName="RE_SpacerApparelMakeableBase">
