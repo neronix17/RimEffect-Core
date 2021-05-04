@@ -83,6 +83,7 @@
         <ability>RE_Biotic_Singularity</ability>
       </li>
     </comps>
+    <tradeTags inherit="False"/>
   </ThingDef>
 
   <ThingDef ParentName="RE_BioticAmp_Base">
@@ -95,6 +96,50 @@
       </li>
     </comps>
   </ThingDef-->
+  
+   <ThingDef ParentName="RE_BioticAmp_Base">
+    <defName>RE_BioticAmp_Singularity</defName>
+    <label>biotic amp (Biotic singularity)</label>
+    <comps>
+      <li Class="RimEffect.CompProperties_UseEffectGiveAbility">
+        <ability>RE_Biotic_Singularity</ability>
+      </li>
+    </comps>
+    <tradeTags inherit="False"/>
+  </ThingDef>
+  
+   <ThingDef ParentName="RE_BioticAmp_Base">
+    <defName>RE_BioticAmp_Annihilation</defName>
+    <label>biotic amp (Biotic annihilation field)</label>
+    <comps>
+      <li Class="RimEffect.CompProperties_UseEffectGiveAbility">
+        <ability>RE_Biotic_Annihilation</ability>
+      </li>
+    </comps>
+    <tradeTags inherit="False"/>
+  </ThingDef>
+  
+   <ThingDef ParentName="RE_BioticAmp_Base">
+    <defName>RE_BioticAmp_Flare</defName>
+    <label>biotic amp (Biotic flare)</label>
+    <comps>
+      <li Class="RimEffect.CompProperties_UseEffectGiveAbility">
+        <ability>RE_Biotic_Flare</ability>
+      </li>
+    </comps>
+    <tradeTags inherit="False"/>
+  </ThingDef>
+  
+   <ThingDef ParentName="RE_BioticAmp_Base">
+    <defName>RE_BioticAmp_Dominate</defName>
+    <label>biotic amp (Biotic dominate)</label>
+    <comps>
+      <li Class="RimEffect.CompProperties_UseEffectGiveAbility">
+        <ability>RE_Biotic_Dominate</ability>
+      </li>
+    </comps>
+    <tradeTags inherit="False"/>
+  </ThingDef>
 
   <HediffDef ParentName="ImplantHediffBase"> 
     <defName>RE_BioticAmpHediff</defName>

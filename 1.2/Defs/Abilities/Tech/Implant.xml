@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef>
+  <ThingDef Name="RE_OmniTool_Base">
     <defName>RE_OmniTool</defName>
     <label>omni tool</label>
     <description>This device is a multipurpose diagnostic and manufacturing tool as well as a computer used for a variety of civilian and battlefield tasks, such as hacking, diagnostics, decryption and repair. With training in specific abilities, the user can cast technological powers with diverse effects. This implant can be upgraded through several levels. Higher levels permit the use of larger amounts of tech powers.</description>
@@ -73,6 +73,51 @@
       </li>
       <li Class="CompProperties_Forbiddable"/>
     </comps>
+  </ThingDef>
+  
+   <ThingDef ParentName="RE_OmniTool_Base">
+    <defName>RE_OmniTool_CombatDrone</defName>
+    <label>omni tool (Combat drone)</label>
+    <comps>
+      <li Class="RimEffect.CompProperties_UseEffectGiveAbility">
+        <ability>RE_Tech_CombatDrone</ability>
+      </li>
+    </comps>
+    <tradeTags inherit="False"/>
+  </ThingDef>
+  
+   <ThingDef ParentName="RE_OmniTool_Base">
+    <defName>RE_OmniTool_DefenseMatrix</defName>
+    <label>omni tool (Defense matrix)</label>
+    <comps>
+      <li Class="RimEffect.CompProperties_UseEffectGiveAbility">
+        <ability>RE_Tech_DefenseMatrix</ability>
+      </li>
+    </comps>
+    <tradeTags inherit="False"/>
+  </ThingDef>
+  
+  
+   <ThingDef ParentName="RE_OmniTool_Base">
+    <defName>RE_OmniTool_Sabotage</defName>
+    <label>omni tool (Sabotage)</label>
+    <comps>
+      <li Class="RimEffect.CompProperties_UseEffectGiveAbility">
+        <ability>RE_Tech_Sabotage</ability>
+      </li>
+    </comps>
+    <tradeTags inherit="False"/>
+  </ThingDef>
+  
+   <ThingDef ParentName="RE_OmniTool_Base">
+    <defName>RE_OmniTool_TacticalCloak</defName>
+    <label>omni tool (Tactical cloak)</label>
+    <comps>
+      <li Class="RimEffect.CompProperties_UseEffectGiveAbility">
+        <ability>RE_Tech_TacticalCloak</ability>
+      </li>
+    </comps>
+    <tradeTags inherit="False"/>
   </ThingDef>
 
   <HediffDef ParentName="ImplantHediffBase"> 
