@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef>
+  <ThingDef Name="RE_BioticAmp_Base">
     <defName>RE_BioticAmp</defName>
     <label>biotic amp</label>
     <description>This brain implant allows the user to manipulate the mass effect fields using element zero nodules inside of the amplifier, essentially generating strong enough fields for practical use. With training in specific abilities, the user can throw biotic abilities with diverse effects. Restricts the maximum weight of the weapon carried.</description>
@@ -71,6 +71,27 @@
       <li Class="CompProperties_Forbiddable"/>
     </comps>
   </ThingDef>
+
+  <!-->ThingDef ParentName="RE_BioticAmp_Base">
+    <defName>RE_BioticAmp_Singularity</defName>
+    <label>biotic amp (Singularity)</label>
+    <comps>
+      <li Class="RimEffect.CompProperties_UseEffectGiveAbility">
+        <ability>RE_Biotic_Singularity</ability>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="RE_BioticAmp_Base">
+    <defName>RE_BioticAmp_LevelFour</defName>
+    <label>biotic amp (Level 4)</label>
+    <comps>
+      <li Class="RimEffect.CompProperties_UseEffectGiveAbility">
+        <level>4</level>
+        <requiredHediff>RE_BioticAmpHediff</requiredHediff>
+      </li>
+    </comps>
+  </ThingDef-->
 
   <HediffDef ParentName="ImplantHediffBase"> 
     <defName>RE_BioticAmpHediff</defName>
