@@ -51,6 +51,9 @@
     <tradeTags>
       <li>RE_Amps</li>
     </tradeTags>
+    <thingSetMakerTags>
+      <li>RE_Implant</li>
+    </thingSetMakerTags>
     <comps>
       <li Class="CompProperties_Usable">
         <compClass>CompUsableImplant</compClass>
