@@ -203,7 +203,7 @@ This one is out of service.</description>
       <ComponentSpacer>4</ComponentSpacer>
     </killedLeavings>
     <costList>
-      <Plasteel>128</Plasteel>
+      <Plasteel>130</Plasteel>
       <ComponentSpacer>5</ComponentSpacer>
     </costList>
     <rotatable>false</rotatable>
