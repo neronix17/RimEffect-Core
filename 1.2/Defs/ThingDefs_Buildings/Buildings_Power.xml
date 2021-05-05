@@ -178,7 +178,7 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>RimEffect.CompPowerFusionCell</compClass>
-				<basePowerConsumption>-50</basePowerConsumption>
+				<basePowerConsumption>-100</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Battery">
@@ -328,7 +328,7 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>RimEffect.CompPowerPlantNuclear</compClass>
-				<basePowerConsumption>-8000</basePowerConsumption>
+				<basePowerConsumption>-10000</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Flickable" />
@@ -354,7 +354,7 @@
 			</li>
 			<li Class="RimEffect.CompProperties_VariableHeatPusher">
 				<compClass>RimEffect.CompVariableHeatPusher</compClass>
-				<heatPerSecond>60</heatPerSecond>
+				<heatPerSecond>40</heatPerSecond>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="RimEffect.CompProperties_PlantHarmRadiusIfBroken">
