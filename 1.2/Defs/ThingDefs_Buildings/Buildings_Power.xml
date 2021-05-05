@@ -184,7 +184,7 @@
 			<li Class="CompProperties_Battery">
 				<storedEnergyMax>1000</storedEnergyMax>
 				<efficiency>0.6</efficiency>
-				<shortCircuitInRain>true</shortCircuitInRain>
+				<shortCircuitInRain>false</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
