@@ -30,6 +30,8 @@
                 }
             }
         }
+
+        public override bool CanHitTarget(LocalTargetInfo target) => base.CanHitTarget(target) && (target.Cell.GetFirstBuilding(this.pawn.Map) == null);
     }
 
     public class AbilityExtension_Building : DefModExtension
