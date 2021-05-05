@@ -3,8 +3,8 @@
   
   <SitePartDef>
     <defName>RE_RogueSite</defName>
-    <label>incapacitated refugee</label>
-    <description>A stranded, incapacitated refugee begging for help.</description>
+    <label>rogue VI site</label>
+    <description>A small installation run by a rogue virtual intelligence.</description>
     <workerClass>RimEffect.SitePartWorker_RogueSite</workerClass>
     <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
     <expandingIconTexture>World/WorldObjects/RogueVI</expandingIconTexture>
