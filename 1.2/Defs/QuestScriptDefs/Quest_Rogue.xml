@@ -9,30 +9,7 @@
 		<expireDaysRange>2~3</expireDaysRange>
 		<questNameRules>
 			<rulesStrings>
-				<li>questName->Rogue [numeral]</li>
-				<li>numeral->I</li>
-				<li>numeral->II</li>
-				<li>numeral->III</li>
-				<li>numeral->IV</li>
-				<li>numeral->V</li>
-				<li>numeral->VI</li>
-				<li>numeral->VII</li>
-				<li>numeral->VIII</li>
-				<li>numeral->IX</li>
-				<li>numeral->X</li>
-				<li>numeral->XI</li>
-				<li>numeral->XII</li>
-				<li>numeral->XIII</li>
-				<li>numeral->XIV</li>
-				<li>numeral->XV</li>
-				<li>numeral->XVI</li>
-				<li>numeral->XVII</li>
-				<li>numeral->XVIII</li>
-				<li>numeral->XIX</li>
-				<li>numeral->XX</li>
-				<li>numeral->XXI</li>
-				<li>numeral->XXII</li>
-				<li>numeral->XXIII</li>
+				<li>questName->Rogue VI</li>
 			</rulesStrings>
 		</questNameRules>
 		<questDescriptionRules>
