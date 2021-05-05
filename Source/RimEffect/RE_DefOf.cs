@@ -62,6 +62,8 @@ namespace RimEffect
         public static ThingDef       RE_AbilityFlyer;
         public static ThingDef       RE_AbilityFlyer_Charge;
 
+        public static ThingDef RE_MediGel;
+
         public static ThingDef RE_ProtheanBeacon;
         public static ThingDef RE_CrashedKodiakShuttle;
         public static JobDef RE_OpenBeacon;
