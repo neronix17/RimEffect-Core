@@ -14,7 +14,7 @@ namespace RimEffect
     public class AmmoBelt : Apparel
     {
         public static Dictionary<Thing, AmmoBelt> pawnsWithAmmobelts = new Dictionary<Thing, AmmoBelt>();
-        private bool inUse;
+        private bool beltModeIsActive;
         public bool InUse
         {
             get
@@ -23,7 +23,7 @@ namespace RimEffect
                 {
                     return true;
                 }
-                return inUse;
+                return beltModeIsActive;
             }
         }
         private Pawn wearer;
@@ -61,9 +61,9 @@ namespace RimEffect
                 command_Toggle.isActive = (() => InUse);
                 command_Toggle.toggleAction = delegate
                 {
-                    this.inUse = !InUse;
+                    this.beltModeIsActive = !InUse;
                 };
-                command_Toggle.defaultLabel = (inUse ? "RE.CommandDisableAmmoBeltLabel".Translate(this.Label) : "RE.CommandEnableAmmoBeltLabel".Translate(this.Label));
+                command_Toggle.defaultLabel = (beltModeIsActive ? "RE.CommandDisableAmmoBeltLabel".Translate(this.Label) : "RE.CommandEnableAmmoBeltLabel".Translate(this.Label));
                 command_Toggle.defaultDesc = "RE.CommandToggleAmmoBeltDesc".Translate();
                 command_Toggle.icon = this.def.uiIcon;
                 command_Toggle.turnOnSound = RE_DefOf.RE_Ammo_Enable;
@@ -76,7 +76,7 @@ namespace RimEffect
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Values.Look(ref inUse, "inUse");
+            Scribe_Values.Look(ref beltModeIsActive, "beltModeIsActive");
         }
 
         public override void Destroy(DestroyMode mode = DestroyMode.Vanish)

@@ -590,7 +590,14 @@ namespace RimEffect
 				DamageDef def = (bodyPartRecord.depth != BodyPartDepth.Outside) ? DamageDefOf.Blunt : HealthUtility.RandomViolenceDamageType();
 				DamageInfo dinfo = new DamageInfo(def, num2, 999f, -1f, null, bodyPartRecord);
 				dinfo.SetIgnoreInstantKillProtection(ignore: true);
-				p.TakeDamage(dinfo);
+				try
+                {
+					p.TakeDamage(dinfo);
+                }
+				catch (Exception ex)
+                {
+					Log.Error(ex.ToString());
+                }
 			}
 			if (!p.Dead)
 			{
