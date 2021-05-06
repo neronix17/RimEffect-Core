@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Rim-Effect: Core beta 1</name>
+	<name>Rim-Effect: Core</name>
 	<author>Vanilla Expanded Team and Co.</author>
 	<supportedVersions><li>1.2</li></supportedVersions>
 	<packageId>RimEffect.Core</packageId>
