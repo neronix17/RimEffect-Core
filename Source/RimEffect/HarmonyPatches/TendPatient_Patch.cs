@@ -34,7 +34,8 @@
 
         public static float TendMultiplier(float mult, Pawn pawn)
         {
-            if (pawn.CurJob.GetTarget(TargetIndex.B).Thing.def == RE_DefOf.RE_MediGel)
+            ThingDef thingDef = pawn.CurJob.GetTarget(TargetIndex.B).Thing?.def;
+            if (thingDef != null && thingDef == RE_DefOf.RE_MediGel)
                 mult /= 2f;
             return mult;
         }
