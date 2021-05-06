@@ -37,6 +37,9 @@
 
         public void GiveAbility(AbilityDef abilityDef)
         {
+            if (this.learnedAbilities.Any(ab => ab.def == abilityDef))
+                return;
+
             Ability ability = (Ability) Activator.CreateInstance(abilityDef.abilityClass);
             ability.def    = abilityDef;
             ability.pawn   = this.Pawn;
