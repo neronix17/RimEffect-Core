@@ -29,16 +29,16 @@
         <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>erdelf.HumanoidAlienRaces</li>
 	</loadAfter>
-	<description>Rim Effect is planned to be a large overhaul mod, adding the story, races, objects, and conflicts of Mass Effect universe into RimWorld, but we made sure everything fits in RimWorld aesthetic, so even player who don’t know Mass Effect can enjoy the new, improved RimWorld experience. The Mass Effect elements are not meant to stand out, and as such will be blended into the RimWorld style by utilising the same naming conventions and writing styles. 
+	<description>Rim Effect is a large overhaul mod series, adding the story, races, objects, and conflicts of Mass Effect universe into RimWorld. The Mass Effect elements are not meant to stand out, and as such are blended into the RimWorld style by utilising the same naming conventions and writing styles.
 
-Much like Vanilla Factions Expanded, the Rim Effect mod series will come divided into sub-modules, firstly to allow the players to pick exactly what elements they want in their games, secondly to ease the production and design process - as only one module will be developed at a time.
+Much like Vanilla Factions Expanded, the Rim Effect mod series comes divided into sub-modules, firstly to allow the players to pick exactly what elements they want in their games, secondly to ease the production and design process.
 
-Rim Effect Core is the primary module for this mod series, upon which all other sub-modules will depend. Core module introduces a brand new faction - Systems Alliance, with their own planet-side bases, apparel, weapons, backstories and structures. Similar to our faction mods, player will be able to select the New Colonists starting scenario and build an Alliance colony on the planet, utilising Alliance-tech base defenses, power generators etc.
+Rim Effect Core is the primary module for this mod series, upon which all other sub-modules will depend. Core module introduces a brand new ultratech faction - Systems Alliance, with their own planet-side bases, apparel, weapons, backstories and structures. It’s certainly the biggest mod ever made by us, and potentially the biggest mod on the workshop right now, featuring dozens of new structures, multiple new power sources, an in-depth ability system with tech and biotic powers, lots of new weapons, apparel, animals and other unique mechanics.
 
-Two new storytellers will also be present in the game: John Paragon and Jane Renegade. Using the storyteller is NOT a requirement to play this mod.
+Two new storytellers are also present in the game: John Paragon and Jane Renegade. Using the storyteller is NOT a requirement to play this mod, but those storytellers offer interesting new approaches to the game itself.
 
-This mod relies on our Vanilla Framework Expanded, as well as Humanoid Alien Races framework by erdelf, and as such, these two mods are required for the mod to work.
+These mods will utilise Vanilla Expanded Framework and all the code within it, as well as Humanoid Alien Races framework, kindly provided by Erdelf. As such, both our Framework and Humanoid Alien Races are required to play with this mod.
 
-Do not share, redistribute, publish or use the assets from this mod without prior approval.
+CC BY-NC-ND 4.0
 	</description>
 </ModMetaData>
