@@ -993,6 +993,7 @@
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<stuffCategories>
 			<li>Metallic</li>
+			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount>
 	    <costList>
