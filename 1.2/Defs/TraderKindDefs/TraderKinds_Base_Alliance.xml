@@ -227,6 +227,11 @@
         <kindCountRange>2~4</kindCountRange>
         <countRange>3~8</countRange>
       </li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>RE_AnimalRE</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
 
       <!-- Buying -->
       <li Class="StockGenerator_BuyExpensiveSimple" />
