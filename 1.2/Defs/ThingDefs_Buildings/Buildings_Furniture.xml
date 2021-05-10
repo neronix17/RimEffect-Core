@@ -918,6 +918,7 @@
     <canOverlapZones>false</canOverlapZones>
     <stuffCategories>
       <li>Metallic</li>
+	  <li>Woody</li>
     </stuffCategories>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <staticSunShadowHeight>0.20</staticSunShadowHeight>
