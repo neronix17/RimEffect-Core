@@ -918,10 +918,11 @@
     <canOverlapZones>false</canOverlapZones>
     <stuffCategories>
       <li>Metallic</li>
+	  <li>Woody</li>
     </stuffCategories>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <staticSunShadowHeight>0.20</staticSunShadowHeight>
-    <surfaceType>Item</surfaceType>
+    <surfaceType>Eat</surfaceType>
     <graphicData>
       <texPath>Things/Building/Furniture/BriefingTable/BriefingTable3x5</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
