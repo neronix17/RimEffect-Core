@@ -36,6 +36,32 @@ namespace RECompMediGel
                 }
             }
         }
+        public static bool CanSealWounds(Pawn pawn)
+        {
+            IEnumerable<Hediff> enumerable = from hd in pawn.health.hediffSet.hediffs
+                                             where hd.TendableNow()
+                                             select hd;
+            if (enumerable != null)
+            {
+                List<Hediff> list = enumerable.ToList();
+                for (int i = 0; i < list.Count; i++)
+                {
+                    if (list[i] != null && !list[i].def.makesSickThought && !list[i].def.chronic)
+                    {
+                        if (list[i].def.hediffClass == typeof(Hediff_MissingPart))
+                        {
+                            return false;
+                        }
+                        else if (!list[i].IsPermanent() && list[i].def.everCurableByItem)
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+
+            return true;
+        }
 
         public static void TendAdditional(Pawn doctor, Pawn patient)
         {
