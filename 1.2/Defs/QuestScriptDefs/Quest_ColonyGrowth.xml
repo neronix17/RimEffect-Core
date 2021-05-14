@@ -28,7 +28,7 @@
 		</questNameRules>
 		<questDescriptionRules>
 			<rulesStrings>
-				<li>questDescription->High command of [asker_faction_name] analyzed the situation at [map_definite] and decided to contact you with an expansion opportunity. They would like to relocate [numberPawns] of personnel to your colony, but they need to make sure you can support them.\n\n[asker_faction_name] requests that you construct additional rooms in [map_definite]. \nIn return, following personnel will join you:\n\n[personnelData]\n\nRooms needs to be built:\n[roomsToBeBuild]\nThe rooms must be built at least [minRoomSizeInfo] in size. You have only [questTimeOut_duration] to complete this order.</li>
+				<li>questDescription->High command of [asker_faction_name] analyzed the situation at [map_definite] and decided to contact you with an expansion opportunity. They would like to relocate [numberPawns] of personnel to your colony, but they need to make sure you can support them.\n\n[asker_faction_name] requests that you construct additional rooms in [map_definite]. \nIn return, following personnel will join you:\n\n[personnelData]\n\nRooms needs to be built:\n[roomsToBeBuild]\nThe rooms must be built at least [minRoomSizeInfo] in size. You have only [questTimeOut_duration] to complete this order.\n</li>
 			</rulesStrings>
 		</questDescriptionRules>
 		<root Class="QuestNode_Sequence">
@@ -113,7 +113,7 @@
 					<inSignal>AllRoomsAreBuilt</inSignal>
 					<node Class="QuestNode_Sequence">
 						<nodes>
-							<li Class="QuestNode_PawnsArrive">
+							<li Class="RimEffect.QuestNode_NewPawnsArrive">
 								<pawns>$personnels</pawns>
 								<joinPlayer>true</joinPlayer>
 								<customLetterLabel>$customLetterLabel</customLetterLabel>

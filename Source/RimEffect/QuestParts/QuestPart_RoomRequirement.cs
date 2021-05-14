@@ -40,6 +40,7 @@ namespace RimEffect
 			{
 				return;
 			}
+
 			var allRooms = map.regionGrid.allRooms.ListFullCopy();
 			foreach (var room in oldRooms)
             {
@@ -49,6 +50,32 @@ namespace RimEffect
 					allRooms.Remove(first);
                 }
             }
+			string progressReport = "RE.CurrentProgress".Translate().RawText;
+			int match = this.quest.description.RawText.IndexOf(progressReport);
+
+			if (match >= 0)
+				this.quest.description = this.quest.description.RawText.Substring(0, match);
+
+			Dictionary<RoomRoleDef, int> roomCount = new Dictionary<RoomRoleDef, int>();
+			foreach (var room in roomsToBeBuilt)
+			{
+				var rooms = allRooms.Where(x => x.Role == room.roomRoleDef && x.CellCount >= room.currentCellCount);
+				if (rooms.Any())
+                {
+					roomCount[room.roomRoleDef] = rooms.Count();
+				}
+			}
+
+			if (roomCount.Any())
+            {
+				progressReport += "\n";
+				foreach (var roomProgress in roomCount)
+                {
+					progressReport += roomProgress.Value + "x " + roomProgress.Key.LabelCap + "\n";
+				}
+				this.quest.description += progressReport;
+			}
+
 			bool allDone = true;
 			foreach (var room in roomsToBeBuilt)
             {
