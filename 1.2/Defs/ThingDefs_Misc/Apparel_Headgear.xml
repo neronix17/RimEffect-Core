@@ -214,6 +214,7 @@
 			</layers>
 			<tags>
 				<li>RE_AllianceSpacerApparel</li>
+				<li>RE_RoyaltyAllowed</li>
 			</tags>
 			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
@@ -333,6 +334,9 @@
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
+			<tags>
+				<li>RE_RoyaltyAllowed</li>
+			</tags>
 		</apparel>
 		<thingClass>Apparel</thingClass>
 		<category>Item</category>
