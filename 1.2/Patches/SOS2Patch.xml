@@ -58,6 +58,13 @@
 						<li>EVA</li>
 					</value>
 				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "RE_Apparel_SpectreArmor" or defName = "RE_Apparel_LightAllianceArmor" or defName = "RE_Apparel_AllianceArmor" or defName = "RE_Apparel_HeavyAllianceArmor"]/statBases/Insulation_Cold</xpath>
+					<value>
+						<Insulation_Cold>100</Insulation_Cold>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>
