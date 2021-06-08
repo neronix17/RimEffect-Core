@@ -93,7 +93,7 @@
             {
                 foreach (Pawn pawn in this.tmpPawns)
                 {
-                    DamageInfo dinfo = new DamageInfo(DamageDefOf.Blunt, TickInterval * (this.damage / GenTicks.TicksPerRealSecond), 1f, instigator: this.caster);
+                    DamageInfo dinfo = new DamageInfo(DamageDefOf.Blunt, TickInterval * (this.damage / GenTicks.TicksPerRealSecond), float.MaxValue, instigator: this.caster);
                     pawn.TakeDamage(dinfo);
                 }
 

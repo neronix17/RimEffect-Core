@@ -1,5 +1,6 @@
 ﻿namespace RimEffect
 {
+    using System;
     using System.Collections.Generic;
     using RimWorld;
     using UnityEngine;
@@ -26,7 +27,7 @@
 
             if (hitThing != null)
             {
-                DamageInfo dinfo = new DamageInfo(this.def.projectile.damageDef, power, this.ArmorPenetration, this.ExactRotation.eulerAngles.y, this.launcher, null, this.equipmentDef, DamageInfo.SourceCategory.ThingOrUnknown, this.intendedTarget.Thing);
+                DamageInfo dinfo = new DamageInfo(this.def.projectile.damageDef, power, float.MaxValue, this.ExactRotation.eulerAngles.y, this.launcher, null, this.equipmentDef, DamageInfo.SourceCategory.ThingOrUnknown, this.intendedTarget.Thing);
                 hitThing.TakeDamage(dinfo).AssociateWithLog(battleLogEntryRangedImpact);
 
                 if (hitThing is Pawn pawn)

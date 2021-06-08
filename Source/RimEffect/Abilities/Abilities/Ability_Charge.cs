@@ -18,7 +18,7 @@
                                                 flyer.ability = this;
                                                 flyer.target  = destination.ToVector3();
                                                 GenSpawn.Spawn(flyer, target.Cell, map);
-                                                target.Thing.TakeDamage(new DamageInfo(DamageDefOf.Blunt, this.GetPowerForPawn(), 1f, instigator: this.pawn));
+                                                target.Thing.TakeDamage(new DamageInfo(DamageDefOf.Blunt, this.GetPowerForPawn(), float.MaxValue, instigator: this.pawn));
 
                                             }, "chargeAbility", false, null);
         }
