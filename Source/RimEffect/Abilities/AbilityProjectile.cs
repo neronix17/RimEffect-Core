@@ -1,6 +1,5 @@
 ﻿namespace RimEffect
 {
-    using System;
     using System.Collections.Generic;
     using RimWorld;
     using UnityEngine;
@@ -39,16 +38,17 @@
                         pawn.stances.StaggerFor(95);
                     }
                 }
-                if (this.def.projectile.extraDamages == null)
+
+                if (this.def.projectile.extraDamages != null)
                 {
-                    return;
-                }
-                foreach (ExtraDamage extraDamage in this.def.projectile.extraDamages)
-                {
-                    if (Rand.Chance(extraDamage.chance))
+                    foreach (ExtraDamage extraDamage in this.def.projectile.extraDamages)
                     {
-                        DamageInfo dinfo2 = new DamageInfo(extraDamage.def, extraDamage.amount, extraDamage.AdjustedArmorPenetration(), this.ExactRotation.eulerAngles.y, this.launcher, null, this.equipmentDef, DamageInfo.SourceCategory.ThingOrUnknown, this.intendedTarget.Thing);
-                        hitThing.TakeDamage(dinfo2).AssociateWithLog(battleLogEntryRangedImpact);
+                        if (Rand.Chance(extraDamage.chance))
+                        {
+                            DamageInfo dinfo2 = new DamageInfo(extraDamage.def, extraDamage.amount, extraDamage.AdjustedArmorPenetration(), this.ExactRotation.eulerAngles.y, this.launcher, null,
+                                                               this.equipmentDef, DamageInfo.SourceCategory.ThingOrUnknown, this.intendedTarget.Thing);
+                            hitThing.TakeDamage(dinfo2).AssociateWithLog(battleLogEntryRangedImpact);
+                        }
                     }
                 }
             }
@@ -63,6 +63,24 @@
                 {
                     MoteMaker.MakeStaticMote(this.ExactPosition, map, ThingDefOf.Mote_ShotHit_Dirt);
                 }
+            }
+            
+            if (this.def.projectile.explosionRadius > 0)
+            {
+                if (this.def.projectile.explosionEffect != null)
+                {
+                    Effecter effecter = this.def.projectile.explosionEffect.Spawn();
+                    effecter.Trigger(new TargetInfo(this.Position, map), new TargetInfo(this.Position, map));
+                    effecter.Cleanup();
+                }
+                GenExplosion.DoExplosion(this.Position, map, this.def.projectile.explosionRadius, this.def.projectile.damageDef, this.launcher, Mathf.RoundToInt(power), float.MaxValue,
+                                         this.def.projectile.soundExplode, this.equipmentDef, this.def, this.intendedTarget.Thing, this.def.projectile.postExplosionSpawnThingDef,
+                                         this.def.projectile.postExplosionSpawnChance, this.def.projectile.postExplosionSpawnThingCount,
+                                         preExplosionSpawnThingDef: this.def.projectile.preExplosionSpawnThingDef, preExplosionSpawnChance: this.def.projectile.preExplosionSpawnChance,
+                                         preExplosionSpawnThingCount: this.def.projectile.preExplosionSpawnThingCount,
+                                         applyDamageToExplosionCellsNeighbors: this.def.projectile.applyDamageToExplosionCellsNeighbors,
+                                         chanceToStartFire: this.def.projectile.explosionChanceToStartFire, damageFalloff: this.def.projectile.explosionDamageFalloff,
+                                         direction: this.origin.AngleToFlat(this.destination));
             }
         }
 
