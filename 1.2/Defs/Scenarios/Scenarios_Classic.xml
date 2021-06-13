@@ -10,7 +10,7 @@
     <summaryPriority>300</summaryPriority>
   </ScenPartDef>
   
-  <ScenarioDef Name="VFE_TheLoneScavenger">
+  <ScenarioDef Name="RE_AllianceColony">
     <defName>RE_AllianceColony</defName>
     <label>Alliance colony</label>
     <description>Your colony is struggling with various threats, both external and internal, halting your expansion and making you vulnerable to attacks. It is time to bring this colony into its golden age.</description>
