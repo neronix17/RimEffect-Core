@@ -314,7 +314,34 @@
 
         public ITargetingSource DestinationSelector { get; }
 
-        
+
+        [DebugAction("Pawns", "Give ability...", actionType = DebugActionType.Action, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+        private static void GiveBioticAbility()
+        {
+            List<DebugMenuOption> list = new List<DebugMenuOption>();
+            foreach (AbilityDef def in DefDatabase<AbilityDef>.AllDefs)
+            {
+                AbilityDef abilityDef = def;
+
+                list.Add(new DebugMenuOption(abilityDef.LabelCap, DebugMenuOptionMode.Tool, () =>
+                                                                                            {
+
+                                                                                                foreach (Pawn item in (from t in Find.CurrentMap.thingGrid.ThingsAt(UI.MouseCell())
+                                                                                                                       where t is Pawn
+                                                                                                                       select t).Cast<Pawn>())
+                                                                                                {
+                                                                                                    CompAbilities abilityComp = item.TryGetComp<CompAbilities>();
+                                                                                                    if (abilityComp != null)
+                                                                                                    {
+                                                                                                        abilityComp.GiveAbility(abilityDef);
+                                                                                                        DebugActionsUtility.DustPuffFrom(item);
+                                                                                                    }
+                                                                                                }
+                                                                                            }));
+            }
+
+            Find.WindowStack.Add(new Dialog_DebugOptionListLister(list));
+        }
     }
 
     public class Ability_Blank : Ability
