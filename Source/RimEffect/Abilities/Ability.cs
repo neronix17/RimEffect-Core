@@ -243,11 +243,15 @@
         public string GetUniqueLoadID() => 
             $"Ability_{this.def.defName}_{this.holder.GetUniqueLoadID()}";
 
+        public virtual bool CanHitTarget(LocalTargetInfo target) => this.CanHitTarget(target, true);
 
-        public virtual bool CanHitTarget(LocalTargetInfo target)
+        public virtual bool CanHitTarget(LocalTargetInfo target, bool sightCheck)
         {
             if (target.IsValid && this.targetParams.CanTarget(target.ToTargetInfo(this.pawn.Map)) && target.Cell.DistanceTo(this.pawn.Position) < this.GetRangeForPawn())
             {
+                if (!sightCheck)
+                    return true;
+
                 if (GenSight.LineOfSight(this.pawn.Position, target.Cell, this.pawn.Map))
                     return true;
                 List<IntVec3> tempSourceList = new List<IntVec3>();
