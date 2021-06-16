@@ -57,7 +57,7 @@
 
             reason = "RE.AbilityDisableReasonGeneral".Translate(this.pawn?.NameShortColored ?? this.holder.LabelCap);
 
-            return this.def.requiredHediff?.Satisfied(this.Hediff) ?? true;
+            return (this.def.requiredHediff?.Satisfied(this.Hediff) ?? true) && (this.def.requiredTrait == null || (this.pawn?.story.traits.HasTrait(this.def.requiredTrait) ?? false));
         }
 
         public virtual float GetRangeForPawn() =>

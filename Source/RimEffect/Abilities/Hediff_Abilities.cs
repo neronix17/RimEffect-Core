@@ -31,7 +31,7 @@
             forLevel = forLevel ?? this.level;
 
             CompAbilities comp = this.pawn.GetComp<CompAbilities>();
-            List<AbilityDef> abilityDefs        = DefDatabase<AbilityDef>.AllDefsListForReading.Where(def => !comp.HasAbility(def) && def.requiredHediff != null && def.requiredHediff.hediffDef == this.def && def.requiredHediff.minimumLevel <= forLevel).ToList();
+            List<AbilityDef> abilityDefs        = DefDatabase<AbilityDef>.AllDefsListForReading.Where(def => !comp.HasAbility(def) && def.requiredHediff != null && def.requiredHediff.hediffDef == this.def && def.requiredHediff.minimumLevel <= forLevel && (def.requiredTrait == null || this.pawn.story.traits.HasTrait(def.requiredTrait))).ToList();
             IEnumerable<AbilityDef> abilityDefsAtLevel = abilityDefs.Where(def => def.requiredHediff.minimumLevel == forLevel);
 
             if (!abilityDefsAtLevel.TryRandomElement(out AbilityDef abilityDef))

@@ -11,6 +11,7 @@
         public Type    abilityClass;
 
         public HediffWithLevelCombination requiredHediff;
+        public TraitDef                   requiredTrait;
 
         public AbilityTargetingMode targetMode = AbilityTargetingMode.Self;
 
@@ -47,7 +48,8 @@
         public float               chance          = 1f;
         public bool                autocastPlayerDefault = false;
 
-        public float Chance => this.targetMode == AbilityTargetingMode.Self ? 0 : this.chance;
+        public float Chance => 
+            this.targetMode == AbilityTargetingMode.Self ? 0 : this.chance;
 
         public override IEnumerable<string> ConfigErrors()
         {
