@@ -61,12 +61,12 @@
         }
 
         public virtual float GetRangeForPawn() =>
-            this.def.rangeStatFactors.Aggregate(this.def.range, (current, statFactor) => current * (this.pawn.GetStatValue(statFactor.stat) * statFactor.value));
+            this.def.targetMode == AbilityTargetingMode.Self
+                ? 0f 
+                : this.def.rangeStatFactors.Aggregate(this.def.range, (current, statFactor) => current * (this.pawn.GetStatValue(statFactor.stat) * statFactor.value));
 
         public virtual float GetRadiusForPawn() =>
-            this.def.targetMode == AbilityTargetingMode.Self
-                ? 0f
-                : this.def.radiusStatFactors.Aggregate(this.def.radius, (current, statFactor) => current * (this.pawn.GetStatValue(statFactor.stat) * statFactor.value));
+            this.def.radiusStatFactors.Aggregate(this.def.radius, (current, statFactor) => current * (this.pawn.GetStatValue(statFactor.stat) * statFactor.value));
 
         public virtual float GetPowerForPawn() =>
             this.def.powerStatFactors.Aggregate(this.def.power, (current, statFactor) => current * (this.pawn.GetStatValue(statFactor.stat) * statFactor.value));
