@@ -243,7 +243,7 @@
         public string GetUniqueLoadID() => 
             $"Ability_{this.def.defName}_{this.holder.GetUniqueLoadID()}";
 
-        public virtual bool CanHitTarget(LocalTargetInfo target) => this.CanHitTarget(target, true);
+        public virtual bool CanHitTarget(LocalTargetInfo   target) => this.CanHitTarget(target, true);
 
         public virtual bool CanHitTarget(LocalTargetInfo target, bool sightCheck)
         {
@@ -262,7 +262,7 @@
             return false;
         }
 
-        public virtual bool ValidateTarget(LocalTargetInfo target) => 
+        public virtual bool ValidateTarget(LocalTargetInfo target, bool showMessages = true) => 
             this.CanHitTarget(target);
 
         public virtual void DrawHighlight(LocalTargetInfo target)
@@ -290,14 +290,15 @@
             GenUI.DrawMouseAttachment(icon);
         }
 
-        public bool      CasterIsPawn  => this.CasterPawn           != null;
-        public bool      IsMeleeAttack => this.GetRangeForPawn() < 6;
-        public bool      Targetable    => this.def.targetMode    != AbilityTargetingMode.Self;
-        public bool      MultiSelect   { get; }
-        public Thing     Caster        => this.pawn ?? this.holder;
-        public Pawn      CasterPawn    => this.pawn;
-        public Verb      GetVerb       { get; }
-        public Texture2D UIIcon        => this.def.icon;
+        public bool      CasterIsPawn     => this.CasterPawn        != null;
+        public bool      IsMeleeAttack    => this.GetRangeForPawn() < 6;
+        public bool      Targetable       => this.def.targetMode    != AbilityTargetingMode.Self;
+        public bool      MultiSelect      { get; }
+        public bool      HidePawnTooltips { get; }
+        public Thing     Caster           => this.pawn ?? this.holder;
+        public Pawn      CasterPawn       => this.pawn;
+        public Verb      GetVerb          { get; }
+        public Texture2D UIIcon           => this.def.icon;
 
         public virtual TargetingParameters targetParams
         {
@@ -316,7 +317,7 @@
 
 
         [DebugAction("Pawns", "Give ability...", actionType = DebugActionType.Action, allowedGameStates = AllowedGameStates.PlayingOnMap)]
-        private static void GiveBioticAbility()
+        private static void GiveAbility()
         {
             List<DebugMenuOption> list = new List<DebugMenuOption>();
             foreach (AbilityDef def in DefDatabase<AbilityDef>.AllDefs)

@@ -101,10 +101,7 @@ namespace RimEffect
         }
     }
 
-    [HarmonyPatch(typeof(Projectile), nameof(Projectile.Launch), new Type[]
-    {
-        typeof(Thing), typeof(Vector3), typeof(LocalTargetInfo), typeof(LocalTargetInfo), typeof(ProjectileHitFlags), typeof(Thing), typeof(ThingDef)
-    })]
+    [HarmonyPatch(typeof(Projectile), nameof(Projectile.Launch), typeof(Thing), typeof(Vector3), typeof(LocalTargetInfo), typeof(LocalTargetInfo), typeof(ProjectileHitFlags), typeof(bool), typeof(Thing), typeof(ThingDef))]
     internal static class Launch_Patch
     {
         private static void Prefix(Projectile __instance, Thing launcher, Vector3 origin, LocalTargetInfo usedTarget, LocalTargetInfo intendedTarget,
@@ -127,15 +124,15 @@ namespace RimEffect
     {
         private static void Prefix(ExpandableProjectile __instance, Thing hitThing)
         {
-            if ((__instance.hitThings?.Any() ?? false) && (__instance.hitThings.Where(x => x is Pawn).Count() > 0 && hitThing is Pawn || __instance.hitThings.Where(x => x is Pawn).Count() > 1))
+            if ((__instance.hitThings?.Any() ?? false) && (__instance.hitThings.Any(x => x is Pawn) && hitThing is Pawn || __instance.hitThings.Count(x => x is Pawn) > 1))
             {
                 TakeDamage_Patch.ignoreEffect = true;
             }
         }
         private static void Postfix(ExpandableProjectile __instance, Thing hitThing)
         {
-            if ((__instance.hitThings?.Any() ?? false) && __instance.hitThings.Where(x => x is Pawn).Count() <= 1
-                && __instance.Launcher != null && AmmoBelt.pawnsWithAmmobelts.TryGetValue(__instance.Launcher, out AmmoBelt ammoBelt) && ammoBelt.InUse && hitThing is Pawn)
+            if ((__instance.hitThings?.Any() ?? false) && __instance.hitThings.Count(x => x is Pawn) <= 1
+                                                      && __instance.Launcher != null && AmmoBelt.pawnsWithAmmobelts.TryGetValue(__instance.Launcher, out AmmoBelt ammoBelt) && ammoBelt.InUse && hitThing is Pawn)
             {
                 if (ammoBelt.def == RE_DefOf.RE_AmmoExplosiveBelt)
                 {

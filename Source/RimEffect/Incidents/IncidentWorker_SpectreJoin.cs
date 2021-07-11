@@ -21,7 +21,7 @@ namespace RimEffect
 			Pawn spectre = PawnGenerator.GeneratePawn(new PawnGenerationRequest(def.pawnKind, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, 
 				forceGenerateNewPawn: true, newborn: false, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, def.pawnMustBeCapableOfViolence, 20f, 
 				forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowFood: true, allowAddictions: true, inhabitant: false, certainlyBeenInCryptosleep: false, 
-				forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 1f, null, 1f, null,
+				forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 1f, 0f, null, 1f, null,
 				null, null, null, null, null, null, fixedGender));
 			spectre.apparel.LockAll();
 			var spectreHediff = HediffMaker.MakeHediff(RE_DefOf.RE_Spectre, spectre) as Hediff_Spectre;

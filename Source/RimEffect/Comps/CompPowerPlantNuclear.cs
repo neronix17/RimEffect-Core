@@ -145,7 +145,7 @@ namespace RimEffect
             }
 
 
-            Room room = this.parent.PositionHeld.GetRoom(this.parent.Map, RegionType.Set_All);
+            Room room = this.parent.PositionHeld.GetRoom(this.parent.Map);
             if (room != null)
             {
                 if ((room.OutdoorsForWork || (!this.parent.Map.roofGrid.Roofed(this.parent.PositionHeld))) || room.OpenRoofCount > 0)

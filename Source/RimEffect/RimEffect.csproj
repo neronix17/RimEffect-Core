@@ -44,7 +44,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="VFECore">
-      <HintPath>..\..\..\VanillaExpandedFramework\1.2\Assemblies\VFECore.dll</HintPath>
+      <HintPath>..\..\..\VanillaExpandedFramework\1.3\Assemblies\VFECore.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

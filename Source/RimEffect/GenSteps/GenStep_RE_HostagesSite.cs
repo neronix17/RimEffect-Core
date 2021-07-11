@@ -109,12 +109,12 @@ namespace RimEffect.GenSteps
             BaseGen.globalSettings.map = map;
             BaseGen.Generate();
 
-            if (faction != null && faction == Faction.Empire)
+            if (faction != null && faction == Faction.OfEmpire)
             {
                 BaseGen.globalSettings.minThroneRooms = 1;
                 BaseGen.globalSettings.minLandingPads = 1;
             }
-            if (faction != null && faction == Faction.Empire && BaseGen.globalSettings.landingPadsGenerated == 0)
+            if (faction != null && faction == Faction.OfEmpire && BaseGen.globalSettings.landingPadsGenerated == 0)
             {
                 CellRect item;
                 GenStep_Settlement.GenerateLandingPadNearby(rp.rect, map, faction, out item);
@@ -131,7 +131,7 @@ namespace RimEffect.GenSteps
                         Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(PawnKindDefOf.Slave, map.ParentFaction, PawnGenerationContext.NonPlayer, map.Tile, false, false, false, false, false, false));
                         GenSpawn.Spawn(pawn, spwWait, map, WipeMode.VanishOrMoveAside);
                         pawn.health.AddHediff(RE_DefOf.RE_TurnBackToFormerFaction);
-                        pawn.guest.SetGuestStatus(map.ParentFaction, true);
+                        pawn.guest.SetGuestStatus(map.ParentFaction,  GuestStatus.Prisoner);
                     }
                     foreach (Building_Bed bed in room.ContainedBeds)
                     {

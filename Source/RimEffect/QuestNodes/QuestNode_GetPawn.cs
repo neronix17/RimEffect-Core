@@ -98,7 +98,7 @@ namespace RimEffect
 
 		private bool TryFindFactionForPawnGeneration(Slate slate, out Faction faction)
 		{
-			return Find.FactionManager.GetFactions_NewTemp(allowHidden: false, allowDefeated: false, allowNonHumanlike: false).Where(delegate (Faction x)
+			return Find.FactionManager.GetFactions(allowHidden: false, allowDefeated: false, allowNonHumanlike: false).Where(delegate (Faction x)
 			{
 				if (excludeFactionDefs.GetValue(slate) != null && excludeFactionDefs.GetValue(slate).Contains(x.def))
 				{
@@ -178,7 +178,7 @@ namespace RimEffect
 			{
 				result = DefDatabase<PawnKindDef>.AllDefsListForReading.Where((PawnKindDef kind) => kind.race.race.Humanlike).RandomElement();
 			}
-			Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(result, faction, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: true, newborn: false, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, mustBeCapableOfViolence: false, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowFood: true, allowAddictions: true, inhabitant: false, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, null, 1f, null, null, null, null, null, null, null, null, null, null, null, fixedTitle));
+			Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(result, faction, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: true, newborn: false, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, mustBeCapableOfViolence: false, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowFood: true, allowAddictions: true, inhabitant: false, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, 0, null, 1f, null, null, null, null, null, null, null, null, null, null, null, fixedTitle));
 			Find.WorldPawns.PassToWorld(pawn);
 			if (pawn.royalty != null && pawn.royalty.AllTitlesForReading.Any())
 			{
@@ -282,7 +282,7 @@ namespace RimEffect
 			}
 			for (int i = 0; i < title.bedroomRequirements.Count; i++)
 			{
-				if (!title.bedroomRequirements[i].PlayerHasResearched())
+				if (!title.bedroomRequirements[i].PlayerCanBuildNow())
 				{
 					return false;
 				}

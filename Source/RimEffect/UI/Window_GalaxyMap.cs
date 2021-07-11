@@ -272,7 +272,7 @@ namespace RimEffect
 				DoDefHyperlinks(rect3, ref curY);
 				float num2 = curY;
 				curY = num;
-				if (!selected.quest.root.hideFactionInfoInWindow)
+				if (!selected.quest.root.hideInvolvedFactionsInfo)
 				{
 					DoFactionInfo(rect4, ref curY);
 				}

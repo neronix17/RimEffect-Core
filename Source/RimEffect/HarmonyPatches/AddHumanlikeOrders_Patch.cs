@@ -23,11 +23,11 @@ namespace RimEffect
                 return p != null && !p.Dead && p.health.hediffSet.HasHediff(RE_DefOf.RE_TurnBackToFormerFaction);
             };
 
-            foreach (LocalTargetInfo dest2 in GenUI.TargetsAt_NewTemp(clickPos, targetingParameters, true, null))
+            foreach (LocalTargetInfo dest2 in GenUI.TargetsAt(clickPos, targetingParameters, true, null))
             {
                 Pawn toHelpPawn = (Pawn)dest2.Thing;
                 FloatMenuOption item2;
-                if (!pawn.CanReach(dest2, PathEndMode.Touch, Danger.Deadly, false, TraverseMode.ByPawn))
+                if (!pawn.CanReach(dest2, PathEndMode.Touch, Danger.Deadly))
                 {
                     item2 = new FloatMenuOption("CannotGoNoPath".Translate(), null, MenuOptionPriority.Default, null, null, 0f, null, null);
                 }

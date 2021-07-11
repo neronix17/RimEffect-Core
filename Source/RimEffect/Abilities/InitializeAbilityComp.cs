@@ -2,6 +2,7 @@
 {
     using UnityEngine;
     using Verse;
+    using VFECore;
     using VFEMech;
 
     [StaticConstructorOnStartup]
@@ -15,22 +16,22 @@
 
                 if (def.race?.Humanlike ?? false)
                 {
-                    if (!def.comps.Any(cp => typeof(VFEMech.ShieldMechBubble).IsAssignableFrom(cp.compClass)))
+                    if (!def.comps.Any(cp => typeof(CompProperties_ShieldBubble).IsAssignableFrom(cp.compClass)))
                     {
-                        CompProperties_ShieldMechBubble props = new CompProperties_ShieldMechBubble()
-                                                                {
-                                                                    compClass             = typeof(CompAbilities),
-                                                                    blockRangedAttack     = true,
-                                                                    blockMeleeAttack      = false,
-                                                                    showWhenDrafted       = true,
-                                                                    showOnHostiles        = true,
-                                                                    showOnNeutralInCombat = true,
-                                                                    shieldTexPath         = "Other/ShieldBubble",
-                                                                    minShieldSize         = 1f,
-                                                                    maxShieldSize         = 1.5f,
-                                                                    shieldColor           = new Color(1, 1, 1, 1),
-                                                                    EnergyLossPerDamage   = 1f
-                                                                };
+                        CompProperties_ShieldBubble props = new CompProperties_ShieldBubble()
+                                                            {
+                                                                compClass             = typeof(CompAbilities),
+                                                                blockRangedAttack     = true,
+                                                                blockMeleeAttack      = false,
+                                                                showWhenDrafted       = true,
+                                                                showOnHostiles        = true,
+                                                                showOnNeutralInCombat = true,
+                                                                shieldTexPath         = "Other/ShieldBubble",
+                                                                minShieldSize         = 1f,
+                                                                maxShieldSize         = 1.5f,
+                                                                shieldColor           = new Color(1, 1, 1, 1),
+                                                                EnergyLossPerDamage   = 1f
+                                                            };
                         def.comps.Add(props);
                         props.ResolveReferences(def);
                         props.PostLoadSpecial(def);

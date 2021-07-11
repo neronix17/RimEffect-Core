@@ -1,12 +1,18 @@
 ﻿namespace RimEffect
 {
+    using System.Reflection;
     using HarmonyLib;
     using RimWorld;
     using Verse;
 
-    [HarmonyPatch(typeof(EquipmentUtility), nameof(EquipmentUtility.CanEquip_NewTmp))]
+    [HarmonyPatch]
     public static class CanEquip_Patch
     {
+        [HarmonyTargetMethod]
+        public static MethodBase TargetMethod() => 
+            AccessTools.Method(typeof(EquipmentUtility), nameof(EquipmentUtility.CanEquip), new[] {typeof(Thing), typeof(Pawn), typeof(string).MakeByRefType(), typeof(bool)});
+
+
         [HarmonyPostfix]
         public static void Postfix(ref bool __result, Thing thing, Pawn pawn, ref string cantReason)
         {

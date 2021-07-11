@@ -11,10 +11,12 @@ using VFEMech;
 
 namespace RimEffect
 {
+    using VFECore;
+
     [StaticConstructorOnStartup]
     public class Gizmo_EnergyCompShieldStatus : Gizmo
     {
-        public ShieldMechBubble shield;
+        public CompShieldBubble shield;
 
         private static readonly Texture2D FullShieldBarTex = SolidColorMaterials.NewSolidColorTexture(new Color(0.2f, 0.2f, 0.24f));
 
@@ -30,7 +32,7 @@ namespace RimEffect
             return 140f;
         }
 
-        public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth)
+        public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
         {
             Rect rect = new Rect(topLeft.x, topLeft.y, GetWidth(maxWidth), 75f);
             Rect rect2 = rect.ContractedBy(6f);
@@ -53,14 +55,14 @@ namespace RimEffect
 
     public class ShieldBeltApparel : Apparel
     {
-        private ShieldMechBubble shieldComp;
-        ShieldMechBubble ShieldComp
+        private CompShieldBubble shieldComp;
+        CompShieldBubble ShieldComp
         {
             get
             {
                 if (shieldComp is null)
                 {
-                    shieldComp = this.TryGetComp<ShieldMechBubble>();
+                    shieldComp = this.TryGetComp<CompShieldBubble>();
                 }
                 return shieldComp;
             }

@@ -128,9 +128,9 @@
         public int       minimumLevel;
 
         public bool Satisfied(Pawn p) => 
-            this.Satisfied(p.health.hediffSet.GetFirstHediffOfDef(this.hediffDef) as Hediff_ImplantWithLevel);
+            this.Satisfied(p.health.hediffSet.GetFirstHediffOfDef(this.hediffDef) as Hediff_Level);
 
-        public bool Satisfied(Hediff_ImplantWithLevel hediff) => 
+        public bool Satisfied(Hediff_Level hediff) => 
             hediff != null && hediff.level >= this.minimumLevel;
     }
 

@@ -57,11 +57,11 @@
                 SoundDefOf.BulletImpact_Ground.PlayOneShot(new TargetInfo(this.Position, map));
                 if (this.Position.GetTerrain(map).takeSplashes)
                 {
-                    MoteMaker.MakeWaterSplash(this.ExactPosition, map, Mathf.Sqrt(power) * 1f, 4f);
+                    FleckMaker.WaterSplash(this.ExactPosition, map, Mathf.Sqrt(power) * 1f, 4f);
                 }
                 else
                 {
-                    MoteMaker.MakeStaticMote(this.ExactPosition, map, ThingDefOf.Mote_ShotHit_Dirt);
+                    FleckMaker.Static(this.ExactPosition, map, FleckDefOf.ShotHit_Dirt);
                 }
             }
             

@@ -48,9 +48,9 @@
 
         public override bool GroupsWith(Gizmo other) => false;// other is Command_Ability;
 
-        protected override GizmoResult GizmoOnGUIInt(Rect butRect, bool shrunk = false)
+        protected override GizmoResult GizmoOnGUIInt(Rect butRect, GizmoRenderParms parms)
         {
-            GizmoResult result = base.GizmoOnGUIInt(butRect, shrunk);
+            GizmoResult result = base.GizmoOnGUIInt(butRect, parms);
 
             if (this.ability.Chance > 0f)
             {

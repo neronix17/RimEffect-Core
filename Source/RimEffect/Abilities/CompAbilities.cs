@@ -8,7 +8,7 @@
     using Verse;
     using Verse.Sound;
 
-    public class CompAbilities : VFEMech.ShieldMechBubble
+    public class CompAbilities : VFECore.CompShieldBubble
     {
 
         private new Pawn Pawn => (Pawn) this.parent;
@@ -126,7 +126,7 @@
             if (this.Pawn.Spawned)
             {
                 SoundDefOf.EnergyShield_Reset.PlayOneShot(new TargetInfo(this.Pawn.Position, this.Pawn.Map));
-                MoteMaker.ThrowLightningGlow(this.Pawn.TrueCenter(), this.Pawn.Map, 3f);
+                FleckMaker.ThrowLightningGlow(this.Pawn.TrueCenter(), this.Pawn.Map, 3f);
             }
 
 

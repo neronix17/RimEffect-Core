@@ -4,7 +4,7 @@
 
     public class Ability_Dominate : Ability
     {
-        public override bool ValidateTarget(LocalTargetInfo target) => 
+        public override bool ValidateTarget(LocalTargetInfo target, bool showMessages = true) => 
             base.ValidateTarget(target) && target.Pawn.RaceProps.IsFlesh;
 
         public override void Cast(LocalTargetInfo target)

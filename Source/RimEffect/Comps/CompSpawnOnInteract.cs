@@ -48,7 +48,7 @@ namespace RimEffect
             {
                 yield return new FloatMenuOption("RE.OpenBeacon".Translate() + " (" + "RE.WrongFaction".Translate() + ")", null);
             }
-            else if (!selPawn.CanReach(this.parent, PathEndMode.Touch, Danger.Deadly, false, TraverseMode.ByPawn))
+            else if (!selPawn.CanReach(this.parent, PathEndMode.Touch, Danger.Deadly, false, mode: TraverseMode.ByPawn))
             {
                 yield return new FloatMenuOption("RE.OpenBeacon".Translate() + " (" + "NoPath".Translate() + ")", null);
             }
@@ -77,7 +77,7 @@ namespace RimEffect
 
         public void SpawnItems()
         {
-            MoteMaker.MakeStaticMote(this.parent.TrueCenter(), this.parent.Map, ThingDefOf.Mote_PsycastAreaEffect, 8);
+            FleckMaker.Static(this.parent.TrueCenter(), this.parent.Map, FleckDefOf.PsycastAreaEffect, 8);
             for (int i = 0; i <= this.Props.numToSpawnRange.RandomInRange; i++)
             {
                 IntVec3 pos;

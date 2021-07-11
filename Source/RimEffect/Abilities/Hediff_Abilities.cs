@@ -4,7 +4,7 @@
     using System.Linq;
     using Verse;
 
-    public class Hediff_Abilities : Hediff_ImplantWithLevel
+    public class Hediff_Abilities : Hediff_Level
     {
         public bool giveRandomAbilities = true;
         

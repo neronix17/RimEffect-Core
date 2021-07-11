@@ -45,7 +45,7 @@ namespace RimEffect
 			Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(RE_DefOf.RE_Colonist, Find.FactionManager.FirstFactionOfDef(RE_DefOf.RE_SystemsAlliance), 
 				PawnGenerationContext.NonPlayer, tile, forceGenerateNewPawn: false, newborn: false, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, 
 				mustBeCapableOfViolence: false, 20f, forceAddFreeWarmLayerIfNeeded: true, allowGay: true, allowFood: true, allowAddictions: true, inhabitant: false, 
-				certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, null, 1f, null, null, null, null, 0.2f));
+				certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, 0, null, 1f, null, null, null, null, 0.2f));
 			HealthUtility.DamageUntilDowned(pawn, allowBleedingWounds: false);
 			HealthUtility.DamageLegsUntilIncapableOfMoving(pawn, allowBleedingWounds: false);
 			return pawn;
