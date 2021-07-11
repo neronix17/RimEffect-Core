@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>RE_GraveBodyBag</defName>
+    <label>body bag</label>
+    <description>A plasti-bag used for containing the remains of a deceased individual, it offers basic filters and protection against exposure to potential diseases the subjects body might have.</description>
+    <thingClass>Building_Grave</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Misc/GraveBodyBag/GraveBodyBagEmpty</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <constructEffect>ConstructDirt</constructEffect>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <size>(1,2)</size>
+    <tickerType>Rare</tickerType>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>100</WorkToBuild>
+      <MeditationFocusStrength>0.06</MeditationFocusStrength>
+    </statBases>
+    <passability>Standable</passability>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <expandHomeArea>false</expandHomeArea>
+      <isInert>true</isInert>
+      <preventDeteriorationInside>true</preventDeteriorationInside>
+      <haulToContainerDuration>500</haulToContainerDuration>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <fullGraveGraphicData>
+        <texPath>Things/Building/Misc/GraveBodyBag/GraveBodyBagFull</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(4,4)</drawSize>
+      </fullGraveGraphicData>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>CorpsesHumanlike</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Misc</designationCategory>
+    <costList>
+      <RE_PrefabComponent>1</RE_PrefabComponent>      <!-- placeholder -->
+    </costList>
+    <comps>
+      <li Class="CompProperties_AssignableToPawn">
+        <drawAssignmentOverlay>false</drawAssignmentOverlay>
+        <compClass>CompAssignableToPawn_Grave</compClass>
+      </li>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Morbid</li>
+        </focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_GraveFull">
+            <offset>0.10</offset>
+          </li>
+          <li Class="FocusStrengthOffset_GraveCorpseRelationship">
+            <offset>0.10</offset>
+          </li>
+          <li Class="FocusStrengthOffset_NearbyGraves">
+            <defs>
+              <li>Grave</li>
+              <li>Sarcophagus</li>
+              <li>RE_GraveBodyBag</li>
+            </defs>
+            <offsetPerBuilding>0.01</offsetPerBuilding>
+            <radius>9.9</radius>
+            <maxBuildings>4</maxBuildings>
+            <focusPerFullGrave>0.01</focusPerFullGrave>
+            <explanationKey>MeditationFocusPerGrave</explanationKey>
+            <explanationKeyAbstract>MeditationFocusPerGraveAbstract</explanationKeyAbstract>
+          </li>
+        </offsets>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>RE_BasicPrefabrication</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>RE_GalaxyMap</defName>
+    <label>galaxy map</label>
+    <description>An interactive holographic map used for navigation and tactical decision-making, trade with passing interstellar vessels, and for communication purposes. Can also be used to receive distress calls from nearby settlements.</description>
+    <thingClass>RimEffect.Building_GalaxyMap</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Misc/GalaxyMap/GalaxyMap</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,6)</drawSize>
+      <damageData>
+        <rect>(0,0,3,1.8)</rect>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+      <shadowData>
+        <volume>(3,0.5,2)</volume>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>8800</WorkToBuild>
+      <Flammability>0.6</Flammability>
+    </statBases>
+    <size>(5,6)</size>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <costList>
+      <Plasteel>150</Plasteel>
+      <ComponentSpacer>14</ComponentSpacer>
+    </costList>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <interactionCellOffset>(0,0,4)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Misc</designationCategory>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>400</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(152,167,250,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="VanillaStorytellersExpanded.CompProperties_QuestGiver">
+        <floatOptionLabel>View contracts</floatOptionLabel>
+        <jobToGive>RE_UseGalaxyMap</jobToGive>
+        <questGiver>RE_GalaxyMap_QuestGiver</questGiver>
+        <questManagerID>1</questManagerID>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>RE_ComplexPrefabrication</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <techLevel>Ultra</techLevel>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>RE_CrashedKodiakShuttle</defName>
+    <label>kodiak shuttle</label>
+    <description>An advanced shuttle propelled using small directional thrusters and a mass effect based repulsion system, the Kodiak Drop Shuttle is a common sight throughout the galaxy thanks to it's robust design and ability to make limited FTL jumps. 
+This one is out of service.</description>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <passability>Impassable</passability>
+    <fillPercent>1.0</fillPercent>
+    <size>(6,3)</size>
+    <graphicData>
+      <texPath>Things/Building/Misc/KodiakShuttleCrashed/KodiakShuttleCrashed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(7,8)</drawSize>
+      <shadowData>
+        <volume>(1.8, 1.0, 4.1)</volume>
+        <offset>(0, 0, -0.1)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Flammability>1</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <killedLeavings>
+      <Plasteel>100</Plasteel>
+      <ChunkSlagSteel>4</ChunkSlagSteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </killedLeavings>
+    <costList>
+      <Plasteel>130</Plasteel>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <drawerType>MapMeshOnly</drawerType>
+    <repairEffect>ConstructMetal</repairEffect>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
+    <techLevel>Ultra</techLevel>
+  </ThingDef>
+
+</Defs>

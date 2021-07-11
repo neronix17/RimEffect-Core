@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MoteGlowDistortBackground">
+    <defName>RE_Mote_BioticDistortion</defName>
+    <thingClass>MoteThrownAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.03</fadeInTime>
+      <fadeOutTime>0.05</fadeOutTime>
+      <solidTime>0.15</solidTime>
+      <growthRate>1.5</growthRate>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Black</texPath>
+      <shaderParameters>
+        <_distortionIntensity>0.05</_distortionIntensity>
+        <_brightnessMultiplier>1.1</_brightnessMultiplier>      
+      </shaderParameters>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Throw</defName>
+    <label>biotic throw</label>
+    <description>Uses Mass Effect field to deal blunt trauma to the enemy</description>
+    <abilityClass>RimEffect.Ability_ShootProjectile</abilityClass>
+    <targetMode>Pawn</targetMode>
+    <castTime>60</castTime>
+    <range>24</range>
+    <iconPath>UI/Abilities/Biotic_Throw</iconPath>
+    <power>6</power>
+    <castSound>RE_Biotic_Throw</castSound>
+    <castMote>Mote_BlastDry</castMote>
+    <targetMotes>
+      <li>RE_Mote_BioticDistortion</li>
+    </targetMotes>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>1</minimumLevel>
+    </requiredHediff>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Projectile">
+        <projectile>RE_Biotic_ThrowProjectile</projectile>
+      </li>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>5</energyUsed>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>RE_Biotic_ThrowProjectile</defName>
+    <label>biotic throw</label>
+    <thingClass>RimEffect.AbilityProjectile</thingClass>
+    <graphicData>
+      <texPath>Things/AbilityEffects/BioticThrow_Shot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>Transparent</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Blunt</damageDef>
+      <armorPenetrationBase>1</armorPenetrationBase>
+      <damageAmountBase>1</damageAmountBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Pull</defName>
+    <label>biotic pull</label>
+    <description>Generates a mass-lowering field which lifts the enemy in the air and quickly drops them, temporarily disabling them from a fight.
+    Effect: Enemy gets pulled towards the caster and gets temporarily knocked on the ground.</description>
+    <abilityClass>RimEffect.Ability_Pull</abilityClass>
+    <targetMode>Pawn</targetMode>
+    <castTime>60</castTime>
+    <range>24</range>
+	<castSound>RE_Biotic_Pull</castSound>
+    <iconPath>UI/Abilities/Biotic_Pull</iconPath>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>1</minimumLevel>
+    </requiredHediff>
+    <targetMotes>
+      <li>RE_Mote_BioticDistortion</li>
+    </targetMotes>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Hediff">
+        <hediff>RE_Prone</hediff>
+      </li>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>10</energyUsed>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
+
+  <HediffDef ParentName="DiseaseBase">
+    <defName>RE_Prone</defName>
+    <label>knocked prone</label>
+    <labelNoun>knocked prone</labelNoun>
+    <description>Knocked prone.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>600~600</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>RE_Dominate</stateEffecter>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Focus</defName>
+    <label>biotic focus</label>
+    <description>Regenerates biotic energy after a short meditation period.</description>
+    <abilityClass>RimEffect.Ability_Blank</abilityClass>
+    <targetMode>Self</targetMode>
+    <castTime>600</castTime>
+    <iconPath>UI/Abilities/Biotic_Focus</iconPath>
+	<castSound>RE_Biotic_Focus</castSound>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>2</minimumLevel>
+    </requiredHediff>
+	<casterHediff>RE_Biotic_Focus</casterHediff>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>-25</energyUsed>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
+ 
+  <HediffDef ParentName="DiseaseBase">
+    <defName>RE_Biotic_Focus</defName>
+    <label>biotic focus</label>
+    <labelNoun>biotic focus</labelNoun>
+    <description>Biotic focus state.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>300~300</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>RE_Dominate</stateEffecter>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Charge</defName>
+    <label>biotic charge</label>
+    <description>Uses biotics to alter the speed and strength, leading to a devastating charge towards the target.</description>
+    <abilityClass>RimEffect.Ability_Charge</abilityClass>
+    <targetMode>Pawn</targetMode>
+    <castTime>60</castTime>
+    <range>30</range>
+    <power>14</power>
+	<castSound>RE_Biotic_Charge</castSound>
+    <iconPath>UI/Abilities/Biotic_Charge</iconPath>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>2</minimumLevel>
+    </requiredHediff>
+    <targetMotes>
+      <li>RE_Mote_BioticDistortion</li>
+    </targetMotes>
+	<casterHediff>RE_Biotic_Charge</casterHediff>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>25</energyUsed>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
+  
+  <HediffDef ParentName="DiseaseBase">
+    <defName>RE_Biotic_Charge</defName>
+    <label>biotic charge</label>
+    <labelNoun>biotic charge</labelNoun>
+    <description>Biotic charge state.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>300~300</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>RE_Dominate</stateEffecter>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Barrier</defName>
+    <label>biotic barrier</label>
+    <description>Utilizes Mass Effect fields to generate a barrier that protects the user from most kinetic damage.</description>
+    <abilityClass>RimEffect.Ability_Barrier</abilityClass>
+    <targetMode>Self</targetMode>
+    <castTime>60</castTime>
+    <power>50</power>
+    <durationTime>600</durationTime>
+    <iconPath>UI/Abilities/Biotic_Barrier</iconPath>
+	<castSound>RE_Biotic_Barrier</castSound>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>2</minimumLevel>
+    </requiredHediff>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>20</energyUsed>
+      </li>
+      <li Class="RimEffect.AbilityExtension_Shield">
+        <shieldTexPath>UI/AbilityShields/ShieldBiotic</shieldTexPath>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Dominate</defName>
+    <label>biotic dominate</label>
+    <description>Disrupt the synaptic harmonics of an organic brain so it can't differentiate between friend and foe.</description>
+    <abilityClass>RimEffect.Ability_Dominate</abilityClass>
+    <targetMode>Pawn</targetMode>
+    <range>30</range>
+    <castTime>60</castTime>
+    <iconPath>UI/Abilities/Biotic_Dominate</iconPath>
+	<castSound>RE_Biotic_Dominate</castSound>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>3</minimumLevel>
+    </requiredHediff>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>50</energyUsed>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Singularity</defName>
+    <label>biotic singularity</label>
+    <description>The gravitational power sucks multiple enemies within a radius to a single area, leaving them helpless and vulnerable to attack.</description>
+    <abilityClass>RimEffect.Ability_Singularity</abilityClass>
+    <targetMode>Location</targetMode>
+    <range>30</range>
+    <castTime>60</castTime>
+    <radius>3</radius>
+    <durationTime>600</durationTime>
+    <iconPath>UI/Abilities/Biotic_Singularity</iconPath>
+	  <castSound>RE_Biotic_Singularity</castSound>
+    <targetMotes>
+      <li>RE_Mote_BioticDistortionSingularity</li>
+    </targetMotes>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>3</minimumLevel>
+    </requiredHediff>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>50</energyUsed>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
+
+  <ThingDef ParentName="EtherealThingBase">
+    <defName>RE_Biotic_SingularityThing</defName>
+    <label>biotic singularity</label>
+    <thingClass>RimEffect.Singularity</thingClass>
+    <graphicData>
+      <texPath>Things/AbilityEffects/Singularity</texPath>
+      <color>(255,255,255,255)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>Transparent</shaderType>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <seeThroughFog>true</seeThroughFog>
+    <alwaysFlee>true</alwaysFlee>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteGlowDistortBackground">
+    <defName>RE_Mote_BioticDistortionSingularity</defName>
+    <thingClass>MoteThrownAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>1</fadeInTime>
+      <fadeOutTime>2</fadeOutTime>
+      <solidTime>6</solidTime>
+      <growthRate>0.3</growthRate>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Black</texPath>
+      <shaderParameters>
+        <_distortionIntensity>0.08</_distortionIntensity>
+        <_brightnessMultiplier>3</_brightnessMultiplier>      
+      </shaderParameters>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Flare</defName>
+    <label>biotic flare</label>
+    <description>Focus and expend most of the biotic energy to unleash a huge flare that throws enemies within its range, causing massive damage.</description>
+    <abilityClass>RimEffect.Ability_Flare</abilityClass>
+    <targetMode>Location</targetMode>
+    <castTime>60</castTime>
+    <range>30</range>
+    <radius>10</radius>
+    <power>30</power>
+    <iconPath>UI/Abilities/Biotic_Flare</iconPath>
+	<castSound>RE_Biotic_Flare</castSound>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>4</minimumLevel>
+    </requiredHediff>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>100</energyUsed>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
+
+    <ThingDef ParentName="EtherealThingBase">
+    <defName>RE_Biotic_FlareThing</defName>
+    <label>biotic flare</label>
+    <thingClass>RimEffect.Flare</thingClass>
+    <graphicData>
+      <texPath>Things/AbilityEffects/BioticFlare/BioticFlare</texPath>
+      <color>(255,255,255,255)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>Transparent</shaderType>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <seeThroughFog>true</seeThroughFog>
+    <alwaysFlee>true</alwaysFlee>
+  </ThingDef>
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Annihilation</defName>
+    <label>biotic annihilation field</label>
+    <description>Spin up a large field of Mass Effect particles, dealing substantial damage to anyone in the area.</description>
+    <abilityClass>RimEffect.Ability_Annihilation</abilityClass>
+    <targetMode>Location</targetMode>
+    <castTime>60</castTime>
+    <range>30</range>
+    <radius>6</radius>
+    <power>5</power>
+    <durationTime>900</durationTime>
+    <iconPath>UI/Abilities/Biotic_AnnihilationField</iconPath>
+    <targetMotes>
+      <li>RE_Mote_BioticDistortionAnnihilationField</li>
+    </targetMotes>
+	<castSound>RE_Biotic_AnnihilationField</castSound>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>4</minimumLevel>
+    </requiredHediff>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>100</energyUsed>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
+
+  <ThingDef ParentName="EtherealThingBase">
+    <defName>RE_Biotic_AnnihilationField</defName>
+    <label>biotic annihilation field</label>
+    <thingClass>RimEffect.AnnihilationField</thingClass>
+    <graphicData>
+      <texPath>Things/AbilityEffects/AnnihilationField</texPath>
+      <color>(255,255,255,255)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>Transparent</shaderType>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <seeThroughFog>true</seeThroughFog>
+    <alwaysFlee>true</alwaysFlee>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteGlowDistortBackground">
+    <defName>RE_Mote_BioticDistortionAnnihilationField</defName>
+    <thingClass>MoteThrownAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>7</fadeInTime>
+      <fadeOutTime>7</fadeOutTime>
+      <solidTime>1</solidTime>
+      <growthRate>0</growthRate>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/Black</texPath>
+      <shaderParameters>
+        <_distortionIntensity>0.05</_distortionIntensity>
+        <_brightnessMultiplier>1.2</_brightnessMultiplier>      
+      </shaderParameters>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+  </ThingDef>
+</Defs>
