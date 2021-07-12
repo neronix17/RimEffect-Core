@@ -59,6 +59,8 @@
       <li>RE_Apparel_SpectreArmor</li>
       <li>RE_Apparel_SpectreVisor</li>
     </apparelRequired>
+	<initialWillRange>0~0</initialWillRange>
+	<initialResistanceRange>46~82</initialResistanceRange>
   </PawnKindDef>
   
 </Defs>

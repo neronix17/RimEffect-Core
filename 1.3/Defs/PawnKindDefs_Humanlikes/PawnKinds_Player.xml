@@ -21,6 +21,8 @@
       <li>RE_Implant</li>
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>8~14</initialResistanceRange>
   </PawnKindDef>
   
 </Defs>

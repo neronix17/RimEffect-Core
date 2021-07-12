@@ -205,7 +205,7 @@
 		<violent>true</violent>
 		<hoursActive>48</hoursActive>
       </li>
-		<li Class="VFEMech.CompProperties_ShieldMechBubble">
+		<li Class="VFECore.CompProperties_ShieldBubble">
 			<EnergyShieldRechargeRate>0.03</EnergyShieldRechargeRate>
 			<EnergyShieldEnergyMax>100</EnergyShieldEnergyMax>
 			<showAlways>true</showAlways>

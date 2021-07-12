@@ -95,7 +95,7 @@
       <li>RE_AllianceReward</li>
     </thingSetMakerTags>
     <comps>
-      <li Class="CompProperties_BiocodableApparel"/>
+      <li Class="CompProperties_Biocodable"/>
     </comps>
   </ThingDef>
 
@@ -194,7 +194,7 @@
       <li>RE_AllianceArmoury</li>
     </thingSetMakerTags>
     <comps>
-      <li Class="CompProperties_BiocodableApparel"/>
+      <li Class="CompProperties_Biocodable"/>
     </comps>
   </ThingDef>
 
@@ -467,7 +467,7 @@
       <li>RE_AllianceArmoury</li>
     </thingSetMakerTags>
     <comps>
-      <li Class="CompProperties_BiocodableApparel"/>
+      <li Class="CompProperties_Biocodable"/>
     </comps>
   </ThingDef>
 
@@ -792,8 +792,8 @@
     </thingSetMakerTags>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-      <li Class="CompProperties_BiocodableApparel"/>
-	  <li Class="VFEMech.CompProperties_ShieldMechBubble">
+      <li Class="CompProperties_Biocodable"/>
+	  <li Class="VFECore.CompProperties_ShieldBubble">
 		<blockRangedAttack>true</blockRangedAttack>
 		<blockMeleeAttack>false</blockMeleeAttack>
 		<showWhenDrafted>true</showWhenDrafted>

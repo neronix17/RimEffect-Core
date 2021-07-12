@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="MoteGlowDistortBackground">
+  <FleckDef ParentName="FleckGlowDistortBackground">
     <defName>RE_Mote_BioticDistortion</defName>
-    <thingClass>MoteThrownAttached</thingClass>
+    <fleckSystemClass>FleckSystemThrown</fleckSystemClass>
     <altitudeLayer>MoteOverhead</altitudeLayer>
-    <mote>
       <fadeInTime>0.03</fadeInTime>
       <fadeOutTime>0.05</fadeOutTime>
       <solidTime>0.15</solidTime>
       <growthRate>1.5</growthRate>
-    </mote>
     <graphicData>
       <texPath>Things/Mote/Black</texPath>
       <shaderParameters>
@@ -19,7 +17,7 @@
       </shaderParameters>
       <drawSize>2.5</drawSize>
     </graphicData>
-  </ThingDef>
+  </FleckDef>
 
   <RimEffect.AbilityDef>
     <defName>RE_Biotic_Throw</defName>
@@ -32,7 +30,7 @@
     <iconPath>UI/Abilities/Biotic_Throw</iconPath>
     <power>6</power>
     <castSound>RE_Biotic_Throw</castSound>
-    <castMote>Mote_BlastDry</castMote>
+    <castMote>BlastDry</castMote>
     <targetMotes>
       <li>RE_Mote_BioticDistortion</li>
     </targetMotes>
@@ -285,16 +283,14 @@
     <alwaysFlee>true</alwaysFlee>
   </ThingDef>
 
-  <ThingDef ParentName="MoteGlowDistortBackground">
+  <FleckDef ParentName="FleckGlowDistortBackground">
     <defName>RE_Mote_BioticDistortionSingularity</defName>
-    <thingClass>MoteThrownAttached</thingClass>
+    <fleckSystemClass>FleckSystemThrown</fleckSystemClass>
     <altitudeLayer>MoteOverhead</altitudeLayer>
-    <mote>
       <fadeInTime>1</fadeInTime>
       <fadeOutTime>2</fadeOutTime>
       <solidTime>6</solidTime>
       <growthRate>0.3</growthRate>
-    </mote>
     <graphicData>
       <texPath>Things/Mote/Black</texPath>
       <shaderParameters>
@@ -303,7 +299,7 @@
       </shaderParameters>
       <drawSize>2.5</drawSize>
     </graphicData>
-  </ThingDef>
+  </FleckDef>
 
   <RimEffect.AbilityDef>
     <defName>RE_Biotic_Flare</defName>
@@ -391,16 +387,14 @@
     <alwaysFlee>true</alwaysFlee>
   </ThingDef>
 
-  <ThingDef ParentName="MoteGlowDistortBackground">
+  <FleckDef ParentName="FleckGlowDistortBackground">
     <defName>RE_Mote_BioticDistortionAnnihilationField</defName>
-    <thingClass>MoteThrownAttached</thingClass>
+    <fleckSystemClass>FleckSystemThrown</fleckSystemClass>
     <altitudeLayer>MoteOverhead</altitudeLayer>
-    <mote>
       <fadeInTime>7</fadeInTime>
       <fadeOutTime>7</fadeOutTime>
       <solidTime>1</solidTime>
       <growthRate>0</growthRate>
-    </mote>
     <graphicData>
       <texPath>Things/Mote/Black</texPath>
       <shaderParameters>
@@ -409,5 +403,5 @@
       </shaderParameters>
       <drawSize>2.5</drawSize>
     </graphicData>
-  </ThingDef>
+  </FleckDef>
 </Defs>

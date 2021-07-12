@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <FactionDef ParentName="HumanFactionBase" Name="RE_AllianceFactionBase" Abstract="True">
+    <FactionDef ParentName="FactionBase" Name="RE_AllianceFactionBase" Abstract="True">
         <pawnSingular>colonist</pawnSingular>
         <pawnsPlural>colonists</pawnsPlural>
         <categoryTag>RE_Alliance</categoryTag>
@@ -34,9 +34,6 @@
             </li>
         </backstoryFilters>
         <geneticVariance>0.8</geneticVariance>
-        <hairTags>
-            <li>Rural</li>
-        </hairTags>
         <caravanTraderKinds>
             <li>RE_Caravan_Alliance_BulkGoods</li>
             <li>RE_Caravan_Alliance_CombatSupplier</li>
@@ -164,8 +161,6 @@
             <li>(0.27, 0.40, 0.74)</li>
             <li>(0.28, 0.44, 0.72)</li>
         </colorSpectrum>
-        <startingGoodwill>10</startingGoodwill>
-        <naturalColonyGoodwill>-50~50</naturalColonyGoodwill>
       <modExtensions>
         <li Class="KCSG.FactionSettlement">
           <useStructureLayout>True</useStructureLayout>
