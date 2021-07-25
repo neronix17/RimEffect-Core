@@ -50,31 +50,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abilities\Abilities\Ability_Annihilation.cs" />
-    <Compile Include="Abilities\Abilities\Ability_Barrier.cs" />
     <Compile Include="Abilities\Abilities\Ability_Charge.cs" />
     <Compile Include="Abilities\Abilities\Ability_Dominate.cs" />
     <Compile Include="Abilities\Abilities\Ability_Flare.cs" />
     <Compile Include="Abilities\Abilities\Ability_Pull.cs" />
     <Compile Include="Abilities\Abilities\Ability_Sabotage.cs" />
-    <Compile Include="Abilities\Abilities\Ability_ShootProjectile.cs" />
     <Compile Include="Abilities\Abilities\Ability_Singularity.cs" />
-    <Compile Include="Abilities\Abilities\Ability_SpawnBuilding.cs" />
-    <Compile Include="Abilities\Ability.cs" />
-    <Compile Include="Abilities\AbilityDef.cs" />
-    <Compile Include="Abilities\AbilityPawnFlyer.cs" />
-    <Compile Include="Abilities\AbilityProjectile.cs" />
-    <Compile Include="Abilities\Command_Ability.cs" />
-    <Compile Include="Abilities\CompAbilities.cs" />
-    <Compile Include="Abilities\CompAbilitiesApparel.cs" />
-    <Compile Include="Abilities\CompUseEffect_GiveAbility.cs" />
-    <Compile Include="Abilities\HediffComp_Ability.cs" />
-    <Compile Include="Abilities\Hediff_Abilities.cs" />
     <Compile Include="Abilities\Hediff_BioticAmp.cs" />
     <Compile Include="Abilities\Hediff_OmniTool.cs" />
-    <Compile Include="Abilities\InitializeAbilityComp.cs" />
-    <Compile Include="Abilities\JobDriver_CastAbilityOnce.cs" />
-    <Compile Include="Abilities\PawnKindAbilityExtension.cs" />
-    <Compile Include="Abilities\Verb_CastAbility.cs" />
     <Compile Include="Apparels\ShieldBeltApparel.cs" />
     <Compile Include="Buildings\Building_AutoDoorLockable.cs" />
     <Compile Include="Buildings\Building_GalaxyMap.cs" />
@@ -103,7 +86,6 @@
     <Compile Include="HarmonyPatches\HostileTo_Patch.cs" />
     <Compile Include="HarmonyPatches\ShouldFleeFrom_Patch.cs" />
     <Compile Include="HarmonyPatches\TendPatient_Patch.cs" />
-    <Compile Include="HarmonyPatches\TryGetAttackVerb_Patch.cs" />
     <Compile Include="HarmonyPatches\Research_Patches.cs" />
     <Compile Include="HarmonyPatches\Verb_Patches.cs" />
     <Compile Include="HarmonyPatches\Notify_DamageApplied_Patch.cs" />

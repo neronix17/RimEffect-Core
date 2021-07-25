@@ -1,6 +1,7 @@
 ﻿namespace RimEffect
 {
     using Verse;
+    using Ability = VFECore.Abilities.Ability;
 
     public class Ability_Dominate : Ability
     {

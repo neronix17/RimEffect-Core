@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <RimEffect.AbilityDef>
+    <VFECore.Abilities.AbilityDef>
         <defName>RE_SpectreArmor_AdrenalineRush</defName>
         <label>Adrenaline Rush</label>
         <description>Gives the wearer an adrenaline rush</description>
-        <abilityClass>RimEffect.Ability_Blank</abilityClass>
+        <abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
         <targetMode>Self</targetMode>
         <castTime>30</castTime>
         <cooldownTime>3600</cooldownTime>
         <iconPath>UI/Abilities/Ability_AdrenalineRush</iconPath>
         <modExtensions>
-            <li Class="RimEffect.AbilityExtension_Hediff">
+            <li Class="VFECore.Abilities.AbilityExtension_Hediff">
                 <hediff>RE_SpectreArmor_AdrenalineRushHediff</hediff>
             </li>
         </modExtensions>
-    </RimEffect.AbilityDef>
+    </VFECore.Abilities.AbilityDef>
 
     <HediffDef ParentName="DiseaseBase">
         <defName>RE_SpectreArmor_AdrenalineRushHediff</defName>
@@ -38,21 +38,21 @@
         </stages>
     </HediffDef>
 
-    <RimEffect.AbilityDef>
+    <VFECore.Abilities.AbilityDef>
         <defName>RE_SpectreArmor_CombatMastery</defName>
         <label>Combat mastery</label>
         <description>Gives the wearer increased ranged accuracy</description>
-        <abilityClass>RimEffect.Ability_Blank</abilityClass>
+        <abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
         <targetMode>Self</targetMode>
         <castTime>30</castTime>
         <cooldownTime>3600</cooldownTime>
         <iconPath>UI/Abilities/Ability_CombatMastery</iconPath>
         <modExtensions>
-            <li Class="RimEffect.AbilityExtension_Hediff">
+            <li Class="VFECore.Abilities.AbilityExtension_Hediff">
                 <hediff>RE_SpectreArmor_CombatMasteryHediff</hediff>
             </li>
         </modExtensions>
-    </RimEffect.AbilityDef>
+    </VFECore.Abilities.AbilityDef>
 
     <HediffDef ParentName="DiseaseBase">
         <defName>RE_SpectreArmor_CombatMasteryHediff</defName>

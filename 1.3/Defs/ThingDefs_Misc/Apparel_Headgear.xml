@@ -392,7 +392,7 @@
 			<li>RE_SpectreArmoury</li>
 		</thingSetMakerTags>
 		<comps>
-			<li Class="RimEffect.CompProperties_AbilitiesApparel">
+			<li Class="VFECore.Abilities.CompProperties_AbilitiesApparel">
 				<abilities>
 					<li>RE_SpectreArmor_CombatMastery</li>
 				</abilities>

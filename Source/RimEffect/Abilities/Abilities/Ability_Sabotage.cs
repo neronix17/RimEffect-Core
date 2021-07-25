@@ -2,6 +2,7 @@
 {
     using UnityEngine;
     using Verse;
+    using Ability = VFECore.Abilities.Ability;
 
     public class Ability_Sabotage : Ability
     {

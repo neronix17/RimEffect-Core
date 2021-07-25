@@ -7,6 +7,7 @@
     using UnityEngine;
     using Verse;
     using Verse.Sound;
+    using Ability = VFECore.Abilities.Ability;
 
     public class Ability_Annihilation : Ability
     {
@@ -19,10 +20,11 @@
             annihilationField.casterFaction = this.pawn.Faction;
             annihilationField.radius        = this.GetRadiusForPawn();
             annihilationField.damage        = this.GetPowerForPawn();
+            annihilationField.startTick     = Find.TickManager.TicksGame;
             annihilationField.endTick       = Find.TickManager.TicksGame + this.GetDurationForPawn();
 
-            if (this.def.targetMotes.Any())
-                annihilationField.mote = this.def.targetMotes.First();
+            if (this.def.targetFlecks.Any())
+                annihilationField.fleck = this.def.targetFlecks.First();
         }
 
         public override void CheckCastEffects(LocalTargetInfo targetInfo, out bool cast, out bool target, out bool hediffApply)
@@ -38,11 +40,11 @@
 
         public Pawn     caster;
         public Faction  casterFaction;
-        public ThingDef mote;
-        public Mote     moteThing;
+        public FleckDef fleck;
 
         public float radius;
         public float damage;
+        public float startTick;
         public float endTick;
 
         [Unsaved] 
@@ -80,14 +82,8 @@
             this.sustainer.Maintain();
             this.curRotation += rotSpeed % 360f;
 
-            if (this.moteThing is null)
-            {
-                this.moteThing = MoteMaker.MakeStaticMote(this.DrawPos, this.Map, mote, this.radius);
-            }
-            else
-            {
-                this.moteThing.Maintain();
-            }
+            if ((Find.TickManager.TicksGame - this.startTick) % (this.fleck.Lifespan / 2f) == 0) 
+                FleckMaker.Static(this.DrawPos, this.Map, this.fleck, this.radius);
 
             if (this.tmpPawns.Any() ? this.IsHashIntervalTick(TickInterval) : this.IsHashIntervalTick(GenTicks.TickRareInterval / 32))
             {

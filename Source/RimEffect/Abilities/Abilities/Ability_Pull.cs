@@ -2,6 +2,8 @@
 {
     using RimWorld;
     using Verse;
+    using VFECore.Abilities;
+    using Ability = VFECore.Abilities.Ability;
 
     public class Ability_Pull : Ability
     {
@@ -26,7 +28,7 @@
 
             if (target.Thing is Pawn)
             {
-                AbilityPawnFlyer flyer = (AbilityPawnFlyer) PawnFlyer.MakeFlyer(RE_DefOf.RE_AbilityFlyer, target.Pawn, destination);
+                AbilityPawnFlyer flyer = (AbilityPawnFlyer) PawnFlyer.MakeFlyer(VFE_DefOf_Abilities.VFEA_AbilityFlyer, target.Pawn, destination);
                 flyer.ability = this;
                 flyer.target  = destination.ToVector3();
                 GenSpawn.Spawn(flyer, target.Cell, this.pawn.Map);

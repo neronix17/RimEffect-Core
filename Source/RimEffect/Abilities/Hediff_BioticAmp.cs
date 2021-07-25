@@ -4,6 +4,8 @@
     using RimWorld;
     using UnityEngine;
     using Verse;
+    using VFECore.Abilities;
+    using Ability = VFECore.Abilities.Ability;
 
     public class Hediff_BioticAmp : Hediff_Abilities
     {
@@ -38,11 +40,29 @@
         }
     }
 
-    public class AbilityExtension_Biotic : DefModExtension
+    public class AbilityExtension_Biotic : AbilityExtension_AbilityMod
     {
         public float GetEnergyUsedByPawn(Pawn pawn) => this.energyUsed * pawn.GetStatValue(RE_DefOf.RE_BioticAbilityCostMultiplier);
 
         public float energyUsed = 0f;
+
+        public override bool IsEnabledForPawn(Ability ability, out string reason)
+        {
+            reason = "RE.AbilityDisableReasonBioticEnergyLack".Translate();
+
+            return ability.Hediff != null && ((Hediff_BioticAmp) ability.Hediff).SufficientEnergyPresent(this.GetEnergyUsedByPawn(ability.pawn));
+        }
+
+        public override void Cast(Ability ability)
+        {
+            base.Cast(ability);
+
+            Hediff_BioticAmp bioticAmp = (Hediff_BioticAmp) ability.pawn.health.hediffSet.GetFirstHediffOfDef(RE_DefOf.RE_BioticAmpHediff);
+            bioticAmp.UseEnergy(this.GetEnergyUsedByPawn(ability.pawn));
+        }
+
+        public override string GetDescription(Ability ability) => 
+            $"{"RE.AbilityStatsBioticEnergy".Translate()}: {this.GetEnergyUsedByPawn(ability.pawn)}".Colorize(Color.cyan);
     }
 
     [StaticConstructorOnStartup]

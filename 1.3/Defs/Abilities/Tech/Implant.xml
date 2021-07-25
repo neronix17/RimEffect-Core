@@ -24,11 +24,11 @@
       <Mass>1</Mass>
       <MarketValue>3100</MarketValue>
       <DeteriorationRate>0</DeteriorationRate>
-	  <WorkToMake>36000</WorkToMake>
+      <WorkToMake>36000</WorkToMake>
     </statBases>
     <costList>
       <ComponentSpacer>5</ComponentSpacer>
-	  <RE_ElementZero>10</RE_ElementZero>
+      <RE_ElementZero>10</RE_ElementZero>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -74,7 +74,7 @@
       <li Class="CompProperties_Forbiddable"/>
     </comps>
   </ThingDef>
-  
+
   <ThingDef Name="RE_OmniToolAbilitySpecific_Base" Abstract="True">
     <label>omni tool</label>
     <description>This device is a multipurpose diagnostic and manufacturing tool as well as a computer used for a variety of civilian and battlefield tasks, such as hacking, diagnostics, decryption and repair. With training in specific abilities, the user can cast technological powers with diverse effects. This implant can be upgraded through several levels. Higher levels permit the use of larger amounts of tech powers.</description>
@@ -125,59 +125,61 @@
       <li Class="CompProperties_Forbiddable"/>
     </comps>
   </ThingDef>
-  
-   <ThingDef ParentName="RE_OmniToolAbilitySpecific_Base">
+
+  <ThingDef ParentName="RE_OmniToolAbilitySpecific_Base">
     <defName>RE_OmniTool_CombatDrone</defName>
     <label>omni tool (Combat drone)</label>
     <comps>
-      <li Class="RimEffect.CompProperties_UseEffectGiveAbility">
+      <li Class="VFECore.Abilities.CompProperties_UseEffectGiveAbility">
         <ability>RE_Tech_CombatDrone</ability>
       </li>
     </comps>
     <tradeTags inherit="False"/>
   </ThingDef>
-  
-   <ThingDef ParentName="RE_OmniToolAbilitySpecific_Base">
+
+  <ThingDef ParentName="RE_OmniToolAbilitySpecific_Base">
     <defName>RE_OmniTool_DefenseMatrix</defName>
     <label>omni tool (Defense matrix)</label>
     <comps>
-      <li Class="RimEffect.CompProperties_UseEffectGiveAbility">
+      <li Class="VFECore.Abilities.CompProperties_UseEffectGiveAbility">
         <ability>RE_Tech_DefenseMatrix</ability>
       </li>
     </comps>
     <tradeTags inherit="False"/>
   </ThingDef>
-  
-  
-   <ThingDef ParentName="RE_OmniToolAbilitySpecific_Base">
+
+
+  <ThingDef ParentName="RE_OmniToolAbilitySpecific_Base">
     <defName>RE_OmniTool_Sabotage</defName>
     <label>omni tool (Sabotage)</label>
     <comps>
-      <li Class="RimEffect.CompProperties_UseEffectGiveAbility">
+      <li Class="VFECore.Abilities.CompProperties_UseEffectGiveAbility">
         <ability>RE_Tech_Sabotage</ability>
       </li>
     </comps>
     <tradeTags inherit="False"/>
   </ThingDef>
-  
-   <ThingDef ParentName="RE_OmniToolAbilitySpecific_Base">
+
+  <ThingDef ParentName="RE_OmniToolAbilitySpecific_Base">
     <defName>RE_OmniTool_TacticalCloak</defName>
     <label>omni tool (Tactical cloak)</label>
     <comps>
-      <li Class="RimEffect.CompProperties_UseEffectGiveAbility">
+      <li Class="VFECore.Abilities.CompProperties_UseEffectGiveAbility">
         <ability>RE_Tech_TacticalCloak</ability>
       </li>
     </comps>
     <tradeTags inherit="False"/>
   </ThingDef>
 
-  <HediffDef ParentName="ImplantHediffBase"> 
+  <HediffDef ParentName="ImplantHediffBase">
     <defName>RE_OmniToolHediff</defName>
     <hediffClass>RimEffect.Hediff_OmniTool</hediffClass>
-    <descriptionHyperlinks><ThingDef>RE_OmniTool</ThingDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <ThingDef>RE_OmniTool</ThingDef>
+    </descriptionHyperlinks>
     <label>omni tool</label>
     <description>This device is a multipurpose diagnostic and manufacturing tool as well as a computer used for a variety of civilian and battlefield tasks, such as hacking, diagnostics, decryption and repair. With training in specific abilities, the user can cast technological powers with diverse effects. This implant can be upgraded through several levels. Higher levels permit the use of larger amounts of tech powers.</description>
-    <initialSeverity>1</initialSeverity> 
+    <initialSeverity>1</initialSeverity>
     <minSeverity>0</minSeverity>
     <maxSeverity>4</maxSeverity>
     <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
@@ -208,27 +210,27 @@
         </statFactors>
       </li>
     </stages>
-	<comps>
-    <li Class="HediffCompProperties_VerbGiver">
-    <tools>
-      <li>
-        <label>point</label>
-        <capacities>
-          <li>Stab</li>
-        </capacities>
-        <power>16</power>
-        <cooldownTime>2</cooldownTime>
+    <!-->comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>point</label>
+            <capacities>
+              <li>Stab</li>
+            </capacities>
+            <power>16</power>
+            <cooldownTime>2</cooldownTime>
+          </li>
+          <li>
+            <label>edge</label>
+            <capacities>
+              <li>Cut</li>
+            </capacities>
+            <power>16</power>
+            <cooldownTime>2</cooldownTime>
+          </li>
+        </tools>
       </li>
-      <li>
-        <label>edge</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>16</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-    </li>
-	</comps>
+    </comps-->
   </HediffDef>
 </Defs>

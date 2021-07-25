@@ -44,7 +44,6 @@ namespace RimEffect
         public static ThingDef RE_Mechanoids_YMIRBase;
 
 
-        public static JobDef         RE_UseAbility;
         public static JobDef         RE_UseCommsConsole;
         public static DutyDef        RE_AssaultEnemies;
         public static PawnKindDef    RE_Colonist;
@@ -59,8 +58,6 @@ namespace RimEffect
         public static SoundDef       RE_Biotic_AnnihilationSphere_Sustainer;
         public static MentalStateDef RE_SabotageBerserk;
         public static MentalStateDef RE_DominationBerserk;
-        public static ThingDef       RE_AbilityFlyer;
-        public static ThingDef       RE_AbilityFlyer_Charge;
 
         public static ThingDef RE_MediGel;
 

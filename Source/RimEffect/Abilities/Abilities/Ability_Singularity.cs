@@ -6,6 +6,7 @@
     using RimWorld;
     using UnityEngine;
     using Verse;
+    using Ability = VFECore.Abilities.Ability;
 
     public class Ability_Singularity : Ability
     {
@@ -18,10 +19,11 @@
             singularity.casterFaction = this.pawn.Faction;
             singularity.radius        = this.GetRadiusForPawn();
             singularity.damage        = this.GetPowerForPawn();
+            singularity.startTick     = Find.TickManager.TicksGame;
             singularity.endTick       = Find.TickManager.TicksGame + this.GetDurationForPawn();
 
-            if (this.def.targetMotes.Any()) 
-                singularity.mote = this.def.targetMotes.First();
+            if (this.def.targetFlecks.Any()) 
+                singularity.fleck = this.def.targetFlecks.First();
         }
 
         public override void CheckCastEffects(LocalTargetInfo targetInfo, out bool cast, out bool target, out bool hediffApply)
@@ -35,11 +37,13 @@
     {
         public Pawn     caster;
         public Faction  casterFaction;
-        public ThingDef mote;
+        public FleckDef fleck;
         public Mote     moteThing;
 
         public float radius;
         public float damage;
+
+        public float startTick;
         public float endTick;
 
         [Unsaved]
@@ -87,14 +91,8 @@
                     }
                 }
 
-            if (this.moteThing is null)
-            {
-                this.moteThing = MoteMaker.MakeStaticMote(this.DrawPos, this.Map, mote);
-            }
-            else
-            {
-                this.moteThing.Maintain();
-            }
+            if ((Find.TickManager.TicksGame - this.startTick) % (this.fleck.Lifespan / 2f) == 0)
+                FleckMaker.Static(this.DrawPos, this.Map, this.fleck, this.radius);
 
             if (this.tmpPawns.Any() ? this.IsHashIntervalTick(GenTicks.TickRareInterval) : this.IsHashIntervalTick(GenTicks.TickRareInterval/8))
             {

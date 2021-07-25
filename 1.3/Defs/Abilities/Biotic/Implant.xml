@@ -130,7 +130,7 @@
     <defName>RE_BioticAmp_Singularity</defName>
     <label>biotic amp (Singularity)</label>
     <comps>
-      <li Class="RimEffect.CompProperties_UseEffectGiveAbility">
+      <li Class="VFECore.Abilities.CompProperties_UseEffectGiveAbility">
         <ability>RE_Biotic_Singularity</ability>
       </li>
     </comps>
@@ -141,7 +141,7 @@
     <defName>RE_BioticAmp_LevelFour</defName>
     <label>biotic amp (Level 4)</label>
     <comps>
-      <li Class="RimEffect.CompProperties_UseEffectGiveAbility">
+      <li Class="VFECore.Abilities.CompProperties_UseEffectGiveAbility">
         <level>4</level>
         <requiredHediff>RE_BioticAmpHediff</requiredHediff>
       </li>
@@ -152,7 +152,7 @@
     <defName>RE_BioticAmp_Singularity</defName>
     <label>biotic amp (Biotic singularity)</label>
     <comps>
-      <li Class="RimEffect.CompProperties_UseEffectGiveAbility">
+      <li Class="VFECore.Abilities.CompProperties_UseEffectGiveAbility">
         <ability>RE_Biotic_Singularity</ability>
       </li>
     </comps>
@@ -163,7 +163,7 @@
     <defName>RE_BioticAmp_Annihilation</defName>
     <label>biotic amp (Biotic annihilation field)</label>
     <comps>
-      <li Class="RimEffect.CompProperties_UseEffectGiveAbility">
+      <li Class="VFECore.Abilities.CompProperties_UseEffectGiveAbility">
         <ability>RE_Biotic_Annihilation</ability>
       </li>
     </comps>
@@ -174,7 +174,7 @@
     <defName>RE_BioticAmp_Flare</defName>
     <label>biotic amp (Biotic flare)</label>
     <comps>
-      <li Class="RimEffect.CompProperties_UseEffectGiveAbility">
+      <li Class="VFECore.Abilities.CompProperties_UseEffectGiveAbility">
         <ability>RE_Biotic_Flare</ability>
       </li>
     </comps>
@@ -185,7 +185,7 @@
     <defName>RE_BioticAmp_Dominate</defName>
     <label>biotic amp (Biotic dominate)</label>
     <comps>
-      <li Class="RimEffect.CompProperties_UseEffectGiveAbility">
+      <li Class="VFECore.Abilities.CompProperties_UseEffectGiveAbility">
         <ability>RE_Biotic_Dominate</ability>
       </li>
     </comps>

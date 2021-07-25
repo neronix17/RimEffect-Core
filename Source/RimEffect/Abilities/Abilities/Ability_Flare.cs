@@ -3,6 +3,7 @@
     using RimWorld;
     using UnityEngine;
     using Verse;
+    using Ability = VFECore.Abilities.Ability;
 
     public class Ability_Flare : Ability
     {
@@ -29,7 +30,7 @@
 
         public override void Tick()
         {
-            this.curRotation += Flare.rotSpeed % 360f;
+            this.curRotation += rotSpeed % 360f;
 
             this.curRadius = (Find.TickManager.TicksGame - this.startTick) * 1.5f;
 

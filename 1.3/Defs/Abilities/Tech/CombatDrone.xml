@@ -46,7 +46,7 @@
         </building>
         <comps>
             <li>
-                <compClass>RimEffect.CompSpawnedBuilding</compClass>
+                <compClass>VFECore.Abilities.CompSpawnedBuilding</compClass>
             </li>
             <li Class="CompProperties_Glower">
                 <glowRadius>4</glowRadius>
