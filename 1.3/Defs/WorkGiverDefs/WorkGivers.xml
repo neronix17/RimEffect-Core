@@ -10,8 +10,8 @@
         <fixedBillGiverDefs>
             <li>RE_ManufacturingBench</li>
         </fixedBillGiverDefs>
-        <verb>manufacturing things</verb>
-        <gerund>manufacturing things at</gerund>
+        <verb>manufacture</verb>
+        <gerund>manufacturing at</gerund>
         <requiredCapacities>
             <li>Manipulation</li>
         </requiredCapacities>
