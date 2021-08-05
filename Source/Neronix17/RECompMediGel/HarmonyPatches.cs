@@ -60,8 +60,7 @@ namespace RECompMediGel
         {
             if (__result != null && __result.def.defName == "RE_MediGel")
             {
-                bool flag = MediGelUtility.CanSealWounds(patient);
-                if (!flag)
+                if (!MediGelUtility.CanSealWounds(patient))
                 {
                     return;
                 }

@@ -26,11 +26,11 @@ namespace RECompMediGel
                     {
                         if (list[i].def.hediffClass == typeof(Hediff_MissingPart))
                         {
-                            list[i].Tended_NewTemp(1.0f, 1.0f);
+                            list[i].Tended(1.0f, 1.0f);
                         }
                         else if (!list[i].IsPermanent() && list[i].def.everCurableByItem)
                         {
-                            HealthUtility.CureHediff(list[i]);
+                            HealthUtility.Cure(list[i]);
                         }
                     }
                 }
@@ -69,13 +69,13 @@ namespace RECompMediGel
             {
                 patient.mindState.timesGuestTendedToByPlayer++;
             }
-            if (doctor != null && doctor.IsColonistPlayerControlled)
+            if (doctor != null && doctor.Faction == Faction.OfPlayer && patient.Faction != doctor.Faction && !patient.IsPrisoner && patient.Faction != null)
             {
-                patient.records.AccumulateStoryEvent(StoryEventDefOf.TendedByPlayer);
+                patient.mindState.timesGuestTendedToByPlayer++;
             }
-            if (doctor != null && doctor.RaceProps.Humanlike && patient.RaceProps.Animal && RelationsUtility.TryDevelopBondRelation(doctor, patient, 0.004f) && doctor.Faction != null && doctor.Faction != patient.Faction)
+            if (doctor != null && doctor.RaceProps.Humanlike && patient.RaceProps.Animal && patient.RaceProps.playerCanChangeMaster && RelationsUtility.TryDevelopBondRelation(doctor, patient, 0.004f) && doctor.Faction != null && doctor.Faction != patient.Faction)
             {
-                InteractionWorker_RecruitAttempt.DoRecruit(doctor, patient, 1f, false);
+                InteractionWorker_RecruitAttempt.DoRecruit(doctor, patient, false);
             }
             patient.records.Increment(RecordDefOf.TimesTendedTo);
             if (doctor != null)
@@ -85,6 +85,21 @@ namespace RECompMediGel
             if (doctor == patient && !doctor.Dead)
             {
                 doctor.mindState.Notify_SelfTended();
+            }
+            if (ModsConfig.IdeologyActive && doctor != null && doctor.Ideo != null)
+            {
+                Precept_Role role = doctor.Ideo.GetRole(doctor);
+                if (role != null && role.def.roleEffects != null)
+                {
+                    foreach (RoleEffect roleEffect in role.def.roleEffects)
+                    {
+                        roleEffect.Notify_Tended(doctor, patient);
+                    }
+                }
+            }
+            if (doctor != null && doctor.Faction == Faction.OfPlayer && doctor != patient)
+            {
+                QuestUtility.SendQuestTargetSignals(patient.questTags, "PlayerTended", patient.Named("SUBJECT"));
             }
         }
     }
