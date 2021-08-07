@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <KCSG.SymbolAutoCreation>
+    <defName>RE_AutoCreation</defName>
+    <autoSymbolsCreation>true</autoSymbolsCreation>
+  </KCSG.SymbolAutoCreation>
+</Defs>
