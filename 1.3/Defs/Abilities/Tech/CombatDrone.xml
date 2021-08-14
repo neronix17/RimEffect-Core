@@ -5,6 +5,7 @@
         <label>combat drone</label>
         <description>A small combat drone turret.</description>
         <thingClass>Building_TurretGun</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
         <graphicData>
             <texPath>Things/AbilityEffects/Drone/TechDrone_Base</texPath>
             <graphicClass>Graphic_Single</graphicClass>
