@@ -523,6 +523,7 @@
     <colorGenerator Class="ColorGenerator_StandardApparel" />
     <tradeTags>
       <li>RE_SpacerApparel</li>
+	  <li>RE_OfficialApparel</li>
     </tradeTags>
   </ThingDef>
 
@@ -602,6 +603,7 @@
     </colorGenerator>
     <tradeTags>
       <li>RE_SpacerApparel</li>
+	  <li>RE_OfficialApparel</li>
     </tradeTags>
   </ThingDef>
 

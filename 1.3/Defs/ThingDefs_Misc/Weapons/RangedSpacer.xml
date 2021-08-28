@@ -423,6 +423,7 @@
     </costList>
     <weaponTags Inherit='False'>
       <li>AllianceGunLight</li>
+	  <li>AllianceSMG</li>
     </weaponTags>
     <tradeTags>
       <li>RE_AllianceWeaponry</li>
