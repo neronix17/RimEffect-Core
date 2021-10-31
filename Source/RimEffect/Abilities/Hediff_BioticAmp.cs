@@ -6,6 +6,7 @@
     using Verse;
     using VFECore.Abilities;
     using Ability = VFECore.Abilities.Ability;
+    using AbilityDef = VFECore.Abilities.AbilityDef;
 
     public class Hediff_BioticAmp : Hediff_Abilities
     {
@@ -32,6 +33,10 @@
             Gizmo_BioticEnergyStatus gizmoBioticEnergy = new Gizmo_BioticEnergyStatus {bioticHediff = this};
             yield return gizmoBioticEnergy;
         }
+
+        public override bool SatisfiesConditionForAbility(AbilityDef abilityDef) => 
+            base.SatisfiesConditionForAbility(abilityDef) || 
+            (abilityDef.requiredHediff?.minimumLevel == 1 && this.level == 0 && this.pawn.health.hediffSet.HasHediff(RE_DefOf.RE_BioticNatural));
 
         public override void ExposeData()
         {

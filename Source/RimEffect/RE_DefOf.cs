@@ -61,14 +61,15 @@ namespace RimEffect
 
         public static ThingDef RE_MediGel;
 
-        public static ThingDef RE_ProtheanBeacon;
-        public static ThingDef RE_CrashedKodiakShuttle;
-        public static JobDef RE_OpenBeacon;
-        public static JobDef RE_SaveHostages;
-        public static JobDef RE_LeaveMap;
-        public static HediffDef RE_TurnBackToFormerFaction;
+        public static ThingDef    RE_ProtheanBeacon;
+        public static ThingDef    RE_CrashedKodiakShuttle;
+        public static JobDef      RE_OpenBeacon;
+        public static JobDef      RE_SaveHostages;
+        public static JobDef      RE_LeaveMap;
+        public static HediffDef   RE_TurnBackToFormerFaction;
         public static PawnKindDef RE_Alliance_Marine;
-        public static ThingDef RE_SpacerTechResearchBench;
+        public static ThingDef    RE_SpacerTechResearchBench;
+        public static HediffDef   RE_BioticNatural;
     }
 }
  

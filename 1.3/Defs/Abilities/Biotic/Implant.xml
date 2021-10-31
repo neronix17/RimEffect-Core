@@ -204,7 +204,16 @@
     <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
     <countsAsAddedPartOrImplant>False</countsAsAddedPartOrImplant>
     <stages>
+          <li>
+          <becomeVisible>false</becomeVisible>
+        <minSeverity>0</minSeverity>
+        <statFactors>
+          <RE_BioticEnergyMax>50.0</RE_BioticEnergyMax>
+          <RE_BioticEnergyRecoveryRate>0.05</RE_BioticEnergyRecoveryRate>
+        </statFactors>
+      </li>
       <li>
+      <becomeVisible>true</becomeVisible>
         <minSeverity>1</minSeverity>
         <statFactors>
           <RE_BioticEnergyMax>100.0</RE_BioticEnergyMax>
@@ -235,6 +244,23 @@
           <RE_BioticEnergyRecoveryRate>0.4</RE_BioticEnergyRecoveryRate>
         </statFactors>
 		<hungerRateFactorOffset>0.4</hungerRateFactorOffset>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="DiseaseBase">
+    <defName>RE_BioticNatural</defName>
+    <label>natural biotic</label>
+    <labelNoun>biotic natural</labelNoun>
+    <description>Able to use biotic powers from birth.</description>
+    <comps>
+        <li>
+            <compClass>RimEffect.HediffComp_NaturalBiotic</compClass>
+        </li>
+    </comps>
+    <stages>
+      <li>
+        <becomeVisible>false</becomeVisible>
       </li>
     </stages>
   </HediffDef>
