@@ -209,7 +209,7 @@
         <minSeverity>0</minSeverity>
         <statFactors>
           <RE_BioticEnergyMax>50.0</RE_BioticEnergyMax>
-          <RE_BioticEnergyRecoveryRate>0.05</RE_BioticEnergyRecoveryRate>
+          <RE_BioticEnergyRecoveryRate>0.10</RE_BioticEnergyRecoveryRate>
         </statFactors>
       </li>
       <li>
@@ -217,23 +217,23 @@
         <minSeverity>1</minSeverity>
         <statFactors>
           <RE_BioticEnergyMax>100.0</RE_BioticEnergyMax>
-          <RE_BioticEnergyRecoveryRate>0.1</RE_BioticEnergyRecoveryRate>
+          <RE_BioticEnergyRecoveryRate>0.25</RE_BioticEnergyRecoveryRate>
         </statFactors>
 		<hungerRateFactorOffset>0.1</hungerRateFactorOffset>
       </li>
       <li>
         <minSeverity>2</minSeverity>
         <statFactors>
-          <RE_BioticEnergyMax>160.34</RE_BioticEnergyMax>
-          <RE_BioticEnergyRecoveryRate>0.2</RE_BioticEnergyRecoveryRate>
+          <RE_BioticEnergyMax>160</RE_BioticEnergyMax>
+          <RE_BioticEnergyRecoveryRate>0.50</RE_BioticEnergyRecoveryRate>
         </statFactors>
 		<hungerRateFactorOffset>0.2</hungerRateFactorOffset>
       </li>
       <li>
         <minSeverity>3</minSeverity>
         <statFactors>
-          <RE_BioticEnergyMax>230.67</RE_BioticEnergyMax>
-          <RE_BioticEnergyRecoveryRate>0.3</RE_BioticEnergyRecoveryRate>
+          <RE_BioticEnergyMax>230</RE_BioticEnergyMax>
+          <RE_BioticEnergyRecoveryRate>1</RE_BioticEnergyRecoveryRate>
         </statFactors>
 		<hungerRateFactorOffset>0.3</hungerRateFactorOffset>
       </li>
@@ -241,7 +241,7 @@
         <minSeverity>4</minSeverity>
         <statFactors>
           <RE_BioticEnergyMax>300</RE_BioticEnergyMax>
-          <RE_BioticEnergyRecoveryRate>0.4</RE_BioticEnergyRecoveryRate>
+          <RE_BioticEnergyRecoveryRate>1.5</RE_BioticEnergyRecoveryRate>
         </statFactors>
 		<hungerRateFactorOffset>0.4</hungerRateFactorOffset>
       </li>
