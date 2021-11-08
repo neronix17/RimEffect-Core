@@ -12,6 +12,12 @@
     {
         public float bioticEnergy;
 
+        public override void PostAdd(DamageInfo? dinfo)
+        {
+            base.PostAdd(dinfo);
+            this.bioticEnergy = this.pawn.GetStatValue(RE_DefOf.RE_BioticEnergyMax);
+        }
+
         public void UseEnergy(float energyUsed)
         {
             this.bioticEnergy -= energyUsed;
