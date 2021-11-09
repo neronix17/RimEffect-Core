@@ -72,6 +72,7 @@
     <label>VI interface</label>
     <description>A hologram emmiter connected to VI interface. The VI can be interacted and talked with, providing users news, information and recreation.</description>
 	<thingClass>RimEffect.Building_VIInterface</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
       <texPath>Things/Building/Joy/VITerminal/VITerminal</texPath>
       <graphicClass>Graphic_Single</graphicClass>
