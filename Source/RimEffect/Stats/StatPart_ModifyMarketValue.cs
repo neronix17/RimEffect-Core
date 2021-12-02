@@ -37,12 +37,10 @@ namespace RimEffect
 				if (req.Thing.ParentHolder is Pawn_InventoryTracker inventoryTracker && inventoryTracker.pawn.GetLord()?.LordJob is LordJob_TradeWithColony lordJob
 					&& FactionHasDiscount(lordJob.lord.faction))
 				{
-					Log.Message("Patch works on " + req.Thing.ParentHolder);
 					return true;
 				}
 				else if (req.Thing.ParentHolder is Settlement_TraderTracker settlement_TraderTracker && FactionHasDiscount(settlement_TraderTracker.settlement.Faction))
 				{
-					Log.Message("Patch works on " + req.Thing.ParentHolder);
 					return true;
 				}
 				else if (req.Thing.ParentHolder is Caravan_TraderTracker caravan_TraderTracker)
@@ -50,13 +48,8 @@ namespace RimEffect
 					var caravan = Traverse.Create(caravan_TraderTracker).Field("caravan").GetValue<Caravan>();
 					if (FactionHasDiscount(caravan.Faction))
 					{
-						Log.Message("Patch works on " + req.Thing.ParentHolder);
 						return true;
 					}
-				}
-				else
-				{
-					Log.Message("Patch doesn't work on " + req.Thing.ParentHolder);
 				}
 			}
 			return false;

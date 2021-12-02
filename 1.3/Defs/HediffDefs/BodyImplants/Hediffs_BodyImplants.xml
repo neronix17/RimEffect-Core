@@ -447,6 +447,13 @@
         <createHediff>BrainShock</createHediff>
       </li>
     </comps>
+    <stages>
+      <li>
+		<statOffsets>
+			<VEF_VerbRangeFactor>0.2</VEF_VerbRangeFactor>
+		</statOffsets>
+      </li>
+    </stages>
   </HediffDef>
 
   <ThingDef ParentName="RE_BodyPartImplantBase">

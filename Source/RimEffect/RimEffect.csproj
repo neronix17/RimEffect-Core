@@ -88,7 +88,6 @@
     <Compile Include="HarmonyPatches\ShouldFleeFrom_Patch.cs" />
     <Compile Include="HarmonyPatches\TendPatient_Patch.cs" />
     <Compile Include="HarmonyPatches\Research_Patches.cs" />
-    <Compile Include="HarmonyPatches\Verb_Patches.cs" />
     <Compile Include="HarmonyPatches\Notify_DamageApplied_Patch.cs" />
     <Compile Include="HarmonyPatches\Building_SpawnSetup_Patch.cs" />
     <Compile Include="HarmonyPatches\CanEquip_Patch.cs" />
