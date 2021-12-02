@@ -16,34 +16,50 @@ namespace RimEffect
 	{
 		public override string ExplanationPart(StatRequest req)
 		{
-			return "RE.AllyRelationsDiscount".Translate();
+			if (ShouldWorkOn(req))
+            {
+				return "RE.AllyRelationsDiscount".Translate();
+			}
+			return null;
 		}
-
 		public override void TransformValue(StatRequest req, ref float val)
 		{
-			if (req.HasThing)
+			if (ShouldWorkOn(req))
             {
-				if (req.Thing.ParentHolder is Pawn_InventoryTracker inventoryTracker && inventoryTracker.pawn.GetLord()?.LordJob is LordJob_TradeWithColony lordJob 
+				val *= 0.75f;
+			}
+		}
+
+		private bool ShouldWorkOn(StatRequest req)
+        {
+			if (req.HasThing)
+			{
+				if (req.Thing.ParentHolder is Pawn_InventoryTracker inventoryTracker && inventoryTracker.pawn.GetLord()?.LordJob is LordJob_TradeWithColony lordJob
 					&& FactionHasDiscount(lordJob.lord.faction))
-                {
-					Log.Message("Removing");
-					val *= 0.75f;
+				{
+					Log.Message("Patch works on " + req.Thing.ParentHolder);
+					return true;
 				}
 				else if (req.Thing.ParentHolder is Settlement_TraderTracker settlement_TraderTracker && FactionHasDiscount(settlement_TraderTracker.settlement.Faction))
-                {
-					Log.Message("Removing");
-					val *= 0.75f;
+				{
+					Log.Message("Patch works on " + req.Thing.ParentHolder);
+					return true;
 				}
 				else if (req.Thing.ParentHolder is Caravan_TraderTracker caravan_TraderTracker)
 				{
 					var caravan = Traverse.Create(caravan_TraderTracker).Field("caravan").GetValue<Caravan>();
 					if (FactionHasDiscount(caravan.Faction))
-                    {
-						Log.Message("Removing");
-						val *= 0.75f;
-                    }
+					{
+						Log.Message("Patch works on " + req.Thing.ParentHolder);
+						return true;
+					}
+				}
+				else
+				{
+					Log.Message("Patch doesn't work on " + req.Thing.ParentHolder);
 				}
 			}
+			return false;
 		}
 		private bool FactionHasDiscount(Faction faction)
         {

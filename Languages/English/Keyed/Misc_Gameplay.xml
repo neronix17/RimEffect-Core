@@ -53,5 +53,5 @@ Be careful: pyjaks are known for causing distress in people when nuzzling, and o
 	<RE.NewRecruit>New Recruit</RE.NewRecruit>
 	<RE.JoinFac>{0} decided to join your faction.</RE.JoinFac>
 	<RE.CurrentProgress>Current progress:</RE.CurrentProgress>
-
+	<RE.AllyRelationsDiscount>Discount based on ally relations: 25%</RE.AllyRelationsDiscount>
 </LanguageData>

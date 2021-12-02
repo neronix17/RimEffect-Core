@@ -50,7 +50,7 @@ namespace RimEffect
 					allRooms.Remove(first);
                 }
             }
-			string progressReport = "RE.CurrentProgress".Translate().RawText;
+			string progressReport = " " + "RE.CurrentProgress".Translate().RawText;
 			int match = this.quest.description.RawText.IndexOf(progressReport);
 
 			if (match >= 0)

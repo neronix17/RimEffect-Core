@@ -70,6 +70,8 @@ namespace RimEffect
         public static PawnKindDef RE_Alliance_Marine;
         public static ThingDef    RE_SpacerTechResearchBench;
         public static HediffDef   RE_BioticNatural;
+
+        public static QuestScriptDef RE_ColonyGrowth;
     }
 }
  

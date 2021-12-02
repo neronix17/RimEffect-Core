@@ -15,8 +15,11 @@ namespace RimEffect
             {
                 foreach (var quest in Find.QuestManager.QuestsListForReading)
                 {
-                    var signal = new Signal("Quest" + quest.id + ".RoomConstructionCheck");
-                    Find.SignalManager.SendSignal(signal);
+                    if (quest != null && quest.root == RE_DefOf.RE_ColonyGrowth)
+                    {
+                        var signal = new Signal("Quest" + quest.id + ".RoomConstructionCheck");
+                        quest.Notify_SignalReceived(signal);
+                    }
                 }
                 colonyGrowthQuest_Dirty = false;
             }
