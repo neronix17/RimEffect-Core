@@ -14,6 +14,7 @@ using Verse.Sound;
 
 namespace RimEffect
 {
+	[StaticConstructorOnStartup]
 	public class Window_GalaxyMap : Window
 	{
 		private QuestInfo selected;

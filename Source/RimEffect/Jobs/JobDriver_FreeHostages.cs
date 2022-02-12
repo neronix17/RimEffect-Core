@@ -33,13 +33,12 @@ namespace RimEffect
                 IntVec3 leavePoint;
                 CellFinder.TryFindRandomPawnExitCell(OtherPawn, out leavePoint);
                 // Turn back to former faction and villager + exit the map
-                Faction fac = Find.QuestManager.QuestsListForReading.Find(q => q.QuestLookTargets.Any(look => look.HasWorldObject && Find.World.worldObjects.ObjectsAt(pawn.Map.Tile).Contains(look.WorldObject))).InvolvedFactions.ToList().Find(f => f != pawn.Map.ParentFaction && f != Faction.OfPlayer);
-                if (fac.HostileTo(Faction.OfPlayer)) fac = Find.FactionManager.RandomNonHostileFaction();
-                foreach (Pawn pawn in Map.mapPawns.AllPawnsSpawned.FindAll(p => p.Position.GetRoom(Map) == this.OtherPawn.Position.GetRoom(Map) && p.health.hediffSet.HasHediff(RE_DefOf.RE_TurnBackToFormerFaction)))
+
+                foreach (Pawn pawn in Map.mapPawns.AllPawnsSpawned.FindAll(p => p.Position.GetRoom(Map) == this.OtherPawn.Position.GetRoom(Map) 
+                && p.health.hediffSet.HasHediff(RE_DefOf.RE_TurnBackToFormerFaction)))
                 {
-                    pawn.SetFactionDirect(fac);
-                    pawn.ChangeKind(PawnKindDefOf.Villager);
                     pawn.health.RemoveHediff(pawn.health.hediffSet.hediffs.Find(h => h.def == RE_DefOf.RE_TurnBackToFormerFaction));
+                    pawn.guest.SetGuestStatus(null);
                     pawn.jobs.TryTakeOrderedJob(new Job(RE_DefOf.RE_LeaveMap, leavePoint));
                 }
             };

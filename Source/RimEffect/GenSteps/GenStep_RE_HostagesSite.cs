@@ -1,7 +1,10 @@
 ﻿using RimWorld;
 using RimWorld.BaseGen;
+using System;
 using System.Linq;
 using Verse;
+using Verse.AI;
+using Verse.AI.Group;
 
 namespace RimEffect.GenSteps
 {
@@ -14,7 +17,6 @@ namespace RimEffect.GenSteps
                 return 69356999;
             }
         }
-
         protected override bool CanScatterAt(IntVec3 c, Map map)
         {
             if (!base.CanScatterAt(c, map))
@@ -38,7 +40,6 @@ namespace RimEffect.GenSteps
             }
             return true;
         }
-
         protected override void ScatterAt(IntVec3 loc, Map map, GenStepParams parms, int count = 1)
         {
             Faction faction;
@@ -120,18 +121,21 @@ namespace RimEffect.GenSteps
                 GenStep_Settlement.GenerateLandingPadNearby(rp.rect, map, faction, out item);
             }
 
+            Faction fac = Find.QuestManager.QuestsListForReading.Find(q => q.QuestLookTargets.Any(look => look.HasWorldObject 
+                && Find.World.worldObjects.ObjectsAt(map.Tile).Contains(look.WorldObject))).InvolvedFactions.ToList().Find(f => f != map.ParentFaction && f != Faction.OfPlayer);
+            if (fac.HostileTo(Faction.OfPlayer)) fac = Find.FactionManager.RandomNonHostileFaction();
             /** Spawn cell block **/
             foreach (IntVec3 item in rp.rect.Cells.InRandomOrder())
             {
-                if (item.GetRoom(map) is Room room && room != null && room.ContainedBeds.EnumerableCount() > 0)
+                if (item.GetRoom(map) is Room room && room != null && room.ContainedBeds.EnumerableCount() > 0 
+                    && room.Cells.ToList().FindAll(c => c.Standable(map) && c.GetDoor(map) == null).TryRandomElement(out var spwWait))
                 {
-                    IntVec3 spwWait = room.Cells.ToList().FindAll(c => c.Standable(map) && c.GetDoor(map) == null).RandomElement();
                     for (int i = 0; i < Rand.RangeInclusive(2, 8); i++)
                     {
-                        Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(PawnKindDefOf.Slave, map.ParentFaction, PawnGenerationContext.NonPlayer, map.Tile, false, false, false, false, false, false));
-                        GenSpawn.Spawn(pawn, spwWait, map, WipeMode.VanishOrMoveAside);
+                        Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(PawnKindDefOf.Villager, fac, PawnGenerationContext.NonPlayer, map.Tile, false, false, false, false, false, false));
+                        GenSpawn.Spawn(pawn, room.Cells.Where(x => x.Standable(map)).RandomElement(), map, WipeMode.VanishOrMoveAside);
                         pawn.health.AddHediff(RE_DefOf.RE_TurnBackToFormerFaction);
-                        pawn.guest.SetGuestStatus(map.ParentFaction,  GuestStatus.Prisoner);
+                        pawn.guest.SetGuestStatus(map.ParentFaction, GuestStatus.Prisoner);
                     }
                     foreach (Building_Bed bed in room.ContainedBeds)
                     {

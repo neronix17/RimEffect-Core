@@ -80,12 +80,11 @@
     <Compile Include="GenSteps\GenStep_RE_PirateOrMech.cs" />
     <Compile Include="GenSteps\GenStep_RE_WoundedSoldier.cs" />
     <Compile Include="GenSteps\GenStep_RogueSite.cs" />
+    <Compile Include="HarmonyPatches\JobGiver_Wander_TryGiveJob.cs" />
     <Compile Include="HarmonyPatches\AddDirect_Patch.cs" />
     <Compile Include="HarmonyPatches\AddHumanlikeOrders_Patch.cs" />
     <Compile Include="HarmonyPatches\CanInteractNowWith_Patch.cs" />
     <Compile Include="HarmonyPatches\EquipmentRender_Patch.cs" />
-    <Compile Include="HarmonyPatches\HostileTo_Patch.cs" />
-    <Compile Include="HarmonyPatches\ShouldFleeFrom_Patch.cs" />
     <Compile Include="HarmonyPatches\TendPatient_Patch.cs" />
     <Compile Include="HarmonyPatches\Research_Patches.cs" />
     <Compile Include="HarmonyPatches\Notify_DamageApplied_Patch.cs" />
