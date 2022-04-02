@@ -10,6 +10,6 @@
 
         [HarmonyPostfix]
         public static void Postfix(PawnKindDef __0, ref bool __result) =>
-            __result &= !__0.race.defName.StartsWith("RE_Mechanoids_");
+            __result &= !__0.race.defName.StartsWith("RE_Mechanoids_") && !__0.race.defName.StartsWith("RE_Husk");
     }
 }
