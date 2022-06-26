@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using System.Linq;
     using RimWorld;
+    using RimWorld.Planet;
     using UnityEngine;
     using Verse;
     using Verse.Sound;
@@ -11,25 +12,27 @@
 
     public class Ability_Annihilation : Ability
     {
-        public override void Cast(LocalTargetInfo target)
+        public override void Cast(params GlobalTargetInfo[] targets)
         {
-            base.Cast(target);
+            base.Cast(targets);
+            foreach (GlobalTargetInfo target in targets)
+            {
+                AnnihilationField annihilationField = (AnnihilationField)GenSpawn.Spawn(RE_DefOf.RE_Biotic_AnnihilationField, target.Cell, this.pawn.Map);
+                annihilationField.caster        = this.pawn;
+                annihilationField.casterFaction = this.pawn.Faction;
+                annihilationField.radius        = this.GetRadiusForPawn();
+                annihilationField.damage        = this.GetPowerForPawn();
+                annihilationField.startTick     = Find.TickManager.TicksGame;
+                annihilationField.endTick       = Find.TickManager.TicksGame + this.GetDurationForPawn();
 
-            AnnihilationField annihilationField = (AnnihilationField) GenSpawn.Spawn(RE_DefOf.RE_Biotic_AnnihilationField, target.Cell, this.pawn.Map);
-            annihilationField.caster        = this.pawn;
-            annihilationField.casterFaction = this.pawn.Faction;
-            annihilationField.radius        = this.GetRadiusForPawn();
-            annihilationField.damage        = this.GetPowerForPawn();
-            annihilationField.startTick     = Find.TickManager.TicksGame;
-            annihilationField.endTick       = Find.TickManager.TicksGame + this.GetDurationForPawn();
-
-            if (this.def.targetFlecks.Any())
-                annihilationField.fleck = this.def.targetFlecks.First();
+                if (this.def.targetFlecks.Any())
+                    annihilationField.fleck = this.def.targetFlecks.First();
+            }
         }
 
-        public override void CheckCastEffects(LocalTargetInfo targetInfo, out bool cast, out bool target, out bool hediffApply)
+        public override void CheckCastEffects(GlobalTargetInfo[] targetInfos, out bool cast, out bool target, out bool hediffApply)
         {
-            base.CheckCastEffects(targetInfo, out cast, out _, out hediffApply);
+            base.CheckCastEffects(targetInfos, out cast, out _, out hediffApply);
             target = false;
         }
     }

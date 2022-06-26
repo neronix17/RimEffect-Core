@@ -1,18 +1,23 @@
 ﻿namespace RimEffect
 {
+    using System.Linq;
     using RimWorld;
+    using RimWorld.Planet;
     using Verse;
     using VFECore.Abilities;
     using Ability = VFECore.Abilities.Ability;
 
     public class Ability_Charge : Ability
     {
-        public override void Cast(LocalTargetInfo target)
+
+        public override void Cast(params GlobalTargetInfo[] targets)
         {
-            base.Cast(target);
+            base.Cast(targets);
 
             LongEventHandler.QueueLongEvent(() =>
                                             {
+                                                GlobalTargetInfo target = targets.First();
+
                                                 IntVec3          destination = target.Cell + ((this.pawn.Position - target.Cell).ToVector3().normalized * 2).ToIntVec3();
                                                 Map              map     = this.pawn.Map;
 

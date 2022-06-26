@@ -1,21 +1,25 @@
 ﻿namespace RimEffect
 {
+    using RimWorld.Planet;
     using UnityEngine;
     using Verse;
     using Ability = VFECore.Abilities.Ability;
 
     public class Ability_Sabotage : Ability
     {
-        public override void Cast(LocalTargetInfo target)
+        public override void Cast(params GlobalTargetInfo[] targets)
         {
-            base.Cast(target);
+            base.Cast(targets);
 
-            if (target.Pawn != null)
+            foreach (GlobalTargetInfo target in targets)
             {
-                if (target.Pawn.RaceProps.IsFlesh)
-                    target.Pawn.stances.StaggerFor(Mathf.RoundToInt(this.GetPowerForPawn() * GenTicks.TicksPerRealSecond));
-                else if (target.Pawn.RaceProps.IsMechanoid)
-                    target.Pawn.mindState.mentalStateHandler.TryStartMentalState(RE_DefOf.RE_SabotageBerserk, null, forceWake: true);
+                if (target.Thing is Pawn targetPawn)
+                {
+                    if (targetPawn.RaceProps.IsFlesh)
+                        targetPawn.stances.StaggerFor(Mathf.RoundToInt(this.GetPowerForPawn() * GenTicks.TicksPerRealSecond));
+                    else if (targetPawn.RaceProps.IsMechanoid)
+                        targetPawn.mindState.mentalStateHandler.TryStartMentalState(RE_DefOf.RE_SabotageBerserk, null, forceWake: true);
+                }
             }
         }
 

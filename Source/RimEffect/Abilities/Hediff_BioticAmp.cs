@@ -2,6 +2,7 @@
 {
     using System.Collections.Generic;
     using RimWorld;
+    using RimWorld.Planet;
     using UnityEngine;
     using Verse;
     using VFECore.Abilities;
@@ -64,9 +65,9 @@
             return ability.Hediff != null && ((Hediff_BioticAmp) ability.Hediff).SufficientEnergyPresent(this.GetEnergyUsedByPawn(ability.pawn));
         }
 
-        public override void Cast(LocalTargetInfo target, Ability ability)
+        public override void Cast(GlobalTargetInfo[] targets, Ability ability)
         {
-            base.Cast(target, ability);
+            base.Cast(targets, ability);
 
             Hediff_BioticAmp bioticAmp = (Hediff_BioticAmp) ability.pawn.health.hediffSet.GetFirstHediffOfDef(RE_DefOf.RE_BioticAmpHediff);
             bioticAmp.UseEnergy(this.GetEnergyUsedByPawn(ability.pawn));
