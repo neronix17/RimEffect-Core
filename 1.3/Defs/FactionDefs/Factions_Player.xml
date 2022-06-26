@@ -23,6 +23,7 @@
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
     <factionNameMaker>NamerFactionOutlander</factionNameMaker>
     <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <allowedCultures><li>Astropolitan</li></allowedCultures>
     <geneticVariance>1</geneticVariance>
     <startingResearchTags>
       <li>AllianceColonyStart</li>
