@@ -24,10 +24,10 @@
 			<li>
 				<compClass>CompQuality</compClass>
 			</li>
-			<li Class="CompProperties_Art">
+			<!-- <li Class="CompProperties_Art">
 				<nameMaker>NamerArtSculpture</nameMaker>
 				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
-			</li>
+			</li> -->
 			<li Class="CompProperties_MeditationFocus">
 				<statDef>MeditationFocusStrength</statDef>
 				<focusTypes>
