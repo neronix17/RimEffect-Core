@@ -8,7 +8,8 @@
 			<minimunGoodwillRequirement>0</minimunGoodwillRequirement>
 		</currency>
 		<workerClass>VanillaStorytellersExpanded.QuestWorker</workerClass>
-		<windowClass>RimEffect.Window_GalaxyMap</windowClass>
+		<windowClass>VanillaStorytellersExpanded.Window_Contracts</windowClass>
+		<windowTitleKey>VEF.AvailableContracts</windowTitleKey>
 		<generateOnce>true</generateOnce>
 		<hideGeneratedQuestsInVanilla>true</hideGeneratedQuestsInVanilla>
 		<maximumAvailableQuestCount>10</maximumAvailableQuestCount>
