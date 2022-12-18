@@ -59,7 +59,6 @@
                 <commonality>0.75</commonality>
             </li>
         </backstoryFilters>
-        <geneticVariance>0.8</geneticVariance>
         <caravanTraderKinds>
             <li>RE_Caravan_Alliance_BulkGoods</li>
             <li>RE_Caravan_Alliance_CombatSupplier</li>
