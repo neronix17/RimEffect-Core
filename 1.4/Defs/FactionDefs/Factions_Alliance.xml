@@ -189,7 +189,7 @@
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
     <configurationListOrderPriority>11</configurationListOrderPriority>
       <modExtensions>
-        <li Class="KCSG.FactionSettlement">
+        <li Class="KCSG.CustomGenOption">
           <chooseFromlayouts>
             <li>AllianceFactionColony1</li>
             <li>AllianceFactionColony2</li>
