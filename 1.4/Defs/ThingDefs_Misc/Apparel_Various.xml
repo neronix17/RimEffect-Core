@@ -732,7 +732,7 @@
     <altitudeLayer>Item</altitudeLayer>
     <alwaysHaulable>True</alwaysHaulable>
     <burnableByRecipe>true</burnableByRecipe>
-    <smeltable>true</smeltable>
+    <smeltable>false</smeltable>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
