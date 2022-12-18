@@ -191,7 +191,6 @@
     <configurationListOrderPriority>11</configurationListOrderPriority>
       <modExtensions>
         <li Class="KCSG.FactionSettlement">
-          <useStructureLayout>True</useStructureLayout>
           <chooseFromlayouts>
             <li>AllianceFactionColony1</li>
             <li>AllianceFactionColony2</li>
