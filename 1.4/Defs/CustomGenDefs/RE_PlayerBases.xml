@@ -201,6 +201,55 @@
     <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
     <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
   </roofGrid>
+  <terrainGrid>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,PrefabSolarCollectors,.,.,RE_PrefabWall_Steel,.,RE_FusionCell_North,RE_FusionCell_North,RE_PrefabWall_Steel,.,PrefabSolarCollectors,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,Door_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,.,.,.,RE_PrefabBed_Steel_North,.,.,.,RE_PrefabWall_Steel,.,.,RE_PrefabBed_Steel_North,.,.,RE_PrefabWall_Steel,.,RE_PrefabWall_Steel,.,.,RE_PrefabStandingLamp,RE_PrefabBed_Steel_North,.,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,.,.,.,.,.</li>
+      <li>.,.,.,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,RE_PrefabWall_Steel,.,RE_PrefabWall_Steel,.,.,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,.</li>
+      <li>.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,.,RE_PrefabWall_Steel,.,.,.,.,.,RE_PrefabWall_Steel,.,RE_PrefabWall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,.,.,.,.,RE_PrefabWall_Steel,.,RE_PrefabWall_Steel,RE_PrefabArmchair_Cloth_South,.,.,.,.,RE_PrefabWall_Steel,.,RE_PrefabWall_Steel,.,.,.,.,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabAutodoor_Steel,RE_PrefabWall_Steel,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabAutodoor_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,RE_PrefabWall_Steel,RE_PrefabAutodoor_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_GraveBodyBag_South,.,RE_GraveBodyBag_South,.,RE_GraveBodyBag_South,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,.,.,.,.</li>
+      <li>.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.</li>
+      <li>.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.</li>
+      <li>.,.,.,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabAutodoor_Steel,RE_PrefabWall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,.,.,RE_ManufacturingBench_South,.,.,RE_PrefabWall_Steel,.,.,.,.,.</li>
+      <li>.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.</li>
+      <li>.,.,.,.,RE_PrefabWall_Steel,.,.,RE_PrefabStool_Steel_North,.,.,RE_PrefabWall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.</li>
+      <li>.,.,.,.,RE_PrefabWall_Steel,.,RE_PrefabTable2x2c_Steel,.,.,.,RE_PrefabAutodoor_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_PrefabAutodoor_Steel,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.</li>
+      <li>.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.</li>
+      <li>.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,.,.,.,.,.,RE_Turret_MassAccelerator,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.</li>
+      <li>.,.,.,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,.,.,.,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabAutodoor_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,.,.,.,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,.,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabGenerator,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,RE_PrefabBarricade_Steel,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,.,.,.,.,RE_PrefabBarricade_Steel,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,.,.,RE_BriefingTable_Steel_North,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,RE_PrefabStandingLamp,.,.,.,.,.,RE_PrefabBarricade_Steel,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,RE_PrefabWall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,.,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,.,RE_PrefabBarricade_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE_PrefabWall_Steel,RE_PrefabWall_Steel,RE_PrefabWall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+   </terrainGrid>
 </KCSG.StructureLayoutDef>
 
 <KCSG.StructureLayoutDef>
