@@ -26,7 +26,7 @@
     <stateEffecter>RE_SabotageBerserk</stateEffecter>
     <tale>MentalStateBerserk</tale>
     <recoverFromSleep>true</recoverFromSleep>
-    <unspawnedCanDo>true</unspawnedCanDo>
+    <inCaravanCanDo>true</inCaravanCanDo>
   </MentalStateDef>
   
   <MentalStateDef ParentName="BaseMentalState">
@@ -54,7 +54,7 @@
     <stateEffecter>RE_Dominate</stateEffecter>
     <tale>MentalStateBerserk</tale>
     <recoverFromSleep>true</recoverFromSleep>
-    <unspawnedCanDo>true</unspawnedCanDo>
+    <inCaravanCanDo>true</inCaravanCanDo>
   </MentalStateDef>
 
 </Defs>
