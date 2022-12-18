@@ -5,9 +5,9 @@
 	<defName>RE_RimEffect</defName>
 	<label>Rim Effect</label>
 	<description>Rim Effect.</description>
-	<Features>
+	<ActivateFeatures>
 		<HediffVerbs>true</HediffVerbs>
-	</Features>
+	</ActivateFeatures>
 </MVCF.ModDef>
 
 </Defs>
