@@ -6,7 +6,7 @@
 	<label>Rim Effect</label>
 	<description>Rim Effect.</description>
 	<ActivateFeatures>
-		<HediffVerbs>true</HediffVerbs>
+		<li>HediffVerbs</li>
 	</ActivateFeatures>
 </MVCF.ModDef>
 
