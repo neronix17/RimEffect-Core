@@ -16,11 +16,6 @@
     <rotation>North</rotation>
   </KCSG.SymbolDef>
   <KCSG.SymbolDef>
-    <defName>RE_ColonialWoodTile</defName>
-    <isTerrain>true</isTerrain>
-    <terrain>RE_ColonialWoodTile</terrain>
-  </KCSG.SymbolDef>
-  <KCSG.SymbolDef>
     <defName>RE_PrefabBed_Steel_North</defName>
     <thing>RE_PrefabBed</thing>
     <stuff>Steel</stuff>
@@ -45,11 +40,6 @@
     <defName>RE_GraveBodyBag_South</defName>
     <thing>RE_GraveBodyBag</thing>
     <rotation>South</rotation>
-  </KCSG.SymbolDef>
-  <KCSG.SymbolDef>
-    <defName>RE_ColonialRubberTile</defName>
-    <isTerrain>true</isTerrain>
-    <terrain>RE_ColonialRubberTile</terrain>
   </KCSG.SymbolDef>
   <KCSG.SymbolDef>
     <defName>RE_ManufacturingBench_South</defName>
@@ -93,11 +83,6 @@
     <rotation>South</rotation>
   </KCSG.SymbolDef>
   <KCSG.SymbolDef>
-    <defName>RE_ColonialFloorTileSteel</defName>
-    <isTerrain>true</isTerrain>
-    <terrain>RE_ColonialFloorTileSteel</terrain>
-  </KCSG.SymbolDef>
-  <KCSG.SymbolDef>
     <defName>RE_SpacerTechResearchBench_Steel_East</defName>
     <thing>RE_SpacerTechResearchBench</thing>
     <stuff>Steel</stuff>
@@ -108,11 +93,6 @@
     <thing>RE_BriefingTable</thing>
     <stuff>Steel</stuff>
     <rotation>North</rotation>
-  </KCSG.SymbolDef>
-  <KCSG.SymbolDef>
-    <defName>RE_ColonialPavementTileSteel</defName>
-    <isTerrain>true</isTerrain>
-    <terrain>RE_ColonialPavementTileSteel</terrain>
   </KCSG.SymbolDef>
   <KCSG.SymbolDef>
     <defName>RE_FusionCell_East</defName>
@@ -491,11 +471,6 @@
     <defName>RE_PrefabWall_Silver</defName>
     <thing>RE_PrefabWall</thing>
     <stuff>Silver</stuff>
-  </KCSG.SymbolDef>
-  <KCSG.SymbolDef>
-    <defName>RE_ColonialPavementTileSilver</defName>
-    <isTerrain>true</isTerrain>
-    <terrain>RE_ColonialPavementTileSilver</terrain>
   </KCSG.SymbolDef>
   <KCSG.SymbolDef>
     <defName>RE_AllianceTerminal_North</defName>
