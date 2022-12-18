@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=============== Medicine ====================-->
+
+	<ThingDef ParentName="MedicineBase">
+		<defName>RE_MediGel</defName>
+		<label>medi-gel</label>
+		<description>An advanced, fast acting gel which almost instantly seals and cures wounds, preventing bleeding out.</description>
+		<thingClass>Medicine</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Resource/MedicineMediGel</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<techLevel>Ultra</techLevel>
+		<stackLimit>25</stackLimit>
+		<tradeability>Buyable</tradeability>
+		<statBases>
+      		<Mass>0.2</Mass>
+			<MarketValue>750</MarketValue>
+			<Flammability>0.7</Flammability>
+			<MedicalPotency>2.00</MedicalPotency>
+			<MedicalQualityMax>2.00</MedicalQualityMax>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<MaxHitPoints>80</MaxHitPoints>
+      		<WorkToMake>3000</WorkToMake>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Use medi-gel</useLabel>
+				<useDuration>300</useDuration>
+			</li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>MechSerumUsed</soundOnUsed>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>RECompMediGel.CompUseEffect_MediGel</compClass>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>CompUseEffect_DestroySelf</compClass>
+			</li>
+		</comps>
+		<costList>
+			<MedicineIndustrial>1</MedicineIndustrial>
+			<Neutroamine>5</Neutroamine>
+			<RE_ElementZero>2</RE_ElementZero>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<recipeUsers>
+				<li>RE_ManufacturingBench</li>
+			</recipeUsers>
+			<researchPrerequisite>RE_MediGelFabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+				<Intellectual>6</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+		<tradeTags>
+			<li>RE_Medicine</li>
+		</tradeTags>
+    <thingSetMakerTags>
+      <li>RE_SystemsAlliance</li>
+    </thingSetMakerTags>
+	</ThingDef>
+
+	<RecipeDef>
+		<defName>RE_AdministerMediGel</defName>
+		<label>administer medi-gel</label>
+		<description>Administer medi-gel.</description>
+		<workerClass>Recipe_AdministerUsableItem</workerClass>
+		<jobString>Administering medi-gel.</jobString>
+		<targetsBodyPart>false</targetsBodyPart>
+		<anesthetize>false</anesthetize>
+		<workAmount>300</workAmount>
+		<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+		<surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RE_MediGel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RE_MediGel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	
+  <ThingDef ParentName="ResourceBase">
+    <defName>RE_PrefabComponent</defName>
+    <label>prefabrication component</label>
+    <description>Miscellaneous parts packed ingeniously together in order to frontload the work required to construct the final result. Prefab components are slow to create but exceptionally fast to work with, leading to their widespread use through almost every part of colonial life.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentPrefabrication</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	  <drawSize>0.90</drawSize>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <MarketValue>15.7</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+	<tradeTags>
+      <li>RE_Resource</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>RE_ElementZero</defName>
+    <label>element zero</label>
+    <description>Colloquially known as "eezo", this material is the backbone of much advanced technology. By running a current through it, it is able to raise or lower the mass within an affected field. The civilizations of the galaxy call this phenomenon "Mass Effect".</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ElementZero</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <stackLimit>150</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>67</MarketValue>
+      <Mass>0.02</Mass>
+      <Flammability>0.7</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+    <deepCommonality>1</deepCommonality>
+    <deepCountPerPortion>5</deepCountPerPortion>
+    <deepLumpSizeRange>2~5</deepLumpSizeRange>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <thingSetMakerTags>
+      <li>RE_SystemsAlliance</li>
+    </thingSetMakerTags>
+	<tradeTags>
+      <li>RE_Resource</li>
+    </tradeTags>
+  </ThingDef>
+
+</Defs>

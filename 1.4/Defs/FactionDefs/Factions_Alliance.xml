@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <FactionDef ParentName="FactionBase" Name="RE_AllianceFactionBase" Abstract="True">
+        <pawnSingular>colonist</pawnSingular>
+        <pawnsPlural>colonists</pawnsPlural>
+        <categoryTag>RE_Alliance</categoryTag>
+        <listOrderPriority>30</listOrderPriority>
+        <settlementGenerationWeight>0.8</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <canMakeRandomly>true</canMakeRandomly>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <leaderTitle>prime minister</leaderTitle>
+        <fixedLeaderKinds>
+            <li>RE_PrimeMinister</li>
+        </fixedLeaderKinds>
+        <factionIconPath>World/WorldObjects/Expanding/AllianceColony</factionIconPath>
+        <factionNameMaker>NamerFaction_SystemsAlliance</factionNameMaker>
+        <settlementNameMaker>NamerFactionBases_SystemsAlliance</settlementNameMaker>
+        <techLevel>Ultra</techLevel>
+        <disallowedMemes>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+        </disallowedMemes>
+    <structureMemeWeights>
+      <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+      <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+      <Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
+      <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
+    </structureMemeWeights>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Offworld</li>
+                </categories>
+                <commonality>0.25</commonality>
+            </li>
+            <li>
+                <categories>
+                    <li>SystemsAlliance</li>
+                </categories>
+                <commonality>0.75</commonality>
+            </li>
+        </backstoryFilters>
+        <geneticVariance>0.8</geneticVariance>
+        <caravanTraderKinds>
+            <li>RE_Caravan_Alliance_BulkGoods</li>
+            <li>RE_Caravan_Alliance_CombatSupplier</li>
+            <li>RE_Caravan_Alliance_Exotic</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>RE_Visitor_Alliance_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>RE_Base_Alliance_Standard</li>
+        </baseTraderKinds>
+        <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+        <raidLootMaker>RE_AllianceRaidLootMaker</raidLootMaker>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0,35)</li>
+                <li>(70, 50)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+            <li>
+                <!-- Normal fights, standard mix -->
+                <kindDef>Combat</kindDef>
+                <options>
+                    <RE_AllianceRecruit>5</RE_AllianceRecruit>
+                    <RE_AllianceMilitia>10</RE_AllianceMilitia>
+                    <RE_AllianceOfficer>1.5</RE_AllianceOfficer>
+                    <RE_Ranger>7</RE_Ranger>
+                    <RE_Alliance_Marine>10</RE_Alliance_Marine>
+                    <RE_Alliance_MarineHeavy>10</RE_Alliance_MarineHeavy>
+                    <RE_Alliance_MarineSniper>5</RE_Alliance_MarineSniper>
+                </options>
+            </li>
+            <li>
+                <!-- adepts and engineers -->
+                <kindDef>Combat</kindDef>
+                <options>
+                    <RE_AllianceRecruit>5</RE_AllianceRecruit>
+                    <RE_AllianceMilitia>10</RE_AllianceMilitia>
+                    <RE_AllianceOfficer>1.5</RE_AllianceOfficer>
+                    <RE_Ranger>7</RE_Ranger>
+                    <RE_Alliance_Marine>10</RE_Alliance_Marine>
+                    <RE_Alliance_MarineHeavy>10</RE_Alliance_MarineHeavy>
+                    <RE_Alliance_MarineSniper>3</RE_Alliance_MarineSniper>
+                    <RE_Alliance_Engineer>5</RE_Alliance_Engineer>
+                    <RE_Alliance_Adept>7</RE_Alliance_Adept>
+                </options>
+            </li>
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <RE_Colonist>20</RE_Colonist>
+                    <RE_Farmer>10</RE_Farmer>
+                    <RE_Official>5</RE_Official>
+                    <RE_Ranger>8</RE_Ranger>
+                    <RE_Scientist>6</RE_Scientist>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <RE_Merchant>1</RE_Merchant>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2</Alpaca>
+                    <Elephant>1</Elephant>
+                </carriers>
+                <guards>
+                    <RE_Colonist>3</RE_Colonist>
+                    <RE_Ranger>7</RE_Ranger>
+                    <RE_AllianceMilitia>10</RE_AllianceMilitia>
+                    <RE_AllianceRecruit>9</RE_AllianceRecruit>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <RE_Colonist>20</RE_Colonist>
+                    <RE_Farmer>10</RE_Farmer>
+                    <RE_AllianceOfficer>1.5</RE_AllianceOfficer>
+                    <RE_PrimeMinister>1</RE_PrimeMinister>
+                    <RE_Scientist>4</RE_Scientist>
+                    <RE_Medic>4</RE_Medic>
+                    <RE_Ranger>5</RE_Ranger>
+                    <RE_AllianceMilitia>7</RE_AllianceMilitia>
+                    <RE_AllianceRecruit>7</RE_AllianceRecruit>
+                    <RE_Official>10</RE_Official>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <settlementTexturePath>World/WorldObjects/AllianceColonyExpanding</settlementTexturePath>
+    </FactionDef>
+
+    <ThingSetMakerDef>
+        <defName>RE_AllianceRaidLootMaker</defName>
+        <root Class="ThingSetMaker_MarketValue">
+            <fixedParams>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                        <li>MedicineIndustrial</li>
+                        <li>ComponentIndustrial</li>
+                        <li>RE_PrefabComponent</li>
+                        <li>ComponentSpacer</li>
+                        <li>MealSurvivalPack</li>
+                        <li>Neutroamine</li>
+                        <li>RE_MediGel</li>
+                        <li>MedicineUltratech</li>
+                    </thingDefs>
+                </filter>
+            </fixedParams>
+        </root>
+    </ThingSetMakerDef>
+
+    <FactionDef ParentName="RE_AllianceFactionBase">
+        <defName>RE_SystemsAlliance</defName>
+        <label>systems alliance</label>
+        <description>These people have arrived to this rimworld fairly recently, in a major colonization mission launched by Systems Alliance. They sport powerful ultra technology, and are known to use element zero to power their settlements and propel their spacecraft.\n\nThey maintain cold but relatively friendly relations with natives and other space-faring civilizations.\n\nSystems Alliance holds reason, economy and exploration in high regard.</description>
+        <colorSpectrum>
+            <li>(0.27, 0.40, 0.74)</li>
+            <li>(0.28, 0.44, 0.72)</li>
+        </colorSpectrum>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>11</configurationListOrderPriority>
+      <modExtensions>
+        <li Class="KCSG.FactionSettlement">
+          <useStructureLayout>True</useStructureLayout>
+          <chooseFromlayouts>
+            <li>AllianceFactionColony1</li>
+            <li>AllianceFactionColony2</li>
+            <li>AllianceFactionColony3</li>
+            <li>AllianceFactionColony4</li>
+            <li>AllianceFactionColony5</li>
+            <li>AllianceFactionColony6</li>
+            <li>AllianceFactionColony7</li>
+            <li>AllianceFactionColony8</li>
+          </chooseFromlayouts>
+        </li>
+      </modExtensions>
+    </FactionDef>
+
+</Defs>

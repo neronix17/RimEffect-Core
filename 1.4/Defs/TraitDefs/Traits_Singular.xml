@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TraitDef>
+    <defName>RE_BioticGod</defName>
+    <commonality>0</commonality>
+    <ignoreConfigErrors>true</ignoreConfigErrors>
+    <degreeDatas>
+      <li>
+        <label>biotic god</label>
+        <description>{PAWN_nameDef} is a biotic god.</description>
+        <statFactors>
+          <RE_BioticEnergyMax>50</RE_BioticEnergyMax>
+          <RE_BioticEnergyRecoveryRate>50</RE_BioticEnergyRecoveryRate>
+        </statFactors>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+</Defs>
