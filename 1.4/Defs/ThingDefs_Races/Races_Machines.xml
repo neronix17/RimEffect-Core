@@ -47,6 +47,9 @@
       <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
     </race>
+	<mechEnabledWorkTypes>
+		<li>Hauling</li>
+	</mechEnabledWorkTypes>
     <butcherProducts>
 	  <RE_PrefabComponent>4</RE_PrefabComponent>
       <ComponentSpacer>2</ComponentSpacer>

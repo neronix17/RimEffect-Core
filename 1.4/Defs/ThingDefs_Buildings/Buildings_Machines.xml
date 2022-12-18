@@ -61,9 +61,6 @@
       <li Class="CompProperties_Flickable"/>
 	  <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
 		<pawnToSpawn>RE_Mechanoids_FENRIS</pawnToSpawn>
-		<allowedWorkTypes>
-			<li>Hauling</li>
-		</allowedWorkTypes>
 		<extraChargingPower>1600</extraChargingPower>
 		<hoursToRecharge>6</hoursToRecharge>
 	  </li>
@@ -136,8 +133,6 @@
       <li Class="CompProperties_Flickable"/>
 	  <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
 		<pawnToSpawn>RE_Mechanoids_LOKI</pawnToSpawn>
-		<allowedWorkTypes>
-		</allowedWorkTypes>
 		<extraChargingPower>1200</extraChargingPower>
 		<spawnWithWeapon>RE_Gun_AlliancePistol</spawnWithWeapon>
 		<hoursToRecharge>24</hoursToRecharge>
@@ -210,8 +205,6 @@
       <li Class="CompProperties_Flickable"/>
 	  <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
 		<pawnToSpawn>RE_Mechanoids_YMIR</pawnToSpawn>
-		<allowedWorkTypes>
-		</allowedWorkTypes>
 		<extraChargingPower>2200</extraChargingPower>
 		<spawnWithWeapon>RE_YMIRMassAccelerator</spawnWithWeapon>
 		<hoursToRecharge>48</hoursToRecharge>
