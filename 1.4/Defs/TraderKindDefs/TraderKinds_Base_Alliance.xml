@@ -178,6 +178,11 @@
         <countRange>1~2</countRange>
       </li>
       <li Class="StockGenerator_Tag">
+        <tradeTag>Art</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+      <li Class="StockGenerator_Tag">
         <tradeTag>Television</tradeTag>
         <thingDefCountRange>1~2</thingDefCountRange>
         <countRange>1~2</countRange>
