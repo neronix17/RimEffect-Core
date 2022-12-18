@@ -129,7 +129,8 @@
       </li>
 
       <!-- Weapons -->
-      <li Class="StockGenerator_WeaponsRanged">
+      <li Class="StockGenerator_MarketValue">
+        <tradeTag>WeaponRanged</tradeTag>
         <countRange>3~6</countRange>
       </li>
       <li Class="StockGenerator_Category">
@@ -149,8 +150,13 @@
       </li>
 
       <!-- Apparel -->
-      <li Class="StockGenerator_Clothes">
-        <countRange>10~16</countRange>
+      <li Class="StockGenerator_MarketValue">
+        <tradeTag>BasicClothing</tradeTag>
+        <countRange>7~10</countRange>
+      </li>
+      <li Class="StockGenerator_MarketValue">
+        <tradeTag>Clothing</tradeTag>
+        <countRange>3~6</countRange>
       </li>
       <li Class="StockGenerator_Tag">
         <tradeTag>RE_SpacerApparel</tradeTag>
@@ -170,9 +176,6 @@
         <categoryDef>BuildingsFurniture</categoryDef>
         <thingDefCountRange>3~4</thingDefCountRange>
         <countRange>1~2</countRange>
-      </li>
-      <li Class="StockGenerator_Art">
-        <countRange>5~10</countRange>
       </li>
       <li Class="StockGenerator_Tag">
         <tradeTag>Television</tradeTag>
