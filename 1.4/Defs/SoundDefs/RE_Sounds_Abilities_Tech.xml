@@ -7,8 +7,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>TechAbilities/Tech_CombatDrone_Aiming</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>TechAbilities/Tech_CombatDrone_Aiming</clipPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -23,8 +23,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>TechAbilities/Tech_CombatDrone_Cast</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>TechAbilities/Tech_CombatDrone_Cast</clipPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -105,8 +105,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>TechAbilities/Tech_CryoBlast_Explode</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>TechAbilities/Tech_CryoBlast_Explode</clipPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -121,8 +121,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>TechAbilities/Tech_CryoBlast_Fire</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>TechAbilities/Tech_CryoBlast_Fire</clipPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -137,8 +137,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>TechAbilities/Tech_DefenseMatrix</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>TechAbilities/Tech_DefenseMatrix</clipPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -153,8 +153,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>TechAbilities/Tech_HexShield</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>TechAbilities/Tech_HexShield</clipPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -169,8 +169,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>TechAbilities/Tech_Incinerate</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>TechAbilities/Tech_Incinerate</clipPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -185,8 +185,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>TechAbilities/Tech_Overcharge_Explode</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>TechAbilities/Tech_Overcharge_Explode</clipPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -201,8 +201,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>TechAbilities/Tech_Overcharge_Shot</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>TechAbilities/Tech_Overcharge_Shot</clipPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -217,8 +217,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>TechAbilities/Tech_Sabotage</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>TechAbilities/Tech_Sabotage</clipPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -233,8 +233,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>TechAbilities/Tech_TacticalCloak</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>TechAbilities/Tech_TacticalCloak</clipPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>

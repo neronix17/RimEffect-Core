@@ -7,8 +7,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>BioticAbilities/Biotic_Throw</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>BioticAbilities/Biotic_Throw</clipPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -23,8 +23,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>BioticAbilities/Biotic_Singularity</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>BioticAbilities/Biotic_Singularity</clipPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -39,8 +39,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>BioticAbilities/Biotic_Pull</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>BioticAbilities/Biotic_Pull</clipPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -55,8 +55,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>BioticAbilities/Biotic_Flare</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>BioticAbilities/Biotic_Flare</clipPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -71,8 +71,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>BioticAbilities/Biotic_Dominate</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>BioticAbilities/Biotic_Dominate</clipPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -87,8 +87,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>BioticAbilities/Biotic_Charge</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>BioticAbilities/Biotic_Charge</clipPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -103,8 +103,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>BioticAbilities/Biotic_Barrier</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>BioticAbilities/Biotic_Barrier</clipPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -140,8 +140,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>BioticAbilities/Biotic_AnnihilationField</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>BioticAbilities/Biotic_AnnihilationField</clipPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -156,8 +156,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>BioticAbilities/Biotic_Focus</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>BioticAbilities/Biotic_Focus</clipPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>

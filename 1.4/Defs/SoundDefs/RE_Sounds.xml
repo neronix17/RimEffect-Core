@@ -24,8 +24,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/Avenger/Avenger_Shot</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Avenger/Avenger_Shot</clipPath>
           </li>
         </grains>      
         <volumeRange>45.2941~45.2941</volumeRange>      
@@ -59,8 +59,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/Katana/Katana_Shot</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Katana/Katana_Shot</clipPath>
           </li>
         </grains>      
         <volumeRange>45.2941~45.2941</volumeRange>      
@@ -94,8 +94,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/Mantis/Mantis_Shot</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Mantis/Mantis_Shot</clipPath>
           </li>
         </grains>      
         <volumeRange>45.2941~45.2941</volumeRange>      
@@ -113,8 +113,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/MissileLauncher/MissileLauncher_Shot</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/MissileLauncher/MissileLauncher_Shot</clipPath>
           </li>
         </grains>      
         <volumeRange>45.2941~45.2941</volumeRange>      
@@ -148,8 +148,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/Phalanx/Phalanx_Shot</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Phalanx/Phalanx_Shot</clipPath>
           </li>
         </grains>      
         <volumeRange>45.2941~45.2941</volumeRange>      
@@ -183,8 +183,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/Predator/Predator_Shot</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Predator/Predator_Shot</clipPath>
           </li>
         </grains>      
         <volumeRange>45.2941~45.2941</volumeRange>      
@@ -218,8 +218,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/Tempest/Tempest_Shot</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Tempest/Tempest_Shot</clipPath>
           </li>
         </grains>      
         <volumeRange>45.2941~45.2941</volumeRange>      
@@ -253,8 +253,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/Vindicator/Vindicator_Shot</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Vindicator/Vindicator_Shot</clipPath>
           </li>
         </grains>      
         <volumeRange>45.2941~45.2941</volumeRange>      
@@ -288,8 +288,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/Widow/Widow_Shot</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Widow/Widow_Shot</clipPath>
           </li>
         </grains>      
         <volumeRange>45.2941~45.2941</volumeRange>      
@@ -307,8 +307,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/HeavyTurret/MassAcceleratorHeavyTurret_Shot</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/HeavyTurret/MassAcceleratorHeavyTurret_Shot</clipPath>
           </li>
         </grains>      
         <volumeRange>45.2941~45.2941</volumeRange>      
@@ -325,8 +325,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/Turret/MassAcceleratorTurret_Shot</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Turret/MassAcceleratorTurret_Shot</clipPath>
           </li>
         </grains>      
         <volumeRange>45.2941~45.2941</volumeRange>      
@@ -360,8 +360,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Pawns/Varren/Varren_Call</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Pawns/Varren/Varren_Call</clipPath>
           </li>
         </grains>
         <volumeRange>18~18</volumeRange>
@@ -379,8 +379,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Pawns/Varren/Varren_Angry</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Pawns/Varren/Varren_Angry</clipPath>
           </li>
         </grains>
         <volumeRange>25~25</volumeRange>
@@ -397,8 +397,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Pawns/Varren/Varren_Wounded</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Pawns/Varren/Varren_Wounded</clipPath>
           </li>
         </grains>
         <volumeRange>17~17</volumeRange>
@@ -416,8 +416,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Pawns/Varren/Varren_Death</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Pawns/Varren/Varren_Death</clipPath>
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
@@ -435,8 +435,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Pawns/YMIR/Shot_YMIRCannon</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Pawns/YMIR/Shot_YMIRCannon</clipPath>
           </li>
         </grains>      
         <volumeRange>45.2941~45.2941</volumeRange>      
