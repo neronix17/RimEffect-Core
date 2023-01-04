@@ -68,9 +68,7 @@
       <li Class="CompProperties_UseEffectPlaySound">
         <soundOnUsed>PsyAmpInstalled</soundOnUsed>
       </li>
-      <li Class="CompProperties_UseEffect">
-        <compClass>CompUseEffect_DestroySelf</compClass>
-      </li>
+      <li Class="CompProperties_UseEffectDestroySelf"/>
       <li Class="CompProperties_Forbiddable"/>
     </comps>
   </ThingDef>
@@ -119,9 +117,7 @@
       <li Class="CompProperties_UseEffectPlaySound">
         <soundOnUsed>PsyAmpInstalled</soundOnUsed>
       </li>
-      <li Class="CompProperties_UseEffect">
-        <compClass>CompUseEffect_DestroySelf</compClass>
-      </li>
+      <li Class="CompProperties_UseEffectDestroySelf"/>
       <li Class="CompProperties_Forbiddable"/>
     </comps>
   </ThingDef>
