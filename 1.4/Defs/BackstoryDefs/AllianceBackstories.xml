@@ -5,7 +5,7 @@
     <defName>RE_BlastoObsessive</defName>
     <title>Blasto obsessive</title>
     <titleShort>Blasto fan</titleShort>
-    <baseDescription>[PAWN_nameDef] grew up on a border colony world, where [PAWN_pronoun] worked the farmland for their family. Their only entertainment came in the form of Blasto movies and videos over the net. [PAWN_nameDef] came to define their entire youth in the continuity of Blasto movies, and from their Blasto Bedsheets to their Blasto jackets, they patterned their entire life after the Hanhar Spectre. This lead to some social outcasting, but they didn't care-- they were busy on Blasto chatrooms with their Extranet friends.</baseDescription>
+    <baseDesc>[PAWN_nameDef] grew up on a border colony world, where [PAWN_pronoun] worked the farmland for their family. Their only entertainment came in the form of Blasto movies and videos over the net. [PAWN_nameDef] came to define their entire youth in the continuity of Blasto movies, and from their Blasto Bedsheets to their Blasto jackets, they patterned their entire life after the Hanhar Spectre. This lead to some social outcasting, but they didn't care-- they were busy on Blasto chatrooms with their Extranet friends.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -15,20 +15,20 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>1</amount>
+        <key>Shooting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Crafting</defName>
-        <amount>1</amount>
+        <key>Crafting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Artistic</defName>
-        <amount>3</amount>
+        <key>Artistic</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>3</amount>
+        <key>Intellectual</key>
+        <value>3</value>
       </li>
     </skillGains>
     <workDisables>
@@ -40,7 +40,7 @@
     <defName>RE_BotanicalProdigy</defName>
     <title>Botanical prodigy</title>
     <titleShort>Prodigy</titleShort>
-    <baseDescription>[PAWN_nameDef] came up out of the Terminus System colonies, where [PAWN_pronoun] served alongside their large family as farmers. They became a specialist with unique and alien flora species and came to be heralded as a prodigy in the colony hydroponics labs.</baseDescription>
+    <baseDesc>[PAWN_nameDef] came up out of the Terminus System colonies, where [PAWN_pronoun] served alongside their large family as farmers. They became a specialist with unique and alien flora species and came to be heralded as a prodigy in the colony hydroponics labs.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -50,16 +50,16 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Construction</defName>
-        <amount>1</amount>
+        <key>Construction</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Cooking</defName>
-        <amount>2</amount>
+        <key>Cooking</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Plants</defName>
-        <amount>4</amount>
+        <key>Plants</key>
+        <value>4</value>
       </li>
     </skillGains>
     <workDisables>
@@ -71,7 +71,7 @@
     <defName>RE_GenemoddedSoldier</defName>
     <title>Genemodded soldier</title>
     <titleShort>Soldier</titleShort>
-    <baseDescription>[PAWN_nameDef] is a Systems Alliance operator. [PAWN_pronoun] was chosen as the elite team of genetically modified soldiers. Now, [PAWN_pronoun] travels the galaxy, bringing justice and liberty to anyone in need.</baseDescription>
+    <baseDesc>[PAWN_nameDef] is a Systems Alliance operator. [PAWN_pronoun] was chosen as the elite team of genetically modified soldiers. Now, [PAWN_pronoun] travels the galaxy, bringing justice and liberty to anyone in need.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -80,20 +80,20 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>1</amount>
+        <key>Shooting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>3</amount>
+        <key>Melee</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>1</amount>
+        <key>Social</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Artistic</defName>
-        <amount>1</amount>
+        <key>Artistic</key>
+        <value>1</value>
       </li>
     </skillGains>
 </AlienRace.BackstoryDef>
@@ -102,7 +102,7 @@
     <defName>RE_MarineCadet</defName>
     <title>Marine cadet</title>
     <titleShort>Cadet</titleShort>
-    <baseDescription>Born on the colony world, [PAWN_nameDef] comes from a large family that includes a long line of Alliance soldiers. Following [PAWN_possessive] family's tradition, [PAWN_pronoun] enlisted in the Alliance Navy as a marine after high school and was assigned to the Recruit Training Depot.</baseDescription>
+    <baseDesc>Born on the colony world, [PAWN_nameDef] comes from a large family that includes a long line of Alliance soldiers. Following [PAWN_possessive] family's tradition, [PAWN_pronoun] enlisted in the Alliance Navy as a marine after high school and was assigned to the Recruit Training Depot.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -112,16 +112,16 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Crafting</defName>
-        <amount>1</amount>
+        <key>Crafting</key>
+        <value>1</value>
       </li>
     </skillGains>
 </AlienRace.BackstoryDef>
@@ -130,7 +130,7 @@
     <defName>RE_SquadLeader1</defName>
     <title>Squad leader</title>
     <titleShort>Leader</titleShort>
-    <baseDescription>Being noticed by the drill instructors early on, [PAWN_nameDef] was quickly promoted to squad leader, and then to platoon guide not long after. [PAWN_possessive] platoon had logged unanimous positive feedback on [PAWN_possessive] leadership in a fitness review cycle, and achieved praise from commanders and other soldiers alike. Despite glowing performance reviews, [PAWN_nameDef] has been denied further opportunities for advancement. Having served on numerous groundside garrisons [PAWN_pronoun] has repeatedly requested a transfer to a shipboard posting, but each request has been denied, without explicit reason.</baseDescription>
+    <baseDesc>Being noticed by the drill instructors early on, [PAWN_nameDef] was quickly promoted to squad leader, and then to platoon guide not long after. [PAWN_possessive] platoon had logged unanimous positive feedback on [PAWN_possessive] leadership in a fitness review cycle, and achieved praise from commanders and other soldiers alike. Despite glowing performance reviews, [PAWN_nameDef] has been denied further opportunities for advancement. Having served on numerous groundside garrisons [PAWN_pronoun] has repeatedly requested a transfer to a shipboard posting, but each request has been denied, without explicit reason.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -139,20 +139,20 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>3</amount>
+        <key>Shooting</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Medicine</defName>
-        <amount>1</amount>
+        <key>Medicine</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>1</amount>
+        <key>Social</key>
+        <value>1</value>
       </li>
     </skillGains>
 </AlienRace.BackstoryDef>
@@ -161,7 +161,7 @@
     <defName>RE_CSecDetective</defName>
     <title>C-sec detective</title>
     <titleShort>Detective</titleShort>
-    <baseDescription>Following [PAWN_possessive] father footsteps, [PAWN_nameDef] signed up for the Citadel Security Investigation division. [PAWN_possessive] main duties included gathering evidence, solving crimes and bringing perpetrators to justice.</baseDescription>
+    <baseDesc>Following [PAWN_possessive] father footsteps, [PAWN_nameDef] signed up for the Citadel Security Investigation division. [PAWN_possessive] main duties included gathering evidence, solving crimes and bringing perpetrators to justice.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -170,16 +170,16 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>2</amount>
+        <key>Melee</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>2</amount>
+        <key>Social</key>
+        <value>2</value>
       </li>
     </skillGains>
 </AlienRace.BackstoryDef>
@@ -188,7 +188,7 @@
     <defName>RE_CSecEnforcer</defName>
     <title>C-sec enforcer</title>
     <titleShort>Enforcer</titleShort>
-    <baseDescription>[PAWN_nameDef] signed up to C-Sec Enforcement division as soon as the slot became available. Wearing the C-Sec colours with pride, [PAWN_possessive] main duties on shift included dispensing discipline for minor infractions, resolving disputes, and responding to various emergencies.</baseDescription>
+    <baseDesc>[PAWN_nameDef] signed up to C-Sec Enforcement division as soon as the slot became available. Wearing the C-Sec colours with pride, [PAWN_possessive] main duties on shift included dispensing discipline for minor infractions, resolving disputes, and responding to various emergencies.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -197,16 +197,16 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>2</amount>
+        <key>Melee</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>1</amount>
+        <key>Social</key>
+        <value>1</value>
       </li>
     </skillGains>
     <workDisables>
@@ -218,7 +218,7 @@
     <defName>RE_CSecCustomsOfficer</defName>
     <title>C-sec customs officer</title>
     <titleShort>Customs officer</titleShort>
-    <baseDescription>[PAWN_nameDef] spent most of [PAWN_possessive] career as a simple customs officer working in the Citadel ports. All day every day, [PAWN_pronoun] screened the passengers and cargo that passed through the docks, confiscated contraband, and arrested a smuggler or two.</baseDescription>
+    <baseDesc>[PAWN_nameDef] spent most of [PAWN_possessive] career as a simple customs officer working in the Citadel ports. All day every day, [PAWN_pronoun] screened the passengers and cargo that passed through the docks, confiscated contraband, and arrested a smuggler or two.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -227,16 +227,16 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>1</amount>
+        <key>Shooting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>2</amount>
+        <key>Social</key>
+        <value>2</value>
       </li>
     </skillGains>
     <workDisables>
@@ -249,7 +249,7 @@
     <defName>RE_CSecNetworkOfficer</defName>
     <title>C-sec network officer</title>
     <titleShort>Network officer</titleShort>
-    <baseDescription>Citadel crime is not only limited to physical violence. [PAWN_nameDef] worked at the Citadel Security Network services, fighting against cybercrimes, copyright theft, hacking, viral attacks, and illegal AI. This branch of C-Sec is also called E-Security, and [PAWN_nameDef] is a prime example of the best programmer C-Sec has to offer.</baseDescription>
+    <baseDesc>Citadel crime is not only limited to physical violence. [PAWN_nameDef] worked at the Citadel Security Network services, fighting against cybercrimes, copyright theft, hacking, viral attacks, and illegal AI. This branch of C-Sec is also called E-Security, and [PAWN_nameDef] is a prime example of the best programmer C-Sec has to offer.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -258,8 +258,8 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Intellectual</defName>
-        <amount>5</amount>
+        <key>Intellectual</key>
+        <value>5</value>
       </li>
     </skillGains>
 </AlienRace.BackstoryDef>
@@ -268,7 +268,7 @@
     <defName>RE_CSecSpecialResponse</defName>
     <title>C-sec special response</title>
     <titleShort>C-sec SWAT</titleShort>
-    <baseDescription>Officers who deal with hostage situations, bombs, and heavily armed criminals are the Citadel's finest. In the event the Citadel is attacked, they are the front line of interior defense, armed with military-grade weaponry. [PAWN_nameDef] trained all [PAWN_possessive] life for that very purpose, not being afraid of anything and ready to sacrifice everything for the safety of other Citadel species.</baseDescription>
+    <baseDesc>Officers who deal with hostage situations, bombs, and heavily armed criminals are the Citadel's finest. In the event the Citadel is attacked, they are the front line of interior defense, armed with military-grade weaponry. [PAWN_nameDef] trained all [PAWN_possessive] life for that very purpose, not being afraid of anything and ready to sacrifice everything for the safety of other Citadel species.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -277,16 +277,16 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>3</amount>
+        <key>Shooting</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>2</amount>
+        <key>Melee</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Medicine</defName>
-        <amount>1</amount>
+        <key>Medicine</key>
+        <value>1</value>
       </li>
     </skillGains>
     <workDisables>
@@ -300,8 +300,8 @@
     <defName>RE_AllianceSentinel</defName>
     <title>Alliance sentinel</title>
     <titleShort>Sentinel</titleShort>
-    <baseDescription>[PAWN_nameDef] serves in the Systems Alliance Military as a sentinel, possessing both the ability to use technology to [PAWN_possessive] advantage, and to alter the battlefield using the power of bionics. After numerous campaigns, [PAWN_pronoun] became indifferent to the sight of blood and death, which severely affects [PAWN_possessive] ability for social interactions and caring.
-</baseDescription>
+    <baseDesc>[PAWN_nameDef] serves in the Systems Alliance Military as a sentinel, possessing both the ability to use technology to [PAWN_possessive] advantage, and to alter the battlefield using the power of bionics. After numerous campaigns, [PAWN_pronoun] became indifferent to the sight of blood and death, which severely affects [PAWN_possessive] ability for social interactions and caring.
+</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -310,20 +310,20 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Crafting</defName>
-        <amount>3</amount>
+        <key>Crafting</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>1</amount>
+        <key>Intellectual</key>
+        <value>1</value>
       </li>
     </skillGains>
     <workDisables>
@@ -336,7 +336,7 @@
     <defName>RE_Spacer</defName>
     <title>Spacer</title>
     <titleShort>Spacer</titleShort>
-    <baseDescription>Both of [PAWN_nameDef]'s parents were in the Alliance military. [PAWN_possessive] childhood was spent on ships and stations as they transferred from posting to posting, never staying in one location for more than a few years. Following in [PAWN_possessive] parents' footsteps, [PAWN_pronoun] enlisted at the age of eighteen.</baseDescription>
+    <baseDesc>Both of [PAWN_nameDef]'s parents were in the Alliance military. [PAWN_possessive] childhood was spent on ships and stations as they transferred from posting to posting, never staying in one location for more than a few years. Following in [PAWN_possessive] parents' footsteps, [PAWN_pronoun] enlisted at the age of eighteen.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -346,16 +346,16 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>1</amount>
+        <key>Shooting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Mining</defName>
-        <amount>2</amount>
+        <key>Mining</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>1</amount>
+        <key>Intellectual</key>
+        <value>1</value>
       </li>
     </skillGains>
 </AlienRace.BackstoryDef>
@@ -364,8 +364,8 @@
     <defName>RE_EarhBorn</defName>
     <title>Earthborn</title>
     <titleShort>Earthborn</titleShort>
-    <baseDescription>[PAWN_nameDef] was an orphan raised on the streets of the great megatropolises covering Earth. [PAWN_pronoun] escaped the life of petty crime and underworld gangs by enlisting with the Alliance military when [PAWN_pronoun] turned eighteen.
-</baseDescription>
+    <baseDesc>[PAWN_nameDef] was an orphan raised on the streets of the great megatropolises covering Earth. [PAWN_pronoun] escaped the life of petty crime and underworld gangs by enlisting with the Alliance military when [PAWN_pronoun] turned eighteen.
+</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -375,16 +375,16 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Melee</defName>
-        <amount>2</amount>
+        <key>Melee</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>2</amount>
+        <key>Social</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Crafting</defName>
-        <amount>1</amount>
+        <key>Crafting</key>
+        <value>1</value>
       </li>
     </skillGains>
     <workDisables>
@@ -395,7 +395,7 @@
     <defName>RE_Colonist</defName>
     <title>Colonist</title>
     <titleShort>Colonist</titleShort>
-    <baseDescription>[PAWN_nameDef] was born and raised on a small border colony. When [PAWN_pronoun] was sixteen slavers raided [PAWN_possessive] settlement, slaughtering [PAWN_possessive] family and friends. [PAWN_pronoun] was saved by a passing Alliance patrol, and [PAWN_pronoun] enlisted with the military a few years later.</baseDescription>
+    <baseDesc>[PAWN_nameDef] was born and raised on a small border colony. When [PAWN_pronoun] was sixteen slavers raided [PAWN_possessive] settlement, slaughtering [PAWN_possessive] family and friends. [PAWN_pronoun] was saved by a passing Alliance patrol, and [PAWN_pronoun] enlisted with the military a few years later.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -405,16 +405,16 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>1</amount>
+        <key>Intellectual</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Plants</defName>
-        <amount>2</amount>
+        <key>Plants</key>
+        <value>2</value>
       </li>
     </skillGains>
     <workDisables>
@@ -426,7 +426,7 @@
     <defName>RE_SoleSurvivor</defName>
     <title>Sole survivor</title>
     <titleShort>Survivor</titleShort>
-    <baseDescription>During [PAWN_nameDef]'s service, a mission [PAWN_pronoun] was on went horribly wrong. Trapped in an extreme survival situation, [PAWN_pronoun] had to overcome physical torments and psychological stresses that would have broken most people. [PAWN_pronoun] survived while all those around [PAWN_pronoun] fell, and now [PAWN_pronoun] alone is left to tell the tale.</baseDescription>
+    <baseDesc>During [PAWN_nameDef]'s service, a mission [PAWN_pronoun] was on went horribly wrong. Trapped in an extreme survival situation, [PAWN_pronoun] had to overcome physical torments and psychological stresses that would have broken most people. [PAWN_pronoun] survived while all those around [PAWN_pronoun] fell, and now [PAWN_pronoun] alone is left to tell the tale.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -435,20 +435,20 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Crafting</defName>
-        <amount>1</amount>
+        <key>Crafting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Plants</defName>
-        <amount>2</amount>
+        <key>Plants</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Construction</defName>
-        <amount>1</amount>
+        <key>Construction</key>
+        <value>1</value>
       </li>	 
     </skillGains>
     <workDisables>
@@ -460,7 +460,7 @@
     <defName>RE_WarHero</defName>
     <title>War hero</title>
     <titleShort>Hero</titleShort>
-    <baseDescription>Early in [PAWN_nameDef]'s military career [PAWN_pronoun] found [PAWN_possessive]self facing an overwhelming enemy force. [PAWN_pronoun] risked [PAWN_possessive] own life to save [PAWN_possessive] fellow soldiers and defeat the enemy despite the impossible odds. [PAWN_possessive] bravery and heroism have earned [PAWN_pronoun] medals and recognition from the Alliance fleet. [PAWN_pronoun] almost single-handedly repelled an attack by enemies, earning the Star of Terra, the Alliance's highest honor.</baseDescription>
+    <baseDesc>Early in [PAWN_nameDef]'s military career [PAWN_pronoun] found [PAWN_possessive]self facing an overwhelming enemy force. [PAWN_pronoun] risked [PAWN_possessive] own life to save [PAWN_possessive] fellow soldiers and defeat the enemy despite the impossible odds. [PAWN_possessive] bravery and heroism have earned [PAWN_pronoun] medals and recognition from the Alliance fleet. [PAWN_pronoun] almost single-handedly repelled an attack by enemies, earning the Star of Terra, the Alliance's highest honor.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -469,12 +469,12 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>3</amount>
+        <key>Shooting</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>3</amount>
+        <key>Melee</key>
+        <value>3</value>
       </li> 
     </skillGains>
     <workDisables>
@@ -485,7 +485,7 @@
     <defName>RE_RuthlessOfficer</defName>
     <title>Ruthless officer</title>
     <titleShort>Officer</titleShort>
-    <baseDescription>Throughout [PAWN_nameDef]'s military career, [PAWN_pronoun] have held fast to one basic rule: get the job done. [PAWN_pronoun] has been called cold, calculating, and brutal. [PAWN_possessive] reputation for ruthless efficiency makes [PAWN_possessive] fellow soldiers wary of [PAWN_pronoun]. But when failure is not an option, the military always goes to [PAWN_nameDef] first.</baseDescription>
+    <baseDesc>Throughout [PAWN_nameDef]'s military career, [PAWN_pronoun] have held fast to one basic rule: get the job done. [PAWN_pronoun] has been called cold, calculating, and brutal. [PAWN_possessive] reputation for ruthless efficiency makes [PAWN_possessive] fellow soldiers wary of [PAWN_pronoun]. But when failure is not an option, the military always goes to [PAWN_nameDef] first.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -494,16 +494,16 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>3</amount>
+        <key>Social</key>
+        <value>3</value>
       </li> 
       <li>
-        <defName>Intellectual</defName>
-        <amount>1</amount>
+        <key>Intellectual</key>
+        <value>1</value>
       </li> 
     </skillGains>
     <workDisables>
@@ -514,7 +514,7 @@
     <defName>RE_ChildServant</defName>
     <title>Child servant</title>
     <titleShort>Servant</titleShort>
-    <baseDescription>[PAWN_nameDef] was a child servant for rich criminal for most of [PAWN_possessive] childhood. Stripped of fun, happines and even [PAWN_possessive] parents. Trained to obey every command without question. [PAWN_possessive] job was to care about simple jobs or entertain. [PAWN_pronoun] was freed from this suffering when boss was killed and [PAWN_nameDef] sended elsewhere.</baseDescription>
+    <baseDesc>[PAWN_nameDef] was a child servant for rich criminal for most of [PAWN_possessive] childhood. Stripped of fun, happines and even [PAWN_possessive] parents. Trained to obey every command without question. [PAWN_possessive] job was to care about simple jobs or entertain. [PAWN_pronoun] was freed from this suffering when boss was killed and [PAWN_nameDef] sended elsewhere.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -524,12 +524,12 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Cooking</defName>
-        <amount>3</amount>
+        <key>Cooking</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Plants</defName>
-        <amount>2</amount>
+        <key>Plants</key>
+        <value>2</value>
       </li> 
     </skillGains>
     <workDisables>
@@ -543,7 +543,7 @@
     <defName>RE_MilitaryUtility</defName>
     <title>Military utility</title>
     <titleShort>Repairer</titleShort>
-    <baseDescription>[PAWN_nameDef] repaired malfunctioned turrets and defence androids on Alliance stations. [PAWN_pronoun] learned about the insides of military weaponry and got pretty good at using [PAWN_possessive] tools the Alliance provided.</baseDescription>
+    <baseDesc>[PAWN_nameDef] repaired malfunctioned turrets and defence androids on Alliance stations. [PAWN_pronoun] learned about the insides of military weaponry and got pretty good at using [PAWN_possessive] tools the Alliance provided.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -552,16 +552,16 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Construction</defName>
-        <amount>2</amount>
+        <key>Construction</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Crafting</defName>
-        <amount>3</amount>
+        <key>Crafting</key>
+        <value>3</value>
       </li> 
       <li>
-        <defName>Intellectual</defName>
-        <amount>1</amount>
+        <key>Intellectual</key>
+        <value>1</value>
       </li> 
     </skillGains>
     <workDisables>
@@ -572,7 +572,7 @@
     <defName>RE_AllianceAmbassador</defName>
     <title>Alliance ambassador</title>
     <titleShort>Ambassador</titleShort>
-    <baseDescription>[PAWN_nameDef] had been promised a career as a diplomat since childhood. [PAWN_pronoun] was trained in the best educational institutions of the Alliance to represent the interests of [PAWN_possessive] state on the world stage. [PAWN_pronoun] doesn't know anything about combat due to the time spent in luxurious suites of space stations and planets.</baseDescription>
+    <baseDesc>[PAWN_nameDef] had been promised a career as a diplomat since childhood. [PAWN_pronoun] was trained in the best educational institutions of the Alliance to represent the interests of [PAWN_possessive] state on the world stage. [PAWN_pronoun] doesn't know anything about combat due to the time spent in luxurious suites of space stations and planets.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -581,12 +581,12 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Intellectual</defName>
-        <amount>1</amount>
+        <key>Intellectual</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>5</amount>
+        <key>Social</key>
+        <value>5</value>
       </li> 
     </skillGains>
     <workDisables>
@@ -598,7 +598,7 @@
     <defName>RE_SecurityGuard</defName>
     <title>Security guard</title>
     <titleShort>Guard</titleShort>
-    <baseDescription>[PAWN_nameDef] spent a lot of time in a distant space station as a security guard. The station was not famous for its well-being, so [PAWN_pronoun] had to suppress constant riots. It hardened [PAWN_possessive] body and mind and taught [PAWN_objective] how to fight.</baseDescription>
+    <baseDesc>[PAWN_nameDef] spent a lot of time in a distant space station as a security guard. The station was not famous for its well-being, so [PAWN_pronoun] had to suppress constant riots. It hardened [PAWN_possessive] body and mind and taught [PAWN_objective] how to fight.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -607,12 +607,12 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>3</amount>
+        <key>Shooting</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>2</amount>
+        <key>Melee</key>
+        <value>2</value>
       </li> 
     </skillGains>
     <workDisables>
@@ -623,7 +623,7 @@
     <defName>RE_AgriculturalApprentice</defName>
     <title>Agricultural apprentice</title>
     <titleShort>Farm kid</titleShort>
-    <baseDescription>[PAWN_nameDef] didn't spend much time on capitol planets or in space as a child, [PAWN_possessive] home was always some colony at the edge of known space, learning to feed [PAWN_possessive] colony and keep the equipment running.</baseDescription>
+    <baseDesc>[PAWN_nameDef] didn't spend much time on capitol planets or in space as a child, [PAWN_possessive] home was always some colony at the edge of known space, learning to feed [PAWN_possessive] colony and keep the equipment running.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -633,8 +633,8 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Plants</defName>
-        <amount>4</amount>
+        <key>Plants</key>
+        <value>4</value>
       </li>
     </skillGains>
     <workDisables>
@@ -645,7 +645,7 @@
     <defName>RE_AgriculturalExpert</defName>
     <title>Agricultural expert</title>
     <titleShort>Agriculturalist</titleShort>
-    <baseDescription>[PAWN_nameDef] has spent [PAWN_possessive] adulthood working in various farming communes, with a dedication to growing anything a colony may need in the worst environments. Making the best of few resources, [PAWN_nameDef] had to be familiar with maintaining [PAWN_possessive] equipment.</baseDescription>
+    <baseDesc>[PAWN_nameDef] has spent [PAWN_possessive] adulthood working in various farming communes, with a dedication to growing anything a colony may need in the worst environments. Making the best of few resources, [PAWN_nameDef] had to be familiar with maintaining [PAWN_possessive] equipment.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -655,12 +655,12 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Plants</defName>
-        <amount>5</amount>
+        <key>Plants</key>
+        <value>5</value>
       </li>
       <li>
-        <defName>Construction</defName>
-        <amount>1</amount>
+        <key>Construction</key>
+        <value>1</value>
       </li>
     </skillGains>
     <workDisables>
@@ -671,7 +671,7 @@
     <defName>RE_JuniorOfficer</defName>
     <title>Junior officer</title>
     <titleShort>Officer</titleShort>
-    <baseDescription>[PAWN_nameDef] was raised in a politically minded family on Earth and came to believe that humans that should be first and foremost in galactic politics. In preparation for [PAWN_possessive] military or political career, [PAWN_pronoun] participated in a junior officer's program throughout school.</baseDescription>
+    <baseDesc>[PAWN_nameDef] was raised in a politically minded family on Earth and came to believe that humans that should be first and foremost in galactic politics. In preparation for [PAWN_possessive] military or political career, [PAWN_pronoun] participated in a junior officer's program throughout school.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -681,20 +681,20 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>1</amount>
+        <key>Social</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>1</amount>
+        <key>Intellectual</key>
+        <value>1</value>
       </li>
     </skillGains>
     <workDisables>
@@ -705,7 +705,7 @@
     <defName>RE_DischargedPilot</defName>
     <title>Discharged pilot</title>
     <titleShort>Pilot</titleShort>
-    <baseDescription>After a hot shot career with the Systems Alliance, [PAWN_nameDef] was honorably discharged. Unhappy with the sedentary retired life, [PAWN_nameDef] has sought out a life in the rimward colonies as a second career. [PAWN_pronoun] retains some skills with a pistol, maintaining [PAWN_possessive] craft and formulating plans.</baseDescription>
+    <baseDesc>After a hot shot career with the Systems Alliance, [PAWN_nameDef] was honorably discharged. Unhappy with the sedentary retired life, [PAWN_nameDef] has sought out a life in the rimward colonies as a second career. [PAWN_pronoun] retains some skills with a pistol, maintaining [PAWN_possessive] craft and formulating plans.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -714,16 +714,16 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Crafting</defName>
-        <amount>2</amount>
+        <key>Crafting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Plants</defName>
-        <amount>2</amount>
+        <key>Plants</key>
+        <value>2</value>
       </li>
     </skillGains>
     <workDisables>
@@ -734,7 +734,7 @@
     <defName>RE_BatarianChildSoldier</defName>
     <title>Batarian child soldier</title>
     <titleShort>Pirate</titleShort>
-    <baseDescription>With [PAWN_possessive] parents captured or killed by Batarian slavers out of the Terminus systems, [PAWN_nameDef] was strong enough and at the right age to be kept by the pirate crew as cannon fodder. Luckily for [PAWN_nameDef], [PAWN_pronoun] excelled at it.</baseDescription>
+    <baseDesc>With [PAWN_possessive] parents captured or killed by Batarian slavers out of the Terminus systems, [PAWN_nameDef] was strong enough and at the right age to be kept by the pirate crew as cannon fodder. Luckily for [PAWN_nameDef], [PAWN_pronoun] excelled at it.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -744,12 +744,12 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>3</amount>
+        <key>Shooting</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>2</amount>
+        <key>Melee</key>
+        <value>2</value>
       </li>
     </skillGains>
     <workDisables>
@@ -762,7 +762,7 @@
     <defName>RE_AllianceMarine</defName>
     <title>Alliance marine</title>
     <titleShort>Marine</titleShort>
-    <baseDescription>[PAWN_nameDef] enlisted into the Systems Alliance Marines as soon as [PAWN_pronoun] was able, performing well throughout [PAWN_possessive] training and enlistment period. Now discharged, [PAWN_pronoun] takes [PAWN_possessive] combat skills and first aid training with [PAWN_objective].</baseDescription>
+    <baseDesc>[PAWN_nameDef] enlisted into the Systems Alliance Marines as soon as [PAWN_pronoun] was able, performing well throughout [PAWN_possessive] training and enlistment period. Now discharged, [PAWN_pronoun] takes [PAWN_possessive] combat skills and first aid training with [PAWN_objective].</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -771,16 +771,16 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>2</amount>
+        <key>Melee</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Medicine</defName>
-        <amount>2</amount>
+        <key>Medicine</key>
+        <value>2</value>
       </li>
     </skillGains>
     <workDisables>
@@ -793,7 +793,7 @@
     <defName>RE_AsteroidMiner</defName>
     <title>Asteroid miner</title>
     <titleShort>Miner</titleShort>
-    <baseDescription>[PAWN_nameDef] spent a number of years sweating in the cramped tunnels and hot machinery rooms of a remote asteroid mine, attempting to avoid the crime and drug use rampant on these types of stations. The work was hard, but [PAWN_pronoun] developed valuable skills working with raw materials, fabrication and heavy machinery.</baseDescription>
+    <baseDesc>[PAWN_nameDef] spent a number of years sweating in the cramped tunnels and hot machinery rooms of a remote asteroid mine, attempting to avoid the crime and drug use rampant on these types of stations. The work was hard, but [PAWN_pronoun] developed valuable skills working with raw materials, fabrication and heavy machinery.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -802,16 +802,16 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Construction</defName>
-        <amount>2</amount>
+        <key>Construction</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Mining</defName>
-        <amount>2</amount>
+        <key>Mining</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Crafting</defName>
-        <amount>2</amount>
+        <key>Crafting</key>
+        <value>2</value>
       </li>
     </skillGains>
     <workDisables>
@@ -824,7 +824,7 @@
     <defName>RE_MilitiaCombatant</defName>
     <title>Militia combatant</title>
     <titleShort>Militia</titleShort>
-    <baseDescription>As a child, [PAWN_nameDef] became a militia combatant on [PAWN_possessive] home planet, invaded by an alien race. After going through the horrors of war, [PAWN_pronoun] acquired combat skills along with the nightmares that haunt [PAWN_objective] to this day.</baseDescription>
+    <baseDesc>As a child, [PAWN_nameDef] became a militia combatant on [PAWN_possessive] home planet, invaded by an alien race. After going through the horrors of war, [PAWN_pronoun] acquired combat skills along with the nightmares that haunt [PAWN_objective] to this day.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -834,12 +834,12 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
     </skillGains>
     <workDisables>
@@ -853,7 +853,7 @@
     <defName>RE_Bully</defName>
     <title>Bully</title>
     <titleShort>Bully</titleShort>
-    <baseDescription>[PAWN_nameDef] was born to a marine father who was stationed on the fringes of Citadel Space, and a mother who was a lawyer. During  [PAWN_possessive] childhood [PAWN_nameDef] frequently bullied other children because [PAWN_pronoun] was bigger and stronger at the time and as [PAWN_pronoun] got older began to participate in small petty crimes.</baseDescription>
+    <baseDesc>[PAWN_nameDef] was born to a marine father who was stationed on the fringes of Citadel Space, and a mother who was a lawyer. During  [PAWN_possessive] childhood [PAWN_nameDef] frequently bullied other children because [PAWN_pronoun] was bigger and stronger at the time and as [PAWN_pronoun] got older began to participate in small petty crimes.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -863,12 +863,12 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>1</amount>
+        <key>Shooting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
     </skillGains>
     <workDisables>
@@ -880,7 +880,7 @@
     <defName>RE_Convict</defName>
     <title>Convict</title>
     <titleShort>Convict</titleShort>
-    <baseDescription>At age seventeen was [PAWN_possessive] first time organizing a crime. [PAWN_nameDef] and four of [PAWN_possessive] friends planned on robbing a shoe store, all armed with loaded pistols. However the robbery went awry and two of [PAWN_possessive] friends were killed in a shootout with police authorities. [PAWN_pronoun] and the others were taken into custody and charged with robbery and armed possesion.</baseDescription>
+    <baseDesc>At age seventeen was [PAWN_possessive] first time organizing a crime. [PAWN_nameDef] and four of [PAWN_possessive] friends planned on robbing a shoe store, all armed with loaded pistols. However the robbery went awry and two of [PAWN_possessive] friends were killed in a shootout with police authorities. [PAWN_pronoun] and the others were taken into custody and charged with robbery and armed possesion.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -889,16 +889,16 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>1</amount>
+        <key>Shooting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>2</amount>
+        <key>Melee</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Crafting</defName>
-        <amount>2</amount>
+        <key>Crafting</key>
+        <value>2</value>
       </li>
     </skillGains>
     <workDisables>
@@ -909,7 +909,7 @@
     <defName>RE_Survivor</defName>
     <title>Survivor</title>
     <titleShort>Survivor</titleShort>
-    <baseDescription>During an encounter with batarian raiders, many Batarian ships surrounded the ship [PAWN_nameDef] was on and consumed it with a hail of missiles. After taking on a huge amount of damage the crew evacuated, despite numerous efforts to call for help to nearby ships. [PAWN_nameDef] was devastated by the loss of [PAWN_possessive] friends and the mental toll it took on him.</baseDescription>
+    <baseDesc>During an encounter with batarian raiders, many Batarian ships surrounded the ship [PAWN_nameDef] was on and consumed it with a hail of missiles. After taking on a huge value of damage the crew evacuated, despite numerous efforts to call for help to nearby ships. [PAWN_nameDef] was devastated by the loss of [PAWN_possessive] friends and the mental toll it took on him.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -918,16 +918,16 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Construction</defName>
-        <amount>2</amount>
+        <key>Construction</key>
+        <value>2</value>
       </li>
     </skillGains>
     <workDisables>
@@ -938,7 +938,7 @@
     <defName>RE_FirstContactWarHero</defName>
     <title>First Contact War hero</title>
     <titleShort>Hero</titleShort>
-    <baseDescription>[PAWN_nameDef] fought the turian groundforces during the First Contact War. During the ruthless and gruesome fighting, [PAWN_pronoun] was wounded, promoted, and given command of a squad. During the peak of the fighting [PAWN_nameDef] lead a few men around a turian stronghold and ambushed a large turian force and wiped them out.</baseDescription>
+    <baseDesc>[PAWN_nameDef] fought the turian groundforces during the First Contact War. During the ruthless and gruesome fighting, [PAWN_pronoun] was wounded, promoted, and given command of a squad. During the peak of the fighting [PAWN_nameDef] lead a few men around a turian stronghold and ambushed a large turian force and wiped them out.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -947,16 +947,16 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>2</amount>
+        <key>Melee</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>2</amount>
+        <key>Social</key>
+        <value>2</value>
       </li>
     </skillGains>
     <workDisables>
@@ -967,7 +967,7 @@
     <defName>RE_BrokenSoldier</defName>
     <title>Broken soldier</title>
     <titleShort>Broken soldier</titleShort>
-    <baseDescription>Lieutenant [PAWN_nameDef] was the Executive Officer of one of the Alliance frigates. When the ship responded to a distress signal at a remote research station, [PAWN_nameDef] led the ground team to victory. Returning to the Citadel to recuperate after the mission, [PAWN_pronoun] received the final decree of [PAWN_possessive] divorce, a separation caused by the long absences of [PAWN_possessive] military career. [PAWN_pronoun] then followed the human tradition after getting divorced: [PAWN_pronoun] went to Chora's Den, near [PAWN_possessive] apartment on the Citadel, to drown [PAWN_possessive] sorrows.</baseDescription>
+    <baseDesc>Lieutenant [PAWN_nameDef] was the Executive Officer of one of the Alliance frigates. When the ship responded to a distress signal at a remote research station, [PAWN_nameDef] led the ground team to victory. Returning to the Citadel to recuperate after the mission, [PAWN_pronoun] received the final decree of [PAWN_possessive] divorce, a separation caused by the long absences of [PAWN_possessive] military career. [PAWN_pronoun] then followed the human tradition after getting divorced: [PAWN_pronoun] went to Chora's Den, near [PAWN_possessive] apartment on the Citadel, to drown [PAWN_possessive] sorrows.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -976,16 +976,16 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Crafting</defName>
-        <amount>1</amount>
+        <key>Crafting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>2</amount>
+        <key>Social</key>
+        <value>2</value>
       </li>
     </skillGains>
     <workDisables>
@@ -997,7 +997,7 @@
     <defName>RE_Retiree</defName>
     <title>Retiree</title>
     <titleShort>Retiree</titleShort>
-    <baseDescription>[PAWN_nameDef] was a lieutenant in the Systems Alliance Navy who served aboard one of the frigates patrolling Terminus space. After [PAWN_possessive] commanding officer quit the Alliance, [PAWN_pronoun] accepted an early retirement and left the military life behind.</baseDescription>
+    <baseDesc>[PAWN_nameDef] was a lieutenant in the Systems Alliance Navy who served aboard one of the frigates patrolling Terminus space. After [PAWN_possessive] commanding officer quit the Alliance, [PAWN_pronoun] accepted an early retirement and left the military life behind.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -1006,16 +1006,16 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>1</amount>
+        <key>Shooting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Crafting</defName>
-        <amount>1</amount>
+        <key>Crafting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Construction</defName>
-        <amount>2</amount>
+        <key>Construction</key>
+        <value>2</value>
       </li>
     </skillGains>
     <workDisables>
@@ -1027,7 +1027,7 @@
     <defName>RE_PromissingStudent</defName>
     <title>Promising student</title>
     <titleShort>Student</titleShort>
-    <baseDescription>[PAWN_nameDef] enlisted at a very early age, seeking a better life. [PAWN_pronoun] trained for two years on one of the Alliance battle cruisers. [PAWN_pronoun] served aboard eight vessels and received two purple hearts before the Skyllian Blitz, where [PAWN_possessive] ship was deployed to help defend the colony.</baseDescription>
+    <baseDesc>[PAWN_nameDef] enlisted at a very early age, seeking a better life. [PAWN_pronoun] trained for two years on one of the Alliance battle cruisers. [PAWN_pronoun] served aboard eight vessels and received two purple hearts before the Skyllian Blitz, where [PAWN_possessive] ship was deployed to help defend the colony.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -1037,20 +1037,20 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>1</amount>
+        <key>Shooting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Crafting</defName>
-        <amount>1</amount>
+        <key>Crafting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>1</amount>
+        <key>Social</key>
+        <value>1</value>
       </li>
     </skillGains>
     <workDisables>
@@ -1061,7 +1061,7 @@
     <defName>RE_AllianceStudent</defName>
     <title>Alliance student</title>
     <titleShort>Student</titleShort>
-    <baseDescription>[PAWN_nameDef] comes originally from London, but [PAWN_possessive] parents preferred the freedom of colony life. [PAWN_possessive] parents didn't have money for sending [PAWN_pronoun] to a university, but [PAWN_nameDef] was able to pursue [PAWN_possessive] studies as the Alliance offered [PAWN_objective] full scholarship after seeing [PAWN_possessive] aptitude scores.</baseDescription>
+    <baseDesc>[PAWN_nameDef] comes originally from London, but [PAWN_possessive] parents preferred the freedom of colony life. [PAWN_possessive] parents didn't have money for sending [PAWN_pronoun] to a university, but [PAWN_nameDef] was able to pursue [PAWN_possessive] studies as the Alliance offered [PAWN_objective] full scholarship after seeing [PAWN_possessive] aptitude scores.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -1071,20 +1071,20 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Crafting</defName>
-        <amount>1</amount>
+        <key>Crafting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Artistic</defName>
-        <amount>1</amount>
+        <key>Artistic</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>1</amount>
+        <key>Social</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>2</amount>
+        <key>Intellectual</key>
+        <value>2</value>
       </li>
     </skillGains>
     <workDisables>
@@ -1095,7 +1095,7 @@
     <defName>RE_SquadLeader</defName>
     <title>Squad leader</title>
     <titleShort>Leader</titleShort>
-    <baseDescription>Early in [PAWN_possessive] career, [PAWN_nameDef] was stationed on the remote colony, an Alliance special forces unit. When the Collectors attack, determined to capture the population, [PAWN_nameDef] and [PAWN_possessive] squad were tasked with protecting the civilians. The events mark a turning point for [PAWN_objective] regarding [PAWN_possessive] confidence as a leader.</baseDescription>
+    <baseDesc>Early in [PAWN_possessive] career, [PAWN_nameDef] was stationed on the remote colony, an Alliance special forces unit. When the Collectors attack, determined to capture the population, [PAWN_nameDef] and [PAWN_possessive] squad were tasked with protecting the civilians. The events mark a turning point for [PAWN_objective] regarding [PAWN_possessive] confidence as a leader.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -1104,20 +1104,20 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>2</amount>
+        <key>Melee</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Medicine</defName>
-        <amount>1</amount>
+        <key>Medicine</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>1</amount>
+        <key>Social</key>
+        <value>1</value>
       </li>
     </skillGains>
     <workDisables>
@@ -1128,7 +1128,7 @@
     <defName>RE_Cadet</defName>
     <title>Cadet</title>
     <titleShort>Cadet</titleShort>
-    <baseDescription>[PAWN_nameDef] spent [PAWN_possessive] early life on space station because of [PAWN_possessive] mother's job there as a civilian contractor, and grew up around ships. When [PAWN_pronoun] was old enough to enlist, [PAWN_pronoun] joined the Alliance Navy.</baseDescription>
+    <baseDesc>[PAWN_nameDef] spent [PAWN_possessive] early life on space station because of [PAWN_possessive] mother's job there as a civilian contractor, and grew up around ships. When [PAWN_pronoun] was old enough to enlist, [PAWN_pronoun] joined the Alliance Navy.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -1138,20 +1138,20 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Crafting</defName>
-        <amount>1</amount>
+        <key>Crafting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Shooting</defName>
-        <amount>1</amount>
+        <key>Shooting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>1</amount>
+        <key>Intellectual</key>
+        <value>1</value>
       </li>
     </skillGains>
     <workDisables>
@@ -1162,7 +1162,7 @@
     <defName>RE_AlliancePilot</defName>
     <title>Alliance pilot</title>
     <titleShort>Pilot</titleShort>
-    <baseDescription>Early in [PAWN_possessive] career, [PAWN_nameDef] was stationed on the remote colony, an Alliance special forces unit. When the Collectors attack, determined to capture the population, [PAWN_nameDef] and [PAWN_possessive] squad were tasked with protecting the civilians. The events mark a turning point for [PAWN_objective] regarding [PAWN_possessive] confidence as a leader.</baseDescription>
+    <baseDesc>Early in [PAWN_possessive] career, [PAWN_nameDef] was stationed on the remote colony, an Alliance special forces unit. When the Collectors attack, determined to capture the population, [PAWN_nameDef] and [PAWN_possessive] squad were tasked with protecting the civilians. The events mark a turning point for [PAWN_objective] regarding [PAWN_possessive] confidence as a leader.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -1171,24 +1171,24 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>-2</amount>
+        <key>Shooting</key>
+        <value>-2</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>-1</amount>
+        <key>Melee</key>
+        <value>-1</value>
       </li>
       <li>
-        <defName>Construction</defName>
-        <amount>2</amount>
+        <key>Construction</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Crafting</defName>
-        <amount>1</amount>
+        <key>Crafting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>1</amount>
+        <key>Intellectual</key>
+        <value>1</value>
       </li>
     </skillGains>
     <workDisables>
