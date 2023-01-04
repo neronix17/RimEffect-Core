@@ -16,7 +16,7 @@
                 if (target.Thing is Pawn targetPawn)
                 {
                     if (targetPawn.RaceProps.IsFlesh)
-                        targetPawn.stances.StaggerFor(Mathf.RoundToInt(this.GetPowerForPawn() * GenTicks.TicksPerRealSecond));
+                        targetPawn.stances.stagger.StaggerFor(Mathf.RoundToInt(this.GetPowerForPawn() * GenTicks.TicksPerRealSecond));
                     else if (targetPawn.RaceProps.IsMechanoid)
                         targetPawn.mindState.mentalStateHandler.TryStartMentalState(RE_DefOf.RE_SabotageBerserk, null, forceWake: true);
                 }

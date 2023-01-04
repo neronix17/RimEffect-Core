@@ -217,7 +217,7 @@ namespace RimEffect
 				}
 				map.powerNetManager.UpdatePowerNetsAndConnections_First();
 				Building newBattery;
-				if (TryFindClosestReachableNet(powerComp.parent.Position, (PowerNet x) => x.CurrentEnergyGainRate() - powerComp.Props.basePowerConsumption * CompPower.WattsToWattDaysPerTick > 1E-07f, map, out PowerNet foundNet, out IntVec3 closestTransmitter))
+				if (TryFindClosestReachableNet(powerComp.parent.Position, (PowerNet x) => x.CurrentEnergyGainRate() - powerComp.Props.PowerConsumption * CompPower.WattsToWattDaysPerTick > 1E-07f, map, out PowerNet foundNet, out IntVec3 closestTransmitter))
 				{
 					map.floodFiller.ReconstructLastFloodFillPath(closestTransmitter, tmpCells);
 					bool flag = false;
@@ -283,7 +283,7 @@ namespace RimEffect
 				{
 					if (!compPowerTrader.PowerOn)
 					{
-						return compPowerTrader.Props.basePowerConsumption > 0f;
+						return compPowerTrader.Props.PowerConsumption > 0f;
 					}
 					return false;
 				}
@@ -305,7 +305,7 @@ namespace RimEffect
 				{
 					if (!compPowerTrader.PowerOn)
 					{
-						return compPowerTrader.Props.basePowerConsumption < 0f;
+						return compPowerTrader.Props.PowerConsumption < 0f;
 					}
 					return false;
 				}

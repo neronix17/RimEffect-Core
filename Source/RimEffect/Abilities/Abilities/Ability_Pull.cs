@@ -34,7 +34,7 @@
 
                 if (target.Thing is Pawn)
                 {
-                    AbilityPawnFlyer flyer = (AbilityPawnFlyer)PawnFlyer.MakeFlyer(VFE_DefOf_Abilities.VFEA_AbilityFlyer, target.Thing as Pawn, destination);
+                    AbilityPawnFlyer flyer = (AbilityPawnFlyer)PawnFlyer.MakeFlyer(VFE_DefOf_Abilities.VFEA_AbilityFlyer, target.Thing as Pawn, destination, null, null);
                     flyer.ability = this;
                     flyer.target  = destination.ToVector3();
                     GenSpawn.Spawn(flyer, target.Cell, this.pawn.Map);

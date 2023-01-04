@@ -33,16 +33,12 @@ namespace RimEffect
 		private bool PrimaryVerbIsIncendiary(Pawn pawn)
 		{
 			if (pawn.equipment != null && pawn.equipment.Primary != null)
-			{
-				List<Verb> allVerbs = pawn.equipment.Primary.GetComp<CompEquippable>().AllVerbs;
-				for (int i = 0; i < allVerbs.Count; i++)
-				{
-					if (allVerbs[i].verbProps.isPrimary)
-					{
-						return allVerbs[i].IsIncendiary();
-					}
-				}
-			}
+            {
+                List<Verb> allVerbs = pawn.equipment.Primary.GetComp<CompEquippable>().AllVerbs;
+                foreach (Verb v in allVerbs)
+                    if (v.verbProps.isPrimary)
+                        return v.IsIncendiary_Melee() || v.IsIncendiary_Ranged();
+            }
 			return false;
 		}
 	}

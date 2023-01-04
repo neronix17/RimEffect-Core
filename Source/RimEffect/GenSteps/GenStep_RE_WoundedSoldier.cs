@@ -44,7 +44,7 @@ namespace RimEffect.GenSteps
 		private void AddRandomDamageTo(Pawn p, int damageAmount)
         {
 			HediffSet hediffSet = p.health.hediffSet;
-			p.health.forceIncap = true;
+			p.health.forceDowned = true;
 			IEnumerable<BodyPartRecord> source = from x in HittablePartsViolence(hediffSet)
 												 where !p.health.hediffSet.hediffs.Any((Hediff y) => y.Part == x && y.CurStage != null && y.CurStage.partEfficiencyOffset < 0f)
 												 select x;

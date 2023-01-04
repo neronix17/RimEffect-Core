@@ -40,17 +40,20 @@ namespace RimEffect
 			slate.Set("refugee", pawn);
 		}
 
-		public static Pawn GenerateRefugee(int tile)
-		{
-			Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(RE_DefOf.RE_Colonist, Find.FactionManager.FirstFactionOfDef(RE_DefOf.RE_SystemsAlliance), 
-				PawnGenerationContext.NonPlayer, tile, forceGenerateNewPawn: false, newborn: false, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, 
-				mustBeCapableOfViolence: false, 20f, forceAddFreeWarmLayerIfNeeded: true, allowGay: true, allowFood: true, allowAddictions: true, inhabitant: false, 
-				certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, 0, null, 1f, null, null, null, null, 0.2f));
-			HealthUtility.DamageUntilDowned(pawn, allowBleedingWounds: false);
-			HealthUtility.DamageLegsUntilIncapableOfMoving(pawn, allowBleedingWounds: false);
-			return pawn;
-		}
-		public override string GetPostProcessedThreatLabel(Site site, SitePart sitePart)
+        public static Pawn GenerateRefugee(int tile)
+        {
+            Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(kind: RE_DefOf.RE_Colonist, faction: Find.FactionManager.FirstFactionOfDef(RE_DefOf.RE_SystemsAlliance), context: PawnGenerationContext.NonPlayer, tile: tile,
+                                                                             forceGenerateNewPawn: false, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, mustBeCapableOfViolence: false, 
+                                                                             colonistRelationChanceFactor: 20f, forceAddFreeWarmLayerIfNeeded: true, allowGay: true, allowPregnant: false, allowFood: true, allowAddictions: true, 
+                                                                             inhabitant: false, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, biocodeWeaponChance: 0f,
+                                                                             biocodeApparelChance: 0f, extraPawnForExtraRelationChance: null, relationWithExtraPawnChanceFactor: 1f, validatorPreGear: null, validatorPostGear: null,
+                                                                             forcedTraits: null, prohibitedTraits: null, minChanceToRedressWorldPawn: 0.2f));
+            HealthUtility.DamageUntilDowned(pawn, allowBleedingWounds: false);
+            HealthUtility.DamageLegsUntilIncapableOfMoving(pawn, allowBleedingWounds: false);
+            return pawn;
+        }
+
+        public override string GetPostProcessedThreatLabel(Site site, SitePart sitePart)
 		{
 			string text = base.GetPostProcessedThreatLabel(site, sitePart);
 			if (sitePart.things != null && sitePart.things.Any)

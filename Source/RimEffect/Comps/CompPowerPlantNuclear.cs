@@ -86,17 +86,17 @@ namespace RimEffect
                     radiationRadius = 0;
                     tickRadiation = 0;
                     variableHeatPusherComp.HeatPerSecondVariable = variableHeatPusherComp.Props.heatPerSecond;
-                    return -base.Props.basePowerConsumption;
+                    return -base.Props.PowerConsumption;
                 }
                 else
                 {
                     signalMeltdown = false;
                     float powerAdditional;
-                    powerAdditional = (2*this.refuelableComp.FuelPercentOfMax-1f) * base.Props.basePowerConsumption;
+                    powerAdditional = (2*this.refuelableComp.FuelPercentOfMax-1f) * base.Props.PowerConsumption;
                     radiationRadius = radiationRadiusBase + ((this.refuelableComp.FuelPercentOfMax - 0.5f) * radiationRadiusBase * 5);
                     variableHeatPusherComp.HeatPerSecondVariable = variableHeatPusherComp.Props.heatPerSecond + (variableHeatPusherComp.Props.heatPerSecond * this.refuelableComp.FuelPercentOfMax);
                     tickRadiation = (int)Math.Round((tickRadiationBase * (1.0f - this.refuelableComp.FuelPercentOfMax)) + tickRadiationBase);
-                    return -base.Props.basePowerConsumption - powerAdditional;
+                    return -base.Props.PowerConsumption - powerAdditional;
                 }
 
             }
@@ -117,7 +117,7 @@ namespace RimEffect
             this.breakdownableComp = this.parent.GetComp<CompBreakdownable>();
             this.variableHeatPusherComp = this.parent.GetComp<CompVariableHeatPusher>();
 
-            if (base.Props.basePowerConsumption < 0f && !this.parent.IsBrokenDown() && FlickUtility.WantsToBeOn(this.parent))
+            if (base.Props.PowerConsumption < 0f && !this.parent.IsBrokenDown() && FlickUtility.WantsToBeOn(this.parent))
             {
                 base.PowerOn = true;
             }
@@ -197,23 +197,19 @@ namespace RimEffect
             if (c.InBounds(this.parent.Map))
             {
                 HashSet<Thing> hashSet = new HashSet<Thing>(c.GetThingList(this.parent.Map));
-                if (hashSet != null)
+                foreach (Thing thing in hashSet)
                 {
-                    foreach (Thing thing in hashSet)
+                    if (thing is Pawn affectedPawn && affectedPawn.RaceProps.IsFlesh)
                     {
-                        Pawn affectedPawn = thing as Pawn;
-                        if (affectedPawn != null && affectedPawn.RaceProps.IsFlesh)
+                        float num = 0.028758334f;
+                        num *= Mathf.Clamp01(1 - affectedPawn.GetStatValue(StatDefOf.ToxicEnvironmentResistance, true));
+                        if (num != 0f)
                         {
-                            float num = 0.028758334f;
-                            num *= affectedPawn.GetStatValue(StatDefOf.ToxicSensitivity, true);
-                            if (num != 0f)
-                            {
-                                float num2 = Mathf.Lerp(0.85f, 1.15f, Rand.ValueSeeded(affectedPawn.thingIDNumber ^ 74374237));
-                                num *= num2;
-                                HealthUtility.AdjustSeverity(affectedPawn, HediffDefOf.ToxicBuildup, num);
-                            }
-
+                            float num2 = Mathf.Lerp(0.85f, 1.15f, Rand.ValueSeeded(affectedPawn.thingIDNumber ^ 74374237));
+                            num *= num2;
+                            HealthUtility.AdjustSeverity(affectedPawn, HediffDefOf.ToxicBuildup, num);
                         }
+
                     }
                 }
 

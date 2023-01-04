@@ -21,7 +21,7 @@
                                                 IntVec3          destination = target.Cell + ((this.pawn.Position - target.Cell).ToVector3().normalized * 2).ToIntVec3();
                                                 Map              map     = this.pawn.Map;
 
-                                                AbilityPawnFlyer flyer = (AbilityPawnFlyer) PawnFlyer.MakeFlyer(VFE_DefOf_Abilities.VFEA_AbilityFlyer_Charge, this.pawn, destination);
+                                                AbilityPawnFlyer flyer = (AbilityPawnFlyer) PawnFlyer.MakeFlyer(VFE_DefOf_Abilities.VFEA_AbilityFlyer_Charge, this.pawn, destination, null, null);
                                                 flyer.ability = this;
                                                 flyer.target  = destination.ToVector3();
                                                 GenSpawn.Spawn(flyer, target.Cell, map);

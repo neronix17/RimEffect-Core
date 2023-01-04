@@ -132,7 +132,7 @@ namespace RimEffect.GenSteps
                 {
                     for (int i = 0; i < Rand.RangeInclusive(2, 8); i++)
                     {
-                        Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(PawnKindDefOf.Villager, fac, PawnGenerationContext.NonPlayer, map.Tile, false, false, false, false, false, false));
+                        Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(PawnKindDefOf.Villager, fac, PawnGenerationContext.NonPlayer, map.Tile, false, false, false, false));
                         GenSpawn.Spawn(pawn, room.Cells.Where(x => x.Standable(map)).RandomElement(), map, WipeMode.VanishOrMoveAside);
                         pawn.health.AddHediff(RE_DefOf.RE_TurnBackToFormerFaction);
                         pawn.guest.SetGuestStatus(map.ParentFaction, GuestStatus.Prisoner);

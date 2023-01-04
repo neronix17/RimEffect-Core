@@ -22,15 +22,9 @@ namespace RimEffect
 
         private static readonly Texture2D EmptyShieldBarTex = SolidColorMaterials.NewSolidColorTexture(Color.clear);
 
-        public Gizmo_EnergyCompShieldStatus()
-        {
-            order = -100f;
-        }
-
-        public override float GetWidth(float maxWidth)
-        {
-            return 140f;
-        }
+        public override float Order => -100;
+        
+        public override float GetWidth(float maxWidth) => 140f;
 
         public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
         {

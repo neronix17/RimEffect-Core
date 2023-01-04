@@ -160,9 +160,9 @@ namespace RimEffect
 					senRange = FloatRange.Zero;
 				}
 				IEnumerable<RoyalTitleDef> source = DefDatabase<RoyalTitleDef>.AllDefsListForReading.Where((RoyalTitleDef t) => faction.def.RoyalTitlesAllInSeniorityOrderForReading.Contains(t) && (senRange.max <= 0f || senRange.IncludesEpsilon(t.seniority)));
-				if (requireResearchedBedroomFurnitureIfRoyal.GetValue(slate) && source.Any((RoyalTitleDef x) => PlayerHasResearchedBedroomRequirementsFor(x)))
+				if (requireResearchedBedroomFurnitureIfRoyal.GetValue(slate) && source.Any(this.PlayerHasResearchedBedroomRequirementsFor))
 				{
-					source = source.Where((RoyalTitleDef x) => PlayerHasResearchedBedroomRequirementsFor(x));
+					source = source.Where(this.PlayerHasResearchedBedroomRequirementsFor);
 				}
 				fixedTitle = source.RandomElementByWeight((RoyalTitleDef t) => t.commonality);
 				if (mustBeOfKind.GetValue(slate) == null && !DefDatabase<PawnKindDef>.AllDefsListForReading.Where((PawnKindDef k) => k.titleRequired != null && k.titleRequired == fixedTitle).TryRandomElement(out result))
@@ -178,7 +178,8 @@ namespace RimEffect
 			{
 				result = DefDatabase<PawnKindDef>.AllDefsListForReading.Where((PawnKindDef kind) => kind.race.race.Humanlike).RandomElement();
 			}
-			Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(result, faction, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: true, newborn: false, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, mustBeCapableOfViolence: false, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowFood: true, allowAddictions: true, inhabitant: false, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, 0, null, 1f, null, null, null, null, null, null, null, null, null, null, null, fixedTitle));
+			Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(result, faction, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: true, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, mustBeCapableOfViolence: false,
+                                                                             colonistRelationChanceFactor: 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowFood: true, allowAddictions: true, inhabitant: false, fixedTitle: fixedTitle));
 			Find.WorldPawns.PassToWorld(pawn);
 			if (pawn.royalty != null && pawn.royalty.AllTitlesForReading.Any())
 			{

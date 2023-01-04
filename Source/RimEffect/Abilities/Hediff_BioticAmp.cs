@@ -86,8 +86,8 @@
 
         private static readonly Texture2D EmptyBarTex = SolidColorMaterials.NewSolidColorTexture(Color.clear);
 
-        public Gizmo_BioticEnergyStatus() => this.order = -1500f;
-
+        public override float Order => -1500f;
+        
         public override float GetWidth(float maxWidth) => 
             140f;
 

@@ -86,17 +86,17 @@ namespace RimEffect
                     radiationRadius = 0;
                     tickRadiation = 0;
                     variableHeatPusherComp.HeatPerSecondVariable = variableHeatPusherComp.Props.heatPerSecond;
-                    return -base.Props.basePowerConsumption;
+                    return -base.Props.PowerConsumption;
                 }
                 else
                 {
                     signalMeltdown = false;
                     float powerAdditional;
-                    powerAdditional = (2 * this.refuelableComp.FuelPercentOfMax - 1f) * base.Props.basePowerConsumption;
+                    powerAdditional = (2 * this.refuelableComp.FuelPercentOfMax - 1f) * base.Props.PowerConsumption;
                     radiationRadius = radiationRadiusBase + ((this.refuelableComp.FuelPercentOfMax - 0.5f) * radiationRadiusBase * 5);
                     variableHeatPusherComp.HeatPerSecondVariable = variableHeatPusherComp.Props.heatPerSecond + (variableHeatPusherComp.Props.heatPerSecond * this.refuelableComp.FuelPercentOfMax);
                     tickRadiation = (int)Math.Round((tickRadiationBase * (1.0f - this.refuelableComp.FuelPercentOfMax)) + tickRadiationBase);
-                    return -base.Props.basePowerConsumption - powerAdditional;
+                    return -base.Props.PowerConsumption - powerAdditional;
                 }
 
             }
@@ -117,7 +117,7 @@ namespace RimEffect
             this.breakdownableComp = this.parent.GetComp<CompBreakdownable>();
             this.variableHeatPusherComp = this.parent.GetComp<CompVariableHeatPusher>();
 
-            if (base.Props.basePowerConsumption < 0f && !this.parent.IsBrokenDown() && FlickUtility.WantsToBeOn(this.parent))
+            if (base.Props.PowerConsumption < 0f && !this.parent.IsBrokenDown() && FlickUtility.WantsToBeOn(this.parent))
             {
                 base.PowerOn = true;
             }
