@@ -299,10 +299,6 @@
       <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1.14</drawSize>
     </graphicData>
-	<comps>
-      <li> <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-      </li>
-    </comps>
     <soundInteract>RE_Interact_Mantis</soundInteract>
     <statBases>
       <WorkToMake>50000</WorkToMake>
@@ -658,10 +654,6 @@
       <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1.22</drawSize>
     </graphicData>
-	<comps>
-      <li> <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-      </li>
-    </comps>
     <soundInteract>RE_Interact_Widow</soundInteract>
     <statBases>
       <WorkToMake>50000</WorkToMake>
@@ -811,9 +803,6 @@
         <explosiveRadius>9.9</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
         <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
-      </li>
-      <li>
-        <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
       </li>
     </comps>
   </ThingDef>
