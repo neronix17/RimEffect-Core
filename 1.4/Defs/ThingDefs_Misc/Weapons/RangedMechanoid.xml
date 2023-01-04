@@ -48,11 +48,6 @@
         <cooldownTime>2.6</cooldownTime>
       </li>
     </tools>
-    <comps>
-      <li>
-        <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-      </li>
-    </comps>
   </ThingDef>
 
   <ThingDef ParentName="RE_Gun_MechHeavyMassAccelerator">
