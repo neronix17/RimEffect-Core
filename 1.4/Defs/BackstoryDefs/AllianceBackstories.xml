@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_BlastoObsessive</defName>
     <title>Blasto obsessive</title>
     <titleShort>Blasto fan</titleShort>
@@ -34,9 +34,9 @@
     <workDisables>
         <li>Social</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_BotanicalProdigy</defName>
     <title>Botanical prodigy</title>
     <titleShort>Prodigy</titleShort>
@@ -65,9 +65,9 @@
     <workDisables>
         <li>Intellectual</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_GenemoddedSoldier</defName>
     <title>Genemodded soldier</title>
     <titleShort>Soldier</titleShort>
@@ -96,9 +96,9 @@
         <value>1</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_MarineCadet</defName>
     <title>Marine cadet</title>
     <titleShort>Cadet</titleShort>
@@ -124,9 +124,9 @@
         <value>1</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_SquadLeader1</defName>
     <title>Squad leader</title>
     <titleShort>Leader</titleShort>
@@ -155,9 +155,9 @@
         <value>1</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_CSecDetective</defName>
     <title>C-sec detective</title>
     <titleShort>Detective</titleShort>
@@ -182,9 +182,9 @@
         <value>2</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_CSecEnforcer</defName>
     <title>C-sec enforcer</title>
     <titleShort>Enforcer</titleShort>
@@ -212,9 +212,9 @@
     <workDisables>
         <li>Intellectual</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_CSecCustomsOfficer</defName>
     <title>C-sec customs officer</title>
     <titleShort>Customs officer</titleShort>
@@ -243,9 +243,9 @@
 		<li>Intellectual</li>
 		<li>ManualSkilled</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_CSecNetworkOfficer</defName>
     <title>C-sec network officer</title>
     <titleShort>Network officer</titleShort>
@@ -262,9 +262,9 @@
         <value>5</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_CSecSpecialResponse</defName>
     <title>C-sec special response</title>
     <titleShort>C-sec SWAT</titleShort>
@@ -294,9 +294,9 @@
 		<li>Artistic</li>
 		<li>Hauling</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_AllianceSentinel</defName>
     <title>Alliance sentinel</title>
     <titleShort>Sentinel</titleShort>
@@ -330,9 +330,9 @@
 		<li>Social</li>
 		<li>Hauling</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_Spacer</defName>
     <title>Spacer</title>
     <titleShort>Spacer</titleShort>
@@ -358,9 +358,9 @@
         <value>1</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_EarhBorn</defName>
     <title>Earthborn</title>
     <titleShort>Earthborn</titleShort>
@@ -389,9 +389,9 @@
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_Colonist</defName>
     <title>Colonist</title>
     <titleShort>Colonist</titleShort>
@@ -420,9 +420,9 @@
     <workDisables>
 	<li>Caring</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_SoleSurvivor</defName>
     <title>Sole survivor</title>
     <titleShort>Survivor</titleShort>
@@ -454,9 +454,9 @@
     <workDisables>
 	<li>Social</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_WarHero</defName>
     <title>War hero</title>
     <titleShort>Hero</titleShort>
@@ -479,9 +479,9 @@
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_RuthlessOfficer</defName>
     <title>Ruthless officer</title>
     <titleShort>Officer</titleShort>
@@ -508,9 +508,9 @@
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_ChildServant</defName>
     <title>Child servant</title>
     <titleShort>Servant</titleShort>
@@ -537,9 +537,9 @@
 	<li>Artistic</li>
 	<li>Intellectual</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_MilitaryUtility</defName>
     <title>Military utility</title>
     <titleShort>Repairer</titleShort>
@@ -566,9 +566,9 @@
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_AllianceAmbassador</defName>
     <title>Alliance ambassador</title>
     <titleShort>Ambassador</titleShort>
@@ -592,9 +592,9 @@
     <workDisables>
 	<li>Violent</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_SecurityGuard</defName>
     <title>Security guard</title>
     <titleShort>Guard</titleShort>
@@ -617,9 +617,9 @@
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_AgriculturalApprentice</defName>
     <title>Agricultural apprentice</title>
     <titleShort>Farm kid</titleShort>
@@ -639,9 +639,9 @@
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_AgriculturalExpert</defName>
     <title>Agricultural expert</title>
     <titleShort>Agriculturalist</titleShort>
@@ -665,9 +665,9 @@
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_JuniorOfficer</defName>
     <title>Junior officer</title>
     <titleShort>Officer</titleShort>
@@ -699,9 +699,9 @@
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_DischargedPilot</defName>
     <title>Discharged pilot</title>
     <titleShort>Pilot</titleShort>
@@ -728,9 +728,9 @@
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_BatarianChildSoldier</defName>
     <title>Batarian child soldier</title>
     <titleShort>Pirate</titleShort>
@@ -756,9 +756,9 @@
 	<li>Animals</li>
 	<li>Artistic</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_AllianceMarine</defName>
     <title>Alliance marine</title>
     <titleShort>Marine</titleShort>
@@ -787,9 +787,9 @@
 	<li>Hauling</li>
 	<li>Artistic</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_AsteroidMiner</defName>
     <title>Asteroid miner</title>
     <titleShort>Miner</titleShort>
@@ -818,9 +818,9 @@
 	<li>Hauling</li>
 	<li>Artistic</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_MilitiaCombatant</defName>
     <title>Militia combatant</title>
     <titleShort>Militia</titleShort>
@@ -847,9 +847,9 @@
 	<li>Artistic</li>
 	<li>Caring</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_Bully</defName>
     <title>Bully</title>
     <titleShort>Bully</titleShort>
@@ -874,9 +874,9 @@
     <workDisables>
 	<li>Caring</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_Convict</defName>
     <title>Convict</title>
     <titleShort>Convict</titleShort>
@@ -903,9 +903,9 @@
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_Survivor</defName>
     <title>Survivor</title>
     <titleShort>Survivor</titleShort>
@@ -932,9 +932,9 @@
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_FirstContactWarHero</defName>
     <title>First Contact War hero</title>
     <titleShort>Hero</titleShort>
@@ -961,9 +961,9 @@
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_BrokenSoldier</defName>
     <title>Broken soldier</title>
     <titleShort>Broken soldier</titleShort>
@@ -991,9 +991,9 @@
     <workDisables>
 	<li>Caring</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_Retiree</defName>
     <title>Retiree</title>
     <titleShort>Retiree</titleShort>
@@ -1021,9 +1021,9 @@
     <workDisables>
 	<li>Hauling</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_PromissingStudent</defName>
     <title>Promising student</title>
     <titleShort>Student</titleShort>
@@ -1055,9 +1055,9 @@
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_AllianceStudent</defName>
     <title>Alliance student</title>
     <titleShort>Student</titleShort>
@@ -1089,9 +1089,9 @@
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_SquadLeader</defName>
     <title>Squad leader</title>
     <titleShort>Leader</titleShort>
@@ -1122,9 +1122,9 @@
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_Cadet</defName>
     <title>Cadet</title>
     <titleShort>Cadet</titleShort>
@@ -1156,9 +1156,9 @@
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_AlliancePilot</defName>
     <title>Alliance pilot</title>
     <titleShort>Pilot</titleShort>
@@ -1193,6 +1193,6 @@
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
 </Defs>

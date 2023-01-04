@@ -418,6 +418,13 @@
       <li>ImplantEmpireCommon</li>
       <li>RE_Implant</li>
     </techHediffsTags>
+    <backstoryFiltersOverride>
+        <li>
+            <categories>
+                <li>SystemsAlliance</li>
+            </categories>
+        </li>
+    </backstoryFiltersOverride>
 	<initialWillRange>3~4</initialWillRange>
 	<initialResistanceRange>18~28</initialResistanceRange>
   </PawnKindDef>
