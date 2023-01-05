@@ -38,9 +38,7 @@
 			<li Class="CompProperties_UseEffect">
 				<compClass>RECompMediGel.CompUseEffect_MediGel</compClass>
 			</li>
-			<li Class="CompProperties_UseEffect">
-				<compClass>CompUseEffect_DestroySelf</compClass>
-			</li>
+			<li Class="CompProperties_UseEffectDestroySelf"/>
 		</comps>
 		<costList>
 			<MedicineIndustrial>1</MedicineIndustrial>
