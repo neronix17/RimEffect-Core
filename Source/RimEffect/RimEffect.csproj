@@ -56,7 +56,6 @@
     <Compile Include="Abilities\Hediff_BioticAmp.cs" />
     <Compile Include="Abilities\Hediff_OmniTool.cs" />
     <Compile Include="Apparels\ShieldBeltApparel.cs" />
-    <Compile Include="Buildings\Building_AutoDoorLockable.cs" />
     <Compile Include="Buildings\Building_GalaxyMap.cs" />
     <Compile Include="Buildings\Building_VIInterface.cs" />
     <Compile Include="Comps\CompPlantHarmRadiusIfBroken.cs" />
@@ -116,7 +115,6 @@
     <Compile Include="Sites\SitePartWorker_Generic.cs" />
     <Compile Include="Sites\SitePartWorker_RogueSite.cs" />
     <Compile Include="Stats\StatPart_ModifyMarketValue.cs" />
-    <Compile Include="Textures.cs" />
     <Compile Include="RE_DefOf.cs" />
     <Compile Include="Apparels\AmmoBelt.cs" />
     <Compile Include="HarmonyPatches\HarmonyInit.cs" />
