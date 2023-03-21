@@ -13,8 +13,7 @@
         public override void Cast(params GlobalTargetInfo[] targets)
         {
             base.Cast(targets);
-
-            LongEventHandler.QueueLongEvent(() =>
+            LongEventHandler.ExecuteWhenFinished(() =>
                                             {
                                                 GlobalTargetInfo target = targets.First();
 
@@ -27,7 +26,7 @@
                                                 GenSpawn.Spawn(flyer, target.Cell, map);
                                                 target.Thing.TakeDamage(new DamageInfo(DamageDefOf.Blunt, this.GetPowerForPawn(), float.MaxValue, instigator: this.pawn));
 
-                                            }, "chargeAbility", false, null);
+                                            });
         }
     }
 }
