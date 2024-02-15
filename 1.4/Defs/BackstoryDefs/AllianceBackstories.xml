@@ -485,7 +485,7 @@
     <defName>RE_RuthlessOfficer</defName>
     <title>Ruthless officer</title>
     <titleShort>Officer</titleShort>
-    <baseDesc>Throughout [PAWN_nameDef]'s military career, [PAWN_pronoun] have held fast to one basic rule: get the job done. [PAWN_pronoun] has been called cold, calculating, and brutal. [PAWN_possessive] reputation for ruthless efficiency makes [PAWN_possessive] fellow soldiers wary of [PAWN_pronoun]. But when failure is not an option, the military always goes to [PAWN_nameDef] first.</baseDesc>
+    <baseDesc>Throughout [PAWN_nameDef]'s military career, [PAWN_pronoun] have held fast to one basic rule: get the job done. [PAWN_pronoun] has been called cold, calculating, and brutal. [PAWN_possessive] reputation for ruthless efficiency makes [PAWN_possessive] fellow soldiers wary of [PAWN_objective]. But when failure is not an option, the military always goes to [PAWN_nameDef] first.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
