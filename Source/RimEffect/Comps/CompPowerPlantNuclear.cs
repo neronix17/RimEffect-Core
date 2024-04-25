@@ -133,13 +133,13 @@ namespace RimEffect
 
             if (!onlyBreakOnceDuringSolarFlare)
             {
-                if (this.parent.Map.gameConditionManager.ElectricityDisabled)
+                if (this.parent.Map.gameConditionManager.ElectricityDisabled(this.parent.Map))
                 {
                     this.breakdownableComp.DoBreakdown();
                     onlyBreakOnceDuringSolarFlare = true;
                 }
             }
-            if (!this.parent.Map.gameConditionManager.ElectricityDisabled)
+            if (!this.parent.Map.gameConditionManager.ElectricityDisabled(this.parent.Map))
             {
                 onlyBreakOnceDuringSolarFlare = false;
             }

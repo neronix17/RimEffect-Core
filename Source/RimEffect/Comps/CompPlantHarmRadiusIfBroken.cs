@@ -54,7 +54,7 @@ namespace RimEffect
                 ticksActive = 0;
                 return;
             }
-            if (this.parent.Map.gameConditionManager.ElectricityDisabled)
+            if (this.parent.Map.gameConditionManager.ElectricityDisabled(this.parent.Map))
             {
                 ticksActive = 0;
                 return;

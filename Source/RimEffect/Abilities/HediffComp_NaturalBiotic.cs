@@ -12,7 +12,7 @@
         {
             base.CompPostMake();
 
-            if (!this.Pawn.health.hediffSet.HasHediff(RE_DefOf.RE_BioticAmpHediff) && HediffMaker.MakeHediff(RE_DefOf.RE_BioticAmpHediff, this.Pawn, this.Pawn.RaceProps.body.GetPartsWithDef(BodyPartDefOf.Brain).FirstOrFallback()) is Hediff_Abilities implant)
+            if (!this.Pawn.health.hediffSet.HasHediff(RE_DefOf.RE_BioticAmpHediff) && HediffMaker.MakeHediff(RE_DefOf.RE_BioticAmpHediff, this.Pawn, this.Pawn.RaceProps.body.GetPartsWithDef(RE_DefOf.Brain).FirstOrFallback()) is Hediff_Abilities implant)
             {
                 implant.Severity            = 0f;
                 implant.giveRandomAbilities = true;

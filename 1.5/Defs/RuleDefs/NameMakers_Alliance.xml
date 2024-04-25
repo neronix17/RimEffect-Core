@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerFaction_SystemsAlliance</defName>
+    <rulePack>
+      <rulesStrings>
+		<li>name->The 4th Alliance fleet</li>
+		<li>name->The 5th Alliance fleet</li>
+		<li>name->The 6th Alliance fleet</li>
+		<li>name->The 7th Alliance fleet</li>
+		<li>name->The 8th Alliance fleet</li>
+		<li>name->The 9th Alliance fleet</li>
+		<li>name->The 10th Alliance fleet</li>
+		<li>name->The 11th Alliance fleet</li>
+		<li>name->The 12th Alliance fleet</li>
+		<li>name->The 13th Alliance fleet</li>
+		<li>name->The 14th Alliance fleet</li>
+		<li>name->The 15th Alliance fleet</li>
+		<li>name->The 16th Alliance fleet</li>
+		<li>name->The 17th Alliance fleet</li>
+		<li>name->The 18th Alliance fleet</li>
+		<li>name->The 19th Alliance fleet</li>
+		<li>name->The 20th Alliance fleet</li>
+		<li>name->The 21st Alliance fleet</li>
+		<li>name->The 22nd Alliance fleet</li>
+		<li>name->The 23rd Alliance fleet</li>
+		<li>name->The 24th Alliance fleet</li>
+		<li>name->The 25th Alliance fleet</li>
+		<li>name->The 26th Alliance fleet</li>
+		<li>name->The 27th Alliance fleet</li>
+		<li>name->The 28th Alliance fleet</li>
+		<li>name->The 29th Alliance fleet</li>
+		<li>name->The 30th Alliance fleet</li>
+		<li>name->The 31st Alliance fleet</li>
+		<li>name->The 32nd Alliance fleet</li>
+		<li>name->The 33rd Alliance fleet</li>
+		<li>name->The 34th Alliance fleet</li>
+		<li>name->The 35th Alliance fleet</li>
+		<li>name->The 36th Alliance fleet</li>
+		<li>name->The 37th Alliance fleet</li>
+		<li>name->The 38th Alliance fleet</li>
+		<li>name->The 39th Alliance fleet</li>
+		<li>name->The 40th Alliance fleet</li>
+		<li>name->The 41st Alliance fleet</li>
+		<li>name->The 42nd Alliance fleet</li>
+		<li>name->The 43rd Alliance fleet</li>
+		<li>name->The 44th Alliance fleet</li>
+		<li>name->The 45th Alliance fleet</li>
+		<li>name->The 46th Alliance fleet</li>
+		<li>name->The 47th Alliance fleet</li>
+		<li>name->The 48th Alliance fleet</li>
+		<li>name->The 49th Alliance fleet</li>
+		<li>name->The 50th Alliance fleet</li>
+		<li>name->The 51st Alliance fleet</li>
+		<li>name->The 52nd Alliance fleet</li>
+		<li>name->The 53rd Alliance fleet</li>
+		<li>name->The 54th Alliance fleet</li>
+		<li>name->The 55th Alliance fleet</li>
+		<li>name->The 56th Alliance fleet</li>
+		<li>name->Arcturus expedition force</li>
+		<li>name->Elyse expedition force</li>
+		<li>name->Selene expedition force</li>
+		<li>name->Elysium expedition force</li>
+		<li>name->Novi expedition force</li>
+		<li>name->Torus expedition force</li>
+		<li>name->Caelys expedition force</li>
+		<li>name->Helio expedition force</li>
+		<li>name->Spire expedition force</li>
+		<li>name->Alpha expedition force</li>
+		<li>name->Beta expedition force</li>
+		<li>name->Tarus expedition force</li>
+		<li>name->Herment expedition force</li>
+		<li>name->Merveile expedition force</li>
+		<li>name->Orphe expedition force</li>
+		<li>name->Azure expedition force</li>
+		<li>name->Exin expedition force</li>
+		<li>name->Siro expedition force</li>
+		<li>name->Arcturus colonial initiative</li>
+        <li>name->Elyse colonial initiative</li>
+		<li>name->Selene colonial initiative</li>
+		<li>name->Elysium colonial initiative</li>
+		<li>name->Novi colonial initiative</li>
+		<li>name->Caelys colonial initiative</li>
+		<li>name->Helio colonial initiative</li>
+		<li>name->Spire colonial initiative</li>
+		<li>name->Alpha colonial initiative</li>
+		<li>name->Beta colonial initiative</li>
+		<li>name->Tarus colonial initiative</li>
+		<li>name->Herment colonial initiative</li>
+		<li>name->Merveile colonial initiative</li>
+		<li>name->Orphe colonial initiative</li>
+		<li>name->Azure colonial initiative</li>
+		<li>name->Exin colonial initiative</li>
+		<li>name->Siro colonial initiative</li>
+		<li>name->Astraeus colonial initiative</li>
+		<li>name->Claste colonial initiative</li>
+		<li>name->Celera colonial initiative</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+
+</Defs>

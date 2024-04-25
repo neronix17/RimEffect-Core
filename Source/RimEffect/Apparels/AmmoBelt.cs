@@ -191,7 +191,7 @@ namespace RimEffect
                     }
                     else if (ammoBelt.def == RE_DefOf.RE_AmmoIncendiaryBelt)
                     {
-                        __instance.TryAttachFire(0.5f);
+                        __instance.TryAttachFire(0.5f, dinfo.Instigator);
                     }
                 }
             }

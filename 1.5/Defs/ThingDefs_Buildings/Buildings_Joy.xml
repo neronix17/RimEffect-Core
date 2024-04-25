@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>RE_PrefabTelevision</defName>
+    <label>prefab television</label>
+    <description>An advanced television set with a larger screen, integrated smart functions, and holonet connection. it serves to act as an entertainment medium for increased recreation. \n\nPrefabricated equipment is vital for getting a new settlement up and running quickly and safely out on the dangerous frontier.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PrefabTV/PrefabTV</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shadowData>
+        <volume>(1.6, 0.6, 0.1)</volume>
+        <offset>(0, 0, 0.35)</offset>
+      </shadowData>
+      <drawSize>(3,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <rotatable>true</rotatable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.35</fillPercent>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <costList>
+      <Plasteel>80</Plasteel>
+      <RE_PrefabComponent>16</RE_PrefabComponent>
+    </costList>
+    <statBases>
+      <WorkToBuild>6000</WorkToBuild>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Mass>8</Mass>
+      <JoyGainFactor>1.6</JoyGainFactor>
+    </statBases>
+    <pathCost>50</pathCost>
+    <passability>PassThroughOnly</passability>
+    <size>(3,1)</size>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <researchPrerequisites><li>RE_ComplexPrefabrication</li></researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <building>
+      <joyKind>Television</joyKind>
+      <spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+      <boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+      <watchBuildingStandDistanceRange>3~7</watchBuildingStandDistanceRange>
+      <watchBuildingStandRectWidth>7</watchBuildingStandRectWidth>
+      <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+      <effectWatching>WatchingTelevision</effectWatching>
+    </building>
+    <designationCategory>Joy</designationCategory>
+    <placeWorkers>
+      <li>PlaceWorker_WatchArea</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>400</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <tradeTags>
+      <li>RE_PrefabTV</li>
+    </tradeTags>
+	<techLevel>Ultra</techLevel>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>RE_VIInterface</defName>
+    <label>VI interface</label>
+    <description>A hologram emmiter connected to VI interface. The VI can be interacted and talked with, providing users news, information and recreation.</description>
+	<thingClass>RimEffect.Building_VIInterface</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Joy/VITerminal/VITerminal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.6, 0.6, 0.1)</volume>
+        <offset>(0, 0, 0.2)</offset>
+      </shadowData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+	<costList>
+	<ComponentSpacer>2</ComponentSpacer>
+	<Plasteel>25</Plasteel>
+	<Steel>50</Steel>
+    <RE_PrefabComponent>8</RE_PrefabComponent>
+	</costList>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>1000</WorkToBuild>
+      <Mass>3</Mass>
+      <Flammability>1.0</Flammability>
+      <JoyGainFactor>1</JoyGainFactor>
+    </statBases>
+    <placeWorkers>
+      <li>PlaceWorker_NeverAdjacentUnstandable</li>
+    </placeWorkers>
+	<comps>
+		<li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+	</comps>
+    <building>
+      <joyKind>RE_Interaction_VIInterface</joyKind>
+      <watchBuildingStandDistanceRange>-1~1</watchBuildingStandDistanceRange>
+      <watchBuildingStandRectWidth>3</watchBuildingStandRectWidth>
+      <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+    </building>
+    <pathCost>14</pathCost>
+    <designationCategory>Joy</designationCategory>
+    <researchPrerequisites>
+      <li>RE_ComplexPrefabrication</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

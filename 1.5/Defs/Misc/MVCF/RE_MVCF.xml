@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<MVCF.ModDef>
+	<defName>RE_RimEffect</defName>
+	<label>Rim Effect</label>
+	<description>Rim Effect.</description>
+	<ActivateFeatures>
+		<li>HediffVerbs</li>
+	</ActivateFeatures>
+</MVCF.ModDef>
+
+</Defs>

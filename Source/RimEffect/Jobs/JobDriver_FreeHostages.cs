@@ -34,8 +34,8 @@ namespace RimEffect
                 CellFinder.TryFindRandomPawnExitCell(OtherPawn, out leavePoint);
                 // Turn back to former faction and villager + exit the map
 
-                foreach (Pawn pawn in Map.mapPawns.AllPawnsSpawned.FindAll(p => p.Position.GetRoom(Map) == this.OtherPawn.Position.GetRoom(Map) 
-                && p.health.hediffSet.HasHediff(RE_DefOf.RE_TurnBackToFormerFaction)))
+                foreach (Pawn pawn in Map.mapPawns.AllPawnsSpawned.Where(p => p.Position.GetRoom(Map) == this.OtherPawn.Position.GetRoom(Map) 
+                                                                           && p.health.hediffSet.HasHediff(RE_DefOf.RE_TurnBackToFormerFaction)))
                 {
                     pawn.health.RemoveHediff(pawn.health.hediffSet.hediffs.Find(h => h.def == RE_DefOf.RE_TurnBackToFormerFaction));
                     pawn.guest.SetGuestStatus(null);

@@ -92,7 +92,7 @@ namespace RimEffect
                 overlightRadius = 0
             });
 
-            base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlag.Things);
+            base.Map.mapDrawer.MapMeshDirty(base.Position, MapMeshFlagDefOf.Things);
             base.Map.glowGrid.RegisterGlower(this.compGlower);
         }
 
@@ -118,9 +118,11 @@ namespace RimEffect
                 return interfaceMat;
             }
         }
-        public override void Draw()
+
+        protected override void DrawAt(Vector3 drawLoc, bool flip = false)
         {
-            base.Draw();
+            base.DrawAt(drawLoc, flip);
+
             if (InUse)
             {
                 Vector3 drawPos = DrawPos;

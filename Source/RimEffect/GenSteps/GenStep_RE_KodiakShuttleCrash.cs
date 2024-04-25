@@ -43,7 +43,7 @@ namespace RimEffect.GenSteps
         {
             FireUtility.TryStartFireIn((from x in GenRadial.RadialCellsAround(position, 10f, true)
                                         where x.InBounds(map)
-                                        select x).RandomElement(), map, Rand.Range(0.1f, 0.925f));
+                                        select x).RandomElement(), map, Rand.Range(0.1f, 0.925f), null);
         }
     }
 }

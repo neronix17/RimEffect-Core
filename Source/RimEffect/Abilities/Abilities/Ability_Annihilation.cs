@@ -122,7 +122,7 @@
                 this.Destroy();
         }
 
-        public override void DrawAt(Vector3 drawLoc, bool flip = false)
+        protected override void DrawAt(Vector3 drawLoc, bool flip = false)
         {
             Mesh mesh = this.Graphic.MeshAt(this.Rotation);
             Quaternion quat = Quaternion.AngleAxis(this.curRotation, Vector3.up);

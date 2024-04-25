@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>RE_MassEffectFieldManipulation</defName>
+    <label>mass effect field manipulation</label>
+    <description>Use zero element to open new scientific horizons.</description>
+    <baseCost>8000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>ShipReactor</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	<tags>
+	  <li>AllianceColonyStart</li>
+	</tags>
+    <researchViewX>0.0</researchViewX>
+    <researchViewY>2.1</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_BasicPrefabrication</defName>
+    <label>basic prefabrication</label>
+    <description>Build prefab furniture and fabricate spacer items.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_MassEffectFieldManipulation</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tags>
+	  <li>AllianceColonyStart</li>
+	</tags>
+    <researchViewX>1.0</researchViewX>
+    <researchViewY>0.0</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_ComplexPrefabrication</defName>
+    <label>complex prefabrication</label>
+    <description>Build complicated prefab constructions and fabricate advanced spacer items.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_BasicPrefabrication</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>2.0</researchViewX>
+    <researchViewY>0.0</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_PrefabSolarPanels</defName>
+    <label>prefab solar panels</label>
+    <description>Build prefab solar panels for electricity generation.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_MassEffectFieldManipulation</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>1.0</researchViewX>
+    <researchViewY>0.7</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_PrefabGeothermalPlant</defName>
+    <label>prefab geothermal plant</label>
+    <description>Build prefab geothermal power plants on top of steam geysers, for uninterrupted power.</description>
+    <baseCost>5500</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_MassEffectFieldManipulation</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>2.0</researchViewX>
+    <researchViewY>1.4</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_MassAcceleration</defName>
+    <label>mass acceleration</label>
+    <description>Produce mass acceleration turrets.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_ComplexPrefabrication</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>3.0</researchViewX>
+    <researchViewY>0.0</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_AmmunitionModification</defName>
+    <label>ammunition modification</label>
+    <description>Produce new ammo types with different attributes.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_MassAcceleration</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>4.0</researchViewX>
+    <researchViewY>0.0</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_FusionReactor</defName>
+    <label>fusion reactor</label>
+    <description>Construct fusion reactors and cells for electricity generation.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_MassEffectFieldManipulation</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>1.0</researchViewX>
+    <researchViewY>1.4</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_ElementZero</defName>
+    <label>element zero</label>
+    <description>Produce zero element using special extractor.</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_MassEffectFieldManipulation</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>4.0</researchViewX>
+    <researchViewY>2.1</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_EezoPowerGeneration</defName>
+    <label>eezo power generation</label>
+    <description>Construct element zero reactor to produce huge amounts of electricity.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_ElementZero</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>5.0</researchViewX>
+    <researchViewY>0.0</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_BioticAmp</defName>
+    <label>biotic Amp</label>
+    <description>Craft biotic amps in order to receive biotic abilities.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_ElementZero</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>5.0</researchViewX>
+    <researchViewY>0.7</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_OmniTool</defName>
+    <label>omni-Tool</label>
+    <description>Craft omni-tools in order to receive tech powers.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_ElementZero</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>5.0</researchViewX>
+    <researchViewY>1.4</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_MediGelFabrication</defName>
+    <label>medi-gel fabrication</label>
+    <description>Produce medi-gel by using element zero.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_ElementZero</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>5.0</researchViewX>
+    <researchViewY>2.1</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_HighTechBodyImplants</defName>
+    <label>high-tech body implants</label>
+    <description>Make high-tech body implants with unique purposes.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_ElementZero</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>6.0</researchViewX>
+    <researchViewY>1.65</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_ComplexSpacerClothing</defName>
+    <label>complex spacer clothing</label>
+    <description>Tailor complicated spacer garments.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_BasicPrefabrication</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>2.0</researchViewX>
+    <researchViewY>0.7</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_AllianceCooperation</defName>
+    <label>alliance cooperation</label>
+    <description>Use alliance terminal in order to get access to new research projects.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_MassEffectFieldManipulation</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+	  <li>RE_AllianceTerminal</li>
+    </requiredResearchFacilities>
+	<tags>
+	  <li>AllianceColonyStart</li>
+	</tags>
+    <researchViewX>0.0</researchViewX>
+    <researchViewY>2.8</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_AllianceWeaponry</defName>
+    <label>alliance weaponry</label>
+    <description>Craft spacer alliance weapons.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_AllianceCooperation</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+	  <li>RE_AllianceTerminal</li>
+    </requiredResearchFacilities>
+    <researchViewX>1.0</researchViewX>
+    <researchViewY>2.8</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_HeavyAllianceWeapons</defName>
+    <label>heavy alliance weapons</label>
+    <description>Craft heavy spacer alliance weapons.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_AllianceWeaponry</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+	  <li>RE_AllianceTerminal</li>
+    </requiredResearchFacilities>
+    <researchViewX>2.0</researchViewX>
+    <researchViewY>2.8</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_AllianceArmoury</defName>
+    <label>alliance armoury</label>
+    <description>Craft spacer alliance armor.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_AllianceCooperation</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+	  <li>RE_AllianceTerminal</li>
+    </requiredResearchFacilities>
+    <researchViewX>3.0</researchViewX>
+    <researchViewY>2.8</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_HeavyAllianceArmor</defName>
+    <label>heavy alliance armor</label>
+    <description>Craft heavy spacer alliance armor.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_AllianceArmoury</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+	  <li>RE_AllianceTerminal</li>
+    </requiredResearchFacilities>
+    <researchViewX>4.0</researchViewX>
+    <researchViewY>2.8</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_AllianceKodiak</defName>
+    <label>alliance Kodiak</label>
+    <description>Construct Alliance shuttles for fast traveling around the planet.</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_AllianceCooperation</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+	  <li>RE_AllianceTerminal</li>
+    </requiredResearchFacilities>
+    <researchViewX>5.0</researchViewX>
+    <researchViewY>2.8</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_ColonyDefenseForce</defName>
+    <label>colony defense force</label>
+    <description>Construct LOKI and FENRIS mechs for various purposes.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_AllianceCooperation</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+	  <li>RE_AllianceTerminal</li>
+    </requiredResearchFacilities>
+    <researchViewX>6.0</researchViewX>
+    <researchViewY>2.8</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_YMIRMech</defName>
+    <label>YMIR mech</label>
+    <description>Construct YMIR mechs for defending purposes.</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_AllianceCooperation</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+	  <li>RE_AllianceTerminal</li>
+    </requiredResearchFacilities>
+    <researchViewX>7.0</researchViewX>
+    <researchViewY>2.8</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+
+</Defs>

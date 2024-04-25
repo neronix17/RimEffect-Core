@@ -72,6 +72,13 @@ namespace RimEffect
         public static HediffDef   RE_BioticNatural;
 
         public static QuestScriptDef RE_ColonyGrowth;
+
+    
+    #region Vanilla
+
+        public static BodyPartDef Brain;
+
+    #endregion
     }
 }
  

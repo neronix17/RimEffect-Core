@@ -43,7 +43,7 @@
                 this.Destroy();
         }
 
-        public override void DrawAt(Vector3 drawLoc, bool flip = false)
+        protected override void DrawAt(Vector3 drawLoc, bool flip = false)
         {
             this.Graphic.drawSize = new Vector2(this.curRadius*2f, this.curRadius*2f);
 

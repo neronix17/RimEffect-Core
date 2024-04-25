@@ -24,7 +24,7 @@ namespace RimEffect
             finalize.initAction = delegate ()
              {
                  // End related quest if no other pawn of same faction are still on the map
-                 if (this.Map.mapPawns.AllPawnsSpawned.FindAll(predicate => predicate.Faction == pawn.Faction).Count <= 1)
+                 if (this.Map.mapPawns.AllPawnsSpawned.Count(predicate => predicate.Faction == pawn.Faction) <= 1)
                  {
                      foreach (var item in Find.QuestManager.QuestsListForReading)
                      {
