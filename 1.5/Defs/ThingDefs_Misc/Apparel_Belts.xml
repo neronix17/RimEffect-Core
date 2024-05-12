@@ -1,364 +1,556 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <ThingDef ParentName="ApparelNoQualityBase" Name="RE_AmmoBelts" Abstract="True">
-    <thingCategories>
-      <li>ApparelUtility</li>
-    </thingCategories>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-	<thingClass>RimEffect.AmmoBelt</thingClass>
-    <statBases>
-      <MarketValue>1200</MarketValue>
-      <Mass>0.2</Mass>
-      <Beauty>-3</Beauty>
-      <Flammability>0.5</Flammability>
-	  <WorkToMake>8000</WorkToMake>
-    </statBases>
-    <tradeability>Sellable</tradeability>
-    <soundInteract>Standard_Pickup</soundInteract>
-    <tickerType>Normal</tickerType>
-    <apparel>
-      <scoreOffset>4</scoreOffset>
-      <careIfWornByCorpse>false</careIfWornByCorpse>
-      <careIfDamaged>false</careIfDamaged>
-      <wearPerDay>0</wearPerDay>
-      <bodyPartGroups>
-        <li>Waist</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Belt</li>
-      </layers>
-    </apparel>
-    <recipeMaker>
-      <researchPrerequisite>RE_AmmunitionModification</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-      <recipeUsers Inherit="False">
-        <li>RE_ManufacturingBench</li>
-      </recipeUsers>
-    </recipeMaker>
-    <tradeTags>
-      <li>RE_AmmoBelts</li>
-    </tradeTags>
-	<techLevel>Ultra</techLevel>
-  </ThingDef>
-  
-  <ThingDef ParentName="RE_AmmoBelts">
-    <defName>RE_AmmoCryoBelt</defName>
-    <label>cryo rounds</label>
-    <description>An ammo belt with cryo rounds. Occupies belt slot.\n\nEach shot fired with a weapon whilst this belt is equipped applies hypothermia, but reduces durability of the belt.</description>
-    <graphicData>
-      <texPath>Things/Apparel/AmmoBelt/AmmoCryoBelt</texPath>
-      <drawSize>(0.7,0.7)</drawSize>
-    </graphicData>
-    <apparel>
-      <wornGraphicPath>Things/Apparel/AmmoBelt/AmmoCryoBelt</wornGraphicPath>
-      <wornGraphicData>
-        <renderUtilityAsPack>true</renderUtilityAsPack>
-        <north>
-          <male>  <offset>(0.4, -0.25)</offset> </male>
-          <female><offset>(0.4,-0.25)</offset> </female>
-          <thin>  <offset>(0.3,-0.25)</offset> </thin>
-          <hulk>  <offset>(0.4,-0.3)</offset> </hulk>
-          <fat>   <offset>(0.6,-0.25)</offset> </fat>
-        </north>
-        <south>
-          <male>  <offset>(-0.4, -0.25)</offset> </male>
-          <female><offset>(-0.4,-0.25)</offset> </female>
-          <thin>  <offset>(-0.3,-0.25)</offset> </thin>
-          <hulk>  <offset>(-0.4,-0.3)</offset> </hulk>
-          <fat>   <offset>(-0.6,-0.25)</offset> </fat>
-        </south>
-        <east>
-          <offset>(-0.05,-0.3)</offset>
-        </east>
+	<ThingDef ParentName="ApparelNoQualityBase" Name="RE_AmmoBelts" Abstract="True">
+		<thingCategories>
+			<li>ApparelUtility</li>
+		</thingCategories>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>RimEffect.AmmoBelt</thingClass>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<Mass>0.2</Mass>
+			<Beauty>-3</Beauty>
+			<Flammability>0.5</Flammability>
+			<WorkToMake>8000</WorkToMake>
+		</statBases>
+		<tradeability>Sellable</tradeability>
+		<soundInteract>Standard_Pickup</soundInteract>
+		<tickerType>Normal</tickerType>
+		<apparel>
+			<scoreOffset>4</scoreOffset>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>RE_AmmunitionModification</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>RE_ManufacturingBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tradeTags>
+			<li>RE_AmmoBelts</li>
+		</tradeTags>
+		<techLevel>Ultra</techLevel>
+	</ThingDef>
 
-        <male>  <scale>(0.4,0.4)</scale> </male>
-        <female><scale>(0.4,0.4)</scale> </female>
-        <thin>  <scale>(0.4,0.4)</scale> </thin>
-        <hulk>  <scale>(0.4,0.4)</scale> </hulk>
-        <fat>   <scale>(0.4,0.4)</scale> </fat>
-      </wornGraphicData>
-    </apparel>
-    <thingSetMakerTags><li>RE_AmmoBelts</li></thingSetMakerTags>
-    <comps>
-      <li Class="CompProperties_Reloadable">
-        <maxCharges>100</maxCharges>
-        <destroyOnEmpty>true</destroyOnEmpty>
-        <chargeNoun>charge</chargeNoun>
-        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
-      </li>
-    </comps>
-    <costList>
-      <Plasteel>10</Plasteel>
-      <RE_ElementZero>2</RE_ElementZero>
-    </costList>
-  </ThingDef>
-  
-  <ThingDef ParentName="RE_AmmoBelts">
-    <defName>RE_AmmoDisruptorBelt</defName>
-    <label>disruptor rounds</label>
-    <description>An ammo belt with disruptor rounds. Occupies belt slot.\n\nEach shot fired with a weapon whilst this belt is equipped applies EMP damage, but reduces durability of the belt.</description>
-    <graphicData>
-      <texPath>Things/Apparel/AmmoBelt/AmmoDisruptorBelt</texPath>
-      <drawSize>(0.7,0.7)</drawSize>
-    </graphicData>
-    <apparel>
-      <wornGraphicPath>Things/Apparel/AmmoBelt/AmmoDisruptorBelt</wornGraphicPath>
-      <wornGraphicData>
-        <renderUtilityAsPack>true</renderUtilityAsPack>
-        <north>
-          <male>  <offset>(0.4, -0.25)</offset> </male>
-          <female><offset>(0.4,-0.25)</offset> </female>
-          <thin>  <offset>(0.3,-0.25)</offset> </thin>
-          <hulk>  <offset>(0.4,-0.3)</offset> </hulk>
-          <fat>   <offset>(0.6,-0.25)</offset> </fat>
-        </north>
-        <south>
-          <male>  <offset>(-0.4, -0.25)</offset> </male>
-          <female><offset>(-0.4,-0.25)</offset> </female>
-          <thin>  <offset>(-0.3,-0.25)</offset> </thin>
-          <hulk>  <offset>(-0.4,-0.3)</offset> </hulk>
-          <fat>   <offset>(-0.6,-0.25)</offset> </fat>
-        </south>
-        <east>
-          <offset>(-0.05,-0.3)</offset>
-        </east>
+	<ThingDef ParentName="RE_AmmoBelts">
+		<defName>RE_AmmoCryoBelt</defName>
+		<label>cryo rounds</label>
+		<description>An ammo belt with cryo rounds. Occupies belt slot.\n\nEach shot fired with a weapon whilst this belt is equipped applies hypothermia, but reduces durability of the belt.</description>
+		<graphicData>
+			<texPath>Things/Apparel/AmmoBelt/AmmoCryoBelt</texPath>
+			<drawSize>(0.7,0.7)</drawSize>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/AmmoBelt/AmmoCryoBelt</wornGraphicPath>
+			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<north>
+					<male>
+						<offset>(0.4, -0.25)</offset>
+					</male>
+					<female>
+						<offset>(0.4,-0.25)</offset>
+					</female>
+					<thin>
+						<offset>(0.3,-0.25)</offset>
+					</thin>
+					<hulk>
+						<offset>(0.4,-0.3)</offset>
+					</hulk>
+					<fat>
+						<offset>(0.6,-0.25)</offset>
+					</fat>
+				</north>
+				<south>
+					<male>
+						<offset>(-0.4, -0.25)</offset>
+					</male>
+					<female>
+						<offset>(-0.4,-0.25)</offset>
+					</female>
+					<thin>
+						<offset>(-0.3,-0.25)</offset>
+					</thin>
+					<hulk>
+						<offset>(-0.4,-0.3)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.6,-0.25)</offset>
+					</fat>
+				</south>
+				<east>
+					<offset>(-0.05,-0.3)</offset>
+				</east>
 
-        <male>  <scale>(0.4,0.4)</scale> </male>
-        <female><scale>(0.4,0.4)</scale> </female>
-        <thin>  <scale>(0.4,0.4)</scale> </thin>
-        <hulk>  <scale>(0.4,0.4)</scale> </hulk>
-        <fat>   <scale>(0.4,0.4)</scale> </fat>
-      </wornGraphicData>
-    </apparel>
-    <thingSetMakerTags><li>RE_AmmoBelts</li></thingSetMakerTags>
-    <comps>
-      <li Class="CompProperties_Reloadable">
-        <maxCharges>100</maxCharges>
-        <destroyOnEmpty>true</destroyOnEmpty>
-        <chargeNoun>charge</chargeNoun>
-        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
-      </li>
-    </comps>
-    <costList>
-      <Plasteel>10</Plasteel>
-      <RE_ElementZero>2</RE_ElementZero>
-    </costList>
-  </ThingDef>
-  
-  <ThingDef ParentName="RE_AmmoBelts">
-    <defName>RE_AmmoExplosiveBelt</defName>
-    <label>explosive rounds</label>
-    <description>An ammo belt with explosive rounds. Occupies belt slot.\n\nEach shot fired with a weapon whilst this belt is equipped is an explosive shot with a 1.9 detonation radius, but reduces durability of the belt.</description>
-    <graphicData>
-      <texPath>Things/Apparel/AmmoBelt/AmmoExplosiveBelt</texPath>
-      <drawSize>(0.7,0.7)</drawSize>
-    </graphicData>
-	<statBases>
-	      <MaxHitPoints>50</MaxHitPoints>
-	</statBases>
-    <apparel>
-      <wornGraphicPath>Things/Apparel/AmmoBelt/AmmoExplosiveBelt</wornGraphicPath>
-      <wornGraphicData>
-        <renderUtilityAsPack>true</renderUtilityAsPack>
-        <north>
-          <male>  <offset>(0.4, -0.25)</offset> </male>
-          <female><offset>(0.4,-0.25)</offset> </female>
-          <thin>  <offset>(0.3,-0.25)</offset> </thin>
-          <hulk>  <offset>(0.4,-0.3)</offset> </hulk>
-          <fat>   <offset>(0.6,-0.25)</offset> </fat>
-        </north>
-        <south>
-          <male>  <offset>(-0.4, -0.25)</offset> </male>
-          <female><offset>(-0.4,-0.25)</offset> </female>
-          <thin>  <offset>(-0.3,-0.25)</offset> </thin>
-          <hulk>  <offset>(-0.4,-0.3)</offset> </hulk>
-          <fat>   <offset>(-0.6,-0.25)</offset> </fat>
-        </south>
-        <east>
-          <offset>(-0.05,-0.3)</offset>
-        </east>
+				<male>
+					<scale>(0.4,0.4)</scale>
+				</male>
+				<female>
+					<scale>(0.4,0.4)</scale>
+				</female>
+				<thin>
+					<scale>(0.4,0.4)</scale>
+				</thin>
+				<hulk>
+					<scale>(0.4,0.4)</scale>
+				</hulk>
+				<fat>
+					<scale>(0.4,0.4)</scale>
+				</fat>
+			</wornGraphicData>
+		</apparel>
+		<thingSetMakerTags>
+			<li>RE_AmmoBelts</li>
+		</thingSetMakerTags>
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>100</maxCharges>
+				<destroyOnEmpty>true</destroyOnEmpty>
+				<chargeNoun>charge</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<RE_ElementZero>2</RE_ElementZero>
+		</costList>
+	</ThingDef>
 
-        <male>  <scale>(0.4,0.4)</scale> </male>
-        <female><scale>(0.4,0.4)</scale> </female>
-        <thin>  <scale>(0.4,0.4)</scale> </thin>
-        <hulk>  <scale>(0.4,0.4)</scale> </hulk>
-        <fat>   <scale>(0.4,0.4)</scale> </fat>
-      </wornGraphicData>
-    </apparel>
-    <thingSetMakerTags><li>RE_AmmoBelts</li></thingSetMakerTags>
-    <comps>
-      <li Class="CompProperties_Reloadable">
-        <maxCharges>100</maxCharges>
-        <destroyOnEmpty>true</destroyOnEmpty>
-        <chargeNoun>charge</chargeNoun>
-        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
-      </li>
-    </comps>
-    <costList>
-      <Plasteel>10</Plasteel>
-      <RE_ElementZero>5</RE_ElementZero>
-    </costList>
-  </ThingDef>
-  
-  <ThingDef ParentName="RE_AmmoBelts">
-    <defName>RE_AmmoIncendiaryBelt</defName>
-    <label>incendiary rounds</label>
-    <description>An ammo belt with incendiary rounds. Occupies belt slot.\n\nEach shot fired with a weapon whilst this belt is equipped applies fire damage and sets the target on fire, but reduces durability of the belt.</description>
-    <graphicData>
-      <texPath>Things/Apparel/AmmoBelt/AmmoIncendiaryBelt</texPath>
-      <drawSize>(0.7,0.7)</drawSize>
-    </graphicData>
-    <apparel>
-      <wornGraphicPath>Things/Apparel/AmmoBelt/AmmoIncendiaryBelt</wornGraphicPath>
-      <wornGraphicData>
-        <renderUtilityAsPack>true</renderUtilityAsPack>
-        <north>
-          <male>  <offset>(0.4, -0.25)</offset> </male>
-          <female><offset>(0.4,-0.25)</offset> </female>
-          <thin>  <offset>(0.3,-0.25)</offset> </thin>
-          <hulk>  <offset>(0.4,-0.3)</offset> </hulk>
-          <fat>   <offset>(0.6,-0.25)</offset> </fat>
-        </north>
-        <south>
-          <male>  <offset>(-0.4, -0.25)</offset> </male>
-          <female><offset>(-0.4,-0.25)</offset> </female>
-          <thin>  <offset>(-0.3,-0.25)</offset> </thin>
-          <hulk>  <offset>(-0.4,-0.3)</offset> </hulk>
-          <fat>   <offset>(-0.6,-0.25)</offset> </fat>
-        </south>
-        <east>
-          <offset>(-0.05,-0.3)</offset>
-        </east>
+	<ThingDef ParentName="RE_AmmoBelts">
+		<defName>RE_AmmoDisruptorBelt</defName>
+		<label>disruptor rounds</label>
+		<description>An ammo belt with disruptor rounds. Occupies belt slot.\n\nEach shot fired with a weapon whilst this belt is equipped applies EMP damage, but reduces durability of the belt.</description>
+		<graphicData>
+			<texPath>Things/Apparel/AmmoBelt/AmmoDisruptorBelt</texPath>
+			<drawSize>(0.7,0.7)</drawSize>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/AmmoBelt/AmmoDisruptorBelt</wornGraphicPath>
+			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<north>
+					<male>
+						<offset>(0.4, -0.25)</offset>
+					</male>
+					<female>
+						<offset>(0.4,-0.25)</offset>
+					</female>
+					<thin>
+						<offset>(0.3,-0.25)</offset>
+					</thin>
+					<hulk>
+						<offset>(0.4,-0.3)</offset>
+					</hulk>
+					<fat>
+						<offset>(0.6,-0.25)</offset>
+					</fat>
+				</north>
+				<south>
+					<male>
+						<offset>(-0.4, -0.25)</offset>
+					</male>
+					<female>
+						<offset>(-0.4,-0.25)</offset>
+					</female>
+					<thin>
+						<offset>(-0.3,-0.25)</offset>
+					</thin>
+					<hulk>
+						<offset>(-0.4,-0.3)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.6,-0.25)</offset>
+					</fat>
+				</south>
+				<east>
+					<offset>(-0.05,-0.3)</offset>
+				</east>
 
-        <male>  <scale>(0.4,0.4)</scale> </male>
-        <female><scale>(0.4,0.4)</scale> </female>
-        <thin>  <scale>(0.4,0.4)</scale> </thin>
-        <hulk>  <scale>(0.4,0.4)</scale> </hulk>
-        <fat>   <scale>(0.4,0.4)</scale> </fat>
-      </wornGraphicData>
-    </apparel>
-    <thingSetMakerTags><li>RE_AmmoBelts</li></thingSetMakerTags>
-    <comps>
-      <li Class="CompProperties_Reloadable">
-        <maxCharges>100</maxCharges>
-        <destroyOnEmpty>true</destroyOnEmpty>
-        <chargeNoun>charge</chargeNoun>
-        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
-      </li>
-    </comps>
-    <costList>
-      <Plasteel>10</Plasteel>
-      <RE_ElementZero>2</RE_ElementZero>
-    </costList>
-  </ThingDef>
-  
-  <ThingDef ParentName="RE_AmmoBelts">
-    <defName>RE_AmmoPiercingBelt</defName>
-    <label>piercing rounds</label>
-    <description>An ammo belt with armor-piercing rounds. Occupies belt slot.\n\nEach shot fired with a weapon whilst this belt is equipped has a 50% higher armor penetration, but reduces durability of the belt.</description>
-    <graphicData>
-      <texPath>Things/Apparel/AmmoBelt/AmmoPiercingBelt</texPath>
-      <drawSize>(0.7,0.7)</drawSize>
-    </graphicData>
-    <apparel>
-      <wornGraphicPath>Things/Apparel/AmmoBelt/AmmoPiercingBelt</wornGraphicPath>
-      <wornGraphicData>
-        <renderUtilityAsPack>true</renderUtilityAsPack>
-        <north>
-          <male>  <offset>(0.4, -0.25)</offset> </male>
-          <female><offset>(0.4,-0.25)</offset> </female>
-          <thin>  <offset>(0.3,-0.25)</offset> </thin>
-          <hulk>  <offset>(0.4,-0.3)</offset> </hulk>
-          <fat>   <offset>(0.6,-0.25)</offset> </fat>
-        </north>
-        <south>
-          <male>  <offset>(-0.4, -0.25)</offset> </male>
-          <female><offset>(-0.4,-0.25)</offset> </female>
-          <thin>  <offset>(-0.3,-0.25)</offset> </thin>
-          <hulk>  <offset>(-0.4,-0.3)</offset> </hulk>
-          <fat>   <offset>(-0.6,-0.25)</offset> </fat>
-        </south>
-        <east>
-          <offset>(-0.05,-0.3)</offset>
-        </east>
+				<male>
+					<scale>(0.4,0.4)</scale>
+				</male>
+				<female>
+					<scale>(0.4,0.4)</scale>
+				</female>
+				<thin>
+					<scale>(0.4,0.4)</scale>
+				</thin>
+				<hulk>
+					<scale>(0.4,0.4)</scale>
+				</hulk>
+				<fat>
+					<scale>(0.4,0.4)</scale>
+				</fat>
+			</wornGraphicData>
+		</apparel>
+		<thingSetMakerTags>
+			<li>RE_AmmoBelts</li>
+		</thingSetMakerTags>
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>100</maxCharges>
+				<destroyOnEmpty>true</destroyOnEmpty>
+				<chargeNoun>charge</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<RE_ElementZero>2</RE_ElementZero>
+		</costList>
+	</ThingDef>
 
-        <male>  <scale>(0.4,0.4)</scale> </male>
-        <female><scale>(0.4,0.4)</scale> </female>
-        <thin>  <scale>(0.4,0.4)</scale> </thin>
-        <hulk>  <scale>(0.4,0.4)</scale> </hulk>
-        <fat>   <scale>(0.4,0.4)</scale> </fat>
-      </wornGraphicData>
-    </apparel>
-    <thingSetMakerTags><li>RE_AmmoBelts</li></thingSetMakerTags>
-    <comps>
-      <li Class="CompProperties_Reloadable">
-        <maxCharges>100</maxCharges>
-        <destroyOnEmpty>true</destroyOnEmpty>
-        <chargeNoun>charge</chargeNoun>
-        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
-      </li>
-    </comps>
-    <costList>
-      <Plasteel>10</Plasteel>
-      <RE_ElementZero>2</RE_ElementZero>
-    </costList>
-  </ThingDef>
-  
-  <ThingDef ParentName="RE_AmmoBelts">
-    <defName>RE_AmmoToxicBelt</defName>
-    <label>toxic rounds</label>
-    <description>An ammo belt with toxic rounds. Occupies belt slot.\n\nEach shot fired with a weapon whilst this belt is equipped applies toxic buildup, but reduces durability of the belt.</description>
-    <graphicData>
-      <texPath>Things/Apparel/AmmoBelt/AmmoToxicBelt</texPath>
-      <drawSize>(0.7,0.7)</drawSize>
-    </graphicData>
-    <apparel>
-      <wornGraphicPath>Things/Apparel/AmmoBelt/AmmoToxicBelt</wornGraphicPath>
-      <wornGraphicData>
-        <renderUtilityAsPack>true</renderUtilityAsPack>
-        <north>
-          <male>  <offset>(0.4, -0.25)</offset> </male>
-          <female><offset>(0.4,-0.25)</offset> </female>
-          <thin>  <offset>(0.3,-0.25)</offset> </thin>
-          <hulk>  <offset>(0.4,-0.3)</offset> </hulk>
-          <fat>   <offset>(0.6,-0.25)</offset> </fat>
-        </north>
-        <south>
-          <male>  <offset>(-0.4, -0.25)</offset> </male>
-          <female><offset>(-0.4,-0.25)</offset> </female>
-          <thin>  <offset>(-0.3,-0.25)</offset> </thin>
-          <hulk>  <offset>(-0.4,-0.3)</offset> </hulk>
-          <fat>   <offset>(-0.6,-0.25)</offset> </fat>
-        </south>
-        <east>
-          <offset>(-0.05,-0.3)</offset>
-        </east>
+	<ThingDef ParentName="RE_AmmoBelts">
+		<defName>RE_AmmoExplosiveBelt</defName>
+		<label>explosive rounds</label>
+		<description>An ammo belt with explosive rounds. Occupies belt slot.\n\nEach shot fired with a weapon whilst this belt is equipped is an explosive shot with a 1.9 detonation radius, but reduces durability of the belt.</description>
+		<graphicData>
+			<texPath>Things/Apparel/AmmoBelt/AmmoExplosiveBelt</texPath>
+			<drawSize>(0.7,0.7)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/AmmoBelt/AmmoExplosiveBelt</wornGraphicPath>
+			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<north>
+					<male>
+						<offset>(0.4, -0.25)</offset>
+					</male>
+					<female>
+						<offset>(0.4,-0.25)</offset>
+					</female>
+					<thin>
+						<offset>(0.3,-0.25)</offset>
+					</thin>
+					<hulk>
+						<offset>(0.4,-0.3)</offset>
+					</hulk>
+					<fat>
+						<offset>(0.6,-0.25)</offset>
+					</fat>
+				</north>
+				<south>
+					<male>
+						<offset>(-0.4, -0.25)</offset>
+					</male>
+					<female>
+						<offset>(-0.4,-0.25)</offset>
+					</female>
+					<thin>
+						<offset>(-0.3,-0.25)</offset>
+					</thin>
+					<hulk>
+						<offset>(-0.4,-0.3)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.6,-0.25)</offset>
+					</fat>
+				</south>
+				<east>
+					<offset>(-0.05,-0.3)</offset>
+				</east>
 
-        <male>  <scale>(0.4,0.4)</scale> </male>
-        <female><scale>(0.4,0.4)</scale> </female>
-        <thin>  <scale>(0.4,0.4)</scale> </thin>
-        <hulk>  <scale>(0.4,0.4)</scale> </hulk>
-        <fat>   <scale>(0.4,0.4)</scale> </fat>
-      </wornGraphicData>
-    </apparel>
-    <thingSetMakerTags><li>RE_AmmoBelts</li></thingSetMakerTags>
-    <comps>
-      <li Class="CompProperties_Reloadable">
-        <maxCharges>100</maxCharges>
-        <destroyOnEmpty>true</destroyOnEmpty>
-        <chargeNoun>charge</chargeNoun>
-        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
-      </li>
-    </comps>
-    <costList>
-      <Plasteel>10</Plasteel>
-      <RE_ElementZero>2</RE_ElementZero>
-    </costList>
-  </ThingDef>
-  
+				<male>
+					<scale>(0.4,0.4)</scale>
+				</male>
+				<female>
+					<scale>(0.4,0.4)</scale>
+				</female>
+				<thin>
+					<scale>(0.4,0.4)</scale>
+				</thin>
+				<hulk>
+					<scale>(0.4,0.4)</scale>
+				</hulk>
+				<fat>
+					<scale>(0.4,0.4)</scale>
+				</fat>
+			</wornGraphicData>
+		</apparel>
+		<thingSetMakerTags>
+			<li>RE_AmmoBelts</li>
+		</thingSetMakerTags>
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>100</maxCharges>
+				<destroyOnEmpty>true</destroyOnEmpty>
+				<chargeNoun>charge</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<RE_ElementZero>5</RE_ElementZero>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="RE_AmmoBelts">
+		<defName>RE_AmmoIncendiaryBelt</defName>
+		<label>incendiary rounds</label>
+		<description>An ammo belt with incendiary rounds. Occupies belt slot.\n\nEach shot fired with a weapon whilst this belt is equipped applies fire damage and sets the target on fire, but reduces durability of the belt.</description>
+		<graphicData>
+			<texPath>Things/Apparel/AmmoBelt/AmmoIncendiaryBelt</texPath>
+			<drawSize>(0.7,0.7)</drawSize>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/AmmoBelt/AmmoIncendiaryBelt</wornGraphicPath>
+			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<north>
+					<male>
+						<offset>(0.4, -0.25)</offset>
+					</male>
+					<female>
+						<offset>(0.4,-0.25)</offset>
+					</female>
+					<thin>
+						<offset>(0.3,-0.25)</offset>
+					</thin>
+					<hulk>
+						<offset>(0.4,-0.3)</offset>
+					</hulk>
+					<fat>
+						<offset>(0.6,-0.25)</offset>
+					</fat>
+				</north>
+				<south>
+					<male>
+						<offset>(-0.4, -0.25)</offset>
+					</male>
+					<female>
+						<offset>(-0.4,-0.25)</offset>
+					</female>
+					<thin>
+						<offset>(-0.3,-0.25)</offset>
+					</thin>
+					<hulk>
+						<offset>(-0.4,-0.3)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.6,-0.25)</offset>
+					</fat>
+				</south>
+				<east>
+					<offset>(-0.05,-0.3)</offset>
+				</east>
+
+				<male>
+					<scale>(0.4,0.4)</scale>
+				</male>
+				<female>
+					<scale>(0.4,0.4)</scale>
+				</female>
+				<thin>
+					<scale>(0.4,0.4)</scale>
+				</thin>
+				<hulk>
+					<scale>(0.4,0.4)</scale>
+				</hulk>
+				<fat>
+					<scale>(0.4,0.4)</scale>
+				</fat>
+			</wornGraphicData>
+		</apparel>
+		<thingSetMakerTags>
+			<li>RE_AmmoBelts</li>
+		</thingSetMakerTags>
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>100</maxCharges>
+				<destroyOnEmpty>true</destroyOnEmpty>
+				<chargeNoun>charge</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<RE_ElementZero>2</RE_ElementZero>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="RE_AmmoBelts">
+		<defName>RE_AmmoPiercingBelt</defName>
+		<label>piercing rounds</label>
+		<description>An ammo belt with armor-piercing rounds. Occupies belt slot.\n\nEach shot fired with a weapon whilst this belt is equipped has a 50% higher armor penetration, but reduces durability of the belt.</description>
+		<graphicData>
+			<texPath>Things/Apparel/AmmoBelt/AmmoPiercingBelt</texPath>
+			<drawSize>(0.7,0.7)</drawSize>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/AmmoBelt/AmmoPiercingBelt</wornGraphicPath>
+			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<north>
+					<male>
+						<offset>(0.4, -0.25)</offset>
+					</male>
+					<female>
+						<offset>(0.4,-0.25)</offset>
+					</female>
+					<thin>
+						<offset>(0.3,-0.25)</offset>
+					</thin>
+					<hulk>
+						<offset>(0.4,-0.3)</offset>
+					</hulk>
+					<fat>
+						<offset>(0.6,-0.25)</offset>
+					</fat>
+				</north>
+				<south>
+					<male>
+						<offset>(-0.4, -0.25)</offset>
+					</male>
+					<female>
+						<offset>(-0.4,-0.25)</offset>
+					</female>
+					<thin>
+						<offset>(-0.3,-0.25)</offset>
+					</thin>
+					<hulk>
+						<offset>(-0.4,-0.3)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.6,-0.25)</offset>
+					</fat>
+				</south>
+				<east>
+					<offset>(-0.05,-0.3)</offset>
+				</east>
+
+				<male>
+					<scale>(0.4,0.4)</scale>
+				</male>
+				<female>
+					<scale>(0.4,0.4)</scale>
+				</female>
+				<thin>
+					<scale>(0.4,0.4)</scale>
+				</thin>
+				<hulk>
+					<scale>(0.4,0.4)</scale>
+				</hulk>
+				<fat>
+					<scale>(0.4,0.4)</scale>
+				</fat>
+			</wornGraphicData>
+		</apparel>
+		<thingSetMakerTags>
+			<li>RE_AmmoBelts</li>
+		</thingSetMakerTags>
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>100</maxCharges>
+				<destroyOnEmpty>true</destroyOnEmpty>
+				<chargeNoun>charge</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<RE_ElementZero>2</RE_ElementZero>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="RE_AmmoBelts">
+		<defName>RE_AmmoToxicBelt</defName>
+		<label>toxic rounds</label>
+		<description>An ammo belt with toxic rounds. Occupies belt slot.\n\nEach shot fired with a weapon whilst this belt is equipped applies toxic buildup, but reduces durability of the belt.</description>
+		<graphicData>
+			<texPath>Things/Apparel/AmmoBelt/AmmoToxicBelt</texPath>
+			<drawSize>(0.7,0.7)</drawSize>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/AmmoBelt/AmmoToxicBelt</wornGraphicPath>
+			<wornGraphicData>
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<north>
+					<male>
+						<offset>(0.4, -0.25)</offset>
+					</male>
+					<female>
+						<offset>(0.4,-0.25)</offset>
+					</female>
+					<thin>
+						<offset>(0.3,-0.25)</offset>
+					</thin>
+					<hulk>
+						<offset>(0.4,-0.3)</offset>
+					</hulk>
+					<fat>
+						<offset>(0.6,-0.25)</offset>
+					</fat>
+				</north>
+				<south>
+					<male>
+						<offset>(-0.4, -0.25)</offset>
+					</male>
+					<female>
+						<offset>(-0.4,-0.25)</offset>
+					</female>
+					<thin>
+						<offset>(-0.3,-0.25)</offset>
+					</thin>
+					<hulk>
+						<offset>(-0.4,-0.3)</offset>
+					</hulk>
+					<fat>
+						<offset>(-0.6,-0.25)</offset>
+					</fat>
+				</south>
+				<east>
+					<offset>(-0.05,-0.3)</offset>
+				</east>
+
+				<male>
+					<scale>(0.4,0.4)</scale>
+				</male>
+				<female>
+					<scale>(0.4,0.4)</scale>
+				</female>
+				<thin>
+					<scale>(0.4,0.4)</scale>
+				</thin>
+				<hulk>
+					<scale>(0.4,0.4)</scale>
+				</hulk>
+				<fat>
+					<scale>(0.4,0.4)</scale>
+				</fat>
+			</wornGraphicData>
+		</apparel>
+		<thingSetMakerTags>
+			<li>RE_AmmoBelts</li>
+		</thingSetMakerTags>
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>100</maxCharges>
+				<destroyOnEmpty>true</destroyOnEmpty>
+				<chargeNoun>charge</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<RE_ElementZero>2</RE_ElementZero>
+		</costList>
+	</ThingDef>
+
 </Defs>

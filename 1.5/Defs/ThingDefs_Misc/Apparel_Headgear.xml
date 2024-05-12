@@ -327,7 +327,14 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<drawData>
+				<dataNorth>
+					<layer>-3</layer>
+				</dataNorth>
+			</drawData>
 			<layers>
 				<li>Overhead</li>
 			</layers>
