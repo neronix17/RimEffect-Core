@@ -6,23 +6,22 @@
     using Verse;
 
     [StaticConstructorOnStartup]
-    [HarmonyPatch(typeof(PawnRenderer), "DrawEquipment")]
+    [HarmonyPatch(typeof(PawnRenderUtility), nameof(PawnRenderUtility.DrawEquipmentAndApparelExtras))]
     public static class EquipmentRender_Patch
     {
         private static readonly Graphic graphic = GraphicDatabase.Get(typeof(Graphic_Single), @"Things/AbilityEffects/Omniblade/Omniblade", ShaderTypeDefOf.Cutout.Shader,
                                                                       new Vector2(1, 1), Color.white, Color.white);
 
-        delegate bool CarryWeaponOpenly(PawnRenderer instance);
+        delegate bool CarryWeaponOpenly(Pawn pawn);
 
-        private static readonly CarryWeaponOpenly carryOpenlyDelegate = AccessTools.MethodDelegate<CarryWeaponOpenly>(AccessTools.Method(typeof(PawnRenderer), "CarryWeaponOpenly"));
+        private static readonly CarryWeaponOpenly carryOpenlyDelegate = AccessTools.MethodDelegate<CarryWeaponOpenly>(AccessTools.Method(typeof(PawnRenderUtility), nameof(PawnRenderUtility.CarryWeaponOpenly)));
 
         [HarmonyPostfix]
-        public static void Postfix(PawnRenderer __instance, Pawn ___pawn)
+        public static void Postfix(Pawn pawn)
         {
-            Pawn pawn = ___pawn;
             if (!pawn.Dead && pawn.RaceProps.Humanlike && pawn.Spawned)
             {
-                if ((pawn.equipment?.PrimaryEq is null && ((pawn.stances.curStance is Stance_Busy stanceBusy && !stanceBusy.neverAimWeapon && stanceBusy.focusTarg.IsValid) || carryOpenlyDelegate(__instance))) ||
+                if ((pawn.equipment?.PrimaryEq is null && ((pawn.stances.curStance is Stance_Busy stanceBusy && !stanceBusy.neverAimWeapon && stanceBusy.focusTarg.IsValid) || carryOpenlyDelegate(pawn))) ||
                     (!(pawn.equipment?.PrimaryEq?.PrimaryVerb.IsMeleeAttack ?? true) && pawn.mindState.MeleeThreatStillThreat))
                 {
                     if (pawn.health.hediffSet.HasHediff(RE_DefOf.RE_OmniToolHediff))

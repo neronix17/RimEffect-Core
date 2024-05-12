@@ -14,7 +14,7 @@
     {
         [HarmonyTargetMethod]
         public static MethodBase TargetMethod() => 
-            AccessTools.Method(typeof(JobDriver_TendPatient).GetNestedTypes(AccessTools.all).First(t => t.Name.Contains("MakeNewToils")), "MoveNext");
+            AccessTools.EnumeratorMoveNext(AccessTools.Method(typeof(JobDriver_TendPatient), "MakeNewToils"));
 
         [HarmonyTranspiler]
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
@@ -25,7 +25,7 @@
 
                 if (instruction.Is(OpCodes.Ldc_R4, 600))
                 {
-                    yield return new CodeInstruction(OpCodes.Ldloc_1);
+                    yield return new CodeInstruction(OpCodes.Ldloc_2);
                     yield return new CodeInstruction(OpCodes.Ldfld, AccessTools.Field(typeof(JobDriver), nameof(JobDriver.pawn)));
                     yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(TendPatient_Patch), nameof(TendMultiplier)));
                 }
