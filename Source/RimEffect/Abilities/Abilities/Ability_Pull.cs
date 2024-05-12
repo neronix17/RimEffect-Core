@@ -32,11 +32,10 @@
 
                 target.Thing.TryGetComp<CompCanBeDormant>()?.WakeUp();
 
-                if (target.Thing is Pawn)
+                if (target.Thing is Pawn targetPawn)
                 {
-                    AbilityPawnFlyer flyer = (AbilityPawnFlyer)PawnFlyer.MakeFlyer(VFE_DefOf_Abilities.VFEA_AbilityFlyer, target.Thing as Pawn, destination, null, null);
+                    AbilityPawnFlyer flyer = (AbilityPawnFlyer)PawnFlyer.MakeFlyer(VFE_DefOf_Abilities.VFEA_AbilityFlyer, targetPawn, destination, null, null);
                     flyer.ability = this;
-                    flyer.target  = destination.ToVector3();
                     GenSpawn.Spawn(flyer, target.Cell, this.pawn.Map);
                 }
                 else

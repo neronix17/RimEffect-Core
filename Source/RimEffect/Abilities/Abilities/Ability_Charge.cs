@@ -22,7 +22,6 @@
 
                                                 AbilityPawnFlyer flyer = (AbilityPawnFlyer) PawnFlyer.MakeFlyer(VFE_DefOf_Abilities.VFEA_AbilityFlyer_Charge, this.pawn, destination, null, null);
                                                 flyer.ability = this;
-                                                flyer.target  = destination.ToVector3();
                                                 GenSpawn.Spawn(flyer, target.Cell, map);
                                                 target.Thing.TakeDamage(new DamageInfo(DamageDefOf.Blunt, this.GetPowerForPawn(), float.MaxValue, instigator: this.pawn));
 
