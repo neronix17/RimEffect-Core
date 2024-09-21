@@ -8,10 +8,12 @@
 			<PsychicSensitivity>0.5</PsychicSensitivity>
 			<ToxicResistance>1</ToxicResistance>
 			<Flammability>0</Flammability>
-			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-250</ComfyTemperatureMin>
 			<ComfyTemperatureMax>250</ComfyTemperatureMax>
 			<MeatAmount>0</MeatAmount>
 			<ArmorRating_Heat>2.00</ArmorRating_Heat>
+			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
 		</statBases>
 		<receivesSignals>true</receivesSignals>
 		<race>
